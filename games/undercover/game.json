@@ -1,0 +1,248 @@
+{
+  "id": "undercover",
+  "name": { "zh": "誰是臥底", "en": "Undercover", "ja": "アンダーカバー" },
+  "players": { "zh": "4–12 人", "en": "4–12 players", "ja": "4〜12人" },
+  "time": { "zh": "15 分鐘", "en": "15 min", "ja": "15分" },
+  "summary": {
+    "zh": "大家拿到同一個詞，只有臥底的詞不太一樣。輪流用一句話描述，找出誰在跟你講不同的東西。一支手機傳著玩，不用主持人。",
+    "en": "Everyone gets the same word, except the undercover players, whose word is slightly different. Describe it in one sentence each and find out who is talking about something else. Pass one phone around; no host needed.",
+    "ja": "全員同じお題、ただし潜入者だけ少し違うお題。ひとことずつ説明して、違うものの話をしている人を見つけよう。スマホ 1 台を回して遊べて、進行役はいらない。"
+  },
+
+  "rules": [
+    {
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "大部分人是**平民**，拿到同一個詞；少數人是**臥底**，拿到意思相近但不同的詞（例如平民「牛奶」、臥底「豆漿」）。也可以加一個**白板**，什麼詞都沒有。",
+          "",
+          "**沒有人知道自己是不是臥底**——你只看得到自己的詞。要從大家的描述發現「他講的好像跟我的不一樣」。",
+          "",
+          "每輪每人用一句話描述自己的詞，然後投票淘汰一個人，直到分出勝負。"
+        ],
+        "en": [
+          "Most players are **Civilians** and get the same word. A few are **Undercover** and get a similar but different word (for example, Civilians get \"Coffee\" and Undercover gets \"Tea\"). You can also add one **Blank**, who gets no word at all.",
+          "",
+          "**Nobody knows whether they are Undercover**: you only see your own word. You have to notice from the others' clues that someone seems to be describing something else.",
+          "",
+          "Each round everyone describes their word in one sentence, then you vote one player out, until one side wins."
+        ],
+        "ja": [
+          "ほとんどの人は**市民**で、同じお題をもらいます。少数の**潜入者**は、似ているけれど違うお題をもらいます（たとえば市民「うどん」、潜入者「そば」）。お題のない**白紙**を 1 人入れることもできます。",
+          "",
+          "**自分が潜入者かどうかは誰にもわかりません**。見えるのは自分のお題だけ。みんなの説明から「この人、話が少しずれている」と気づくのがポイントです。",
+          "",
+          "毎ラウンド全員がひとことずつお題を説明し、投票で 1 人を脱落させます。勝負がつくまで繰り返します。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "身分", "en": "Roles", "ja": "役割" },
+      "md": {
+        "zh": [
+          "- **平民**：人數最多，拿到同一個詞。要找出所有臥底和白板",
+          "- **臥底**：詞跟平民很像但不一樣。一開始不知道自己是臥底，發現後要努力混進平民裡",
+          "- **白板**（可不加）：沒有詞，自己知道是白板。靠聽別人描述猜詞、假裝自己也有。白板跟臥底同一邊"
+        ],
+        "en": [
+          "- **Civilian**: the majority, all with the same word. Must find every Undercover and Blank player",
+          "- **Undercover**: a word close to, but not the same as, the Civilians'. You do not know you are Undercover at first; once you realise it, blend in with the Civilians",
+          "- **Blank** (optional): has no word and knows it. Listen to the clues, guess the word and pretend you have it too. The Blank is on the Undercover side"
+        ],
+        "ja": [
+          "- **市民**：いちばん多く、全員同じお題。潜入者と白紙を全員見つけるのが目標",
+          "- **潜入者**：市民とよく似た別のお題。最初は自分が潜入者だと知らないので、気づいたら市民に紛れ込む",
+          "- **白紙**（入れなくてもよい）：お題がなく、自分が白紙だと知っている。みんなの説明からお題を推理して、持っているふりをする。白紙は潜入者側"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "遊戲流程", "en": "How to Play", "ja": "ゲームの流れ" },
+      "md": {
+        "zh": [
+          "### 1. 發詞（一支手機傳著玩）",
+          "",
+          "到〈開局〉頁設定人數、臥底數、要不要白板，按「開始發詞」。大家圍成一圈、順時針編號，手機從 1 號開始傳：輪到的人點開看自己的詞，記住後蓋起來，再交給下一個人。",
+          "",
+          "### 2. 描述",
+          "",
+          "從 App 指定的人開始，**順時針每人一句話**描述自己的詞。",
+          "",
+          "- 不能直接說出詞，也不能說出詞裡的字",
+          "- 要說真的跟自己的詞有關的話（白板例外，只能編）",
+          "",
+          "### 3. 投票",
+          "",
+          "全部說完後討論一下，**所有人同時指向**懷疑的人。得票最多的出局。平手時，平手的人各再描述一句，然後只在他們之間重新投票。",
+          "",
+          "### 4. 公布身分",
+          "",
+          "在 App 點出局的人，會顯示他是平民、臥底還是白板（不公布詞）。還沒分出勝負就進下一輪，回到第 2 步。出局的人不再發言、不投票。"
+        ],
+        "en": [
+          "### 1. Deal (pass one phone)",
+          "",
+          "On the Play tab, set the number of players, Undercover players and whether to add a Blank, then press \"Deal words\". Sit in a circle numbered clockwise and pass the phone starting from player 1: each player peeks at their word, hides it, and hands the phone on.",
+          "",
+          "### 2. Describe",
+          "",
+          "Starting with the player the app names, **go clockwise and give one sentence each** about your word.",
+          "",
+          "- Do not say the word itself or any part of it",
+          "- Your clue must genuinely fit your word (except the Blank, who has to bluff)",
+          "",
+          "### 3. Vote",
+          "",
+          "After everyone has spoken, discuss, then **everyone points at a suspect at the same time**. The player with the most votes is out. On a tie, the tied players each give one more clue and you vote again between them only.",
+          "",
+          "### 4. Reveal",
+          "",
+          "Tap the eliminated player in the app to see whether they were a Civilian, Undercover or Blank (the word stays secret). If no one has won yet, start the next round from step 2. Eliminated players no longer speak or vote."
+        ],
+        "ja": [
+          "### 1. お題を配る（スマホ 1 台を回す）",
+          "",
+          "〈プレイ〉タブで人数・潜入者の数・白紙を入れるかを決め、「お題を配る」を押します。輪になって時計回りに番号をつけ、1 番からスマホを回します。自分の番になったらお題を見て、覚えたら隠して次の人へ渡します。",
+          "",
+          "### 2. 説明",
+          "",
+          "アプリが指定した人から、**時計回りに一人ひとこと**ずつ自分のお題を説明します。",
+          "",
+          "- お題そのものや、お題に含まれる字を言ってはいけない",
+          "- 自分のお題に本当に当てはまることを言う（白紙だけは作り話でよい）",
+          "",
+          "### 3. 投票",
+          "",
+          "全員が話したら少し相談し、**全員同時に**怪しい人を指さします。いちばん票が多い人が脱落。同票なら、その人たちがもうひとことずつ説明し、その人たちの中だけで投票し直します。",
+          "",
+          "### 4. 正体を公開",
+          "",
+          "アプリで脱落した人をタップすると、市民・潜入者・白紙のどれだったかが表示されます（お題は伏せたまま）。勝負がつかなければ次のラウンドへ、2 に戻ります。脱落した人はもう話さず、投票もしません。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "勝負", "en": "Winning", "ja": "勝敗" },
+      "md": {
+        "zh": [
+          "- **平民勝**：臥底和白板全部出局",
+          "- **臥底勝**：場上的平民人數**不比臥底方（臥底＋白板）多**時——例如只剩 1 個平民和 1 個臥底",
+          "",
+          "App 每次淘汰後會自動判斷，分出勝負就公布雙方的詞。"
+        ],
+        "en": [
+          "- **Civilians win** when every Undercover and Blank player is out",
+          "- **Undercover wins** when the Civilians **no longer outnumber the Undercover side** (Undercover plus Blank), for example 1 Civilian and 1 Undercover left",
+          "",
+          "The app checks after every elimination and reveals both words when the game ends."
+        ],
+        "ja": [
+          "- **市民の勝ち**：潜入者と白紙が全員脱落",
+          "- **潜入者の勝ち**：残った市民の人数が**潜入者側（潜入者＋白紙）より多くなくなったとき**。たとえば市民 1 人と潜入者 1 人が残ったとき",
+          "",
+          "アプリが脱落のたびに自動で判定し、勝負がついたら両方のお題を公開します。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "人數建議", "en": "Suggested Setups", "ja": "おすすめ人数" },
+      "md": {
+        "zh": [
+          "| 人數 | 臥底 | 白板 |",
+          "|---|---|---|",
+          "| 4–5 | 1 | 不加 |",
+          "| 6–7 | 1 | 可加 1 |",
+          "| 8–10 | 2 | 可加 1 |",
+          "| 11–12 | 3 | 可加 1 |",
+          "",
+          "App 改人數時會自動帶入建議的臥底數，也可以自己調。平民至少要比臥底方多 2 人，不然投錯一次就輸了，所以臥底和白板有上限。"
+        ],
+        "en": [
+          "| Players | Undercover | Blank |",
+          "|---|---|---|",
+          "| 4–5 | 1 | none |",
+          "| 6–7 | 1 | optional |",
+          "| 8–10 | 2 | optional |",
+          "| 11–12 | 3 | optional |",
+          "",
+          "The app fills in the suggested number of Undercover players when you change the player count; you can adjust it. Civilians must start with at least 2 more players than the Undercover side, otherwise one wrong vote would lose the game, so Undercover and Blank are capped."
+        ],
+        "ja": [
+          "| 人数 | 潜入者 | 白紙 |",
+          "|---|---|---|",
+          "| 4–5 | 1 | なし |",
+          "| 6–7 | 1 | 入れてもよい |",
+          "| 8–10 | 2 | 入れてもよい |",
+          "| 11–12 | 3 | 入れてもよい |",
+          "",
+          "人数を変えるとアプリがおすすめの潜入者数を入れます。自分で変更もできます。市民は潜入者側より最低 2 人多くないと、一度投票を外しただけで負けてしまうので、潜入者と白紙の数には上限があります。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "描述技巧", "en": "Tips", "ja": "コツ" },
+      "md": {
+        "zh": [
+          "- **平民**：講太明白，臥底會猜出你們的詞跟著講；講太模糊，又會被當成臥底",
+          "- **臥底**：先聽前面的人怎麼說，覺得自己的詞不太一樣時，挑兩個詞都說得通的特點講",
+          "- **白板**：盡量晚一點發言，抓大家描述的共通點",
+          "- 拿手機看詞時用手擋一下，看完記得按「蓋起來」再傳"
+        ],
+        "en": [
+          "- **Civilians**: too obvious and the Undercover will guess your word and copy you; too vague and you will look like the Undercover",
+          "- **Undercover**: listen to the earlier clues first. If your word seems different, pick a feature that fits both words",
+          "- **Blank**: try to speak late and build on what the clues have in common",
+          "- Shield the screen when peeking, and press \"Hide\" before passing the phone on"
+        ],
+        "ja": [
+          "- **市民**：はっきり言いすぎると潜入者にお題を当てられてまねされ、ぼかしすぎると潜入者だと疑われる",
+          "- **潜入者**：まず前の人の説明を聞く。自分のお題が少し違うと感じたら、両方のお題に当てはまる特徴を選ぶ",
+          "- **白紙**：できるだけ後に話して、みんなの説明の共通点に乗る",
+          "- お題を見るときは手で画面を隠し、見終わったら「隠す」を押してから渡す"
+        ]
+      }
+    }
+  ],
+
+  "play": {
+    "type": "undercover",
+    "words": {
+      "zh": [
+        ["牛奶", "豆漿"], ["包子", "饅頭"], ["水餃", "餛飩"], ["眉毛", "睫毛"], ["蝴蝶", "飛蛾"],
+        ["麥當勞", "肯德基"], ["情人節", "七夕"], ["雨傘", "雨衣"], ["鋼琴", "小提琴"], ["珍珠奶茶", "奶綠"],
+        ["火鍋", "麻辣燙"], ["機車", "腳踏車"], ["捷運", "公車"], ["高鐵", "飛機"], ["醫生", "護士"],
+        ["老師", "教授"], ["籃球", "排球"], ["羽毛球", "網球"], ["游泳", "潛水"], ["咖啡", "奶茶"],
+        ["可樂", "汽水"], ["西瓜", "哈密瓜"], ["橘子", "柳丁"], ["草莓", "櫻桃"], ["蛋糕", "麵包"],
+        ["筷子", "湯匙"], ["枕頭", "棉被"], ["手機", "平板"], ["電影", "連續劇"], ["演唱會", "音樂劇"],
+        ["周杰倫", "林俊傑"], ["哈利波特", "魔戒"], ["孫悟空", "豬八戒"], ["白雪公主", "灰姑娘"], ["月餅", "粽子"],
+        ["春節", "中秋節"], ["夜市", "菜市場"], ["便利商店", "超市"], ["拖鞋", "涼鞋"], ["口紅", "護唇膏"],
+        ["眼鏡", "隱形眼鏡"], ["貓", "老虎"], ["狗", "狼"], ["企鵝", "海豹"], ["壽司", "生魚片"],
+        ["拉麵", "烏龍麵"], ["颱風", "暴雨"], ["電梯", "手扶梯"], ["襪子", "手套"], ["啤酒", "紅酒"]
+      ],
+      "en": [
+        ["Coffee", "Tea"], ["Cat", "Tiger"], ["Dog", "Wolf"], ["Pizza", "Burger"], ["Pancake", "Waffle"],
+        ["Butterfly", "Moth"], ["Doctor", "Nurse"], ["Piano", "Guitar"], ["Beach", "Swimming pool"], ["Bicycle", "Motorcycle"],
+        ["Train", "Bus"], ["Airplane", "Helicopter"], ["Basketball", "Volleyball"], ["Tennis", "Badminton"], ["Swimming", "Diving"],
+        ["Apple", "Pear"], ["Orange", "Lemon"], ["Strawberry", "Cherry"], ["Cake", "Bread"], ["Fork", "Spoon"],
+        ["Pillow", "Blanket"], ["Phone", "Tablet"], ["Movie", "TV series"], ["Concert", "Musical"], ["Harry Potter", "The Lord of the Rings"],
+        ["Snow White", "Cinderella"], ["Christmas", "Thanksgiving"], ["Halloween", "Easter"], ["Sunglasses", "Glasses"], ["Lipstick", "Lip balm"],
+        ["Sushi", "Sashimi"], ["Ramen", "Spaghetti"], ["Penguin", "Seal"], ["Shark", "Dolphin"], ["Rain", "Snow"],
+        ["Castle", "Palace"], ["Wine", "Beer"], ["Socks", "Gloves"], ["Elevator", "Escalator"], ["Teacher", "Professor"],
+        ["Milk", "Yogurt"], ["Watermelon", "Melon"], ["Taxi", "Uber"], ["Library", "Bookstore"], ["Candle", "Lamp"],
+        ["Ketchup", "Mustard"], ["Football", "Rugby"], ["Zoo", "Aquarium"], ["Pirate", "Ninja"], ["Hotel", "Hostel"]
+      ],
+      "ja": [
+        ["コーヒー", "紅茶"], ["うどん", "そば"], ["寿司", "刺身"], ["ラーメン", "つけ麺"], ["カレー", "シチュー"],
+        ["おにぎり", "お弁当"], ["猫", "トラ"], ["犬", "オオカミ"], ["チョウ", "ガ"], ["医者", "看護師"],
+        ["ピアノ", "ギター"], ["海", "プール"], ["自転車", "バイク"], ["新幹線", "飛行機"], ["電車", "バス"],
+        ["野球", "ソフトボール"], ["テニス", "バドミントン"], ["水泳", "ダイビング"], ["りんご", "なし"], ["みかん", "レモン"],
+        ["いちご", "さくらんぼ"], ["ケーキ", "パン"], ["箸", "スプーン"], ["枕", "布団"], ["スマホ", "タブレット"],
+        ["映画", "ドラマ"], ["コンサート", "ミュージカル"], ["ドラえもん", "アンパンマン"], ["白雪姫", "シンデレラ"], ["お正月", "お盆"],
+        ["クリスマス", "バレンタイン"], ["コンビニ", "スーパー"], ["温泉", "銭湯"], ["メガネ", "サングラス"], ["口紅", "リップクリーム"],
+        ["ペンギン", "アザラシ"], ["サメ", "イルカ"], ["雨", "雪"], ["お城", "神社"], ["ビール", "日本酒"],
+        ["靴下", "手袋"], ["エレベーター", "エスカレーター"], ["牛乳", "豆乳"], ["たこ焼き", "お好み焼き"], ["餃子", "シュウマイ"],
+        ["図書館", "本屋"], ["遊園地", "動物園"], ["忍者", "侍"], ["ホテル", "旅館"], ["花火", "お祭り"]
+      ]
+    }
+  }
+}

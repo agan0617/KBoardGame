@@ -10,6 +10,7 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 ## 功能
 
 - **玩法**：每款遊戲的規則、人數配置、角色說明，上方有目錄可以跳
+- **開局**：要靠 App 才玩得起來的遊戲（例如發祕密詞），一款一個玩法模組
 - **主持**：勾選這局用到的角色，旁白會自動換成對應的句子
   - **連續播放**：照順序念完一句、停頓幾秒（讓玩家睜眼、閉眼）再念下一句；停頓可選短／中／長
   - 點清單裡任一句，就只念那一句；⏮ ⏭ 一句一句手動念
@@ -18,9 +19,10 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 
 ## 目前收錄
 
-| 遊戲 | 人數 | 旁白 |
+| 遊戲 | 人數 | App 幫什麼 |
 |---|---|---|
-| 阿瓦隆 | 5–10 人 | 夜晚（依派西維爾、莫甘娜、莫德雷德、奧伯倫自動調整）、口令（投票、任務卡）、刺殺 |
+| 阿瓦隆 | 5–10 人 | 主持旁白：夜晚（依派西維爾、莫甘娜、莫德雷德、奧伯倫自動調整）、口令（投票、任務卡）、刺殺 |
+| 誰是臥底 | 4–12 人 | 開局（單機傳遞）：一支手機輪流傳、點開看自己的詞再蓋起來；指定誰先描述、點出局的人公布身分、自動判勝負。詞庫中英日各 50 組，各語言自己的詞，不是互相翻譯 |
 
 ## 新增一款遊戲
 
@@ -63,6 +65,8 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 }
 ```
 
+- 沒有旁白的遊戲不寫 `host`，就沒有主持頁
+- 要寫程式的玩法放 `"play": { "type": "<模組名>", ... }`，模組寫在 `js/modes/<模組名>.js`（註冊到 `window.KBG_MODES`，提供 `mount(容器, { game, lang, tr, esc, store })`），並加進 `index.html` 的 `<script>` 與 `sw.js` 的快取清單。現有：`undercover`（誰是臥底，`play.words` 放 `{ zh, en, ja }` 各自的詞組）
 - `md` 支援：段落、`- ` 條列、`### ` 小標、`| |` 表格、`**粗體**`
 - `pause`：連續播放時，這句念完停幾秒再念下一句（乘上短 0.6／中 1／長 1.6）
 - `when`：勾選條件，選項 id 用 `&&` 串、`!` 表示沒勾；不寫就是每次都念
@@ -71,7 +75,7 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 
 ## 檔案
 
-- `index.html`、`style.css`、`js/app.js`：網頁本體；改了要把 `sw.js` 的 `VERSION` 加一
+- `index.html`、`style.css`、`js/app.js`、`js/modes/`：網頁本體與各遊戲的開局模組；改了要把 `sw.js` 的 `VERSION` 加一
 - `games/`：遊戲資料與旁白音檔（`audio/<語言>/_tts.json` 記每句念的是哪個版本）
 - `tools/make_audio.py`：產生旁白音檔（Azure 語音 eastasia；金鑰不進 repo）
 - `tools/make_icons.py`：產生圖示（需要 Pillow）

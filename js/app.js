@@ -14,13 +14,13 @@ const store = {
 const LANGS = [{ key: 'zh', label: '中' }, { key: 'en', label: 'EN' }, { key: 'ja', label: '日' }];
 const SPEECH_LANG = { zh: 'zh-TW', en: 'en-GB', ja: 'ja-JP' };
 const UI = {
-  zh: { app: 'K桌遊', rules: '玩法', host: '主持', back: '返回', prev: '上一句', next: '下一句',
+  zh: { app: 'K桌遊', rules: '玩法', host: '主持', playTab: '開局', back: '返回', prev: '上一句', next: '下一句',
     play: '▶ 連續播放', resume: '▶ 繼續播放', pause: '⏸ 暫停', pace: '停頓', short: '短', mid: '中', long: '長',
     idleAuto: '按「連續播放」從第一句開始念，或點下面任一句單獨念', idleTap: '點下面任一句就念那一句', fail: '載入失敗：' },
-  en: { app: 'K Board Games', rules: 'Rules', host: 'Host', back: 'Back', prev: 'Previous line', next: 'Next line',
+  en: { app: 'K Board Games', rules: 'Rules', host: 'Host', playTab: 'Play', back: 'Back', prev: 'Previous line', next: 'Next line',
     play: '▶ Play all', resume: '▶ Resume', pause: '⏸ Pause', pace: 'Pauses', short: 'Short', mid: 'Mid', long: 'Long',
     idleAuto: 'Press “Play all” to start from the first line, or tap any line below to hear just that one', idleTap: 'Tap a line below to hear it', fail: 'Failed to load: ' },
-  ja: { app: 'Kボードゲーム', rules: 'ルール', host: '進行', back: '戻る', prev: '前の台詞', next: '次の台詞',
+  ja: { app: 'Kボードゲーム', rules: 'ルール', host: '進行', playTab: 'プレイ', back: '戻る', prev: '前の台詞', next: '次の台詞',
     play: '▶ 連続再生', resume: '▶ 続きを再生', pause: '⏸ 一時停止', pace: '間', short: '短', mid: '中', long: '長',
     idleAuto: '「連続再生」で最初から読み上げます。下の台詞をタップすると、その一文だけ読みます', idleTap: '下の台詞をタップすると読み上げます', fail: '読み込みに失敗：' },
 };
@@ -72,7 +72,12 @@ async function loadGames() {
   await Promise.all(gameIds.map(async id => { games[id] = await loadJson(`games/${id}/game.json`); }));
 }
 
-// ---------- 路由：#/ 首頁、#/<遊戲>/rules、#/<遊戲>/host ----------
+// ---------- 路由：#/ 首頁、#/<遊戲>/rules、#/<遊戲>/host、#/<遊戲>/play ----------
+// 玩法頁每款都有；主持頁看 game.json 有沒有 host；開局頁看有沒有 play（type 對到 js/modes/ 底下註冊的模組）
+
+const MODES = window.KBG_MODES || {};
+const tabsOf = g => ['rules', g.host && 'host', g.play && MODES[g.play.type] && 'play'].filter(Boolean);
+const tabLabel = (g, t) => t === 'play' ? tr(g.play.title) || ui('playTab') : ui(t);
 
 function route() {
   stop();
@@ -82,14 +87,23 @@ function route() {
   $('#game').classList.toggle('hidden', !g);
   $('#back').classList.toggle('hidden', !g);
   if (!g) { cur = null; $('#title').textContent = ui('app'); document.title = ui('app'); return; }
-  if (cur !== g) { cur = g; renderRules(g); renderHost(g); }
+  const tabs = tabsOf(g);
+  if (cur !== g) {
+    cur = g; script = null;
+    $('#tabs').innerHTML = tabs.map(t => `<button data-tab="${t}">${esc(tabLabel(g, t))}</button>`).join('');
+    $('#tabs').classList.toggle('hidden', tabs.length < 2);
+    renderRules(g);
+    if (g.host) renderHost(g);
+    if (g.play) MODES[g.play.type].mount($('#mode'), { game: g, lang, tr, esc, store });
+  }
   $('#title').textContent = tr(g.name);
   document.title = tr(g.name) + '｜' + ui('app');
-  const t = tab === 'host' || tab === 'rules' ? tab : store.get(id + '.tab', 'rules');
+  const want = tab || store.get(id + '.tab', 'rules');
+  const t = tabs.includes(want) ? want : 'rules';
   store.set(id + '.tab', t);
   for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.tab === t);
-  $('#rules').classList.toggle('hidden', t !== 'rules');
-  $('#host').classList.toggle('hidden', t !== 'host');
+  // 開局頁的區塊叫 #mode（#play 是主持頁的播放鈕）
+  for (const [p, sel] of [['rules', '#rules'], ['host', '#host'], ['play', '#mode']]) $(sel).classList.toggle('hidden', t !== p);
   if (t === 'host') preloadAudio(g);
 }
 

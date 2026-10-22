@@ -22,10 +22,7 @@
 </main>
 
 <main id="game" class="view hidden">
-  <nav id="tabs">
-    <button data-tab="rules" data-i18n="rules"></button>
-    <button data-tab="host" data-i18n="host"></button>
-  </nav>
+  <nav id="tabs"></nav>
 
   <section id="rules" class="pane hidden">
     <div id="toc"></div>
@@ -52,8 +49,11 @@
     </div>
     <ol id="lines"></ol>
   </section>
+
+  <section id="mode" class="pane hidden"></section>
 </main>
 
+<script src="js/modes/undercover.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

@@ -110,3 +110,42 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 #lines li.on { background: var(--now); border-color: var(--accent); }
 #lines li.done { color: var(--dim); }
 #controls.single .icon { flex: 1; }
+
+/* 開局頁：誰是臥底 */
+.uc-card { padding: 18px 16px; border-radius: 14px; background: var(--panel); border: 1px solid var(--line); margin-bottom: 12px; }
+.uc-card .big { width: 100%; margin-top: 12px; }
+.uc-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.uc-row .seg { margin: 0; flex: 0 0 60%; }
+.seg button:disabled { opacity: .35; }
+.uc-step { display: flex; align-items: center; gap: 4px; }
+.uc-step button { width: 44px; height: 40px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); font-size: 20px; }
+.uc-step button:disabled { opacity: .35; }
+.uc-step b { min-width: 40px; text-align: center; font-size: 20px; }
+.uc-tip { color: var(--dim); font-size: 15px; margin: 8px 0; }
+.uc-big { font-size: 20px; margin: 8px 0; line-height: 1.5; }
+.uc-huge { font-size: 40px; font-weight: 700; text-align: center; margin: 18px 0; color: var(--accent); word-break: break-word; }
+.uc-pass, .uc-word { text-align: center; min-height: 260px; display: flex; flex-direction: column; justify-content: center; }
+.uc-word .uc-tip { text-align: center; }
+.uc-progress { display: flex; gap: 6px; justify-content: center; }
+.uc-progress i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.uc-progress i.done { background: var(--dim); }
+.uc-progress i.on { background: var(--accent); }
+.uc-round { margin: 0; color: var(--accent); font-weight: 600; }
+.uc-last { margin: 4px 0 8px; padding: 8px 10px; border-radius: 8px; background: var(--now); }
+.uc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+.uc-grid button { height: 64px; border-radius: 12px; background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.uc-grid button b { font-size: 22px; }
+.uc-grid button small { font-size: 12px; color: var(--dim); }
+.uc-grid button.first { border-color: var(--dim); }
+.uc-grid button.on { border-color: var(--accent); background: var(--now); color: var(--accent); }
+.uc-grid button.out { opacity: .4; text-decoration: line-through; }
+.uc-confirm { display: flex; gap: 10px; align-items: center; margin-bottom: 12px; }
+.uc-confirm > button:not(.big) { height: 56px; padding: 0 18px; border-radius: 14px; background: var(--panel); border: 1px solid var(--line); }
+.uc-foot { text-align: center; }
+.link { color: var(--dim); text-decoration: underline; padding: 8px; font-size: 14px; }
+.uc-end { text-align: center; }
+.uc-end.uc .uc-huge { color: #e06a6a; }
+.uc-list { list-style: none; margin: 0 0 12px; padding: 0; }
+.uc-list li { display: grid; grid-template-columns: 2.2em 1fr 1.4fr 3em; gap: 8px; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+.uc-list li.uc span:first-of-type, .uc-list li.bl span:first-of-type { color: #e06a6a; font-weight: 600; }
+.uc-list small { color: var(--dim); text-align: right; }
