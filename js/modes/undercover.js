@@ -16,7 +16,7 @@
       civ: '平民', uc: '臥底', bl: '白板', alive: '還在場：平民 {0}・臥底方 {1}',
       civWin: '平民獲勝！', ucWin: '臥底獲勝！', civWinTip: '臥底和白板全部被找出來了。', ucWinTip: '平民人數不比臥底方多，臥底藏到了最後。',
       words: '平民的詞：{0}　臥底的詞：{1}', again: '再來一局', settings: '改設定',
-      quit: '放棄這局', quitSure: '確定放棄？再按一次', redeal: '換一組詞，重新發', redealSure: '確定換詞？再按一次', outTag: '出局', noWords: '這個語言還沒有詞庫',
+      quit: '重新開始（改人數）', quitSure: '確定重新開始？再按一次', redeal: '換一組詞，重新發', redealSure: '確定換詞？再按一次', outTag: '出局', noWords: '這個語言還沒有詞庫',
     },
     en: {
       players: 'Players', undercover: 'Undercover', blank: 'Blank', none: 'None', add: 'Add 1',
@@ -29,7 +29,7 @@
       civ: 'Civilian', uc: 'Undercover', bl: 'Blank', alive: 'Still in: {0} civilians · {1} on the undercover side',
       civWin: 'Civilians win!', ucWin: 'Undercover wins!', civWinTip: 'Every undercover and blank player was found.', ucWinTip: 'Civilians no longer outnumber the undercover side.',
       words: 'Civilian word: {0}   Undercover word: {1}', again: 'Play again', settings: 'Change settings',
-      quit: 'Abandon game', quitSure: 'Sure? Tap again', redeal: 'New words, deal again', redealSure: 'New words? Tap again', outTag: 'Out', noWords: 'No word list for this language yet',
+      quit: 'Start over (change players)', quitSure: 'Start over? Tap again', redeal: 'New words, deal again', redealSure: 'New words? Tap again', outTag: 'Out', noWords: 'No word list for this language yet',
     },
     ja: {
       players: '人数', undercover: '潜入者', blank: '白紙', none: 'なし', add: '1人入れる',
@@ -42,7 +42,7 @@
       civ: '市民', uc: '潜入者', bl: '白紙', alive: '残り：市民 {0}・潜入者側 {1}',
       civWin: '市民の勝ち！', ucWin: '潜入者の勝ち！', civWinTip: '潜入者と白紙を全員見つけました。', ucWinTip: '市民の人数が潜入者側を上回らなくなりました。',
       words: '市民のお題：{0}　潜入者のお題：{1}', again: 'もう一回', settings: '設定を変える',
-      quit: 'このゲームをやめる', quitSure: '本当に？もう一度タップ', redeal: 'お題を変えて配り直す', redealSure: 'お題を変える？もう一度タップ', outTag: '脱落', noWords: 'この言語のお題はまだありません',
+      quit: '最初からやり直す（人数を変える）', quitSure: 'やり直す？もう一度タップ', redeal: 'お題を変えて配り直す', redealSure: 'お題を変える？もう一度タップ', outTag: '脱落', noWords: 'この言語のお題はまだありません',
     },
   };
 
@@ -118,8 +118,8 @@
   // ---------- 畫面 ----------
 
   const btn = (act, label, cls = '') => `<button class="${cls}" data-act="${act}">${ctx.esc(label)}</button>`;
-  // 發詞到遊戲中都能換詞重發（同樣設定、換一組詞，從 1 號重新傳）；遊戲中才有放棄這局
-  const foot = () => `<p class="uc-foot">${btn('redeal', t(armed === 'redeal' ? 'redealSure' : 'redeal'), 'link')}${S.phase === 'play' ? btn('quit', t(armed === 'quit' ? 'quitSure' : 'quit'), 'link') : ''}</p>`;
+  // 發詞到遊戲中都能換詞重發（同樣設定、換一組詞，從 1 號重新傳），或重新開始（回設定頁改人數）
+  const foot = () => `<p class="uc-foot">${btn('redeal', t(armed === 'redeal' ? 'redealSure' : 'redeal'), 'link')}${btn('quit', t(armed === 'quit' ? 'quitSure' : 'quit'), 'link')}</p>`;
   const stepper = (k, v, lo, hi) => `<div class="uc-step"><button data-act="dec" data-k="${k}"${v <= lo ? ' disabled' : ''}>−</button><b>${v}</b><button data-act="inc" data-k="${k}"${v >= hi ? ' disabled' : ''}>＋</button></div>`;
 
   function render() {
