@@ -1,0 +1,527 @@
+{
+  "id": "sgs",
+  "name": { "zh": "三國殺", "en": "Legends of the Three Kingdoms", "ja": "三国殺" },
+  "players": { "zh": "4–10 人", "en": "4–10 players", "ja": "4〜10人" },
+  "time": { "zh": "40–60 分鐘", "en": "40–60 min", "ja": "40〜60分" },
+  "summary": {
+    "zh": "三國版的身份局：主公和忠臣對上反賊，還有一個想當最後贏家的內奸。只有主公亮身分，其他人邊打邊猜誰是誰。用手機秘密發身分。",
+    "en": "The Three Kingdoms take on hidden roles: the Monarch and Loyalists against the Rebels, plus a Traitor who wants to be the last one standing. Only the Monarch is revealed. Deal roles secretly with one phone.",
+    "ja": "三国志版の正体隠し：主公と忠臣が反賊と戦い、最後の一人を狙う内奸もいる。身分を明かすのは主公だけ。スマホで秘密裏に身分を配れる。"
+  },
+
+  "rules": [
+    {
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "每個人拿一張祕密的**身分**和一張公開的**武將**。只有**主公**亮出身分，其他人都藏著。",
+          "",
+          "大家輪流摸牌、出牌，用「殺」攻擊別人、用「閃」躲開、吃「桃」補血，再配上錦囊、裝備和武將技能。體力歸零又沒人救就陣亡，陣亡時亮出身分。",
+          "",
+          "- **主公、忠臣**：消滅所有反賊和內奸",
+          "- **反賊**：殺死主公",
+          "- **內奸**：成為最後一個活著的人——先幫主公清掉別人，最後再單挑主公",
+          "",
+          "忠臣和反賊都不知道誰是自己人，要從大家打誰、救誰去猜。"
+        ],
+        "en": [
+          "Everyone gets a secret **role** and a public **hero**. Only the **Monarch** reveals their role; everyone else keeps it hidden.",
+          "",
+          "Take turns drawing and playing cards: attack with **Strike**, avoid it with **Dodge**, heal with **Peach**, plus tricks, equipment and hero skills. When your health hits 0 and nobody saves you, you die and reveal your role.",
+          "",
+          "- **Monarch and Loyalists**: eliminate every Rebel and Traitor",
+          "- **Rebels**: kill the Monarch",
+          "- **Traitor**: be the last one alive: help the Monarch clear out everyone else, then defeat the Monarch at the end",
+          "",
+          "Loyalists and Rebels do not know who is on their side, so watch who attacks and who heals whom."
+        ],
+        "ja": [
+          "全員が秘密の**身分**と公開の**武将**を 1 枚ずつ持ちます。身分を明かすのは**主公**だけで、ほかの人は隠したままです。",
+          "",
+          "順番にカードを引いて使い、「殺」で攻撃、「閃」でかわし、「桃」で回復。さらに錦囊・装備・武将の技能を組み合わせます。体力が 0 になって誰にも助けてもらえなければ死亡し、身分を公開します。",
+          "",
+          "- **主公・忠臣**：反賊と内奸を全員倒す",
+          "- **反賊**：主公を倒す",
+          "- **内奸**：最後の一人になる。先に主公とほかの人を片付け、最後に主公と一騎打ち",
+          "",
+          "忠臣も反賊も仲間が誰かわからないので、誰が誰を攻撃し、誰を助けるかから推理します。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "人數與身分", "en": "Players & Roles", "ja": "人数と身分" },
+      "md": {
+        "zh": [
+          "| 人數 | 主公 | 忠臣 | 反賊 | 內奸 |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 1 | 1 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8 | 1 | 2 | 4 | 1 |",
+          "| 9 | 1 | 3 | 4 | 1 |",
+          "| 10 | 1 | 3 | 4 | 2 |",
+          "",
+          "沒有身分牌也能玩：在「發身分」用一支手機輪流傳，秘密發身分。",
+          "",
+          "**5 人以上時，主公體力上限 +1。**"
+        ],
+        "en": [
+          "| Players | Monarch | Loyalist | Rebel | Traitor |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 1 | 1 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8 | 1 | 2 | 4 | 1 |",
+          "| 9 | 1 | 3 | 4 | 1 |",
+          "| 10 | 1 | 3 | 4 | 2 |",
+          "",
+          "No role cards? Use the Roles tab to deal roles secretly by passing one phone around.",
+          "",
+          "**With 5 or more players, the Monarch gets +1 maximum health.**"
+        ],
+        "ja": [
+          "| 人数 | 主公 | 忠臣 | 反賊 | 内奸 |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 1 | 1 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8 | 1 | 2 | 4 | 1 |",
+          "| 9 | 1 | 3 | 4 | 1 |",
+          "| 10 | 1 | 3 | 4 | 2 |",
+          "",
+          "身分カードがなくても大丈夫。〈身分配り〉タブでスマホを回して、秘密裏に身分を配れます。",
+          "",
+          "**5 人以上のとき、主公の体力上限 +1。**"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "1. 發身分，主公亮出身分",
+          "2. **主公先選武將**：從曹操、劉備、孫權再加 2 張隨機武將裡挑 1 個，公開",
+          "3. 其他人各抽 3 張武將挑 1 個（人多不夠分就改抽 2 張），一起亮出",
+          "4. 體力＝武將牌上的勾玉數（主公 5 人以上 +1），用體力牌標示",
+          "5. 每人摸 4 張手牌，由**主公先開始**，之後順時針輪流"
+        ],
+        "en": [
+          "1. Deal roles; the Monarch reveals theirs",
+          "2. **The Monarch picks a hero first** from Cao Cao, Liu Bei, Sun Quan plus 2 random heroes, and reveals it",
+          "3. Everyone else draws 3 heroes and keeps 1 (draw 2 if there are not enough to go round), then all reveal together",
+          "4. Health = the number of jade marks on the hero card (Monarch +1 with 5 or more players); track it on the health card",
+          "5. Everyone draws 4 cards. **The Monarch goes first**, then play passes clockwise"
+        ],
+        "ja": [
+          "1. 身分を配り、主公が公開する",
+          "2. **主公が先に武将を選ぶ**：曹操・劉備・孫権にランダム 2 枚を加えた中から 1 人選んで公開",
+          "3. ほかの人は武将を 3 枚引いて 1 人選ぶ（足りなければ 2 枚）。全員そろって公開",
+          "4. 体力＝武将カードの勾玉の数（5 人以上なら主公 +1）。体力カードで管理する",
+          "5. 全員手札を 4 枚引き、**主公から**時計回りに手番"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "回合流程", "en": "Turn Phases", "ja": "ターンの流れ" },
+      "md": {
+        "zh": [
+          "1. **準備階段**：有些技能在這時發動（觀星、洛神）",
+          "2. **判定階段**：面前判定區有延時錦囊（樂不思蜀、閃電）就依序判定",
+          "3. **摸牌階段**：摸 2 張",
+          "4. **出牌階段**：想出幾張就出幾張，但「殺」每回合**只能出 1 張**（諸葛連弩、張飛例外）",
+          "5. **棄牌階段**：手牌超過目前體力的張數，棄到剩跟體力一樣",
+          "6. **結束階段**：有些技能在這時發動（閉月）",
+          "",
+          "**判定**：翻開牌堆頂一張，看它的花色或點數決定結果，然後棄掉。"
+        ],
+        "en": [
+          "1. **Start phase**: some skills trigger here (Stargazing, Goddess Luo)",
+          "2. **Judgement phase**: resolve any delayed tricks in your judgement area (Indulgence, Lightning) in order",
+          "3. **Draw phase**: draw 2 cards",
+          "4. **Play phase**: play as many cards as you like, but **only 1 Strike** per turn (Zhuge Crossbow and Zhang Fei are exceptions)",
+          "5. **Discard phase**: discard down to your current health",
+          "6. **End phase**: some skills trigger here (Eclipse the Moon)",
+          "",
+          "**Judgement**: flip the top card of the deck; its suit or number decides the result, then discard it."
+        ],
+        "ja": [
+          "1. **準備フェイズ**：ここで発動する技能がある（観星、洛神）",
+          "2. **判定フェイズ**：判定エリアに遅延錦囊（楽不思蜀、閃電）があれば順に判定",
+          "3. **ドローフェイズ**：2 枚引く",
+          "4. **プレイフェイズ**：好きなだけカードを使えるが、「殺」は**1 ターン 1 枚まで**（諸葛連弩、張飛は例外）",
+          "5. **捨て札フェイズ**：手札が現在の体力より多ければ、体力と同じ枚数まで捨てる",
+          "6. **終了フェイズ**：ここで発動する技能がある（閉月）",
+          "",
+          "**判定**：山札の一番上をめくり、スートや数字で結果を決めてから捨てる。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "距離與攻擊範圍", "en": "Distance & Range", "ja": "距離と攻撃範囲" },
+      "md": {
+        "zh": [
+          "- 兩人之間的**距離**＝順時針或逆時針數過去，取比較近的那邊。隔壁是 1，再隔一人是 2；陣亡的人不算",
+          "- 你的「殺」只能打到距離 ≤ **攻擊範圍**的人。沒裝武器時攻擊範圍是 1，裝了武器就看武器",
+          "- **+1 馬**（絕影、的盧、爪黃飛電）：別人看你距離 +1",
+          "- **−1 馬**（赤兔、大宛、紫騂）：你看別人距離 −1",
+          "- 「順手牽羊」只能對距離 1 的人；其他錦囊不看距離"
+        ],
+        "en": [
+          "- **Distance** between two players = count seats clockwise or counter-clockwise, whichever is shorter. Your neighbour is 1, the next one 2; dead players do not count",
+          "- Your Strike can only target players within your **attack range**. Without a weapon your range is 1; with one, use the weapon's range",
+          "- **+1 horse** (Shadow Runner, Hex Mark, Flying Lightning): others count their distance to you as +1",
+          "- **−1 horse** (Red Hare, Ferghana Horse, Violet Stallion): you count your distance to others as −1",
+          "- Snatch only works at distance 1; other tricks ignore distance"
+        ],
+        "ja": [
+          "- 二人の間の**距離**＝時計回りと反時計回りで数え、近いほう。隣が 1、その次が 2。死亡した人は数えない",
+          "- 「殺」は距離が**攻撃範囲**以内の人にしか使えない。武器なしは 1、武器を装備したら武器の範囲",
+          "- **+1 馬**（絶影、的盧、爪黄飛電）：ほかの人から見たあなたまでの距離 +1",
+          "- **−1 馬**（赤兎、大宛、紫騂）：あなたから見たほかの人までの距離 −1",
+          "- 「順手牽羊」は距離 1 の人だけ。ほかの錦囊は距離に関係なし"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "基本牌", "en": "Basic Cards", "ja": "基本カード" },
+      "md": {
+        "zh": [
+          "- **殺**：對攻擊範圍內一個人出，他要出「閃」，不然受到 1 點傷害。每回合限 1 張",
+          "- **閃**：抵消一張對你的「殺」；「萬箭齊發」也要用閃擋",
+          "- **桃**：出牌階段回自己 1 點體力（不能超過上限）；有人瀕死時，任何人都可以出桃救他"
+        ],
+        "en": [
+          "- **Strike**: target one player in your attack range; they must play a Dodge or take 1 damage. Once per turn",
+          "- **Dodge**: cancels one Strike against you; also used against Arrow Barrage",
+          "- **Peach**: during your play phase, heal yourself 1 (up to your maximum); when anyone is dying, anyone may play a Peach to save them"
+        ],
+        "ja": [
+          "- **殺**：攻撃範囲内の 1 人に使う。相手が「閃」を出さなければ 1 ダメージ。1 ターン 1 枚まで",
+          "- **閃**：自分への「殺」を 1 枚打ち消す。「万箭斉発」にも閃で対応",
+          "- **桃**：プレイフェイズに自分の体力を 1 回復（上限まで）。誰かが瀕死のときは、誰でも桃を出して助けられる"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "錦囊牌", "en": "Trick Cards", "ja": "錦囊カード" },
+      "md": {
+        "zh": [
+          "### 一般錦囊（出了就生效）",
+          "",
+          "- **無中生有**：摸 2 張牌",
+          "- **過河拆橋**：棄掉任何一人的一張牌（手牌、裝備或判定區都可以）",
+          "- **順手牽羊**：拿走距離 1 的人一張牌（手牌、裝備或判定區都可以）",
+          "- **決鬥**：跟一個人輪流打出「殺」，由對方先出；先不出的人受到 1 點傷害",
+          "- **借刀殺人**：指定一個有武器的人，叫他對他攻擊範圍內你指定的人出「殺」；他不出，就把武器交給你",
+          "- **南蠻入侵**：其他所有人各出一張「殺」，不出的受到 1 點傷害",
+          "- **萬箭齊發**：其他所有人各出一張「閃」，不出的受到 1 點傷害",
+          "- **桃園結義**：所有人回 1 點體力",
+          "- **五穀豐登**：翻開跟活著人數一樣多的牌，從你開始每人挑一張",
+          "- **無懈可擊**：抵消一張錦囊對一個人的效果；無懈可擊也可以被另一張無懈可擊抵消",
+          "",
+          "### 延時錦囊（放在判定區，到判定階段才判定）",
+          "",
+          "- **樂不思蜀**：放在別人面前。他判定時，不是紅桃就跳過出牌階段",
+          "- **閃電**：放在自己面前。判定出黑桃 2～9，受到 3 點雷電傷害；否則傳給下家"
+        ],
+        "en": [
+          "### Instant tricks",
+          "",
+          "- **Something for Nothing**: draw 2 cards",
+          "- **Dismantle**: discard one card from any player (hand, equipment or judgement area)",
+          "- **Snatch**: take one card from a player at distance 1 (hand, equipment or judgement area)",
+          "- **Duel**: you and one player take turns playing Strikes, starting with them; whoever stops first takes 1 damage",
+          "- **Borrowed Sword**: choose a player with a weapon and a target in their range; they must Strike that target or give you their weapon",
+          "- **Barbarian Invasion**: every other player plays a Strike or takes 1 damage",
+          "- **Arrow Barrage**: every other player plays a Dodge or takes 1 damage",
+          "- **Peach Garden**: everyone heals 1",
+          "- **Bountiful Harvest**: reveal as many cards as there are living players; starting with you, each player takes one",
+          "- **Impeccable Plan**: cancels a trick's effect on one player; it can itself be cancelled by another Impeccable Plan",
+          "",
+          "### Delayed tricks (placed in a judgement area, resolved in the judgement phase)",
+          "",
+          "- **Indulgence**: place in front of another player. On their judgement, anything but a heart makes them skip their play phase",
+          "- **Lightning**: place in front of yourself. A judgement of spades 2–9 deals you 3 thunder damage; otherwise pass it to the next player"
+        ],
+        "ja": [
+          "### 通常の錦囊（使ったらすぐ効果）",
+          "",
+          "- **無中生有**：2 枚引く",
+          "- **過河拆橋**：誰か 1 人のカードを 1 枚捨てさせる（手札・装備・判定エリアのどれでも）",
+          "- **順手牽羊**：距離 1 の人のカードを 1 枚もらう（手札・装備・判定エリアのどれでも）",
+          "- **決闘**：相手と交互に「殺」を出す（相手から）。先に出せなくなった人が 1 ダメージ",
+          "- **借刀殺人**：武器を持つ人を指定し、その人の攻撃範囲内であなたが指定した人に「殺」を使わせる。使わなければ武器をあなたに渡す",
+          "- **南蛮入侵**：ほかの全員が「殺」を出す。出せない人は 1 ダメージ",
+          "- **万箭斉発**：ほかの全員が「閃」を出す。出せない人は 1 ダメージ",
+          "- **桃園結義**：全員の体力を 1 回復",
+          "- **五穀豊登**：生存人数と同じ枚数をめくり、あなたから順に 1 枚ずつ選ぶ",
+          "- **無懈可撃**：錦囊の 1 人への効果を打ち消す。無懈可撃も別の無懈可撃で打ち消せる",
+          "",
+          "### 遅延錦囊（判定エリアに置き、判定フェイズに判定）",
+          "",
+          "- **楽不思蜀**：ほかの人の前に置く。その人の判定がハート以外なら、プレイフェイズを飛ばす",
+          "- **閃電**：自分の前に置く。判定がスペードの 2〜9 なら 3 点の雷ダメージ、そうでなければ次の人へ回す"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "裝備牌", "en": "Equipment", "ja": "装備カード" },
+      "md": {
+        "zh": [
+          "武器、防具、+1 馬、−1 馬各只能裝一張，換新的就把舊的棄掉。",
+          "",
+          "| 武器 | 範圍 | 效果 |",
+          "|---|---|---|",
+          "| 諸葛連弩 | 1 | 出牌階段「殺」不限次數 |",
+          "| 青釭劍 | 2 | 你的「殺」無視對方防具 |",
+          "| 雌雄雙股劍 | 2 | 「殺」指定異性時，對方選：棄一張手牌，或讓你摸一張 |",
+          "| 寒冰劍 | 2 | 「殺」要造成傷害時，可以改成棄掉對方兩張牌 |",
+          "| 貫石斧 | 3 | 「殺」被閃掉時，可以棄兩張牌讓它照樣造成傷害 |",
+          "| 青龍偃月刀 | 3 | 「殺」被閃掉時，可以對同一人再出一張「殺」 |",
+          "| 丈八蛇矛 | 3 | 兩張手牌可以當「殺」用 |",
+          "| 方天畫戟 | 4 | 「殺」是最後一張手牌時，可以多指定最多 2 人 |",
+          "| 麒麟弓 | 5 | 「殺」造成傷害時，可以棄掉對方一匹馬 |",
+          "",
+          "| 防具 | 效果 |",
+          "|---|---|",
+          "| 八卦陣 | 需要出「閃」時可以判定，紅色就算出了閃 |",
+          "| 仁王盾 | 黑色的「殺」對你無效 |"
+        ],
+        "en": [
+          "You may have one weapon, one armour, one +1 horse and one −1 horse in play; equipping a new one discards the old one.",
+          "",
+          "| Weapon | Range | Effect |",
+          "|---|---|---|",
+          "| Zhuge Crossbow | 1 | Unlimited Strikes in your play phase |",
+          "| Blue Steel Blade | 2 | Your Strike ignores the target's armour |",
+          "| Yin-Yang Swords | 2 | When you Strike someone of the other gender, they discard a card or let you draw one |",
+          "| Ice Sword | 2 | When your Strike would deal damage, you may discard two of their cards instead |",
+          "| Rock Cleaving Axe | 3 | When your Strike is dodged, discard two cards to make it deal damage anyway |",
+          "| Green Dragon Blade | 3 | When your Strike is dodged, you may Strike the same player again |",
+          "| Serpent Spear | 3 | Use two hand cards as a Strike |",
+          "| Sky Scorcher Halberd | 4 | If your Strike is your last hand card, it may target up to 2 more players |",
+          "| Kirin Bow | 5 | When your Strike deals damage, you may discard one of their horses |",
+          "",
+          "| Armour | Effect |",
+          "|---|---|",
+          "| Eight Trigrams | When you need a Dodge, make a judgement; red counts as a Dodge |",
+          "| Renwang Shield | Black Strikes have no effect on you |"
+        ],
+        "ja": [
+          "武器・防具・+1 馬・−1 馬はそれぞれ 1 枚まで。新しいものを装備したら古いものは捨てる。",
+          "",
+          "| 武器 | 範囲 | 効果 |",
+          "|---|---|---|",
+          "| 諸葛連弩 | 1 | プレイフェイズの「殺」が無制限 |",
+          "| 青釭剣 | 2 | 「殺」が相手の防具を無視 |",
+          "| 雌雄双股剣 | 2 | 異性に「殺」を使うと、相手は手札を 1 枚捨てるか、あなたに 1 枚引かせる |",
+          "| 寒氷剣 | 2 | 「殺」でダメージを与えるとき、代わりに相手のカードを 2 枚捨てさせてもよい |",
+          "| 貫石斧 | 3 | 「殺」が閃でかわされたとき、カードを 2 枚捨てればダメージを与える |",
+          "| 青龍偃月刀 | 3 | 「殺」がかわされたとき、同じ相手にもう一度「殺」を使える |",
+          "| 丈八蛇矛 | 3 | 手札 2 枚を「殺」として使える |",
+          "| 方天画戟 | 4 | 最後の手札が「殺」なら、対象を最大 2 人追加できる |",
+          "| 麒麟弓 | 5 | 「殺」でダメージを与えたとき、相手の馬を 1 頭捨てさせられる |",
+          "",
+          "| 防具 | 効果 |",
+          "|---|---|",
+          "| 八卦陣 | 「閃」が必要なとき判定し、赤なら閃を出したことになる |",
+          "| 仁王盾 | 黒の「殺」はあなたに効かない |"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "瀕死、陣亡與勝負", "en": "Dying, Death & Winning", "ja": "瀕死・死亡・勝敗" },
+      "md": {
+        "zh": [
+          "- 體力降到 0 就**瀕死**：從他開始依序問每個人要不要出「桃」救他，救回 1 點以上就活下來",
+          "- 沒人救就陣亡：亮出身分，手牌、裝備和判定區的牌全部棄掉",
+          "- **任何人殺死反賊**：摸 3 張牌",
+          "- **主公殺死忠臣**：主公要棄掉所有手牌和裝備區的牌",
+          "",
+          "**勝負**",
+          "",
+          "- 主公陣亡：如果只剩內奸一個人活著，內奸贏；否則反賊贏（就算反賊都死了也一樣）",
+          "- 反賊和內奸全死：主公和忠臣贏（陣亡的忠臣也算贏）"
+        ],
+        "en": [
+          "- At 0 health you are **dying**: starting with you, everyone in turn may play a Peach to save you. Back to 1 health or more and you live",
+          "- If no one saves you, you die: reveal your role and discard everything in your hand, equipment and judgement areas",
+          "- **Anyone who kills a Rebel** draws 3 cards",
+          "- **If the Monarch kills a Loyalist**, the Monarch discards all cards in hand and in the equipment area",
+          "",
+          "**Winning**",
+          "",
+          "- If the Monarch dies: the Traitor wins if they are the only one left alive; otherwise the Rebels win (even if every Rebel is dead)",
+          "- If every Rebel and Traitor is dead: the Monarch and Loyalists win (dead Loyalists win too)"
+        ],
+        "ja": [
+          "- 体力が 0 になると**瀕死**：その人から順に、全員が「桃」で助けるか選べる。体力 1 以上に戻れば生き残る",
+          "- 誰も助けなければ死亡：身分を公開し、手札・装備・判定エリアのカードをすべて捨てる",
+          "- **反賊を倒した人**はカードを 3 枚引く（誰でも）",
+          "- **主公が忠臣を倒したら**、主公は手札と装備エリアのカードをすべて捨てる",
+          "",
+          "**勝敗**",
+          "",
+          "- 主公が死亡：生き残りが内奸 1 人だけなら内奸の勝ち、それ以外は反賊の勝ち（反賊が全滅していても）",
+          "- 反賊と内奸が全員死亡：主公と忠臣の勝ち（死亡した忠臣も勝ち）"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "標準版 25 名武將", "en": "The 25 Standard Heroes", "ja": "標準版の武将 25 人" },
+      "md": {
+        "zh": [
+          "括號是勢力與體力。標「主公技」的技能只有當主公時才有。",
+          "",
+          "### 魏",
+          "",
+          "- **曹操**（魏・4）奸雄：受到傷害後，可以拿走造成傷害的那張牌｜護駕（主公技）：需要出「閃」時，可以請其他魏將代你出",
+          "- **司馬懿**（魏・3）反饋：受到傷害後，拿傷害來源一張牌｜鬼才：判定牌生效前，可以打出一張手牌代替它",
+          "- **夏侯惇**（魏・4）剛烈：受到傷害後判定，不是紅桃的話，傷害來源選：棄兩張手牌，或受到你 1 點傷害",
+          "- **張遼**（魏・4）突襲：摸牌階段可以不摸，改成從最多兩個人手上各拿一張手牌",
+          "- **許褚**（魏・4）裸衣：摸牌階段可以少摸一張，這回合你的「殺」和「決鬥」傷害 +1",
+          "- **郭嘉**（魏・3）天妒：判定牌生效後可以收進手裡｜遺計：每受到 1 點傷害，看牌堆頂兩張，分給任何人",
+          "- **甄姬**（魏・3）傾國：黑色手牌可以當「閃」｜洛神：準備階段可以判定，黑色就收下並可以再判，直到出現紅色",
+          "",
+          "### 蜀",
+          "",
+          "- **劉備**（蜀・4）仁德：出牌階段可以把手牌送給別人，這階段送出第 2 張時回 1 點體力｜激將（主公技）：需要出「殺」時，可以請其他蜀將代你出",
+          "- **關羽**（蜀・4）武聖：紅色牌可以當「殺」",
+          "- **張飛**（蜀・4）咆哮：出牌階段「殺」不限次數",
+          "- **諸葛亮**（蜀・3）觀星：準備階段看牌堆頂 X 張（X＝活著的人數，最多 5），任意放回頂部或底部｜空城：沒有手牌時，不能被「殺」或「決鬥」指定",
+          "- **趙雲**（蜀・4）龍膽：「殺」可以當「閃」，「閃」也可以當「殺」",
+          "- **馬超**（蜀・4）馬術：你看別人距離 −1｜鐵騎：「殺」指定對手後可以判定，紅色的話對方不能出閃",
+          "- **黃月英**（蜀・3）集智：使用一般錦囊時摸一張牌｜奇才：使用錦囊沒有距離限制",
+          "",
+          "### 吳",
+          "",
+          "- **孫權**（吳・4）制衡：出牌階段一次，棄任意張牌，摸一樣多的牌｜救援（主公技）：其他吳將對你出「桃」時，你多回 1 點",
+          "- **甘寧**（吳・4）奇襲：黑色牌可以當「過河拆橋」",
+          "- **呂蒙**（吳・4）克己：出牌階段沒出過「殺」的話，可以跳過棄牌階段",
+          "- **黃蓋**（吳・4）苦肉：出牌階段可以失去 1 點體力，摸兩張牌（可以重複）",
+          "- **周瑜**（吳・3）英姿：摸牌階段多摸一張｜反間：出牌階段一次，叫一個人猜一種花色，再讓他拿你一張手牌亮出來，猜錯就受到你 1 點傷害",
+          "- **大喬**（吳・3）國色：方塊牌可以當「樂不思蜀」｜流離：被「殺」指定時，可以棄一張牌，把殺轉給你攻擊範圍內的另一個人（不能是出殺的人）",
+          "- **陸遜**（吳・3）謙遜：不能被「順手牽羊」和「樂不思蜀」指定｜連營：失去最後一張手牌時，摸一張",
+          "- **孫尚香**（吳・3）結姻：出牌階段一次，棄兩張手牌，你和一位受傷的男性武將各回 1 點體力｜梟姬：失去一張裝備時摸兩張牌",
+          "",
+          "### 群",
+          "",
+          "- **華佗**（群・3）急救：你的回合外，紅色牌可以當「桃」｜青囊：出牌階段一次，棄一張手牌，讓一個人回 1 點體力",
+          "- **呂布**（群・4）無雙：你的「殺」要連出兩張「閃」才擋得掉；跟你「決鬥」的人每次要出兩張「殺」",
+          "- **貂蟬**（群・3）離間：出牌階段一次，棄一張牌，讓兩位男性武將互相「決鬥」｜閉月：結束階段摸一張牌"
+        ],
+        "en": [
+          "Kingdom and health in brackets. Skills marked Monarch skill only work when that hero is the Monarch.",
+          "",
+          "### Wei",
+          "",
+          "- **Cao Cao** (Wei, 4) Villainous Hero: after taking damage, take the card that caused it | Escort (Monarch skill): when you need a Dodge, other Wei heroes may play it for you",
+          "- **Sima Yi** (Wei, 3) Retaliation: after taking damage, take a card from the source | Devilish Talent: before a judgement takes effect, replace it with a card from your hand",
+          "- **Xiahou Dun** (Wei, 4) Unyielding: after taking damage, make a judgement; unless it is a heart, the source discards 2 hand cards or takes 1 damage from you",
+          "- **Zhang Liao** (Wei, 4) Surprise Raid: instead of drawing in your draw phase, take one hand card each from up to two players",
+          "- **Xu Chu** (Wei, 4) Bare-Chested: draw one fewer card; this turn your Strike and Duel deal +1 damage",
+          "- **Guo Jia** (Wei, 3) Jealous Heaven: after a judgement takes effect, you may take it | Last Strategy: for each point of damage you take, look at the top 2 cards and give them to any players",
+          "- **Zhen Ji** (Wei, 3) Beauty: black hand cards can be used as Dodge | Goddess Luo: in your start phase make a judgement; if black, keep it and you may repeat until you flip a red card",
+          "",
+          "### Shu",
+          "",
+          "- **Liu Bei** (Shu, 4) Benevolence: give hand cards to other players in your play phase; when the second card is given in that phase, heal 1 | Rouse (Monarch skill): when you need a Strike, other Shu heroes may play it for you",
+          "- **Guan Yu** (Shu, 4) God of War: red cards can be used as Strike",
+          "- **Zhang Fei** (Shu, 4) Roar: unlimited Strikes in your play phase",
+          "- **Zhuge Liang** (Shu, 3) Stargazing: in your start phase look at the top X cards (X = living players, max 5) and put them back on top or bottom in any order | Empty City: with no hand cards, you cannot be targeted by Strike or Duel",
+          "- **Zhao Yun** (Shu, 4) Dragon Courage: use Strike as Dodge and Dodge as Strike",
+          "- **Ma Chao** (Shu, 4) Horsemanship: your distance to others is −1 | Iron Cavalry: after your Strike targets someone, make a judgement; if red, they cannot Dodge",
+          "- **Huang Yueying** (Shu, 3) Wisdom: draw a card whenever you use an instant trick | Genius: your tricks have no distance limit",
+          "",
+          "### Wu",
+          "",
+          "- **Sun Quan** (Wu, 4) Balance of Power: once per play phase, discard any number of cards and draw the same number | Rescue (Monarch skill): when another Wu hero gives you a Peach, heal 1 more",
+          "- **Gan Ning** (Wu, 4) Surprise Attack: black cards can be used as Dismantle",
+          "- **Lü Meng** (Wu, 4) Self-Restraint: if you used no Strike in your play phase, skip your discard phase",
+          "- **Huang Gai** (Wu, 4) Self-Injury: in your play phase, lose 1 health to draw 2 cards (repeatable)",
+          "- **Zhou Yu** (Wu, 3) Heroic: draw one extra card in your draw phase | Sow Dissension: once per play phase, a player names a suit, then takes one of your hand cards and shows it; if they guessed wrong, they take 1 damage from you",
+          "- **Da Qiao** (Wu, 3) National Beauty: diamonds can be used as Indulgence | Displacement: when targeted by a Strike, discard a card to redirect it to another player in your attack range (not the attacker)",
+          "- **Lu Xun** (Wu, 3) Humility: cannot be targeted by Snatch or Indulgence | Continuous Camps: when you lose your last hand card, draw one",
+          "- **Sun Shangxiang** (Wu, 3) Marriage: once per play phase, discard 2 hand cards; you and one wounded male hero each heal 1 | Warrior Woman: when you lose an equipment card, draw 2 cards",
+          "",
+          "### Heroes",
+          "",
+          "- **Hua Tuo** (Heroes, 3) First Aid: outside your turn, red cards can be used as Peach | Green Pouch: once per play phase, discard a hand card to heal any player 1",
+          "- **Lü Bu** (Heroes, 4) Peerless: your Strike needs two Dodges to cancel; in a Duel with you, the other player must play two Strikes each time",
+          "- **Diao Chan** (Heroes, 3) Seed Discord: once per play phase, discard a card to make two male heroes Duel each other | Eclipse the Moon: draw a card in your end phase"
+        ],
+        "ja": [
+          "かっこ内は勢力と体力。「主公技」は、その武将が主公のときだけ使える。",
+          "",
+          "### 魏",
+          "",
+          "- **曹操**（魏・4）奸雄：ダメージを受けた後、そのダメージのカードを手に入れる｜護駕（主公技）：「閃」が必要なとき、ほかの魏の武将に代わりに出してもらえる",
+          "- **司馬懿**（魏・3）反饋：ダメージを受けた後、ダメージ元からカードを 1 枚もらう｜鬼才：判定が確定する前に、手札 1 枚で差し替えられる",
+          "- **夏侯惇**（魏・4）剛烈：ダメージを受けた後に判定し、ハート以外なら、ダメージ元は手札 2 枚を捨てるか、あなたから 1 ダメージを受ける",
+          "- **張遼**（魏・4）突襲：ドローフェイズに引く代わりに、最大 2 人から手札を 1 枚ずつもらう",
+          "- **許褚**（魏・4）裸衣：ドローを 1 枚減らすと、このターンの「殺」と「決闘」のダメージ +1",
+          "- **郭嘉**（魏・3）天妒：判定が確定した後、そのカードを手札にできる｜遺計：1 ダメージごとに山札の上 2 枚を見て、好きな人に配る",
+          "- **甄姫**（魏・3）傾国：黒の手札を「閃」として使える｜洛神：準備フェイズに判定し、黒なら手札にしてもう一度、赤が出るまで続けられる",
+          "",
+          "### 蜀",
+          "",
+          "- **劉備**（蜀・4）仁徳：プレイフェイズに手札をほかの人に渡せる。そのフェイズに 2 枚目を渡したとき体力 1 回復｜激将（主公技）：「殺」が必要なとき、ほかの蜀の武将に代わりに出してもらえる",
+          "- **関羽**（蜀・4）武聖：赤のカードを「殺」として使える",
+          "- **張飛**（蜀・4）咆哮：プレイフェイズの「殺」が無制限",
+          "- **諸葛亮**（蜀・3）観星：準備フェイズに山札の上 X 枚（X＝生存人数、最大 5）を見て、上か下に好きな順で戻す｜空城：手札がないとき、「殺」と「決闘」の対象にならない",
+          "- **趙雲**（蜀・4）竜胆：「殺」を「閃」として、「閃」を「殺」として使える",
+          "- **馬超**（蜀・4）馬術：あなたから見たほかの人までの距離 −1｜鉄騎：「殺」の対象を決めた後に判定し、赤なら相手は閃を出せない",
+          "- **黄月英**（蜀・3）集智：通常の錦囊を使うたびに 1 枚引く｜奇才：錦囊に距離制限がない",
+          "",
+          "### 呉",
+          "",
+          "- **孫権**（呉・4）制衡：プレイフェイズに 1 回、好きな枚数を捨てて同じ枚数引く｜救援（主公技）：ほかの呉の武将があなたに「桃」を使うと、さらに 1 回復",
+          "- **甘寧**（呉・4）奇襲：黒のカードを「過河拆橋」として使える",
+          "- **呂蒙**（呉・4）克己：プレイフェイズに「殺」を使っていなければ、捨て札フェイズを飛ばせる",
+          "- **黄蓋**（呉・4）苦肉：プレイフェイズに体力を 1 失って 2 枚引ける（何度でも）",
+          "- **周瑜**（呉・3）英姿：ドローフェイズに 1 枚多く引く｜反間：プレイフェイズに 1 回、相手にスートを 1 つ言わせ、あなたの手札を 1 枚取らせて公開。外れたら相手に 1 ダメージ",
+          "- **大喬**（呉・3）国色：ダイヤのカードを「楽不思蜀」として使える｜流離：「殺」の対象になったとき、1 枚捨てて、攻撃範囲内の別の人（使った人以外）に移せる",
+          "- **陸遜**（呉・3）謙遜：「順手牽羊」と「楽不思蜀」の対象にならない｜連営：最後の手札を失ったとき 1 枚引く",
+          "- **孫尚香**（呉・3）結姻：プレイフェイズに 1 回、手札 2 枚を捨て、あなたと負傷した男性武将 1 人が体力 1 回復｜梟姫：装備カードを失うたびに 2 枚引く",
+          "",
+          "### 群",
+          "",
+          "- **華佗**（群・3）急救：自分のターン外、赤のカードを「桃」として使える｜青嚢：プレイフェイズに 1 回、手札を 1 枚捨てて誰か 1 人の体力を 1 回復",
+          "- **呂布**（群・4）無双：あなたの「殺」は閃 2 枚でないと防げない。あなたと「決闘」する相手は毎回「殺」を 2 枚出す",
+          "- **貂蝉**（群・3）離間：プレイフェイズに 1 回、1 枚捨てて男性武将 2 人に「決闘」させる｜閉月：終了フェイズに 1 枚引く"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips", "ja": "初心者向けヒント" },
+      "md": {
+        "zh": [
+          "- **主公**：開局先觀察誰幫你、誰打你，別急著殺人——殺錯忠臣要棄光牌",
+          "- **忠臣**：太早跳出來保主公，會變成反賊的頭號目標",
+          "- **反賊**：集中火力打主公，但要小心內奸在背後幫主公",
+          "- **內奸**：前期站在主公這邊清反賊，最後才翻臉",
+          "- 新手可以先拿掉技能複雜的武將（郭嘉、司馬懿、諸葛亮），或先玩 5 人局"
+        ],
+        "en": [
+          "- **Monarch**: watch who helps you and who attacks you before striking; killing a Loyalist costs you every card",
+          "- **Loyalist**: revealing yourself too early makes you the Rebels' first target",
+          "- **Rebels**: focus fire on the Monarch, but beware the Traitor quietly helping them",
+          "- **Traitor**: side with the Monarch to clear out the Rebels, and only turn at the very end",
+          "- For new players, leave out heroes with tricky skills (Guo Jia, Sima Yi, Zhuge Liang) or start with 5 players"
+        ],
+        "ja": [
+          "- **主公**：まず誰が助けてくれて誰が攻撃してくるかを見る。忠臣を倒すとカードを全部捨てることになる",
+          "- **忠臣**：早く名乗り出すぎると反賊の一番の標的になる",
+          "- **反賊**：主公に攻撃を集中。ただし内奸が裏で主公を助けているかも",
+          "- **内奸**：序盤は主公側について反賊を減らし、最後に裏切る",
+          "- 初心者は技能が複雑な武将（郭嘉、司馬懿、諸葛亮）を抜くか、5 人で始めるとよい"
+        ]
+      }
+    }
+  ],
+
+  "play": { "type": "sgs", "title": { "zh": "發身分", "en": "Roles", "ja": "身分配り" } }
+}
