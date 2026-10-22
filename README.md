@@ -5,7 +5,6 @@
 **中文、English、日本語**三語：介面、玩法、旁白語音與字幕都跟著右上角的語言切換。
 
 網頁版：<https://agan0617.github.io/KBoardGame/>（純 HTML＋JS，沒有相依套件；打開過一次就能離線用）
-Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebView 外殼，APK 在 Releases）
 
 ## 功能
 
