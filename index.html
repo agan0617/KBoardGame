@@ -14,6 +14,7 @@
 <header id="bar">
   <button id="back" class="icon hidden" aria-label="返回">‹</button>
   <h1 id="title">K桌遊</h1>
+  <div id="langs"></div>
 </header>
 
 <main id="home" class="view hidden">
@@ -22,8 +23,8 @@
 
 <main id="game" class="view hidden">
   <nav id="tabs">
-    <button data-tab="rules">玩法</button>
-    <button data-tab="host">主持</button>
+    <button data-tab="rules" data-i18n="rules"></button>
+    <button data-tab="host" data-i18n="host"></button>
   </nav>
 
   <section id="rules" class="pane hidden">
@@ -40,14 +41,14 @@
     </div>
     <div id="controls">
       <button id="prev" class="icon" aria-label="上一句">⏮</button>
-      <button id="play" class="big">▶ 連續播放</button>
+      <button id="play" class="big"></button>
       <button id="next" class="icon" aria-label="下一句">⏭</button>
     </div>
     <div id="pace" class="seg small">
-      <span>停頓</span>
-      <button data-pace="0.6">短</button>
-      <button data-pace="1">中</button>
-      <button data-pace="1.6">長</button>
+      <span data-i18n="pace"></span>
+      <button data-pace="0.6" data-i18n="short"></button>
+      <button data-pace="1" data-i18n="mid"></button>
+      <button data-pace="1.6" data-i18n="long"></button>
     </div>
     <ol id="lines"></ol>
   </section>

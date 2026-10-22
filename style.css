@@ -24,7 +24,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: flex; align-items: center; gap: 4px;
   height: 52px; padding: 0 8px; background: var(--bg); border-bottom: 1px solid var(--line);
 }
-#bar h1 { margin: 0 8px; font-size: 19px; font-weight: 600; }
+#bar h1 { margin: 0 8px; font-size: 19px; font-weight: 600; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#langs { display: flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; flex: none; }
+#langs button { padding: 5px 10px; font-size: 13px; font-weight: 600; color: var(--dim); }
+#langs button.on { background: var(--accent); color: var(--accent-ink); }
 .icon { width: 44px; height: 44px; border-radius: 10px; font-size: 22px; }
 #back { font-size: 32px; line-height: 1; }
 
@@ -79,7 +82,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .seg.small span { margin-right: 4px; }
 .seg.small button { flex: 0 0 56px; padding: 4px; }
 
+/* 字幕：念的那句一直釘在畫面上方，捲動句子清單也看得到 */
 #now {
+  position: sticky; top: 60px; z-index: 1; box-shadow: 0 6px 12px var(--bg);
   min-height: 132px; padding: 18px 16px 14px; border-radius: 14px; background: var(--now);
   display: flex; flex-direction: column; justify-content: center;
 }

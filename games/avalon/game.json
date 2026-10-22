@@ -1,181 +1,459 @@
 {
   "id": "avalon",
-  "name": "阿瓦隆",
-  "players": "5–10 人",
-  "time": "30 分鐘",
-  "summary": "亞瑟王的忠臣對上莫德雷德的爪牙：藏在人群裡的壞人要破壞任務，好人要找出誰在說謊。",
-  "voice": "zh-TW-YunJheNeural",
-  "rate": "-8%",
+  "name": { "zh": "阿瓦隆", "en": "Avalon", "ja": "アヴァロン" },
+  "players": { "zh": "5–10 人", "en": "5–10 players", "ja": "5〜10人" },
+  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "summary": {
+    "zh": "亞瑟王的忠臣對上莫德雷德的爪牙：藏在人群裡的壞人要破壞任務，好人要找出誰在說謊。",
+    "en": "Loyal Servants of Arthur versus the Minions of Mordred: hidden traitors sabotage the quests while the good side tries to spot the liars.",
+    "ja": "アーサー王の忠臣とモードレッドの手下の戦い。紛れ込んだ悪がクエストを妨害し、善は嘘つきを見破る。"
+  },
+  "voice": { "zh": "zh-TW-YunJheNeural", "en": "en-GB-RyanNeural", "ja": "ja-JP-KeitaNeural" },
+  "rate": { "zh": "-8%", "en": "-5%", "ja": "-5%" },
 
   "rules": [
     {
-      "title": "遊戲概要",
-      "md": [
-        "玩家分成**善良陣營**（亞瑟的忠臣）與**邪惡陣營**（莫德雷德的爪牙），每個人拿一張祕密的角色卡。",
-        "",
-        "遊戲進行 5 輪任務。每輪由隊長挑出出任務的隊員，大家投票決定要不要讓這支隊伍出發，隊員再暗中決定任務成功或失敗。",
-        "",
-        "- **善良陣營**：先完成 3 次任務，而且最後沒被刺客認出梅林，就獲勝",
-        "- **邪惡陣營**：讓 3 次任務失敗，或在最後刺中梅林，就獲勝",
-        "",
-        "邪惡陣營彼此認識，善良陣營不知道誰是誰——好人只能靠討論、投票紀錄和任務結果推理。"
-      ]
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "玩家分成**善良陣營**（亞瑟的忠臣）與**邪惡陣營**（莫德雷德的爪牙），每個人拿一張祕密的角色卡。",
+          "",
+          "遊戲進行 5 輪任務。每輪由隊長挑出出任務的隊員，大家投票決定要不要讓這支隊伍出發，隊員再暗中決定任務成功或失敗。",
+          "",
+          "- **善良陣營**：先完成 3 次任務，而且最後沒被刺客認出梅林，就獲勝",
+          "- **邪惡陣營**：讓 3 次任務失敗，或在最後刺中梅林，就獲勝",
+          "",
+          "邪惡陣營彼此認識，善良陣營不知道誰是誰——好人只能靠討論、投票紀錄和任務結果推理。"
+        ],
+        "en": [
+          "Players are split into **Good** (Loyal Servants of Arthur) and **Evil** (Minions of Mordred). Everyone gets a secret character card.",
+          "",
+          "The game is played over up to 5 quests. Each round the Leader picks a team, everyone votes on whether that team goes, and the team members secretly decide whether the quest succeeds or fails.",
+          "",
+          "- **Good** wins by completing 3 quests, as long as the Assassin does not identify Merlin at the end",
+          "- **Evil** wins by failing 3 quests, or by assassinating Merlin at the end",
+          "",
+          "Evil players know each other; Good players do not. Good must rely on discussion, voting history and quest results."
+        ],
+        "ja": [
+          "プレイヤーは**善の陣営**（アーサー王の忠臣）と**悪の陣営**（モードレッドの手下）に分かれ、それぞれ秘密の役職カードを受け取ります。",
+          "",
+          "ゲームは最大 5 回のクエストで進みます。毎回リーダーがメンバーを選び、全員でその編成を承認するか投票し、メンバーはこっそりクエストの成功か失敗を決めます。",
+          "",
+          "- **善の陣営**：3 回クエストを成功させ、最後に暗殺者にマーリンを見破られなければ勝ち",
+          "- **悪の陣営**：3 回クエストを失敗させるか、最後にマーリンを暗殺すれば勝ち",
+          "",
+          "悪の陣営はお互いを知っていますが、善の陣営は誰が誰かわかりません。善は議論・投票の記録・クエストの結果から推理します。"
+        ]
+      }
     },
     {
-      "title": "人數與陣營",
-      "md": [
-        "| 人數 | 5 | 6 | 7 | 8 | 9 | 10 |",
-        "|---|---|---|---|---|---|---|",
-        "| 善良 | 3 | 4 | 4 | 5 | 6 | 6 |",
-        "| 邪惡 | 2 | 2 | 3 | 3 | 3 | 4 |",
-        "",
-        "梅林和刺客每局都要放。其他特殊角色可以用來替換忠臣或爪牙，但**陣營人數要照上表**。"
-      ]
+      "title": { "zh": "人數與陣營", "en": "Players & Teams", "ja": "人数と陣営" },
+      "md": {
+        "zh": [
+          "| 人數 | 5 | 6 | 7 | 8 | 9 | 10 |",
+          "|---|---|---|---|---|---|---|",
+          "| 善良 | 3 | 4 | 4 | 5 | 6 | 6 |",
+          "| 邪惡 | 2 | 2 | 3 | 3 | 3 | 4 |",
+          "",
+          "梅林和刺客每局都要放。其他特殊角色可以用來替換忠臣或爪牙，但**陣營人數要照上表**。"
+        ],
+        "en": [
+          "| Players | 5 | 6 | 7 | 8 | 9 | 10 |",
+          "|---|---|---|---|---|---|---|",
+          "| Good | 3 | 4 | 4 | 5 | 6 | 6 |",
+          "| Evil | 2 | 2 | 3 | 3 | 3 | 4 |",
+          "",
+          "Merlin and the Assassin are always in the game. Other special characters can replace Loyal Servants or Minions, but **the team sizes must follow this table**."
+        ],
+        "ja": [
+          "| 人数 | 5 | 6 | 7 | 8 | 9 | 10 |",
+          "|---|---|---|---|---|---|---|",
+          "| 善 | 3 | 4 | 4 | 5 | 6 | 6 |",
+          "| 悪 | 2 | 2 | 3 | 3 | 3 | 4 |",
+          "",
+          "マーリンと暗殺者は毎回入れます。ほかの特殊役職は忠臣や手下と入れ替えて使えますが、**陣営の人数は上の表どおり**にします。"
+        ]
+      }
     },
     {
-      "title": "角色",
-      "md": [
-        "### 善良陣營",
-        "",
-        "- **梅林**：夜晚看得到邪惡陣營是誰（看不到莫德雷德）。要暗中引導好人，但不能讓壞人發現自己是梅林",
-        "- **派西維爾**：夜晚看得到梅林。如果場上有莫甘娜，會看到兩個人，分不出哪個才是真梅林",
-        "- **亞瑟的忠臣**：沒有額外資訊，靠推理",
-        "",
-        "### 邪惡陣營",
-        "",
-        "- **刺客**：善良陣營完成 3 次任務時，可以指認一個人是梅林，猜中就逆轉勝",
-        "- **莫甘娜**：在派西維爾眼中看起來像梅林，用來混淆派西維爾",
-        "- **莫德雷德**：梅林看不到他，是最難抓的壞人",
-        "- **奧伯倫**：不知道其他壞人是誰，其他壞人也不知道他；但梅林看得到他",
-        "- **莫德雷德的爪牙**：普通的壞人，夜晚認識同伴"
-      ]
+      "title": { "zh": "角色", "en": "Characters", "ja": "役職" },
+      "md": {
+        "zh": [
+          "### 善良陣營",
+          "",
+          "- **梅林**：夜晚看得到邪惡陣營是誰（看不到莫德雷德）。要暗中引導好人，但不能讓壞人發現自己是梅林",
+          "- **派西維爾**：夜晚看得到梅林。如果場上有莫甘娜，會看到兩個人，分不出哪個才是真梅林",
+          "- **亞瑟的忠臣**：沒有額外資訊，靠推理",
+          "",
+          "### 邪惡陣營",
+          "",
+          "- **刺客**：善良陣營完成 3 次任務時，可以指認一個人是梅林，猜中就逆轉勝",
+          "- **莫甘娜**：在派西維爾眼中看起來像梅林，用來混淆派西維爾",
+          "- **莫德雷德**：梅林看不到他，是最難抓的壞人",
+          "- **奧伯倫**：不知道其他壞人是誰，其他壞人也不知道他；但梅林看得到他",
+          "- **莫德雷德的爪牙**：普通的壞人，夜晚認識同伴"
+        ],
+        "en": [
+          "### Good",
+          "",
+          "- **Merlin**: sees who is Evil at night (except Mordred). Must guide Good quietly without revealing who he is",
+          "- **Percival**: sees Merlin at night. If Morgana is in play, he sees two players and cannot tell which is the real Merlin",
+          "- **Loyal Servant of Arthur**: no extra information; relies on deduction",
+          "",
+          "### Evil",
+          "",
+          "- **Assassin**: when Good completes 3 quests, names one player as Merlin. A correct guess steals the win",
+          "- **Morgana**: appears as Merlin to Percival, to confuse him",
+          "- **Mordred**: hidden from Merlin, the hardest villain to catch",
+          "- **Oberon**: does not know the other Evil players and they do not know him, but Merlin can see him",
+          "- **Minion of Mordred**: a regular Evil player who knows the others at night"
+        ],
+        "ja": [
+          "### 善の陣営",
+          "",
+          "- **マーリン**：夜に悪の陣営が誰かわかる（モードレッドだけは見えない）。善をこっそり導くが、悪に正体を知られてはいけない",
+          "- **パーシヴァル**：夜にマーリンがわかる。モルガナがいると 2 人見えて、どちらが本物かわからない",
+          "- **アーサー王の忠臣**：特別な情報はなく、推理で戦う",
+          "",
+          "### 悪の陣営",
+          "",
+          "- **暗殺者**：善が 3 回クエストを成功させたとき、マーリンだと思う人を 1 人指名し、当たれば逆転勝利",
+          "- **モルガナ**：パーシヴァルからはマーリンに見え、パーシヴァルを惑わせる",
+          "- **モードレッド**：マーリンから見えない、いちばん見つけにくい悪",
+          "- **オベロン**：ほかの悪を知らず、ほかの悪もオベロンを知らない。ただしマーリンからは見える",
+          "- **モードレッドの手下**：普通の悪。夜に仲間を確認できる"
+        ]
+      }
     },
     {
-      "title": "遊戲流程",
-      "md": [
-        "### 1. 夜晚（主持人念旁白）",
-        "",
-        "所有人閉眼，依序讓邪惡陣營互認、梅林看壞人、派西維爾看梅林。到〈主持〉頁勾好這局用到的角色，按播放就會照順序念。",
-        "",
-        "### 2. 組隊",
-        "",
-        "隨機決定第一位隊長，之後每次換人都**順時針**輪下去。隊長照〈任務人數〉表挑出這一輪的隊員（可以挑自己）。",
-        "",
-        "### 3. 投票",
-        "",
-        "大家先討論，然後**所有人同時亮出**贊成或反對（隊長也要投）。",
-        "",
-        "- 贊成**超過半數**：隊伍出發",
-        "- 平手或反對多：否決，隊長換下一位，重新組隊",
-        "- 同一輪**連續 5 次否決**：邪惡陣營直接獲勝",
-        "",
-        "### 4. 出任務",
-        "",
-        "每位隊員暗中交出一張任務卡：",
-        "",
-        "- 善良陣營**只能出成功**",
-        "- 邪惡陣營可以出成功或失敗（出成功是為了藏身分）",
-        "",
-        "收齊後洗亂再翻開。**只要有一張失敗，任務就失敗**（例外見〈任務人數〉）。",
-        "",
-        "### 5. 刺殺梅林",
-        "",
-        "善良陣營完成 3 次任務後，邪惡陣營亮出身分、一起討論，由刺客指認一個人。指到梅林，邪惡陣營逆轉勝；沒指到，善良陣營獲勝。"
-      ]
+      "title": { "zh": "遊戲流程", "en": "How to Play", "ja": "ゲームの流れ" },
+      "md": {
+        "zh": [
+          "### 1. 夜晚（主持人念旁白）",
+          "",
+          "所有人閉眼，依序讓邪惡陣營互認、梅林看壞人、派西維爾看梅林。到〈主持〉頁勾好這局用到的角色，按播放就會照順序念。",
+          "",
+          "### 2. 組隊",
+          "",
+          "隨機決定第一位隊長，之後每次換人都**順時針**輪下去。隊長照〈任務人數〉表挑出這一輪的隊員（可以挑自己）。",
+          "",
+          "### 3. 投票",
+          "",
+          "大家先討論，然後**所有人同時亮出**贊成或反對（隊長也要投）。",
+          "",
+          "- 贊成**超過半數**：隊伍出發",
+          "- 平手或反對多：否決，隊長換下一位，重新組隊",
+          "- 同一輪**連續 5 次否決**：邪惡陣營直接獲勝",
+          "",
+          "### 4. 出任務",
+          "",
+          "每位隊員暗中交出一張任務卡：",
+          "",
+          "- 善良陣營**只能出成功**",
+          "- 邪惡陣營可以出成功或失敗（出成功是為了藏身分）",
+          "",
+          "收齊後洗亂再翻開。**只要有一張失敗，任務就失敗**（例外見〈任務人數〉）。",
+          "",
+          "### 5. 刺殺梅林",
+          "",
+          "善良陣營完成 3 次任務後，邪惡陣營亮出身分、一起討論，由刺客指認一個人。指到梅林，邪惡陣營逆轉勝；沒指到，善良陣營獲勝。"
+        ],
+        "en": [
+          "### 1. Night (the narrator reads)",
+          "",
+          "Everyone closes their eyes. Evil finds each other, Merlin sees Evil, and Percival sees Merlin. On the Host tab, select the characters in this game and press play to hear the steps in order.",
+          "",
+          "### 2. Team building",
+          "",
+          "Pick the first Leader at random; leadership then passes **clockwise**. The Leader chooses the team for this quest using the Team Sizes table (and may include themself).",
+          "",
+          "### 3. Vote",
+          "",
+          "Discuss, then **everyone reveals Approve or Reject at the same time** (the Leader votes too).",
+          "",
+          "- **More than half** approve: the team goes on the quest",
+          "- A tie or more rejects: rejected, the next player becomes Leader and proposes a new team",
+          "- **5 rejections in a row** in the same round: Evil wins immediately",
+          "",
+          "### 4. Quest",
+          "",
+          "Each team member secretly plays one quest card:",
+          "",
+          "- Good players **must play Success**",
+          "- Evil players may play Success or Fail (Success helps them stay hidden)",
+          "",
+          "Shuffle the cards and reveal them. **A single Fail makes the quest fail** (see the exception under Team Sizes).",
+          "",
+          "### 5. Assassinate Merlin",
+          "",
+          "After Good completes 3 quests, Evil reveals themselves and discusses, and the Assassin names one player. If it is Merlin, Evil wins; otherwise Good wins."
+        ],
+        "ja": [
+          "### 1. 夜（進行役がナレーションを読む）",
+          "",
+          "全員が目を閉じ、悪の陣営が仲間を確認、マーリンが悪を確認、パーシヴァルがマーリンを確認します。〈進行〉タブでこのゲームの役職を選び、再生すると順番に読み上げます。",
+          "",
+          "### 2. 編成",
+          "",
+          "最初のリーダーはランダムに決め、その後は**時計回り**に交代します。リーダーは〈クエスト人数〉の表に従ってメンバーを選びます（自分を入れてもよい）。",
+          "",
+          "### 3. 投票",
+          "",
+          "話し合ったあと、**全員同時に**承認か却下を出します（リーダーも投票）。",
+          "",
+          "- 承認が**過半数**：その編成でクエストへ",
+          "- 同数か却下が多い：却下。次の人がリーダーになって編成し直す",
+          "- 同じラウンドで**5 回連続却下**：悪の陣営の勝ち",
+          "",
+          "### 4. クエスト",
+          "",
+          "メンバーはそれぞれクエストカードを 1 枚こっそり出します。",
+          "",
+          "- 善の陣営は**成功しか出せない**",
+          "- 悪の陣営は成功か失敗を選べる（成功を出して正体を隠すこともある）",
+          "",
+          "集めたカードを混ぜてめくります。**失敗が 1 枚でもあればクエスト失敗**です（例外は〈クエスト人数〉参照）。",
+          "",
+          "### 5. マーリン暗殺",
+          "",
+          "善が 3 回クエストを成功させたら、悪の陣営は正体を明かして相談し、暗殺者が 1 人を指名します。マーリンなら悪の逆転勝利、外れたら善の勝利です。"
+        ]
+      }
     },
     {
-      "title": "任務人數",
-      "md": [
-        "每一輪要出任務的人數：",
-        "",
-        "| 人數 | 第1輪 | 第2輪 | 第3輪 | 第4輪 | 第5輪 |",
-        "|---|---|---|---|---|---|",
-        "| 5 | 2 | 3 | 2 | 3 | 3 |",
-        "| 6 | 2 | 3 | 4 | 3 | 4 |",
-        "| 7 | 2 | 3 | 3 | 4＊ | 4 |",
-        "| 8 | 3 | 4 | 4 | 5＊ | 5 |",
-        "| 9 | 3 | 4 | 4 | 5＊ | 5 |",
-        "| 10 | 3 | 4 | 4 | 5＊ | 5 |",
-        "",
-        "＊ 7 人以上時，**第 4 輪要出現 2 張失敗**任務才算失敗。"
-      ]
+      "title": { "zh": "任務人數", "en": "Team Sizes", "ja": "クエスト人数" },
+      "md": {
+        "zh": [
+          "每一輪要出任務的人數：",
+          "",
+          "| 人數 | 第1輪 | 第2輪 | 第3輪 | 第4輪 | 第5輪 |",
+          "|---|---|---|---|---|---|",
+          "| 5 | 2 | 3 | 2 | 3 | 3 |",
+          "| 6 | 2 | 3 | 4 | 3 | 4 |",
+          "| 7 | 2 | 3 | 3 | 4＊ | 4 |",
+          "| 8 | 3 | 4 | 4 | 5＊ | 5 |",
+          "| 9 | 3 | 4 | 4 | 5＊ | 5 |",
+          "| 10 | 3 | 4 | 4 | 5＊ | 5 |",
+          "",
+          "＊ 7 人以上時，**第 4 輪要出現 2 張失敗**任務才算失敗。"
+        ],
+        "en": [
+          "Number of team members for each quest:",
+          "",
+          "| Players | Q1 | Q2 | Q3 | Q4 | Q5 |",
+          "|---|---|---|---|---|---|",
+          "| 5 | 2 | 3 | 2 | 3 | 3 |",
+          "| 6 | 2 | 3 | 4 | 3 | 4 |",
+          "| 7 | 2 | 3 | 3 | 4* | 4 |",
+          "| 8 | 3 | 4 | 4 | 5* | 5 |",
+          "| 9 | 3 | 4 | 4 | 5* | 5 |",
+          "| 10 | 3 | 4 | 4 | 5* | 5 |",
+          "",
+          "* With 7 or more players, **the 4th quest needs 2 Fail cards** to fail."
+        ],
+        "ja": [
+          "各クエストに行くメンバーの人数：",
+          "",
+          "| 人数 | 1回目 | 2回目 | 3回目 | 4回目 | 5回目 |",
+          "|---|---|---|---|---|---|",
+          "| 5 | 2 | 3 | 2 | 3 | 3 |",
+          "| 6 | 2 | 3 | 4 | 3 | 4 |",
+          "| 7 | 2 | 3 | 3 | 4＊ | 4 |",
+          "| 8 | 3 | 4 | 4 | 5＊ | 5 |",
+          "| 9 | 3 | 4 | 4 | 5＊ | 5 |",
+          "| 10 | 3 | 4 | 4 | 5＊ | 5 |",
+          "",
+          "＊ 7 人以上のとき、**4 回目は失敗が 2 枚**出ないとクエスト失敗になりません。"
+        ]
+      }
     },
     {
-      "title": "建議配置",
-      "md": [
-        "第一次玩可以照這個配：",
-        "",
-        "| 人數 | 善良 | 邪惡 |",
-        "|---|---|---|",
-        "| 5 | 梅林、派西維爾、忠臣 | 刺客、莫甘娜 |",
-        "| 6 | 梅林、派西維爾、忠臣×2 | 刺客、莫甘娜 |",
-        "| 7 | 梅林、派西維爾、忠臣×2 | 刺客、莫甘娜、奧伯倫 |",
-        "| 8 | 梅林、派西維爾、忠臣×3 | 刺客、莫甘娜、爪牙 |",
-        "| 9 | 梅林、派西維爾、忠臣×4 | 刺客、莫甘娜、莫德雷德 |",
-        "| 10 | 梅林、派西維爾、忠臣×4 | 刺客、莫甘娜、莫德雷德、奧伯倫 |",
-        "",
-        "全是新手時，可以先拿掉派西維爾和莫甘娜，只用梅林與刺客。"
-      ]
+      "title": { "zh": "建議配置", "en": "Suggested Setups", "ja": "おすすめ構成" },
+      "md": {
+        "zh": [
+          "第一次玩可以照這個配：",
+          "",
+          "| 人數 | 善良 | 邪惡 |",
+          "|---|---|---|",
+          "| 5 | 梅林、派西維爾、忠臣 | 刺客、莫甘娜 |",
+          "| 6 | 梅林、派西維爾、忠臣×2 | 刺客、莫甘娜 |",
+          "| 7 | 梅林、派西維爾、忠臣×2 | 刺客、莫甘娜、奧伯倫 |",
+          "| 8 | 梅林、派西維爾、忠臣×3 | 刺客、莫甘娜、爪牙 |",
+          "| 9 | 梅林、派西維爾、忠臣×4 | 刺客、莫甘娜、莫德雷德 |",
+          "| 10 | 梅林、派西維爾、忠臣×4 | 刺客、莫甘娜、莫德雷德、奧伯倫 |",
+          "",
+          "全是新手時，可以先拿掉派西維爾和莫甘娜，只用梅林與刺客。"
+        ],
+        "en": [
+          "A good starting point:",
+          "",
+          "| Players | Good | Evil |",
+          "|---|---|---|",
+          "| 5 | Merlin, Percival, Servant | Assassin, Morgana |",
+          "| 6 | Merlin, Percival, Servant×2 | Assassin, Morgana |",
+          "| 7 | Merlin, Percival, Servant×2 | Assassin, Morgana, Oberon |",
+          "| 8 | Merlin, Percival, Servant×3 | Assassin, Morgana, Minion |",
+          "| 9 | Merlin, Percival, Servant×4 | Assassin, Morgana, Mordred |",
+          "| 10 | Merlin, Percival, Servant×4 | Assassin, Morgana, Mordred, Oberon |",
+          "",
+          "If everyone is new, leave out Percival and Morgana and play with just Merlin and the Assassin."
+        ],
+        "ja": [
+          "初めてならこの構成がおすすめ：",
+          "",
+          "| 人数 | 善 | 悪 |",
+          "|---|---|---|",
+          "| 5 | マーリン、パーシヴァル、忠臣 | 暗殺者、モルガナ |",
+          "| 6 | マーリン、パーシヴァル、忠臣×2 | 暗殺者、モルガナ |",
+          "| 7 | マーリン、パーシヴァル、忠臣×2 | 暗殺者、モルガナ、オベロン |",
+          "| 8 | マーリン、パーシヴァル、忠臣×3 | 暗殺者、モルガナ、手下 |",
+          "| 9 | マーリン、パーシヴァル、忠臣×4 | 暗殺者、モルガナ、モードレッド |",
+          "| 10 | マーリン、パーシヴァル、忠臣×4 | 暗殺者、モルガナ、モードレッド、オベロン |",
+          "",
+          "全員初心者なら、パーシヴァルとモルガナを抜いて、マーリンと暗殺者だけで遊んでもかまいません。"
+        ]
+      }
     },
     {
-      "title": "新手提醒",
-      "md": [
-        "- **好人**：注意誰投票支持了失敗的隊伍；任務失敗後，隊員裡一定有壞人",
-        "- **梅林**：講太明會被刺殺，講太少好人會輸——用投票和暗示帶風向",
-        "- **壞人**：不一定每次都要出失敗，太早曝光反而被排除在隊伍外",
-        "- 夜晚閉眼時大家輕敲桌面，可以蓋掉有人睜眼、舉手的聲音"
-      ]
+      "title": { "zh": "新手提醒", "en": "Tips", "ja": "初心者向けヒント" },
+      "md": {
+        "zh": [
+          "- **好人**：注意誰投票支持了失敗的隊伍；任務失敗後，隊員裡一定有壞人",
+          "- **梅林**：講太明會被刺殺，講太少好人會輸——用投票和暗示帶風向",
+          "- **壞人**：不一定每次都要出失敗，太早曝光反而被排除在隊伍外",
+          "- 夜晚閉眼時大家輕敲桌面，可以蓋掉有人睜眼、舉手的聲音"
+        ],
+        "en": [
+          "- **Good**: watch who approved teams that failed; a failed quest always has Evil on the team",
+          "- **Merlin**: too obvious and you get assassinated, too quiet and Good loses. Steer with votes and hints",
+          "- **Evil**: you do not have to fail every quest. Getting exposed early keeps you off future teams",
+          "- Tapping the table lightly during the night covers the sound of people moving"
+        ],
+        "ja": [
+          "- **善**：失敗した編成に誰が賛成したかに注目。クエストが失敗したら、メンバーに必ず悪がいる",
+          "- **マーリン**：はっきり言いすぎると暗殺され、黙りすぎると善が負ける。投票とほのめかしで流れを作る",
+          "- **悪**：毎回失敗を出す必要はない。早くばれると編成から外される",
+          "- 夜の間、全員で机を軽くたたくと、目を開けたり手を動かしたりする音をごまかせる"
+        ]
+      }
     }
   ],
 
   "host": {
     "options": [
-      { "id": "percival", "label": "派西維爾", "default": true },
-      { "id": "morgana", "label": "莫甘娜", "default": true },
-      { "id": "mordred", "label": "莫德雷德", "default": false },
-      { "id": "oberon", "label": "奧伯倫", "default": false }
+      { "id": "percival", "label": { "zh": "派西維爾", "en": "Percival", "ja": "パーシヴァル" }, "default": true },
+      { "id": "morgana", "label": { "zh": "莫甘娜", "en": "Morgana", "ja": "モルガナ" }, "default": true },
+      { "id": "mordred", "label": { "zh": "莫德雷德", "en": "Mordred", "ja": "モードレッド" }, "default": false },
+      { "id": "oberon", "label": { "zh": "奧伯倫", "en": "Oberon", "ja": "オベロン" }, "default": false }
     ],
     "scripts": [
       {
         "id": "night",
-        "title": "夜晚",
+        "title": { "zh": "夜晚", "en": "Night", "ja": "夜" },
         "lines": [
-          { "id": "night01", "text": "大家確認一下自己的角色卡，不要讓別人看到。", "pause": 3 },
-          { "id": "night02", "text": "天黑請閉眼。所有人閉上眼睛，把手握拳放在面前。", "pause": 3 },
-          { "id": "night03a", "text": "邪惡陣營請睜開眼睛，互相確認你的同伴。", "pause": 5, "when": "!oberon" },
-          { "id": "night03b", "text": "除了奧伯倫，邪惡陣營請睜開眼睛，互相確認你的同伴。", "pause": 5, "when": "oberon" },
-          { "id": "night04", "text": "邪惡陣營請閉上眼睛。", "pause": 2 },
-          { "id": "night05a", "text": "邪惡陣營請豎起大拇指。", "pause": 2, "when": "!mordred" },
-          { "id": "night05b", "text": "除了莫德雷德，邪惡陣營請豎起大拇指。", "pause": 2, "when": "mordred" },
-          { "id": "night06", "text": "梅林請睜開眼睛，看看誰豎起了大拇指，他們就是邪惡陣營。", "pause": 5 },
-          { "id": "night07", "text": "梅林請閉上眼睛。邪惡陣營請收起大拇指。", "pause": 2 },
-          { "id": "night08a", "text": "梅林和莫甘娜請豎起大拇指。", "pause": 2, "when": "percival && morgana" },
-          { "id": "night08b", "text": "梅林請豎起大拇指。", "pause": 2, "when": "percival && !morgana" },
-          { "id": "night09", "text": "派西維爾請睜開眼睛，看看豎起大拇指的人。", "pause": 5, "when": "percival" },
-          { "id": "night10", "text": "派西維爾請閉上眼睛。所有人請收起大拇指。", "pause": 2, "when": "percival" },
-          { "id": "night11", "text": "天亮了，所有人請睜開眼睛。", "pause": 0 }
+          { "id": "night01", "pause": 3, "text": {
+            "zh": "大家確認一下自己的角色卡，不要讓別人看到。",
+            "en": "Everyone, check your character card. Don't let anyone else see it.",
+            "ja": "自分の役職カードを確認してください。ほかの人には見せないでください。" } },
+          { "id": "night02", "pause": 3, "text": {
+            "zh": "天黑請閉眼。所有人閉上眼睛，把手握拳放在面前。",
+            "en": "Night falls. Everyone, close your eyes and put your fist out in front of you.",
+            "ja": "夜になりました。全員、目を閉じて、こぶしを握って前に出してください。" } },
+          { "id": "night03a", "pause": 5, "when": "!oberon", "text": {
+            "zh": "邪惡陣營請睜開眼睛，互相確認你的同伴。",
+            "en": "Minions of Mordred, open your eyes and find your fellow minions.",
+            "ja": "悪の陣営は目を開けて、仲間を確認してください。" } },
+          { "id": "night03b", "pause": 5, "when": "oberon", "text": {
+            "zh": "除了奧伯倫，邪惡陣營請睜開眼睛，互相確認你的同伴。",
+            "en": "Minions of Mordred, except Oberon, open your eyes and find your fellow minions.",
+            "ja": "オベロン以外の悪の陣営は目を開けて、仲間を確認してください。" } },
+          { "id": "night04", "pause": 2, "text": {
+            "zh": "邪惡陣營請閉上眼睛。",
+            "en": "Minions of Mordred, close your eyes.",
+            "ja": "悪の陣営は目を閉じてください。" } },
+          { "id": "night05a", "pause": 2, "when": "!mordred", "text": {
+            "zh": "邪惡陣營請豎起大拇指。",
+            "en": "Minions of Mordred, put your thumbs up.",
+            "ja": "悪の陣営は親指を立ててください。" } },
+          { "id": "night05b", "pause": 2, "when": "mordred", "text": {
+            "zh": "除了莫德雷德，邪惡陣營請豎起大拇指。",
+            "en": "Minions of Mordred, except Mordred himself, put your thumbs up.",
+            "ja": "モードレッド以外の悪の陣営は親指を立ててください。" } },
+          { "id": "night06", "pause": 5, "text": {
+            "zh": "梅林請睜開眼睛，看看誰豎起了大拇指，他們就是邪惡陣營。",
+            "en": "Merlin, open your eyes. The players with their thumbs up are the forces of evil.",
+            "ja": "マーリンは目を開けて、親指を立てている人を確認してください。それが悪の陣営です。" } },
+          { "id": "night07", "pause": 2, "text": {
+            "zh": "梅林請閉上眼睛。邪惡陣營請收起大拇指。",
+            "en": "Merlin, close your eyes. Minions of Mordred, put your thumbs down.",
+            "ja": "マーリンは目を閉じてください。悪の陣営は親指を下ろしてください。" } },
+          { "id": "night08a", "pause": 2, "when": "percival && morgana", "text": {
+            "zh": "梅林和莫甘娜請豎起大拇指。",
+            "en": "Merlin and Morgana, put your thumbs up.",
+            "ja": "マーリンとモルガナは親指を立ててください。" } },
+          { "id": "night08b", "pause": 2, "when": "percival && !morgana", "text": {
+            "zh": "梅林請豎起大拇指。",
+            "en": "Merlin, put your thumb up.",
+            "ja": "マーリンは親指を立ててください。" } },
+          { "id": "night09", "pause": 5, "when": "percival", "text": {
+            "zh": "派西維爾請睜開眼睛，看看豎起大拇指的人。",
+            "en": "Percival, open your eyes and see who has their thumbs up.",
+            "ja": "パーシヴァルは目を開けて、親指を立てている人を確認してください。" } },
+          { "id": "night10", "pause": 2, "when": "percival", "text": {
+            "zh": "派西維爾請閉上眼睛。所有人請收起大拇指。",
+            "en": "Percival, close your eyes. Everyone, put your thumbs down.",
+            "ja": "パーシヴァルは目を閉じてください。全員、親指を下ろしてください。" } },
+          { "id": "night11", "pause": 0, "text": {
+            "zh": "天亮了，所有人請睜開眼睛。",
+            "en": "Day breaks. Everyone, open your eyes.",
+            "ja": "朝になりました。全員、目を開けてください。" } }
         ]
       },
       {
         "id": "calls",
-        "title": "口令",
+        "title": { "zh": "口令", "en": "Calls", "ja": "かけ声" },
         "autoplay": false,
         "lines": [
-          { "id": "call01", "text": "請大家準備投票。三、二、一，亮！", "pause": 0 },
-          { "id": "call02", "text": "請隊員交出任務卡。洗亂之後，一張一張翻開。", "pause": 0 },
-          { "id": "call03", "text": "任務成功！", "pause": 0 },
-          { "id": "call04", "text": "任務失敗。", "pause": 0 },
-          { "id": "call05", "text": "隊伍被否決，換下一位隊長。", "pause": 0 }
+          { "id": "call01", "pause": 0, "text": {
+            "zh": "請大家準備投票。三、二、一，亮！",
+            "en": "Get ready to vote. Three, two, one, reveal!",
+            "ja": "投票の準備をしてください。さん、に、いち、どうぞ！" } },
+          { "id": "call02", "pause": 0, "text": {
+            "zh": "請隊員交出任務卡。洗亂之後，一張一張翻開。",
+            "en": "Team members, hand in your quest cards. Shuffle them, then turn them over one by one.",
+            "ja": "メンバーはクエストカードを出してください。よく混ぜてから、一枚ずつめくります。" } },
+          { "id": "call03", "pause": 0, "text": {
+            "zh": "任務成功！",
+            "en": "The quest succeeds!",
+            "ja": "クエスト成功！" } },
+          { "id": "call04", "pause": 0, "text": {
+            "zh": "任務失敗。",
+            "en": "The quest fails.",
+            "ja": "クエスト失敗。" } },
+          { "id": "call05", "pause": 0, "text": {
+            "zh": "隊伍被否決，換下一位隊長。",
+            "en": "The team is rejected. Leadership passes to the next player.",
+            "ja": "編成は却下されました。リーダーは次の人に交代です。" } }
         ]
       },
       {
         "id": "assassin",
-        "title": "刺殺",
+        "title": { "zh": "刺殺", "en": "Assassination", "ja": "暗殺" },
         "autoplay": false,
         "lines": [
-          { "id": "assn01", "text": "善良陣營完成了三次任務，進入刺殺階段。", "pause": 1 },
-          { "id": "assn02", "text": "邪惡陣營請亮出身分，和刺客一起討論，找出誰是梅林。", "pause": 0 },
-          { "id": "assn03", "text": "刺客，請指出你認為的梅林。", "pause": 0 }
+          { "id": "assn01", "pause": 1, "text": {
+            "zh": "善良陣營完成了三次任務，進入刺殺階段。",
+            "en": "Good has completed three quests. The assassination begins.",
+            "ja": "善の陣営が三回のクエストを成功させました。暗殺フェーズに入ります。" } },
+          { "id": "assn02", "pause": 0, "text": {
+            "zh": "邪惡陣營請亮出身分，和刺客一起討論，找出誰是梅林。",
+            "en": "Minions of Mordred, reveal yourselves. Discuss with the Assassin and work out who Merlin is.",
+            "ja": "悪の陣営は正体を明かして、暗殺者と相談し、マーリンが誰かを探してください。" } },
+          { "id": "assn03", "pause": 0, "text": {
+            "zh": "刺客，請指出你認為的梅林。",
+            "en": "Assassin, point to the player you believe is Merlin.",
+            "ja": "暗殺者は、マーリンだと思う人を指さしてください。" } }
         ]
       }
     ]

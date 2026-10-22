@@ -1,10 +1,10 @@
-"""把每款遊戲 game.json 裡的旁白句子用 Azure 神經語音念成 mp3，放在 games/<id>/audio/<句子 id>.mp3。
+"""把每款遊戲 game.json 裡的旁白句子用 Azure 神經語音念成 mp3，放在 games/<id>/audio/<語言>/<句子 id>.mp3。
 
     python tools/make_audio.py --key-file <Azure 語音金鑰檔>              # 只補新句子、改過字的句子
     python tools/make_audio.py --key-file <金鑰檔> --game avalon --force  # 整款重念
 
-- 語音與語速看 game.json 的 voice、rate（沒寫就用 zh-TW-YunJheNeural、0%）；句子也可以自己帶 voice
-- 念過的句子記在 audio/_tts.json（文字＋語音＋語速的雜湊），沒變就跳過，不重複花額度
+- 句子的 text 寫成 { zh, en, ja }，每一語各念一份；語音與語速看 game.json 的 voice、rate（同樣分語言），句子也可以自己帶
+- 念過的句子記在 audio/<語言>/_tts.json（文字＋語音＋語速的雜湊），沒變就跳過，不重複花額度
 - 刪掉的句子，音檔也會一起刪
 - 金鑰不進 repo；Azure 資源在 eastasia（F0 免費額度，用完回 429 不收費）
 """
@@ -13,6 +13,14 @@ from xml.sax.saxutils import escape
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')
 REGION = 'eastasia'
+DEFAULT_VOICE = {'zh': 'zh-TW-YunJheNeural', 'en': 'en-GB-RyanNeural', 'ja': 'ja-JP-KeitaNeural'}
+
+
+def pick(v, lg):
+    """{ zh, en, ja } 取這一語；只寫一個字串的當成中文（沒有的語言回 None，由呼叫端用預設）"""
+    if isinstance(v, dict):
+        return v.get(lg)
+    return v if lg == 'zh' else None
 
 
 def tts(key, text, voice, rate):
@@ -50,35 +58,40 @@ def main():
         gdir = os.path.join(ROOT, 'games', gid)
         with open(os.path.join(gdir, 'game.json'), encoding='utf-8') as f:
             g = json.load(f)
-        adir = os.path.join(gdir, 'audio')
-        os.makedirs(adir, exist_ok=True)
-        mpath = os.path.join(adir, '_tts.json')
-        done = {}
-        if os.path.exists(mpath):
-            with open(mpath, encoding='utf-8') as f:
-                done = json.load(f)
-        want = {}
-        for s in g.get('host', {}).get('scripts', []):
-            for l in s['lines']:
-                voice = l.get('voice', g.get('voice', 'zh-TW-YunJheNeural'))
-                rate = l.get('rate', g.get('rate', '0%'))
-                h = hashlib.sha1(f"{l['text']}|{voice}|{rate}".encode('utf-8')).hexdigest()[:12]
+        lines = [l for sc in g.get('host', {}).get('scripts', []) for l in sc['lines']]
+        langs = sorted({lg for l in lines for lg in (l['text'] if isinstance(l['text'], dict) else {'zh': 0})})
+        for lg in langs:
+            adir = os.path.join(gdir, 'audio', lg)
+            os.makedirs(adir, exist_ok=True)
+            mpath = os.path.join(adir, '_tts.json')
+            done = {}
+            if os.path.exists(mpath):
+                with open(mpath, encoding='utf-8') as f:
+                    done = json.load(f)
+            want = {}
+            for l in lines:
+                text = pick(l['text'], lg)
+                if not text:
+                    continue
+                voice = pick(l.get('voice', g.get('voice', DEFAULT_VOICE)), lg) or DEFAULT_VOICE[lg]
+                rate = pick(l.get('rate', g.get('rate', '0%')), lg) or '0%'
+                h = hashlib.sha1(f"{text}|{voice}|{rate}".encode('utf-8')).hexdigest()[:12]
                 want[l['id']] = h
                 out = os.path.join(adir, l['id'] + '.mp3')
                 if not a.force and done.get(l['id']) == h and os.path.exists(out):
                     continue
                 with open(out, 'wb') as f:
-                    f.write(tts(key, l['text'], voice, rate))
+                    f.write(tts(key, text, voice, rate))
                 made += 1
-                print(f"{gid}/{l['id']}  {l['text']}")
+                print(f"{gid}/{lg}/{l['id']}  {text}")
                 time.sleep(0.3)
-        for old in set(done) - set(want):
-            p = os.path.join(adir, old + '.mp3')
-            if os.path.exists(p):
-                os.remove(p)
-                print(f'刪除 {gid}/{old}.mp3')
-        with open(mpath, 'w', encoding='utf-8') as f:
-            json.dump(want, f, ensure_ascii=False, indent=1, sort_keys=True)
+            for old in set(done) - set(want):
+                p = os.path.join(adir, old + '.mp3')
+                if os.path.exists(p):
+                    os.remove(p)
+                    print(f'刪除 {gid}/{lg}/{old}.mp3')
+            with open(mpath, 'w', encoding='utf-8') as f:
+                json.dump(want, f, ensure_ascii=False, indent=1, sort_keys=True)
     print(f'完成，新念 {made} 句')
 
 

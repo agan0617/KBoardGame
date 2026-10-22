@@ -1,6 +1,6 @@
-/* K桌遊：遊戲清單、玩法教學、主持旁白。
-   每款遊戲是 games/<id>/game.json（格式見 README），旁白語音是 games/<id>/audio/<句子 id>.mp3，
-   由 tools/make_audio.py 預先產生。 */
+/* K桌遊：遊戲清單、玩法教學、主持旁白（中英日三語）。
+   每款遊戲是 games/<id>/game.json（格式見 README），旁白語音是 games/<id>/audio/<語言>/<句子 id>.mp3，
+   由 tools/make_audio.py 預先產生。念的那句同時顯示成字幕。 */
 'use strict';
 
 const $ = s => document.querySelector(s);
@@ -8,6 +8,52 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem('kbg.' + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem('kbg.' + k, JSON.stringify(v)); } catch { } },
 };
+
+// ---------- 語言 ----------
+
+const LANGS = [{ key: 'zh', label: '中' }, { key: 'en', label: 'EN' }, { key: 'ja', label: '日' }];
+const SPEECH_LANG = { zh: 'zh-TW', en: 'en-GB', ja: 'ja-JP' };
+const UI = {
+  zh: { app: 'K桌遊', rules: '玩法', host: '主持', back: '返回', prev: '上一句', next: '下一句',
+    play: '▶ 連續播放', resume: '▶ 繼續播放', pause: '⏸ 暫停', pace: '停頓', short: '短', mid: '中', long: '長',
+    idleAuto: '按「連續播放」從第一句開始念，或點下面任一句單獨念', idleTap: '點下面任一句就念那一句', fail: '載入失敗：' },
+  en: { app: 'K Board Games', rules: 'Rules', host: 'Host', back: 'Back', prev: 'Previous line', next: 'Next line',
+    play: '▶ Play all', resume: '▶ Resume', pause: '⏸ Pause', pace: 'Pauses', short: 'Short', mid: 'Mid', long: 'Long',
+    idleAuto: 'Press “Play all” to start from the first line, or tap any line below to hear just that one', idleTap: 'Tap a line below to hear it', fail: 'Failed to load: ' },
+  ja: { app: 'Kボードゲーム', rules: 'ルール', host: '進行', back: '戻る', prev: '前の台詞', next: '次の台詞',
+    play: '▶ 連続再生', resume: '▶ 続きを再生', pause: '⏸ 一時停止', pace: '間', short: '短', mid: '中', long: '長',
+    idleAuto: '「連続再生」で最初から読み上げます。下の台詞をタップすると、その一文だけ読みます', idleTap: '下の台詞をタップすると読み上げます', fail: '読み込みに失敗：' },
+};
+
+function defaultLang() {
+  const n = (navigator.language || '').toLowerCase();
+  return n.startsWith('ja') ? 'ja' : n.startsWith('zh') ? 'zh' : 'en';
+}
+let lang = store.get('lang', null) || defaultLang();
+const ui = k => UI[lang][k];
+// game.json 裡要翻譯的欄位寫成 { zh, en, ja }；缺哪一語就退回中文
+const tr = v => v && typeof v === 'object' && !Array.isArray(v) ? (v[lang] ?? v.zh) : v;
+
+function renderChrome() {
+  document.documentElement.lang = { zh: 'zh-Hant', en: 'en', ja: 'ja' }[lang];
+  $('#langs').innerHTML = LANGS.map(x => `<button data-lang="${x.key}" class="${x.key === lang ? 'on' : ''}">${x.label}</button>`).join('');
+  for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = ui(el.dataset.i18n);
+  $('#back').setAttribute('aria-label', ui('back'));
+  $('#prev').setAttribute('aria-label', ui('prev'));
+  $('#next').setAttribute('aria-label', ui('next'));
+}
+
+$('#langs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b || b.dataset.lang === lang) return;
+  lang = b.dataset.lang;
+  store.set('lang', lang);
+  stop();
+  renderChrome(); renderHome();
+  const sid = cur && script ? script.id : null;
+  cur = null;   // 讓 route() 用新語言重畫玩法與旁白
+  route();
+  if (sid && cur) selectScript(sid);   // 停在原本那組旁白
+});
 
 const games = {};          // id → game.json
 let gameIds = [];
@@ -35,23 +81,22 @@ function route() {
   $('#home').classList.toggle('hidden', !!g);
   $('#game').classList.toggle('hidden', !g);
   $('#back').classList.toggle('hidden', !g);
-  if (!g) { cur = null; $('#title').textContent = 'K桌遊'; document.title = 'K桌遊'; return; }
+  if (!g) { cur = null; $('#title').textContent = ui('app'); document.title = ui('app'); return; }
   if (cur !== g) { cur = g; renderRules(g); renderHost(g); }
-  $('#title').textContent = g.name;
-  document.title = g.name + '｜K桌遊';
+  $('#title').textContent = tr(g.name);
+  document.title = tr(g.name) + '｜' + ui('app');
   const t = tab === 'host' || tab === 'rules' ? tab : store.get(id + '.tab', 'rules');
   store.set(id + '.tab', t);
   for (const b of document.querySelectorAll('#tabs button')) b.classList.toggle('on', b.dataset.tab === t);
   $('#rules').classList.toggle('hidden', t !== 'rules');
   $('#host').classList.toggle('hidden', t !== 'host');
   if (t === 'host') preloadAudio(g);
-  window.scrollTo(0, 0);
 }
 
 function renderHome() {
   $('#game-list').innerHTML = gameIds.map(id => {
     const g = games[id];
-    return `<li><a href="#/${id}"><h2>${esc(g.name)}</h2><div class="meta">${esc(g.players)}・${esc(g.time)}</div><p>${esc(g.summary)}</p></a></li>`;
+    return `<li><a href="#/${id}"><h2>${esc(tr(g.name))}</h2><div class="meta">${esc(tr(g.players))}・${esc(tr(g.time))}</div><p>${esc(tr(g.summary))}</p></a></li>`;
   }).join('');
 }
 
@@ -84,8 +129,8 @@ function md(lines) {
 }
 
 function renderRules(g) {
-  $('#toc').innerHTML = g.rules.map((s, i) => `<a href="#" data-sec="${i}">${esc(s.title)}</a>`).join('');
-  $('#rules-body').innerHTML = g.rules.map((s, i) => `<h2 id="sec-${i}">${esc(s.title)}</h2>${md(s.md)}`).join('');
+  $('#toc').innerHTML = g.rules.map((s, i) => `<a href="#" data-sec="${i}">${esc(tr(s.title))}</a>`).join('');
+  $('#rules-body').innerHTML = g.rules.map((s, i) => `<h2 id="sec-${i}">${esc(tr(s.title))}</h2>${md(tr(s.md))}`).join('');
 }
 
 $('#toc').addEventListener('click', e => {
@@ -94,7 +139,7 @@ $('#toc').addEventListener('click', e => {
   document.getElementById('sec-' + a.dataset.sec).scrollIntoView({ behavior: 'smooth' });
 });
 
-// ---------- 主持：旁白 ----------
+// ---------- 主持：旁白＋字幕 ----------
 
 let opts = {};             // 這局勾了哪些角色
 let script = null;         // 目前的旁白組
@@ -103,7 +148,7 @@ let idx = -1;              // 目前念到第幾句
 let playing = false;       // 連續播放中
 let waitTimer = 0;
 const audio = new Audio();
-const blobs = {};          // 句子 id → 預載好的音檔網址（離線、連播都不用再等網路）
+const blobs = {};          // 語言/句子 id → 預載好的音檔網址（離線、連播都不用再等網路）
 
 // when：選項 id 用 && 串起來，前面加 ! 表示「沒有這個角色」
 function match(when) {
@@ -119,9 +164,9 @@ function renderHost(g) {
   opts = {};
   for (const o of g.host.options) opts[o.id] = o.id in saved ? saved[o.id] : !!o.default;
   $('#options').innerHTML = g.host.options.map(o =>
-    `<button class="chip${opts[o.id] ? ' on' : ''}" data-opt="${o.id}">${esc(o.label)}</button>`).join('');
+    `<button class="chip${opts[o.id] ? ' on' : ''}" data-opt="${o.id}">${esc(tr(o.label))}</button>`).join('');
   $('#options').classList.toggle('hidden', !g.host.options.length);
-  $('#scripts').innerHTML = g.host.scripts.map(s => `<button data-script="${s.id}">${esc(s.title)}</button>`).join('');
+  $('#scripts').innerHTML = g.host.scripts.map(s => `<button data-script="${s.id}">${esc(tr(s.title))}</button>`).join('');
   $('#scripts').classList.toggle('hidden', g.host.scripts.length < 2);
   selectScript(g.host.scripts[0].id);
 }
@@ -140,38 +185,41 @@ function selectScript(id) {
 function rebuildLines() {
   lines = script.lines.filter(l => match(l.when));
   idx = -1;
-  $('#lines').innerHTML = lines.map((l, i) => `<li data-i="${i}">${esc(l.text)}</li>`).join('');
+  $('#lines').innerHTML = lines.map((l, i) => `<li data-i="${i}">${esc(tr(l.text))}</li>`).join('');
   showNow();
 }
 
 function showNow() {
   const t = $('#now-text');
   if (idx < 0) {
-    t.textContent = script.autoplay === false ? '點下面任一句就念那一句' : '按「連續播放」從第一句開始念，或點下面任一句單獨念';
+    t.textContent = ui(script.autoplay === false ? 'idleTap' : 'idleAuto');
     t.className = 'idle';
-  } else { t.textContent = lines[idx].text; t.className = ''; }
+  } else { t.textContent = tr(lines[idx].text); t.className = ''; }
   document.querySelectorAll('#lines li').forEach((li, i) => {
     li.classList.toggle('on', i === idx);
     li.classList.toggle('done', i < idx);
   });
   const on = document.querySelector('#lines li.on');
   if (on) on.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
-  $('#play').textContent = playing ? '⏸ 暫停' : (idx >= 0 && idx < lines.length - 1 ? '▶ 繼續播放' : '▶ 連續播放');
+  $('#play').textContent = ui(playing ? 'pause' : (idx >= 0 && idx < lines.length - 1 ? 'resume' : 'play'));
 }
 
-function audioUrl(l) { return blobs[l.id] || `games/${cur.id}/audio/${l.id}.mp3`; }
+const audioPath = (g, l, lg) => `games/${g.id}/audio/${lg}/${l.id}.mp3`;
+function audioUrl(l) { return blobs[lang + '/' + l.id] || audioPath(cur, l, lang); }
 
 async function preloadAudio(g) {
+  const lg = lang;
   for (const s of g.host.scripts) for (const l of s.lines) {
-    if (blobs[l.id]) continue;
+    const k = lg + '/' + l.id;
+    if (blobs[k]) continue;
     try {
-      const r = await fetch(`games/${g.id}/audio/${l.id}.mp3`);
-      if (r.ok) blobs[l.id] = URL.createObjectURL(await r.blob());
+      const r = await fetch(audioPath(g, l, lg));
+      if (r.ok) blobs[k] = URL.createObjectURL(await r.blob());
     } catch { /* 沒網路：播放時再試 */ }
   }
 }
 
-// 念一句；念完後若在連續播放，停頓 pause 秒接下一句
+// 念一句（字幕同步顯示）；念完後若在連續播放，停頓 pause 秒接下一句
 function say(i) {
   clearTimeout(waitTimer);
   waitBar(0);
@@ -186,16 +234,16 @@ function say(i) {
     waitTimer = setTimeout(() => say(i + 1), sec * 1000);
   };
   audio.onended = done;
-  audio.onerror = () => speakFallback(l.text, done);
+  audio.onerror = () => speakFallback(tr(l.text), done);
   audio.src = audioUrl(l);
-  audio.play().catch(() => speakFallback(l.text, done));
+  audio.play().catch(() => speakFallback(tr(l.text), done));
 }
 
-// 沒有音檔時（還沒產生、或離線沒快取到）：用瀏覽器內建語音，再不行就只顯示文字
+// 沒有音檔時（還沒產生、或離線沒快取到）：用瀏覽器內建語音，再不行就只顯示字幕
 function speakFallback(text, done) {
   if (window.speechSynthesis && window.SpeechSynthesisUtterance) {
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'zh-TW';
+    u.lang = SPEECH_LANG[lang];
     u.onend = done;
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
@@ -216,7 +264,7 @@ function stop() {
   audio.pause();
   if (window.speechSynthesis) speechSynthesis.cancel();
   waitBar(0);
-  if (script) showNow();
+  if (script && cur) showNow();
 }
 
 $('#play').addEventListener('click', () => {
@@ -239,7 +287,7 @@ $('#options').addEventListener('click', e => {
 });
 $('#scripts').addEventListener('click', e => { const b = e.target.closest('button'); if (b) selectScript(b.dataset.script); });
 $('#pace').addEventListener('click', e => {
-  const b = e.target.closest('button'); if (!b) return;
+  const b = e.target.closest('button[data-pace]'); if (!b) return;
   store.set('pace', +b.dataset.pace); markPace();
 });
 function markPace() {
@@ -251,6 +299,7 @@ $('#tabs').addEventListener('click', e => {
   const b = e.target.closest('button'); if (!b) return;
   location.replace(`#/${cur.id}/${b.dataset.tab}`);
 });
+
 // 從首頁點進來的就退回上一頁（App 的返回鍵也走瀏覽紀錄，兩邊才一致）；直接開遊戲網址的才換成首頁
 let cameFromHome = false;
 $('#back').addEventListener('click', () => {
@@ -263,11 +312,13 @@ window.addEventListener('hashchange', e => {
   const was = new URL(e.oldURL).hash.split('/')[1];
   if (!was) cameFromHome = true; else if (!location.hash.split('/')[1]) cameFromHome = false;
   route();
+  window.scrollTo(0, 0);
 });
 
+renderChrome();
 loadGames().then(() => { renderHome(); markPace(); route(); }).catch(e => {
   $('#home').classList.remove('hidden');
-  $('#game-list').innerHTML = `<li><p>載入失敗：${esc(e.message)}</p></li>`;
+  $('#game-list').innerHTML = `<li><p>${esc(ui('fail') + e.message)}</p></li>`;
 });
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => { });
