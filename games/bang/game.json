@@ -1,0 +1,506 @@
+{
+  "id": "bang",
+  "name": {
+    "zh": "砰！",
+    "en": "BANG!",
+    "ja": "BANG!"
+  },
+  "players": {
+    "zh": "4–7 人（擴充 8 人）",
+    "en": "4–7 players (8 with expansion)",
+    "ja": "4〜7人（拡張で8人）"
+  },
+  "time": {
+    "zh": "30–40 分鐘",
+    "en": "30–40 min",
+    "ja": "30〜40分"
+  },
+  "summary": {
+    "zh": "西部槍戰：警長和副警長對上罪犯，還有一個想當最後贏家的叛徒。只有警長亮身分，其他人邊開槍邊猜誰是誰。用手機秘密發身分。",
+    "en": "A Wild West shootout: the Sheriff and Deputies against the Outlaws, plus a Renegade who wants to be the last one standing. Only the Sheriff is known; everyone else shoots while guessing who is who. Deal the secret roles with one phone.",
+    "ja": "西部の撃ち合い。保安官と副保安官 vs 無法者、そして最後の一人を狙う裏切り者。正体が公開なのは保安官だけ。撃ち合いながら誰が誰かを推理する。役職はスマホで秘密に配れる。"
+  },
+  "rules": [
+    {
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
+      "md": {
+        "zh": [
+          "每個人拿一張祕密的**身分**和一張公開的**人物**。只有**警長**亮出身分，其他人都藏著。",
+          "",
+          "大家輪流抽牌、出牌，用「砰！」射別人、用「射失」躲子彈、喝啤酒補血。體力歸零就死，死的時候亮出身分。",
+          "",
+          "- **警長、副警長**：殺光所有罪犯和叛徒",
+          "- **罪犯**：殺死警長",
+          "- **叛徒**：成為最後一個活著的人——先幫警長清掉別人，最後再單挑警長",
+          "",
+          "副警長和罪犯都不知道誰是自己人，要從大家射誰、救誰去猜。"
+        ],
+        "en": [
+          "Everyone gets a secret **role** and a face-up **character**. Only the **Sheriff** reveals their role; everyone else keeps it hidden.",
+          "",
+          "On your turn you draw and play cards: shoot others with BANG!, dodge with Missed!, and drink Beer to heal. When your life reaches zero you are out and reveal your role.",
+          "",
+          "- **Sheriff and Deputies**: eliminate all Outlaws and the Renegade",
+          "- **Outlaws**: kill the Sheriff",
+          "- **Renegade**: be the last one alive — help clear out everyone else, then defeat the Sheriff in the end",
+          "",
+          "Deputies and Outlaws do not know who is on their side. Watch who shoots and who helps whom."
+        ],
+        "ja": [
+          "全員が秘密の**役職**と公開の**キャラクター**を持ちます。役職を公開するのは**保安官**だけで、他の人は隠します。",
+          "",
+          "手番ではカードを引いて使います。BANG! で撃ち、ミス！でかわし、ビールで回復。体力が 0 になると脱落し、役職を公開します。",
+          "",
+          "- **保安官・副保安官**：無法者と裏切り者を全員倒す",
+          "- **無法者**：保安官を倒す",
+          "- **裏切り者**：最後の一人になる。先に他の全員を片付け、最後に保安官を倒す",
+          "",
+          "副保安官も無法者も味方が誰かわかりません。誰が誰を撃ち、誰を助けるかで推理します。"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "人數與身分",
+        "en": "Players and roles",
+        "ja": "人数と役職"
+      },
+      "md": {
+        "zh": [
+          "| 人數 | 警長 | 副警長 | 罪犯 | 叛徒 |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 0 | 2 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8（擴充） | 1 | 2 | 3 | 2 |",
+          "",
+          "沒有身分牌也能玩：在「開局」用一支手機輪流傳，秘密發身分。",
+          "",
+          "8 人局如果警長死的時候只剩兩個叛徒活著，算罪犯贏。"
+        ],
+        "en": [
+          "| Players | Sheriff | Deputy | Outlaw | Renegade |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 0 | 2 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8 (expansion) | 1 | 2 | 3 | 2 |",
+          "",
+          "No role cards? Use the Play tab: pass one phone around to deal the roles secretly.",
+          "",
+          "In an 8-player game, if the Sheriff dies while only the two Renegades are left, the Outlaws win."
+        ],
+        "ja": [
+          "| 人数 | 保安官 | 副保安官 | 無法者 | 裏切り者 |",
+          "|---|---|---|---|---|",
+          "| 4 | 1 | 0 | 2 | 1 |",
+          "| 5 | 1 | 1 | 2 | 1 |",
+          "| 6 | 1 | 1 | 3 | 1 |",
+          "| 7 | 1 | 2 | 3 | 1 |",
+          "| 8（拡張） | 1 | 2 | 3 | 2 |",
+          "",
+          "役職カードがなくても「プレイ」タブでスマホを回せば秘密に配れます。",
+          "",
+          "8 人戦で、保安官が倒れたときに裏切り者 2 人だけが残っていたら無法者の勝ちです。"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
+      "md": {
+        "zh": [
+          "1. 發身分，警長亮出來",
+          "2. 每人隨機拿一張人物牌，正面朝上。人物牌上的子彈數是**體力**（也是手牌上限），**警長多 1 點**",
+          "3. 每人拿一張子彈牌（或用任何東西）記體力",
+          "4. 每人抽跟體力一樣多張的牌",
+          "5. 每人一開始的武器是**柯爾特 .45**（射程 1），不用牌",
+          "6. 警長先，順時針輪流"
+        ],
+        "en": [
+          "1. Deal the roles; the Sheriff reveals theirs",
+          "2. Everyone gets a random character face up. The bullets on it are your **life points** (and hand limit); **the Sheriff gets +1**",
+          "3. Track life with a bullet card or anything else",
+          "4. Everyone draws as many cards as their life points",
+          "5. Everyone starts with a **Colt .45** (range 1); no card needed",
+          "6. The Sheriff goes first, then clockwise"
+        ],
+        "ja": [
+          "1. 役職を配り、保安官は公開する",
+          "2. キャラクターカードを 1 枚ずつ表向きで配る。カードの弾の数が**体力**（手札の上限）。**保安官は +1**",
+          "3. 弾丸カードなどで体力を記録する",
+          "4. 体力と同じ枚数のカードを引く",
+          "5. 最初の武器は全員**コルト .45**（射程 1）。カードは不要",
+          "6. 保安官から時計回り"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "回合流程",
+        "en": "Your turn",
+        "ja": "手番の流れ"
+      },
+      "md": {
+        "zh": [
+          "**1. 抽牌**：抽 2 張。",
+          "",
+          "**2. 出牌**：想出幾張就出幾張，但：",
+          "- 「砰！」每回合**只能出 1 張**（連發槍、威利小子例外）",
+          "- 面前的藍邊牌不能有兩張同名，武器只能裝一把（換武器就把舊的棄掉）",
+          "",
+          "**3. 棄牌**：手牌超過目前體力的張數，棄到剩跟體力一樣。"
+        ],
+        "en": [
+          "**1. Draw**: draw 2 cards.",
+          "",
+          "**2. Play**: play as many cards as you like, but:",
+          "- Only **one BANG! per turn** (except with Volcanic or Willy the Kid)",
+          "- You may not have two blue cards with the same name in play, and only one weapon (replacing it discards the old one)",
+          "",
+          "**3. Discard**: if you hold more cards than your current life points, discard down to that number."
+        ],
+        "ja": [
+          "**1. ドロー**：2 枚引く。",
+          "",
+          "**2. カードを使う**：何枚使ってもよいが、",
+          "- BANG! は**1 手番に 1 枚まで**（ボルカニック、ウィリー・ザ・キッドは例外）",
+          "- 同じ名前の青枠カードを 2 枚置けない。武器は 1 つだけ（付け替えたら古い方を捨てる）",
+          "",
+          "**3. 捨て札**：手札が今の体力より多ければ、体力と同じ枚数まで捨てる。"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "距離與射程",
+        "en": "Distance and range",
+        "ja": "距離と射程"
+      },
+      "md": {
+        "zh": [
+          "- 兩人之間的**距離**＝順時針或逆時針數過去，取比較近的那邊。隔壁是 1，再隔一人是 2；死掉的人不算",
+          "- 你的「砰！」只能打到距離 ≤ 武器**射程**的人",
+          "- **野馬**：別人看你距離 +1；**瞄準鏡**：你看別人距離 −1",
+          "- 「驚嚎」不看距離；「恐慌」只能對距離 1 的人",
+          "",
+          "| 武器 | 射程 |",
+          "|---|---|",
+          "| 柯爾特 .45（預設） | 1 |",
+          "| 連發槍 | 1，「砰！」不限次數 |",
+          "| 斯科菲爾德 | 2 |",
+          "| 雷明頓 | 3 |",
+          "| 卡賓槍 | 4 |",
+          "| 溫徹斯特 | 5 |"
+        ],
+        "en": [
+          "- **Distance** between two players is the number of seats between them, counting the shorter way round. Neighbours are 1, the next ones 2; dead players do not count",
+          "- Your BANG! can only target players within your weapon's **range**",
+          "- **Mustang**: others see you at +1 distance; **Scope**: you see others at −1",
+          "- Cat Balou works at any distance; Panic! only at distance 1",
+          "",
+          "| Weapon | Range |",
+          "|---|---|",
+          "| Colt .45 (default) | 1 |",
+          "| Volcanic | 1, unlimited BANG! |",
+          "| Schofield | 2 |",
+          "| Remington | 3 |",
+          "| Rev. Carabine | 4 |",
+          "| Winchester | 5 |"
+        ],
+        "ja": [
+          "- 2 人の**距離**は、時計回りと反時計回りで近い方の席数。隣が 1、その隣が 2。脱落者は数えない",
+          "- BANG! は武器の**射程**以内の距離の人にしか撃てない",
+          "- **マスタング**：他の人から見た自分の距離 +1。**スコープ**：自分から見た他の人の距離 −1",
+          "- キャット・バルーは距離無関係、パニック！は距離 1 のみ",
+          "",
+          "| 武器 | 射程 |",
+          "|---|---|",
+          "| コルト .45（初期） | 1 |",
+          "| ボルカニック | 1、BANG! 何枚でも |",
+          "| スコフィールド | 2 |",
+          "| レミントン | 3 |",
+          "| カービン | 4 |",
+          "| ウィンチェスター | 5 |"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "棕邊牌（出了就生效）",
+        "en": "Brown cards (one-shot)",
+        "ja": "茶枠カード（使い切り）"
+      },
+      "md": {
+        "zh": [
+          "- **砰！**（25 張）：射程內一人扣 1 體力，除非他出「射失」",
+          "- **射失**（12 張）：躲掉一發子彈（只能在被射時出）",
+          "- **啤酒**（6 張）：自己回 1 體力（不超過上限）；只剩 2 人時沒效",
+          "- **酒館**（1 張）：所有人回 1 體力",
+          "- **驛馬車**（2 張）：抽 2 張",
+          "- **富國銀行**（1 張）：抽 3 張",
+          "- **雜貨店**（2 張）：翻開跟活人數一樣多的牌，從你開始每人挑 1 張",
+          "- **驚嚎**（4 張）：任何距離，棄掉一人的 1 張牌（手牌隨機抽或面前的牌）",
+          "- **恐慌**（4 張）：距離 1，拿走一人的 1 張牌",
+          "- **決鬥**（3 張）：挑一人，從他開始輪流棄「砰！」，先棄不出的人扣 1 體力",
+          "- **加特林**（1 張）：對所有其他人各打一發「砰！」（不算你這回合的砰）",
+          "- **印第安人**（2 張）：其他每人棄一張「砰！」，棄不出的扣 1 體力"
+        ],
+        "en": [
+          "- **BANG!** (25): One player in range loses 1 life unless they play Missed!",
+          "- **Missed!** (12): Cancel one shot (only when shot)",
+          "- **Beer** (6): Regain 1 life (up to max); no effect when only 2 players remain",
+          "- **Saloon** (1): Everyone regains 1 life",
+          "- **Stagecoach** (2): Draw 2 cards",
+          "- **Wells Fargo** (1): Draw 3 cards",
+          "- **General Store** (2): Reveal one card per living player; starting with you, each picks one",
+          "- **Cat Balou** (4): Any distance: make a player discard 1 card (random from hand, or one in play)",
+          "- **Panic!** (4): Distance 1: take 1 card from a player",
+          "- **Duel** (3): Pick a player; starting with them, alternate discarding BANG!; the first who can't loses 1 life",
+          "- **Gatling** (1): A BANG! at every other player (does not count as your BANG!)",
+          "- **Indians!** (2): Every other player discards a BANG! or loses 1 life"
+        ],
+        "ja": [
+          "- **BANG!**（25 枚）：射程内の 1 人の体力 −1（ミス！で回避可）",
+          "- **ミス！**（12 枚）：撃たれたときに 1 発かわす",
+          "- **ビール**（6 枚）：自分の体力 +1（上限まで）。残り 2 人のときは無効",
+          "- **酒場**（1 枚）：全員の体力 +1",
+          "- **駅馬車**（2 枚）：2 枚引く",
+          "- **ウェルズ・ファーゴ**（1 枚）：3 枚引く",
+          "- **雑貨店**（2 枚）：生存者の数だけめくり、自分から 1 枚ずつ選ぶ",
+          "- **キャット・バルー**（4 枚）：距離無関係で 1 人のカードを 1 枚捨てさせる（手札からランダムか場のカード）",
+          "- **パニック！**（4 枚）：距離 1 の人からカードを 1 枚奪う",
+          "- **決闘**（3 枚）：1 人を選び、相手から交互に BANG! を捨てる。先に出せない方が体力 −1",
+          "- **ガトリング**（1 枚）：他の全員に BANG!（この手番の BANG! には数えない）",
+          "- **インディアン！**（2 枚）：他の全員は BANG! を捨てるか体力 −1"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "藍邊牌（放在面前）",
+        "en": "Blue cards (stay in play)",
+        "ja": "青枠カード（場に置く）"
+      },
+      "md": {
+        "zh": [
+          "- **武器**（8 張）：見〈距離與射程〉：連發槍 2、斯科菲爾德 3、雷明頓・卡賓槍・溫徹斯特各 1",
+          "- **酒桶**（2 張）：被射時可以「抽判定」，紅心就算躲掉",
+          "- **野馬**（2 張）：別人看你距離 +1",
+          "- **瞄準鏡**（1 張）：你看別人距離 −1",
+          "- **監獄**（3 張）：放在別人面前（不能關警長）。他回合開始抽判定：紅心就逃出、照常行動；不是紅心就跳過這回合。牌都會棄掉",
+          "- **炸藥**（1 張）：放在自己面前。之後每回合開始抽判定：黑桃 2～9 就爆炸，扣 3 體力；沒爆就傳給左邊的人"
+        ],
+        "en": [
+          "- **Weapons** (8): See Distance and range: Volcanic 2, Schofield 3, Remington / Rev. Carabine / Winchester 1 each",
+          "- **Barrel** (2): When shot, you may \"draw!\": a heart counts as Missed!",
+          "- **Mustang** (2): Others see you at +1 distance",
+          "- **Scope** (1): You see others at −1 distance",
+          "- **Jail** (3): Put in front of another player (not the Sheriff). At the start of their turn they \"draw!\": a heart escapes and plays normally; otherwise they skip the turn. Jail is discarded either way",
+          "- **Dynamite** (1): Put in front of yourself. At the start of each later turn, \"draw!\": spades 2–9 explodes for 3 damage; otherwise pass it to the player on your left"
+        ],
+        "ja": [
+          "- **武器**（8 枚）：〈距離と射程〉参照：ボルカニック 2、スコフィールド 3、レミントン・カービン・ウィンチェスター各 1",
+          "- **樽**（2 枚）：撃たれたとき「判定」でき、ハートならミス！扱い",
+          "- **マスタング**（2 枚）：他の人から見た距離 +1",
+          "- **スコープ**（1 枚）：自分から見た距離 −1",
+          "- **牢屋**（3 枚）：他の人の前に置く（保安官には不可）。その人は手番の最初に判定し、ハートなら脱出して通常通り、それ以外は手番を飛ばす。どちらでも牢屋は捨てる",
+          "- **ダイナマイト**（1 枚）：自分の前に置く。以降の手番の最初に判定し、スペードの 2〜9 なら爆発して体力 −3、それ以外は左隣に渡す"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "抽判定",
+        "en": "\"Draw!\"",
+        "ja": "判定"
+      },
+      "md": {
+        "zh": [
+          "有些牌要「抽判定」：從牌堆翻開最上面一張，看它的**花色和點數**，看完就棄掉。",
+          "",
+          "- 酒桶：紅心 → 躲掉",
+          "- 監獄：紅心 → 逃出",
+          "- 炸藥：黑桃 2～9 → 爆炸",
+          "",
+          "回合開始時炸藥和監獄都在面前的話，**先判炸藥**。"
+        ],
+        "en": [
+          "Some cards make you \"draw!\": flip the top card of the deck, check its **suit and value**, then discard it.",
+          "",
+          "- Barrel: heart → missed",
+          "- Jail: heart → escape",
+          "- Dynamite: spades 2–9 → explodes",
+          "",
+          "If you have both Dynamite and Jail at the start of your turn, **check Dynamite first**."
+        ],
+        "ja": [
+          "一部のカードは「判定」をします。山札の一番上をめくって**スートと数字**を見て、捨てます。",
+          "",
+          "- 樽：ハート → かわす",
+          "- 牢屋：ハート → 脱出",
+          "- ダイナマイト：スペードの 2〜9 → 爆発",
+          "",
+          "手番の最初にダイナマイトと牢屋の両方があれば、**ダイナマイトから先に**判定します。"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "死亡與獎懲",
+        "en": "Death, rewards and penalties",
+        "ja": "脱落と賞罰"
+      },
+      "md": {
+        "zh": [
+          "- 體力歸零時，可以馬上出「啤酒」回 1 點救自己（只剩 2 人時不行）",
+          "- 死了就亮出身分，手牌和面前的牌全部棄掉",
+          "- **任何人殺死罪犯**：抽 3 張牌",
+          "- **警長殺死副警長**：警長要棄掉所有手牌和面前的牌",
+          "",
+          "**勝負**",
+          "- 警長死了：如果只剩叛徒一個人活著，叛徒贏；否則罪犯贏（就算罪犯都死了也一樣）",
+          "- 罪犯和叛徒全死：警長和副警長贏（死掉的副警長也算贏）"
+        ],
+        "en": [
+          "- When your life hits zero you may immediately play a Beer to survive with 1 life (not when only 2 players remain)",
+          "- When you die, reveal your role and discard all your cards in hand and in play",
+          "- **Anyone who kills an Outlaw**: draws 3 cards",
+          "- **The Sheriff kills a Deputy**: the Sheriff discards all cards in hand and in play",
+          "",
+          "**Winning**",
+          "- The Sheriff dies: if the Renegade is the only one left, the Renegade wins; otherwise the Outlaws win (even if they are all dead)",
+          "- All Outlaws and Renegades are dead: the Sheriff and Deputies win (dead Deputies win too)"
+        ],
+        "ja": [
+          "- 体力が 0 になったら、すぐにビールを出して体力 1 で踏みとどまれる（残り 2 人のときは不可）",
+          "- 脱落したら役職を公開し、手札と場のカードをすべて捨てる",
+          "- **無法者を倒した人**：カードを 3 枚引く",
+          "- **保安官が副保安官を倒した**：保安官は手札と場のカードをすべて捨てる",
+          "",
+          "**勝敗**",
+          "- 保安官が倒れた：裏切り者が 1 人だけ残っていれば裏切り者の勝ち。それ以外は無法者の勝ち（無法者が全滅していても）",
+          "- 無法者と裏切り者が全滅：保安官と副保安官の勝ち（脱落した副保安官も勝ち）"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "16 個人物",
+        "en": "The 16 characters",
+        "ja": "16 人のキャラクター"
+      },
+      "md": {
+        "zh": [
+          "括號是體力。",
+          "",
+          "- **巴特·卡西迪**（4）：每扣 1 體力就抽 1 張",
+          "- **黑傑克**（4）：抽牌時亮出第 2 張，紅心或方塊就再抽 1 張",
+          "- **災星珍妮**（4）：「砰！」可以當「射失」用，反過來也行",
+          "- **艾爾·格林戈**（3）：每被打掉 1 體力，就從打他的人手上抽 1 張",
+          "- **傑西·瓊斯**（4）：抽牌時第 1 張可以從別人手牌抽",
+          "- **喬多奈**（4）：自帶酒桶效果",
+          "- **基特·卡爾森**（4）：抽牌時看牌堆頂 3 張，留 2 張、放回 1 張",
+          "- **幸運杜克**（4）：抽判定時翻 2 張，自己挑一張",
+          "- **保羅·瑞格瑞特**（3）：自帶野馬（別人看他 +1）",
+          "- **佩德羅·拉米瑞茲**（4）：抽牌時第 1 張可以拿棄牌堆最上面那張",
+          "- **蘿絲·杜蘭**（4）：自帶瞄準鏡（看別人 −1）",
+          "- **席德·凱瓊**（4）：隨時棄 2 張牌回 1 體力",
+          "- **殺手史萊伯**（4）：他的「砰！」要 2 張「射失」才躲得掉",
+          "- **蘇西·拉法葉**（4）：手牌一沒有就抽 1 張",
+          "- **禿鷹山姆**（4）：有人死了，他拿走那人所有的牌",
+          "- **威利小子**（4）：「砰！」不限次數",
+          "",
+          "人物名稱各版本翻譯不同，以手上的牌為準。"
+        ],
+        "en": [
+          "Life points in brackets.",
+          "",
+          "- **Bart Cassidy** (4): draws a card each time he loses a life point",
+          "- **Black Jack** (4): shows his second drawn card; if it is a heart or diamond, he draws one more",
+          "- **Calamity Janet** (4): may use BANG! as Missed! and vice versa",
+          "- **El Gringo** (3): each time he loses a life point, he draws a card from the hand of the player who hit him",
+          "- **Jesse Jones** (4): may draw his first card from another player's hand",
+          "- **Jourdonnais** (4): always has a built-in Barrel",
+          "- **Kit Carlson** (4): looks at the top 3 cards, keeps 2 and puts 1 back",
+          "- **Lucky Duke** (4): on \"draw!\" flips 2 cards and chooses one",
+          "- **Paul Regret** (3): built-in Mustang (others see him at +1)",
+          "- **Pedro Ramirez** (4): may draw his first card from the top of the discard pile",
+          "- **Rose Doolan** (4): built-in Scope (sees others at −1)",
+          "- **Sid Ketchum** (4): may discard 2 cards at any time to regain 1 life",
+          "- **Slab the Killer** (4): his BANG! needs 2 Missed! to cancel",
+          "- **Suzy Lafayette** (4): draws a card as soon as her hand is empty",
+          "- **Vulture Sam** (4): takes all the cards of any player who dies",
+          "- **Willy the Kid** (4): may play any number of BANG!"
+        ],
+        "ja": [
+          "かっこ内は体力。",
+          "",
+          "- **バート・キャシディ**（4）：体力を 1 失うたびに 1 枚引く",
+          "- **ブラック・ジャック**（4）：ドローの 2 枚目を公開し、ハートかダイヤならもう 1 枚引く",
+          "- **カラミティ・ジャネット**（4）：BANG! をミス！として、ミス！を BANG! として使える",
+          "- **エル・グリンゴ**（3）：体力を 1 失うたびに、撃った人の手札から 1 枚引く",
+          "- **ジェシー・ジョーンズ**（4）：ドローの 1 枚目を他の人の手札から引ける",
+          "- **ジョルドネ**（4）：常に樽を持っている扱い",
+          "- **キット・カールソン**（4）：山札の上 3 枚を見て 2 枚取り、1 枚戻す",
+          "- **ラッキー・デューク**（4）：判定で 2 枚めくり、好きな方を選ぶ",
+          "- **ポール・リグレット**（3）：常にマスタング（他の人から +1）",
+          "- **ペドロ・ラミレス**（4）：ドローの 1 枚目を捨て札の一番上から取れる",
+          "- **ローズ・ドゥーラン**（4）：常にスコープ（他の人へ −1）",
+          "- **シド・ケッチャム**（4）：いつでも 2 枚捨てて体力 +1",
+          "- **スラブ・ザ・キラー**（4）：彼の BANG! はミス！2 枚でないとかわせない",
+          "- **スージー・ラファイエット**（4）：手札が 0 枚になったらすぐ 1 枚引く",
+          "- **バルチャー・サム**（4）：誰かが脱落したら、その人のカードをすべてもらう",
+          "- **ウィリー・ザ・キッド**（4）：BANG! を何枚でも使える"
+        ]
+      }
+    },
+    {
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips for new players",
+        "ja": "初心者向けのヒント"
+      },
+      "md": {
+        "zh": [
+          "- 副警長：不要太早亮自己的立場，罪犯會先打你",
+          "- 叛徒：前期假裝是副警長幫警長，罪犯死光前不要讓警長死",
+          "- 罪犯：互相不認識，看誰在射警長就知道誰是同伴",
+          "- 警長：射錯副警長會被罰棄光牌，不確定時先打已經露餡的人",
+          "- 「射失」是保命牌，不要隨便拿去棄"
+        ],
+        "en": [
+          "- Deputy: don't reveal your side too early, or the Outlaws will target you",
+          "- Renegade: act like a Deputy early on; don't let the Sheriff die before the Outlaws are gone",
+          "- Outlaws: you don't know each other — whoever shoots the Sheriff is probably on your side",
+          "- Sheriff: shooting a Deputy costs you all your cards; when unsure, go after players who have shown their hand",
+          "- Missed! keeps you alive — don't throw it away lightly"
+        ],
+        "ja": [
+          "- 副保安官：早く立場を見せると無法者に狙われる",
+          "- 裏切り者：序盤は副保安官のふりをして保安官を助け、無法者が全滅する前に保安官を倒させない",
+          "- 無法者：お互いを知らないので、保安官を撃っている人が仲間",
+          "- 保安官：副保安官を倒すと手札を全部失う。迷ったら正体がばれた人から狙う",
+          "- ミス！は命綱。気軽に捨てない"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "bang",
+    "title": {
+      "zh": "發身分",
+      "en": "Roles",
+      "ja": "役職配り"
+    }
+  }
+}

@@ -175,6 +175,7 @@
   }
 
   function onClick(ev) {
+    if (el.dataset.mode !== 'undercover') return;   // 開局頁是各模式共用的容器，別的遊戲在用時不處理
     const b = ev.target.closest('button[data-act]'); if (!b || b.disabled) return;
     const act = b.dataset.act;
     const wasArmed = armed;
@@ -211,6 +212,7 @@
       ctx = c;
       loadExtra();
       if (el !== node) { el = node; el.addEventListener('click', onClick); }
+      el.dataset.mode = 'undercover';
       S = ctx.store.get('undercover.state', null);
       // 重開 App 或換語言時先蓋回去，不讓手上拿著手機的下一個人看到前一個人的詞
       if (S && S.shown) { S.shown = false; save(); }
