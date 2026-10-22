@@ -36,6 +36,7 @@ const tr = v => v && typeof v === 'object' && !Array.isArray(v) ? (v[lang] ?? v.
 
 function renderChrome() {
   document.documentElement.lang = { zh: 'zh-Hant', en: 'en', ja: 'ja' }[lang];
+  $('#ver').textContent = 'v' + APP_VERSION;
   $('#langs').innerHTML = LANGS.map(x => `<button data-lang="${x.key}" class="${x.key === lang ? 'on' : ''}">${x.label}</button>`).join('');
   for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = ui(el.dataset.i18n);
   $('#back').setAttribute('aria-label', ui('back'));
@@ -86,6 +87,7 @@ function route() {
   $('#home').classList.toggle('hidden', !!g);
   $('#game').classList.toggle('hidden', !g);
   $('#back').classList.toggle('hidden', !g);
+  $('#ver').classList.toggle('hidden', !!g);   // 版號只在主畫面顯示
   if (!g) { cur = null; $('#title').textContent = ui('app'); document.title = ui('app'); return; }
   const tabs = tabsOf(g);
   if (cur !== g) {

@@ -1,8 +1,9 @@
-/* 離線快取：先用快取秒開，背景抓新版，下次打開就是新的。改了網頁本體（html／css／js）就把 VERSION 加一。
+/* 離線快取：先用快取秒開，背景抓新版，下次打開就是新的。版號在 js/version.js，改了網頁本體（html／css／js）就加版號。
    遊戲資料與旁白音檔不在清單裡，第一次讀到就存進快取（桌遊常在收訊差的地方玩，主持頁打開過一次就能離線念）。 */
-const VERSION = 'kbg-1.2.0';
+importScripts('js/version.js');
+const VERSION = 'kbg-' + APP_VERSION;
 const FILES = [
-  './', 'index.html', 'style.css', 'manifest.webmanifest', 'js/app.js', 'js/modes/undercover.js',
+  './', 'index.html', 'style.css', 'manifest.webmanifest', 'js/version.js', 'js/app.js', 'js/modes/undercover.js',
   'icons/icon-192.png', 'icons/icon-512.png',
 ];
 

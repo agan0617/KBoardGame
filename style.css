@@ -25,6 +25,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   height: 52px; padding: 0 8px; background: var(--bg); border-bottom: 1px solid var(--line);
 }
 #bar h1 { margin: 0 8px; font-size: 19px; font-weight: 600; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#ver { margin-right: 8px; font-size: 12px; color: var(--dim); flex: none; }
 #langs { display: flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; flex: none; }
 #langs button { padding: 5px 10px; font-size: 13px; font-weight: 600; color: var(--dim); }
 #langs button.on { background: var(--accent); color: var(--accent-ink); }
