@@ -80,3 +80,13 @@
 - `games/`：遊戲資料與旁白音檔（`audio/<語言>/_tts.json` 記每句念的是哪個版本）
 - `tools/make_audio.py`：產生旁白音檔（Azure 語音 eastasia；金鑰不進 repo）
 - `tools/make_icons.py`：產生圖示（需要 Pillow）
+
+## 版權
+
+Copyright © 2026 agan0617. All rights reserved. 保留所有權利，詳見 [LICENSE](LICENSE)。
+
+使用的第三方素材（依各自授權）：
+
+- **Microsoft Azure 神經語音（zh-TW-YunJheNeural、en-GB-RyanNeural、ja-JP-KeitaNeural）**：games/avalon/audio/ 的旁白 mp3 用 Azure 語音合成，Microsoft Azure 服務條款（合成語音的使用規範）（https://azure.microsoft.com/products/ai-services/text-to-speech）
+
+本作品是個人製作的非官方作品，與 阿瓦隆 The Resistance: Avalon（Indie Boards & Cards（設計 Don Eskridge））、砰！BANG!（dV Giochi（設計 Emiliano Sciarra））、三國殺（遊卡桌遊（Yoka Games）） 沒有關係；相關名稱與商標屬原權利人所有。
