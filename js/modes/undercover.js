@@ -1,5 +1,6 @@
 /* 誰是臥底：單機傳遞模式。一支手機輪流傳，每人點開看自己的詞再蓋起來；描述、投票在桌上進行，
-   出局的人在這裡點掉，自動公布身分、判勝負。詞庫在 game.json 的 play.words（每一語各自一份，不是互相翻譯）。
+   出局的人在這裡點掉，自動公布身分、判勝負。詞庫在 game.json 的 play.words（每一語各自一份，不是互相翻譯）；
+   大詞庫放在 play.wordsFile 指的獨立檔（例 words.zh.json），打開開局頁才載入，載入前先用 play.words。
    進行中的局存在 localStorage，App 被關掉或重新整理也接得回來。 */
 'use strict';
 (window.KBG_MODES = window.KBG_MODES || {}).undercover = (() => {
@@ -15,7 +16,7 @@
       civ: '平民', uc: '臥底', bl: '白板', alive: '還在場：平民 {0}・臥底方 {1}',
       civWin: '平民獲勝！', ucWin: '臥底獲勝！', civWinTip: '臥底和白板全部被找出來了。', ucWinTip: '平民人數不比臥底方多，臥底藏到了最後。',
       words: '平民的詞：{0}　臥底的詞：{1}', again: '再來一局', settings: '改設定',
-      quit: '放棄這局', quitSure: '確定放棄？再按一次', outTag: '出局', noWords: '這個語言還沒有詞庫',
+      quit: '放棄這局', quitSure: '確定放棄？再按一次', redeal: '換一組詞，重新發', redealSure: '確定換詞？再按一次', outTag: '出局', noWords: '這個語言還沒有詞庫',
     },
     en: {
       players: 'Players', undercover: 'Undercover', blank: 'Blank', none: 'None', add: 'Add 1',
@@ -28,7 +29,7 @@
       civ: 'Civilian', uc: 'Undercover', bl: 'Blank', alive: 'Still in: {0} civilians · {1} on the undercover side',
       civWin: 'Civilians win!', ucWin: 'Undercover wins!', civWinTip: 'Every undercover and blank player was found.', ucWinTip: 'Civilians no longer outnumber the undercover side.',
       words: 'Civilian word: {0}   Undercover word: {1}', again: 'Play again', settings: 'Change settings',
-      quit: 'Abandon game', quitSure: 'Sure? Tap again', outTag: 'Out', noWords: 'No word list for this language yet',
+      quit: 'Abandon game', quitSure: 'Sure? Tap again', redeal: 'New words, deal again', redealSure: 'New words? Tap again', outTag: 'Out', noWords: 'No word list for this language yet',
     },
     ja: {
       players: '人数', undercover: '潜入者', blank: '白紙', none: 'なし', add: '1人入れる',
@@ -41,11 +42,18 @@
       civ: '市民', uc: '潜入者', bl: '白紙', alive: '残り：市民 {0}・潜入者側 {1}',
       civWin: '市民の勝ち！', ucWin: '潜入者の勝ち！', civWinTip: '潜入者と白紙を全員見つけました。', ucWinTip: '市民の人数が潜入者側を上回らなくなりました。',
       words: '市民のお題：{0}　潜入者のお題：{1}', again: 'もう一回', settings: '設定を変える',
-      quit: 'このゲームをやめる', quitSure: '本当に？もう一度タップ', outTag: '脱落', noWords: 'この言語のお題はまだありません',
+      quit: 'このゲームをやめる', quitSure: '本当に？もう一度タップ', redeal: 'お題を変えて配り直す', redealSure: 'お題を変える？もう一度タップ', outTag: '脱落', noWords: 'この言語のお題はまだありません',
     },
   };
 
-  let el, ctx, S, quitArmed = false;
+  let el, ctx, S, armed = '';   // 要按兩次才生效的按鈕（quit／redeal），第一次按下時記在這裡
+  const extra = {};   // 語言 → 從 wordsFile 載入的詞庫
+  const wordList = () => extra[ctx.lang] || ctx.game.play.words[ctx.lang] || ctx.game.play.words.zh;
+  function loadExtra() {
+    const lang = ctx.lang, file = (ctx.game.play.wordsFile || {})[lang];
+    if (!file || extra[lang]) return;
+    fetch(`games/${ctx.game.id}/${file}`).then(r => r.ok ? r.json() : null).then(a => { if (Array.isArray(a) && a.length) extra[lang] = a; }).catch(() => { });
+  }
   const t = (k, ...a) => (T[ctx.lang] || T.zh)[k].replace(/\{(\d)\}/g, (_, i) => a[i]);
   const save = () => ctx.store.set('undercover.state', S);
   const rnd = n => Math.floor(Math.random() * n);
@@ -67,13 +75,13 @@
 
   function deal() {
     const c = cfg();
-    const list = ctx.game.play.words[ctx.lang] || ctx.game.play.words.zh;
-    // 避開最近用過的詞組
+    const list = wordList();
+    // 避開最近用過的詞組（最多記 500 組，詞庫大時不必全記）
     const recent = ctx.store.get('undercover.recent', []);
     let pool = list.map((_, i) => i).filter(i => !recent.includes(ctx.lang + i));
     if (!pool.length) pool = list.map((_, i) => i);
     const pi = pool[rnd(pool.length)];
-    ctx.store.set('undercover.recent', [ctx.lang + pi, ...recent].slice(0, Math.floor(list.length * 0.7)));
+    ctx.store.set('undercover.recent', [ctx.lang + pi, ...recent].slice(0, Math.min(500, Math.floor(list.length * 0.7))));
     const pair = rnd(2) ? list[pi] : [list[pi][1], list[pi][0]];
     const roles = shuffle([...Array(c.uc).fill('uc'), ...Array(c.blank).fill('bl'), ...Array(c.n - c.uc - c.blank).fill('civ')]);
     S = { phase: 'deal', civWord: pair[0], ucWord: pair[1], cur: 0, shown: false, round: 1, pick: -1, last: null,
@@ -110,6 +118,8 @@
   // ---------- 畫面 ----------
 
   const btn = (act, label, cls = '') => `<button class="${cls}" data-act="${act}">${ctx.esc(label)}</button>`;
+  // 發詞到遊戲中都能換詞重發（同樣設定、換一組詞，從 1 號重新傳）；遊戲中才有放棄這局
+  const foot = () => `<p class="uc-foot">${btn('redeal', t(armed === 'redeal' ? 'redealSure' : 'redeal'), 'link')}${S.phase === 'play' ? btn('quit', t(armed === 'quit' ? 'quitSure' : 'quit'), 'link') : ''}</p>`;
   const stepper = (k, v, lo, hi) => `<div class="uc-step"><button data-act="dec" data-k="${k}"${v <= lo ? ' disabled' : ''}>−</button><b>${v}</b><button data-act="inc" data-k="${k}"${v >= hi ? ' disabled' : ''}>＋</button></div>`;
 
   function render() {
@@ -117,7 +127,7 @@
     let h = '';
     if (!S || S.phase === 'setup') {
       const c = cfg();
-      const hasWords = ctx.game.play.words[ctx.lang];
+      const hasWords = ctx.game.play.words[ctx.lang] || extra[ctx.lang];
       h = `<div class="uc-card uc-setup">
         <div class="uc-row"><span>${e(t('players'))}</span>${stepper('n', c.n, MIN, MAX)}</div>
         <div class="uc-row"><span>${e(t('undercover'))}</span>${stepper('uc', c.uc, 1, maxUc(c))}</div>
@@ -135,9 +145,9 @@
           ${p.role === 'bl' ? `<p class="uc-tip">${e(t('blankTip'))}</p>` : ''}
           ${btn('hide', t('gotIt'), 'big')}
         </div>`;
-      h += `<p class="uc-progress">${S.players.map((_, i) => `<i class="${i < S.cur ? 'done' : i === S.cur ? 'on' : ''}"></i>`).join('')}</p>`;
+      h += `<p class="uc-progress">${S.players.map((_, i) => `<i class="${i < S.cur ? 'done' : i === S.cur ? 'on' : ''}"></i>`).join('')}</p>` + foot();
     } else if (S.phase === 'ready') {
-      h = `<div class="uc-card uc-pass"><p class="uc-big">${e(t('allSeen'))}</p>${btn('play', t('toPlay'), 'big')}</div>`;
+      h = `<div class="uc-card uc-pass"><p class="uc-big">${e(t('allSeen'))}</p>${btn('play', t('toPlay'), 'big')}</div>` + foot();
     } else if (S.phase === 'play') {
       const c = counts();
       h = `<div class="uc-card">
@@ -150,7 +160,7 @@
         <div class="uc-grid">${S.players.map((p, i) => `<button data-act="pick" data-i="${i}" class="${p.out ? 'out' : ''}${S.pick === i ? ' on' : ''}${S.starter === i ? ' first' : ''}"${p.out ? ' disabled' : ''}>
           <b>${i + 1}</b>${p.out ? `<small>${e(roleName(p.role))}</small>` : ''}</button>`).join('')}</div>
         ${S.pick >= 0 ? `<div class="uc-confirm">${btn('cancel', t('cancel'))}${btn('out', t('out', S.pick + 1), 'big')}</div>` : ''}
-        <p class="uc-foot">${btn('quit', quitArmed ? t('quitSure') : t('quit'), 'link')}</p>`;
+        ${foot()}`;
     } else if (S.phase === 'end') {
       h = `<div class="uc-card uc-end ${S.winner}">
           ${S.last != null ? `<p class="uc-last">${e(t('wasRole', S.last + 1, roleName(S.players[S.last].role)))}</p>` : ''}
@@ -167,7 +177,8 @@
   function onClick(ev) {
     const b = ev.target.closest('button[data-act]'); if (!b || b.disabled) return;
     const act = b.dataset.act;
-    if (act !== 'quit') quitArmed = false;
+    const wasArmed = armed;
+    armed = '';
     const c = cfg();
     switch (act) {
       case 'inc': case 'dec': {
@@ -187,7 +198,8 @@
       case 'pick': S.pick = S.pick === +b.dataset.i ? -1 : +b.dataset.i; break;
       case 'cancel': S.pick = -1; break;
       case 'out': eliminate(S.pick); return;
-      case 'quit': if (!quitArmed) { quitArmed = true; render(); return; } quitArmed = false; S = null; break;
+      case 'quit': if (wasArmed !== 'quit') { armed = 'quit'; render(); return; } S = null; break;
+      case 'redeal': if (wasArmed !== 'redeal') { armed = 'redeal'; render(); return; } deal(); return;
       case 'settings': S = null; break;
     }
     save(); render();
@@ -197,6 +209,7 @@
   return {
     mount(node, c) {
       ctx = c;
+      loadExtra();
       if (el !== node) { el = node; el.addEventListener('click', onClick); }
       S = ctx.store.get('undercover.state', null);
       // 重開 App 或換語言時先蓋回去，不讓手上拿著手機的下一個人看到前一個人的詞

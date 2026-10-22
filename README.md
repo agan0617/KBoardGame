@@ -22,7 +22,7 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 | 遊戲 | 人數 | App 幫什麼 |
 |---|---|---|
 | 阿瓦隆 | 5–10 人 | 主持旁白：夜晚（依派西維爾、莫甘娜、莫德雷德、奧伯倫自動調整）、口令（投票、任務卡）、刺殺 |
-| 誰是臥底 | 4–12 人 | 開局（單機傳遞）：一支手機輪流傳、點開看自己的詞再蓋起來；指定誰先描述、點出局的人公布身分、自動判勝負。詞庫中英日各 50 組，各語言自己的詞，不是互相翻譯 |
+| 誰是臥底 | 4–12 人 | 開局（單機傳遞）：一支手機輪流傳、點開看自己的詞再蓋起來；指定誰先描述、點出局的人公布身分、自動判勝負；發詞後不喜歡這組詞可以換詞重發。詞庫中文 11,526 組（70 個類別）、英日各 50 組，各語言自己的詞，不是互相翻譯 |
 
 ## 新增一款遊戲
 
@@ -66,7 +66,7 @@ Android App：[KBoardGameApp](https://github.com/agan0617/KBoardGameApp)（WebVi
 ```
 
 - 沒有旁白的遊戲不寫 `host`，就沒有主持頁
-- 要寫程式的玩法放 `"play": { "type": "<模組名>", ... }`，模組寫在 `js/modes/<模組名>.js`（註冊到 `window.KBG_MODES`，提供 `mount(容器, { game, lang, tr, esc, store })`），並加進 `index.html` 的 `<script>` 與 `sw.js` 的快取清單。現有：`undercover`（誰是臥底，`play.words` 放 `{ zh, en, ja }` 各自的詞組）
+- 要寫程式的玩法放 `"play": { "type": "<模組名>", ... }`，模組寫在 `js/modes/<模組名>.js`（註冊到 `window.KBG_MODES`，提供 `mount(容器, { game, lang, tr, esc, store })`），並加進 `index.html` 的 `<script>` 與 `sw.js` 的快取清單。現有：`undercover`（誰是臥底，`play.words` 放 `{ zh, en, ja }` 各自的詞組；大詞庫放 `play.wordsFile` 指的獨立檔，例如 `{ "zh": "words.zh.json" }`，內容是 `[["詞A","詞B"], …]`，打開開局頁才載入，不拖慢首頁）
 - `md` 支援：段落、`- ` 條列、`### ` 小標、`| |` 表格、`**粗體**`
 - `pause`：連續播放時，這句念完停幾秒再念下一句（乘上短 0.6／中 1／長 1.6）
 - `when`：勾選條件，選項 id 用 `&&` 串、`!` 表示沒勾；不寫就是每次都念

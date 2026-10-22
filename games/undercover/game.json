@@ -206,6 +206,7 @@
 
   "play": {
     "type": "undercover",
+    "wordsFile": { "zh": "words.zh.json" },
     "words": {
       "zh": [
         ["牛奶", "豆漿"], ["包子", "饅頭"], ["水餃", "餛飩"], ["眉毛", "睫毛"], ["蝴蝶", "飛蛾"],
