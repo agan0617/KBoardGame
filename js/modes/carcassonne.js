@@ -24,6 +24,8 @@
         '貨物：遊戲結束時酒、麥、布各自最多的人 10 分（平手都拿）',
         '豬：同一塊草地有你的豬，每座城堡 4 分',
         '仙子：回合開始時仙子在你的棋子旁 +1；那個棋子所在的區塊計分時 +3',
+        '國王：遊戲結束時拿著國王卡的人，每座完成的城堡 1 分',
+        '異教徒挑戰：禮拜堂和修道院先被圍滿的 9 分，另一方 0 分',
       ],
     },
     en: {
@@ -42,6 +44,8 @@
         'Goods: at game end, most wine, grain and cloth each scores 10 (ties all score)',
         'Pig: with your pig in a field, each city is worth 4',
         'Fairy: +1 at the start of your turn if next to your meeple; +3 when that meeple’s feature scores',
+        'King: at game end, whoever holds the King scores 1 per completed city',
+        'Heretic challenge: whichever of the shrine and cloister is surrounded first scores 9, the other 0',
       ],
     },
     ja: {
@@ -60,6 +64,8 @@
         '交易品：終了時、ワイン・小麦・布それぞれ最多の人が 10 点（同数は全員）',
         '豚：自分の豚がいる草原は都市 1 つ 4 点',
         '妖精：手番の最初に自分のコマの隣なら +1、そのコマの場所が得点したら +3',
+        '王：終了時に王を持っている人は、完成した都市 1 つにつき 1 点',
+        '異端者の対決：礼拝堂と修道院の先に囲まれた方が 9 点、もう一方は 0 点',
       ],
     },
   };

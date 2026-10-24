@@ -233,6 +233,92 @@
       }
     },
     {
+      "title": { "zh": "擴充：伯爵（卡卡頌城）", "en": "Expansion: The Count", "ja": "拡張：伯爵" },
+      "md": {
+        "zh": [
+          "- 卡卡頌城的 12 片板拼在一起當起始板，城裡有 4 個主要建築：**伯爵城堡、市場、鐵匠鋪、大教堂**",
+          "- **別人計分、你卻沒分**的時候，你可以從手上派一個小人進卡卡頌城的任一個建築，並把**伯爵**移到城裡任一個建築上（那裡可以已經有小人）",
+          "- 之後有區塊計分時，計分前城裡的小人可以出城加入：**城堡 → 城堡**、**鐵匠鋪 → 道路**、**大教堂 → 修道院**、**市場 → 草地**（只在遊戲結束算草地時）",
+          "- **伯爵所在的建築**，小人不能出城；伯爵只能在城裡 4 個建築之間移動，不能離開卡卡頌城"
+        ],
+        "en": [
+          "- The 12 Carcassonne city tiles form the start; the city has 4 districts: **castle, market, blacksmith, cathedral**",
+          "- When **someone else scores and you get nothing**, you may place a follower from your hand in any district, and move **the Count** to any district (it may already hold followers)",
+          "- Later, just before a feature scores, followers in the city may leave to join it: **castle → city**, **blacksmith → road**, **cathedral → cloister**, **market → field** (only for the final field scoring)",
+          "- Followers in **the Count's district** can't leave; the Count only moves between the 4 districts and never leaves the city"
+        ],
+        "ja": [
+          "- カルカソンヌの街 12 枚をスタートにする。街には 4 つの区画がある：**伯爵の城、市場、鍛冶屋、大聖堂**",
+          "- **他の人が得点して自分は 0 点**のとき、手持ちのミープルを街のどこかの区画に置き、**伯爵**を好きな区画へ動かせる（ミープルがいてもよい）",
+          "- 以後、場所が得点する直前に街のミープルが出て行って加われる：**城 → 都市**、**鍛冶屋 → 道**、**大聖堂 → 修道院**、**市場 → 草原**（終了時の草原だけ）",
+          "- **伯爵のいる区画**のミープルは出られない。伯爵は 4 つの区画の間だけを動き、街から出ない"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：國王", "en": "Expansion: The King", "ja": "拡張：王" },
+      "md": {
+        "zh": [
+          "- 開局時國王卡放旁邊",
+          "- 第一個**完成城堡**的人拿國王卡；之後誰完成一座**更大**的城堡，國王卡就換到他手上",
+          "- 遊戲結束時，國王卡在誰手上，地圖上每一座**已完成的城堡**給他 1 分"
+        ],
+        "en": [
+          "- Set the King tile aside at the start",
+          "- The first player to **complete a city** takes the King; whoever later completes a **larger** city takes it from them",
+          "- At game end, whoever holds the King scores 1 for every **completed city** on the map"
+        ],
+        "ja": [
+          "- 王のタイルを横に置いておく",
+          "- 最初に**都市を完成させた人**が王を取る。以後、それより**大きい**都市を完成させた人に移る",
+          "- 終了時に王を持っている人は、地図上の**完成した都市** 1 つにつき 1 点"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：異教徒（禮拜堂）", "en": "Expansion: Shrines & heretics", "ja": "拡張：異端者（礼拝堂）" },
+      "md": {
+        "zh": [
+          "- 新的**禮拜堂**板，算分方式跟修道院一樣（周圍 8 格放滿 9 分），站在上面的小人叫**異教徒**",
+          "- 禮拜堂放在**有僧侶的修道院旁邊**、而且派了異教徒，就立刻成立**挑戰**；反過來，修道院放在有異教徒的禮拜堂旁邊並派僧侶也一樣",
+          "- 挑戰中，**先被圍滿的那一方得 9 分，另一方 0 分**，兩邊的小人都收回",
+          "- 遊戲結束時還沒分出勝負，照修道院的未完成算法各自算分"
+        ],
+        "en": [
+          "- New **shrine** tiles score like cloisters (9 when surrounded); the follower on one is a **heretic**",
+          "- Placing a shrine with a heretic **next to a cloister with a monk** starts a **challenge** right away — and the same if you place a cloister with a monk next to a shrine with a heretic",
+          "- In a challenge, **whichever is surrounded first scores 9 and the other scores 0**; both followers return",
+          "- If the challenge is still open at game end, both score as incomplete cloisters"
+        ],
+        "ja": [
+          "- 新しい**礼拝堂**タイルは修道院と同じ得点（周り 8 マスで 9 点）。そこに置いたミープルは**異端者**",
+          "- **修道士のいる修道院の隣**に礼拝堂を置いて異端者を置いたら、すぐに**対決**になる。修道院を異端者のいる礼拝堂の隣に置いて修道士を置いた場合も同じ",
+          "- 対決では**先に囲まれた方が 9 点、もう一方は 0 点**。どちらのミープルも戻る",
+          "- 終了時に決着がついていなければ、未完成の修道院と同じように両方得点"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：投石車", "en": "Expansion: The Catapult", "ja": "拡張：カタパルト" },
+      "md": {
+        "zh": [
+          "- 洗進有**投石車圖示**的板。抽到時先照一般規則放板、派小人",
+          "- 接著進入**投石車階段**：用盒裡的投石車把標記彈射到地圖上，標記壓到的小人或位置會觸發不同效果",
+          "- 標記的種類和各自的效果請看盒內說明書，這裡還沒收錄"
+        ],
+        "en": [
+          "- Shuffle in the tiles with the **catapult symbol**. When you draw one, place it and a follower as usual",
+          "- Then a **catapult phase** begins: launch tokens onto the map with the included catapult; what a token lands on triggers its effect",
+          "- See the rulebook in the box for the token types and effects; not covered here yet"
+        ],
+        "ja": [
+          "- **カタパルトの印**があるタイルを混ぜる。引いたら普通にタイルとミープルを置く",
+          "- 続いて**カタパルトフェイズ**：箱のカタパルトでトークンを地図に飛ばし、落ちた場所のミープルなどに効果が起きる",
+          "- トークンの種類と効果は箱の説明書を参照（ここには未収録）"
+        ]
+      }
+    },
+    {
       "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
       "md": {
         "zh": [
@@ -261,17 +347,17 @@
         "zh": [
           "- 基本版（2001 年德國年度遊戲獎）",
           "- 四合一擴充：旅館與大教堂、商人與建築師、公主與龍、河流 II",
-          "- 五合一擴充（投石車等）：規則待補"
+          "- 五合一擴充：投石車、版圖塔（抽板用的塔，不改規則，建議從頂部抽免得倒塌）、異教徒、伯爵、國王"
         ],
         "en": [
           "- Base game (Spiel des Jahres 2001)",
           "- 4-in-1 expansion: Inns & Cathedrals, Traders & Builders, The Princess & the Dragon, The River II",
-          "- 5-in-1 expansion (Catapult and more): rules to be added"
+          "- 5-in-1 expansion: Catapult, Tower (a tile dispenser, no rule change; draw from the top so it doesn't topple), shrines & heretics, the Count, the King"
         ],
         "ja": [
           "- 基本セット（2001 年ドイツ年間ゲーム大賞）",
           "- 4 in 1 拡張：宿屋と大聖堂、商人と建築士、王女とドラゴン、川 II",
-          "- 5 in 1 拡張（カタパルトなど）：ルールは追加予定"
+          "- 5 in 1 拡張：カタパルト、タイルタワー（タイルを引く塔でルールは変わらない。倒れないよう上から引く）、異端者、伯爵、王"
         ]
       }
     }
