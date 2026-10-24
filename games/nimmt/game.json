@@ -1,0 +1,118 @@
+{
+  "id": "nimmt",
+  "name": { "zh": "誰是牛頭王", "en": "6 nimmt!", "ja": "ニムト" },
+  "players": { "zh": "2–10 人", "en": "2–10 players", "ja": "2〜10人" },
+  "time": { "zh": "45 分鐘", "en": "45 min", "ja": "45分" },
+  "summary": {
+    "zh": "大家同時出一張牌，照大小排進四列，誰放到某一列的第 6 張就要把前 5 張吃下來，上面的牛頭就是扣分。牛頭最少的人贏。App 幫你算牛頭。",
+    "en": "Everyone plays a card at once; cards go into four rows by number, and whoever places the 6th card in a row takes the other five — their bull heads are penalty points. Fewest heads wins. The app counts the heads.",
+    "ja": "全員同時に 1 枚出し、数字の順に 4 列へ並べる。列の 6 枚目を置いた人は前の 5 枚を引き取り、牛の頭が失点になる。一番少ない人の勝ち。アプリで牛の頭を計算できる。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "- 104 張牌（1～104）洗勻，每人發 **10 張**",
+          "- 從牌堆翻 **4 張**，排成直的四列，每列一張",
+          "- 每張牌上的**牛頭數**就是吃下來的扣分：55 是 7 頭、11 的倍數 5 頭、10 的倍數 3 頭、5 的倍數 2 頭、其他 1 頭"
+        ],
+        "en": [
+          "- Shuffle the 104 cards (1–104) and deal **10** to each player",
+          "- Turn up **4** cards from the deck to start four rows, one card each",
+          "- The **bull heads** on a card are its penalty: 55 has 7, multiples of 11 have 5, multiples of 10 have 3, multiples of 5 have 2, all others 1"
+        ],
+        "ja": [
+          "- 104 枚（1〜104）を混ぜて各自 **10 枚**配る",
+          "- 山札から **4 枚**めくって 4 列の先頭に 1 枚ずつ置く",
+          "- カードの**牛の頭**が失点：55 は 7、11 の倍数は 5、10 の倍数は 3、5 の倍数は 2、その他は 1"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "怎麼出牌", "en": "Playing a turn", "ja": "カードの出し方" },
+      "md": {
+        "zh": [
+          "1. 每個人**同時**挑一張手牌蓋著出，一起翻開",
+          "2. 從**數字最小**的牌開始，一張一張放進列裡",
+          "3. 每張牌接在「**最後一張比它小、而且差距最小**」的那一列後面",
+          "4. 放進去的是那一列的**第 6 張**：把前 5 張收進自己的牛頭堆，這張牌變成那一列新的第一張",
+          "5. 牌比四列最後一張**都小**：自己挑一列整列收走，這張牌變成那一列新的第一張",
+          "",
+          "10 張都出完是一局。"
+        ],
+        "en": [
+          "1. Everyone **simultaneously** chooses a card face down, then all reveal",
+          "2. Place them one at a time, starting with the **lowest number**",
+          "3. Each card goes on the row whose last card is **lower than it and closest** to it",
+          "4. If it would be the **6th card** in that row, take the 5 cards into your penalty pile; your card starts that row",
+          "5. If your card is **lower than every row's last card**, choose a row and take it all; your card starts that row",
+          "",
+          "A round ends when all 10 cards are played."
+        ],
+        "ja": [
+          "1. 全員**同時に**手札から 1 枚を裏向きで選び、一斉に公開",
+          "2. **数字の小さい**カードから 1 枚ずつ並べる",
+          "3. 各カードは「**最後のカードが自分より小さく、差が一番小さい**」列に置く",
+          "4. その列の **6 枚目**になったら、前の 5 枚を自分の失点の山に取り、自分のカードがその列の先頭になる",
+          "5. どの列の最後のカードより**小さい**ときは、好きな列を 1 つまるごと取り、自分のカードがその列の先頭になる",
+          "",
+          "10 枚出し切ったら 1 ラウンド終了。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "計分與結束", "en": "Scoring and end", "ja": "得点と終了" },
+      "md": {
+        "zh": [
+          "- 每局結束，算自己吃到的牌上牛頭總數，累積起來",
+          "- 有人累積到 **66 頭**，遊戲結束，**牛頭最少的人贏**",
+          "- 沒人到 66 就重新洗牌發牌，再玩一局",
+          "",
+          "在「開局」頁每局輸入吃到的牌號，App 會換成牛頭數加總。"
+        ],
+        "en": [
+          "- At the end of each round, add up the bull heads on the cards you took",
+          "- When someone reaches **66**, the game ends and **the player with the fewest heads wins**",
+          "- Otherwise reshuffle, deal and play another round",
+          "",
+          "Enter the card numbers you took in the Play tab and the app converts them to heads."
+        ],
+        "ja": [
+          "- ラウンドの終わりに、取ったカードの牛の頭を合計して累積",
+          "- 誰かが **66 頭**になったら終了。**一番少ない人の勝ち**",
+          "- 66 に届かなければ配り直して次のラウンド",
+          "",
+          "「プレイ」タブで取ったカードの番号を入れると、アプリが牛の頭に換算する。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "md": {
+        "zh": [
+          "- 看哪一列已經 4、5 張，那附近的數字最危險",
+          "- 很小的牌可以拿來「主動收一列只有 1～2 頭的列」，換掉危險的列",
+          "- 記住大家出過哪些數字，越後面越好判斷",
+          "- 55 和 11 的倍數（11、22、33…）頭最多，別讓它們進你的牛頭堆"
+        ],
+        "en": [
+          "- Rows with 4 or 5 cards make nearby numbers dangerous",
+          "- A very low card lets you deliberately take a cheap row (1–2 heads) and reset it",
+          "- Track which numbers have been played — it gets easier late in the round",
+          "- 55 and multiples of 11 (11, 22, 33…) carry the most heads; keep them out of your pile"
+        ],
+        "ja": [
+          "- 4〜5 枚並んだ列の近くの数字が危ない",
+          "- とても小さいカードで、頭の少ない（1〜2 頭）列をわざと取ってリセットできる",
+          "- 出た数字を覚えておくと、終盤ほど読みやすい",
+          "- 55 と 11 の倍数（11、22、33…）は頭が多い。自分の山に入れないように"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "nimmt",
+    "title": { "zh": "算牛頭", "en": "Heads", "ja": "牛の頭" }
+  }
+}
