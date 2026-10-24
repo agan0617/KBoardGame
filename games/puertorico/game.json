@@ -278,6 +278,76 @@
       }
     },
     {
+      "title": { "zh": "擴展一：新時代建築", "en": "Expansion I: The New Buildings", "ja": "拡張 1：新しい建物" },
+      "md": {
+        "zh": [
+          "**準備**：生產建築照舊。紫色建築由大家挑：總督先挑一種放到費用相同的空位，順時針輪流，直到 12 個小建築位和 5 個大建築位都放滿（小建築一次放兩棟）。費用 2、5、8 的位置要從同費用的四種裡挑兩種不同的。沒挑到的收回盒子。費用和分數照板塊上印的。",
+          "",
+          "**森林**：有森林小屋的人，開拓者時可以改放一塊森林。蓋建築時，島上每 2 塊森林便宜 1 元（不受欄位上限）。森林沒有殖民者格，放了就不能改。",
+          "",
+          "**新建築**",
+          "- **森林小屋**：開拓者時可以放森林代替農場或採石場",
+          "- **渡槽**：大藍染坊有生產藍染時多 1 個藍染；大製糖廠有生產砂糖時多 1 個砂糖（小的不算）",
+          "- **黑市**：蓋建築時可以退回 1 個殖民者、1 個貨物、1 分（每樣最多一個），各折 1 元，最多折 3 元；用了黑市就要把錢花光",
+          "- **倉庫**：船運結束時除了原本留的 1 個，再多留 3 個任意貨物",
+          "- **旅館**：市長時可以放最多 2 個殖民者進來，之後任何階段可以把他們調去任何建築、農場或採石場，待到下一次市長",
+          "- **商站**：商人時可以把 1 個貨物賣給商站而不是交易所，照原價、交易所已經有的種類也能賣；市場加成不算",
+          "- **教堂**：蓋第二、三欄建築拿 1 分，蓋大建築拿 2 分；教堂本身不算分",
+          "- **小碼頭**：船長時有一次可以把不同種貨物一起運掉，每 2 個貨物 1 分",
+          "- **燈塔**：每次裝船拿 1 元；自己是船長時再多 1 元（不管有沒有裝船）",
+          "- **特產工廠**：生產最多的那一種貨物數量減 1，就拿幾元（玉米不算）",
+          "- **圖書館**：挑角色時特權加倍（例如建築師便宜 2 元、商人多 2 元）",
+          "- **工會大廳**：船長時第一次裝船前，羅盤上每 2 個同種貨物拿 1 分",
+          "- **雕像**（大）：不放殖民者，遊戲結束值 8 分",
+          "- **修道院**（大）：島上每 3 塊同種地形算一組：1 組 1 分、2 組 3 分、3 組 6 分、4 組 10 分",
+          "",
+          "建築名稱各版本翻譯不同，以手上的版本為準。"
+        ],
+        "en": [
+          "**Setup**: production buildings as usual. Players choose the violet buildings: the Governor picks one and places it on an empty space of the same cost, then clockwise until all 12 small and 5 large spaces are filled (small buildings come in pairs). For costs 2, 5 and 8, pick two different buildings out of the four at that cost. Unchosen buildings go back in the box. Costs and VP are as printed on the tiles.",
+          "",
+          "**Forests**: a Forest House owner may place a forest in the Settler phase. When building, every 2 forests on your island reduce the cost by 1 (no column limit). Forests have no colonist space and can't be changed once placed.",
+          "",
+          "**New buildings**",
+          "- **Forest house**: in the Settler phase, place a forest instead of a plantation or quarry",
+          "- **Aqueduct**: +1 indigo if the large indigo plant produced indigo; +1 sugar if the large sugar mill produced sugar (not the small ones)",
+          "- **Black market**: when building, return up to one colonist, one good and one VP chip for 1 doubloon off each (max 3); you must spend all your money",
+          "- **Storehouse**: after the Captain phase, keep 3 extra goods of any kind besides the usual one",
+          "- **Guest house**: in the Mayor phase hold up to 2 colonists here and move them later in any phase to a building, plantation or quarry, until the next Mayor phase",
+          "- **Trading post**: in the Trader phase, sell 1 good here instead of the trading house, at the normal price, even a kind already in the trading house; market bonuses don't apply",
+          "- **Church**: building from column 2 or 3 earns 1 VP chip, column 4 earns 2; the church itself is worth nothing",
+          "- **Small wharf**: once in a Captain phase, ship different goods together; 1 VP per 2 goods",
+          "- **Lighthouse**: +1 doubloon each time you load a ship; +1 more when you are Captain (shipping or not)",
+          "- **Specialty factory**: doubloons equal to your most-produced kind minus 1 (not corn)",
+          "- **Library**: your role privilege is doubled",
+          "- **Union hall**: before your first shipment in the Captain phase, 1 VP chip per 2 goods of the same kind on your windrose",
+          "- **Statue** (large): no colonists; worth 8 VP at game end",
+          "- **Cloister** (large): sets of 3 identical island tiles: 1 set 1 VP, 2 sets 3, 3 sets 6, 4 sets 10"
+        ],
+        "ja": [
+          "**準備**：生産建物はいつもどおり。紫の建物は全員で選ぶ：総督から 1 つ選んで同じコストの空き枠に置き、時計回りに小 12 枠・大 5 枠が埋まるまで続ける（小建物は 2 つずつ）。コスト 2・5・8 は同コストの 4 種から別々の 2 種を選ぶ。選ばれなかった建物は箱へ。コストと点はタイルに印刷のとおり。",
+          "",
+          "**森**：森の家を持つ人は開拓者のときに森を置ける。建てるとき、島の森 2 つにつき 1 安い（列の上限なし）。森には入植者の枠がなく、置いたら変えられない。",
+          "",
+          "**新しい建物**",
+          "- **森の家**：開拓者のとき、農園や採石場の代わりに森を置ける",
+          "- **水道橋**：大きな藍染め工場が藍を生産したら +1、大きな製糖所が砂糖を生産したら +1（小さい方は対象外）",
+          "- **闇市**：建てるとき入植者・商品・勝利点チップを各 1 つまで戻して 1 ずつ割引（最大 3）。お金は使い切る",
+          "- **貯蔵庫**：船長の終わりに、普段の 1 つに加えて好きな商品を 3 つ残せる",
+          "- **ゲストハウス**：市長のとき入植者を 2 人まで置き、後でどのフェイズでも建物・農園・採石場へ移せる。次の市長まで",
+          "- **交易所**：商人のとき交易所の代わりにここへ 1 つ売れる。通常価格で、交易所にある種類でも可。市場のボーナスはなし",
+          "- **教会**：2・3 列目の建物を建てると 1 点、4 列目なら 2 点。教会自体は 0 点",
+          "- **小さな波止場**：船長で 1 回、違う種類の商品をまとめて出荷。商品 2 つで 1 点",
+          "- **灯台**：船に積むたびに 1 ドゥブロン。自分が船長なら（積まなくても）さらに 1",
+          "- **特産品工場**：一番多く生産した種類の数 −1 だけドゥブロン（トウモロコシは除く）",
+          "- **図書館**：役割の特権が 2 倍",
+          "- **組合会館**：船長で最初に積む前に、風配図の同じ商品 2 つにつき 1 点",
+          "- **銅像**（大）：入植者を置かない。終了時 8 点",
+          "- **修道院**（大）：島の同じタイル 3 枚で 1 組：1 組 1 点、2 組 3 点、3 組 6 点、4 組 10 点"
+        ]
+      }
+    },
+    {
       "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
       "md": {
         "zh": [
