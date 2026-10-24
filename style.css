@@ -224,6 +224,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* 運轉潮汐：三輪計分表（沿用 pr-grid） */
 .td-grid { grid-template-columns: 6em 1fr 1fr; }
 .td-status { text-align: center; color: var(--accent); min-height: 1.5em; }
+
+/* 富饒之城：最後算分（沿用 pr-grid） */
+.ci-grid { grid-template-columns: 3em 1.3fr .8fr .8fr .8fr 1fr 3em; gap: 4px; }
+.ci-grid input[type=number] { font-size: 15px; padding: 0 2px; }
+.ci-chk { display: flex; justify-content: center; }
+.ci-chk input { width: 22px; height: 22px; accent-color: var(--accent); }
 .link { color: var(--dim); text-decoration: underline; padding: 8px; font-size: 14px; }
 .uc-end { text-align: center; }
 .uc-end.uc .uc-huge { color: #e06a6a; }

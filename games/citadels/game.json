@@ -1,0 +1,208 @@
+{
+  "id": "citadels",
+  "name": { "zh": "富饒之城", "en": "Citadels", "ja": "あやつり人形" },
+  "players": { "zh": "2–7 人（新版 2–8 人）", "en": "2–7 players (2016 edition 2–8)", "ja": "2〜7人（新版 2〜8人）" },
+  "time": { "zh": "30–60 分鐘", "en": "30–60 min", "ja": "30〜60分" },
+  "summary": {
+    "zh": "每一輪秘密挑一個角色：刺客、盜賊、魔術師、國王、主教、商人、建築師、軍閥，用角色能力搶錢、蓋建築，城市建得最值錢的人贏。App 幫你算最後總分。",
+    "en": "Each round secretly choose a character — Assassin, Thief, Magician, King, Bishop, Merchant, Architect, Warlord — use its power to gain gold and build districts; the most valuable city wins. The app adds up the final scores.",
+    "ja": "毎ラウンドこっそりキャラクターを選ぶ：暗殺者、盗賊、魔術師、王、司教、商人、建築家、傭兵。能力でお金を得て建物を建て、一番価値の高い町を作った人の勝ち。アプリで最終得点を計算。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "先看這裡", "en": "Read this first", "ja": "はじめに" },
+      "md": {
+        "zh": [
+          "富饒之城有舊版（2000 年，8 座建築結束）和新版（2016 年，7 座建築結束、角色可以替換）。下面寫的是兩版共通的規則，**版本不同的地方另外標出，以盒內說明書為準**。"
+        ],
+        "en": [
+          "Citadels has a classic edition (2000; ends at 8 districts) and a 2016 edition (ends at 7 districts; swappable characters). Below are the rules common to both, **with differences noted — follow the rulebook in your box**."
+        ],
+        "ja": [
+          "旧版（2000 年、建物 8 つで終了）と新版（2016 年、建物 7 つで終了、キャラクター差し替え可）がある。以下は共通ルールで、**違いは注記。箱の説明書に従う**。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "- 每人拿 **2 金幣**、**4 張建築牌**",
+          "- 年紀最大的人拿**王冠**",
+          "- 8 張角色牌另外放"
+        ],
+        "en": [
+          "- Each player takes **2 gold** and **4 district cards**",
+          "- The oldest player takes the **crown**",
+          "- Keep the 8 character cards apart"
+        ],
+        "ja": [
+          "- 各自 **2 金**と**建物カード 4 枚**",
+          "- 最年長の人が**王冠**を持つ",
+          "- キャラクター 8 枚は別にしておく"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "選角色", "en": "Choosing characters", "ja": "キャラクター選択" },
+      "md": {
+        "zh": [
+          "1. 角色洗勻，**蓋著拿掉 1 張**（誰都不能看）",
+          "2. 照人數再**翻開拿掉**幾張（國王不能翻開拿掉，翻到就換一張）：4 人 2 張、5 人 1 張、6～7 人 0 張",
+          "3. 拿王冠的人先看剩下的角色，挑 1 張蓋著，其餘傳給左手邊，依序挑",
+          "4. 7 人時最後一個人可以把一開始蓋著拿掉的那張加進來挑",
+          "",
+          "2～3 人時每人挑兩個角色，照說明書的少人規則。"
+        ],
+        "en": [
+          "1. Shuffle the characters and **remove 1 face down** (no one looks)",
+          "2. **Remove more face up** by player count (the King can't be removed face up — replace it): 4 players 2, 5 players 1, 6–7 players 0",
+          "3. The crowned player looks at the rest, keeps 1 secretly and passes them left; each player picks in turn",
+          "4. With 7 players, the last player may add the face-down card to their choice",
+          "",
+          "With 2–3 players everyone takes two characters — see the rulebook's small-group rules."
+        ],
+        "ja": [
+          "1. キャラクターを混ぜ、**1 枚を裏向きで除外**（誰も見ない）",
+          "2. 人数に応じて**表向きでさらに除外**（王は表向きで除外できない、出たら入れ替え）：4 人 2 枚、5 人 1 枚、6〜7 人 0 枚",
+          "3. 王冠の人が残りから 1 枚こっそり取り、左隣へ渡す。順に選ぶ",
+          "4. 7 人なら最後の人は最初に裏向きで除いたカードも選択肢に加えられる",
+          "",
+          "2〜3 人は各自 2 キャラクター。説明書の少人数ルール参照。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "叫角色與回合", "en": "Calling characters and turns", "ja": "キャラクターの呼び出しと手番" },
+      "md": {
+        "zh": [
+          "拿王冠的人從 **1 號到 8 號**依序叫角色，拿到那個角色的人翻開、輪到他：",
+          "",
+          "1. **拿資源**（二選一）：拿 **2 金幣**，或抽 **2 張建築牌留 1 張**",
+          "2. **蓋建築**：付費用蓋一座（不能蓋跟自己城裡同名的）",
+          "3. 角色能力可以在回合中任何時候用一次",
+          "",
+          "沒人拿的角色叫了就跳過。"
+        ],
+        "en": [
+          "The crowned player calls characters **1 to 8** in order; whoever has that character reveals it and takes a turn:",
+          "",
+          "1. **Take an action**: take **2 gold**, or draw **2 district cards and keep 1**",
+          "2. **Build**: pay to build one district (not a duplicate of one in your city)",
+          "3. Use the character's power once at any point in the turn",
+          "",
+          "Characters nobody chose are skipped."
+        ],
+        "ja": [
+          "王冠の人が **1 番から 8 番**まで順に呼び、そのキャラクターの人が公開して手番を行う：",
+          "",
+          "1. **資源を取る**：**2 金**を取るか、建物カードを **2 枚引いて 1 枚残す**",
+          "2. **建てる**：コストを払って 1 つ建てる（自分の町と同じ名前は不可）",
+          "3. キャラクターの能力は手番中いつでも 1 回",
+          "",
+          "誰も選んでいないキャラクターは飛ばす。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "八個角色（基本）", "en": "The eight characters (basic)", "ja": "8 人のキャラクター（基本）" },
+      "md": {
+        "zh": [
+          "1. **刺客**：指定一個角色，那個角色這輪整回合跳過",
+          "2. **盜賊**：指定一個角色（不能是刺客或被刺殺的），輪到他時偷走他全部的金幣",
+          "3. **魔術師**：跟一個玩家交換全部手牌，或丟掉任意張手牌再抽一樣多張",
+          "4. **國王**：拿王冠（下一輪先挑角色）；城裡每座**黃色**（貴族）建築 +1 金",
+          "5. **主教**：建築不會被軍閥破壞；每座**藍色**（宗教）建築 +1 金",
+          "6. **商人**：多拿 1 金；每座**綠色**（商業）建築 +1 金",
+          "7. **建築師**：多抽 2 張建築牌；這回合最多蓋 **3 座**",
+          "8. **軍閥**：付「建築費用 −1」破壞別人一座建築（已完成的城市不能動）；每座**紅色**（軍事）建築 +1 金",
+          "",
+          "新版的角色名稱和能力可能略有不同，以卡上為準。"
+        ],
+        "en": [
+          "1. **Assassin**: name a character; it skips its whole turn this round",
+          "2. **Thief**: name a character (not the Assassin or the killed one); take all their gold when they are called",
+          "3. **Magician**: swap your whole hand with a player, or discard any number of cards and draw that many",
+          "4. **King**: take the crown (choose first next round); +1 gold per **yellow** (noble) district",
+          "5. **Bishop**: your districts can't be destroyed by the Warlord; +1 gold per **blue** (religious) district",
+          "6. **Merchant**: +1 gold; +1 gold per **green** (trade) district",
+          "7. **Architect**: draw 2 extra district cards; build up to **3** this turn",
+          "8. **Warlord**: pay a district's cost minus 1 to destroy it (not in a completed city); +1 gold per **red** (military) district",
+          "",
+          "2016 edition names and powers may differ slightly — follow the cards."
+        ],
+        "ja": [
+          "1. **暗殺者**：キャラクターを 1 人指名し、そのラウンドの手番をまるごと飛ばす",
+          "2. **盗賊**：キャラクターを指名し（暗殺者と殺された者は不可）、呼ばれたときに所持金を全部奪う",
+          "3. **魔術師**：誰かと手札をまるごと交換するか、好きな枚数捨てて同じ枚数引く",
+          "4. **王**：王冠を取る（次のラウンド最初に選ぶ）。**黄**（貴族）の建物 1 つにつき +1 金",
+          "5. **司教**：自分の建物は傭兵に壊されない。**青**（宗教）の建物 1 つにつき +1 金",
+          "6. **商人**：+1 金。**緑**（商業）の建物 1 つにつき +1 金",
+          "7. **建築家**：建物カードを 2 枚追加で引く。この手番は **3 つ**まで建てられる",
+          "8. **傭兵**：建物のコスト −1 を払って他人の建物を壊す（完成した町は不可）。**赤**（軍事）の建物 1 つにつき +1 金",
+          "",
+          "新版は名前や能力が少し違うことがある。カードに従う。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "結束與算分", "en": "Game end and scoring", "ja": "終了と得点" },
+      "md": {
+        "zh": [
+          "有人蓋到 **8 座**（新版 **7 座**）建築，**這一輪做完**就結束。",
+          "",
+          "- 城裡所有建築的**費用加總**",
+          "- 五種顏色都有：**+3**",
+          "- **第一個**蓋滿的人：**+4**；這輪也蓋滿的其他人：**+2**",
+          "- 紫色特殊建築照卡上的加分",
+          "",
+          "在「開局」頁填好，App 算總分排名。"
+        ],
+        "en": [
+          "When someone builds their **8th** district (**7th** in the 2016 edition), the game ends **after that round**.",
+          "",
+          "- **Sum of the costs** of all your districts",
+          "- All five colors: **+3**",
+          "- **First** to complete the city: **+4**; others who completed this round: **+2**",
+          "- Purple special districts score as printed",
+          "",
+          "Fill it in on the Play tab and the app totals and ranks."
+        ],
+        "ja": [
+          "誰かが建物を **8 つ**（新版は **7 つ**）建てたら、**そのラウンドの終わり**で終了。",
+          "",
+          "- 町の建物の**コスト合計**",
+          "- 5 色すべて：**+3**",
+          "- **最初に**町を完成：**+4**、同じラウンドに完成した他の人：**+2**",
+          "- 紫の特殊建物はカードの点",
+          "",
+          "「プレイ」タブに入れると合計と順位を計算。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "md": {
+        "zh": [
+          "- 選角色時想想別人缺什麼：快蓋滿的人很可能拿建築師，刺客、軍閥就盯他",
+          "- 錢很多時小心盜賊，錢少時拿商人或對應顏色的角色",
+          "- 手牌不夠時魔術師或抽牌比拿錢划算"
+        ],
+        "en": [
+          "- When choosing, think about what others need: someone close to finishing may take the Architect — the Assassin or Warlord should target them",
+          "- Rich? Beware the Thief. Poor? Take the Merchant or the character matching your colors",
+          "- Short of cards, the Magician or drawing beats taking gold"
+        ],
+        "ja": [
+          "- 選ぶときは他人が何を欲しいか考える。完成間近の人は建築家を取りそう、暗殺者や傭兵で狙う",
+          "- お金が多いときは盗賊に注意。少ないときは商人や自分の色に合うキャラクター",
+          "- 手札が少ないときは魔術師やカードを引く方が得"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "citadels",
+    "title": { "zh": "算分", "en": "Score", "ja": "得点" }
+  }
+}
