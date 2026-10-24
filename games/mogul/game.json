@@ -1,0 +1,173 @@
+{
+  "id": "mogul",
+  "name": { "zh": "MOGUL 房產大亨", "en": "MOGUL", "ja": "MOGUL 不動産王" },
+  "players": { "zh": "2–6 人", "en": "2–6 players", "ja": "2〜6人" },
+  "time": { "zh": "60–120 分鐘", "en": "60–120 min", "ja": "60〜120分" },
+  "summary": {
+    "zh": "大富翁類的買地收租遊戲，錢都在電子刷卡機裡。擲骰繞圈、買地蓋房、收過路費，讓別人破產。App 有備用銀行：刷卡機沒電或想看每筆紀錄時用。",
+    "en": "A Monopoly-style property trading game with an electronic banking unit. Roll around the board, buy and build, collect rent and bankrupt the others. The app has a backup bank for when the unit runs out of batteries or you want a transaction log.",
+    "ja": "モノポリー型の不動産ゲームで、お金は電子カード端末で管理する。サイコロで回り、土地を買って家を建て、通行料を取り、相手を破産させる。アプリには端末の電池切れや記録確認用の予備銀行がある。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "先看這裡", "en": "Read this first", "ja": "はじめに" },
+      "md": {
+        "zh": [
+          "這款是大富翁類遊戲的電子銀行版。下面寫的是這類遊戲的**通則**；起始金額、過起點拿多少、各格子的價錢與特殊卡，**以盒內說明書和刷卡機為準**。",
+          "",
+          "「開局」頁是**備用銀行**：起始金額和過起點的錢可以自己設，收付、互轉都有紀錄。"
+        ],
+        "en": [
+          "This is the electronic-banking edition of a Monopoly-style game. Below are the **general rules** for this kind of game; starting money, the Pass GO amount, property prices and special cards **follow the rulebook and the banking unit in the box**.",
+          "",
+          "The Play tab is a **backup bank**: set the starting money and Pass GO amount yourself; every payment and transfer is logged."
+        ],
+        "ja": [
+          "これはモノポリー型ゲームの電子銀行版。以下はこの種のゲームの**共通ルール**で、初期資金、スタート通過の金額、マスの値段や特別カードは**箱の説明書と端末に従う**。",
+          "",
+          "「プレイ」タブは**予備銀行**：初期資金とスタート通過の金額を自分で設定でき、支払いと送金はすべて記録される。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "- 每人選一個棋子放起點，拿一張銀行卡",
+          "- 刷卡機替每張卡存入起始金額（照說明書）",
+          "- 地契、房子、旅館、機會卡和命運卡放旁邊",
+          "- 擲骰最大的人先開始，順時針輪流"
+        ],
+        "en": [
+          "- Each player picks a token, places it on GO and takes a bank card",
+          "- Load each card with the starting money on the banking unit (see the rulebook)",
+          "- Set out the title deeds, houses, hotels, and Chance and Community cards",
+          "- Highest roll starts; play goes clockwise"
+        ],
+        "ja": [
+          "- 各自コマを選んでスタートに置き、銀行カードを 1 枚取る",
+          "- 端末で各カードに初期資金を入れる（説明書参照）",
+          "- 権利書、家、ホテル、チャンスと共同基金のカードを横に置く",
+          "- サイコロが一番大きい人から時計回り"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "回合流程", "en": "Your turn", "ja": "手番の流れ" },
+      "md": {
+        "zh": [
+          "1. 擲兩顆骰子，照點數往前走",
+          "2. 看停在哪一格：",
+          "- **沒人的地**：可以照價錢買下拿地契；不買就拍賣，出價最高的人買走",
+          "- **別人的地**：付過路費給地主，房子越多越貴",
+          "- **自己的地**：沒事",
+          "- **機會、命運**：抽一張照做",
+          "- **稅金**：付給銀行",
+          "- **入獄**：直接去監獄，不經過起點、不拿錢",
+          "3. 經過或停在起點，從銀行拿錢",
+          "4. 擲出**兩顆一樣**可以再擲一次；連續三次一樣就入獄"
+        ],
+        "en": [
+          "1. Roll two dice and move that many spaces",
+          "2. Where you land:",
+          "- **Unowned property**: buy it at its price and take the deed; if you don't, it is auctioned to the highest bidder",
+          "- **Someone else's property**: pay the owner rent — more with more houses",
+          "- **Your own property**: nothing happens",
+          "- **Chance / Community**: draw a card and do what it says",
+          "- **Tax**: pay the bank",
+          "- **Go to jail**: move straight to jail, without passing GO or collecting money",
+          "3. Passing or landing on GO pays you from the bank",
+          "4. **Doubles** let you roll again; three doubles in a row send you to jail"
+        ],
+        "ja": [
+          "1. サイコロ 2 個を振って進む",
+          "2. 止まったマス：",
+          "- **持ち主のいない土地**：値段で買って権利書をもらう。買わなければ競売で最高額の人が買う",
+          "- **他人の土地**：持ち主に通行料。家が多いほど高い",
+          "- **自分の土地**：何もなし",
+          "- **チャンス・共同基金**：カードを引いて従う",
+          "- **税金**：銀行に払う",
+          "- **刑務所へ**：スタートを通らず、お金をもらわずに刑務所へ",
+          "3. スタートを通過するか止まると銀行からお金をもらう",
+          "4. **ゾロ目**ならもう一度振れる。3 回連続で刑務所"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "蓋房子與抵押", "en": "Building and mortgages", "ja": "建物と抵当" },
+      "md": {
+        "zh": [
+          "- 集滿**同一顏色的所有地**，才能在那些地上蓋房子",
+          "- 同一組要**平均蓋**：每塊都有一間才能蓋第二間",
+          "- 每塊地 4 間房子後可以換成 1 間旅館",
+          "- 缺錢時可以把地抵押給銀行拿一半價錢，抵押中的地收不到過路費，贖回要多付利息",
+          "- 玩家之間可以自由交易地契和錢"
+        ],
+        "en": [
+          "- Own **every property of a color** before building houses on them",
+          "- Build **evenly**: each property in the group needs one house before any gets a second",
+          "- After 4 houses on a property you can upgrade to a hotel",
+          "- Short of money? Mortgage a property to the bank for half its price; mortgaged property collects no rent and costs interest to redeem",
+          "- Players may trade deeds and money freely"
+        ],
+        "ja": [
+          "- **同じ色の土地を全部**持って初めて家を建てられる",
+          "- **均等に**建てる：グループの全部に 1 軒ずつ建ててから 2 軒目",
+          "- 1 つの土地に家 4 軒でホテルにできる",
+          "- お金が足りなければ土地を銀行に抵当に入れて半額をもらう。抵当中は通行料なし、戻すには利息",
+          "- プレイヤー同士で権利書とお金を自由に取引できる"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "監獄與破產", "en": "Jail and bankruptcy", "ja": "刑務所と破産" },
+      "md": {
+        "zh": [
+          "- 在監獄裡：付罰金、用出獄卡，或擲出兩顆一樣就出獄；照說明書最多待幾回合",
+          "- 在監獄裡照樣收得到過路費",
+          "- 付不出錢就要賣房子、抵押地；還是付不出就**破產**，財產交給債主（欠銀行就還給銀行）",
+          "- 最後剩下的那個人贏；也可以約定時間，到時財產最多的人贏"
+        ],
+        "en": [
+          "- In jail: pay the fine, use a Get Out of Jail card, or roll doubles; the rulebook sets the maximum turns",
+          "- You still collect rent while in jail",
+          "- If you can't pay, sell houses and mortgage property; if you still can't, you are **bankrupt** and your assets go to the creditor (or the bank)",
+          "- The last player standing wins — or agree on a time limit and the richest player wins"
+        ],
+        "ja": [
+          "- 刑務所では：罰金を払う、釈放カードを使う、ゾロ目を出すで出られる。最大何回いるかは説明書",
+          "- 刑務所にいても通行料はもらえる",
+          "- 払えなければ家を売り土地を抵当に。それでも払えなければ**破産**、財産は債権者（銀行なら銀行）へ",
+          "- 最後まで残った人の勝ち。時間を決めて、その時点で一番財産の多い人の勝ちでもよい"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "備用銀行怎麼用", "en": "Using the backup bank", "ja": "予備銀行の使い方" },
+      "md": {
+        "zh": [
+          "1. 設好人數、起始金額、過起點拿多少，按「開始」",
+          "2. 點一個人，輸入金額，再按要做的事：過起點、從銀行收、付給銀行、付給某號",
+          "3. 每筆都記在下面，按錯就「復原上一筆」",
+          "4. 餘額變負數會標「負債！」"
+        ],
+        "en": [
+          "1. Set players, starting money and the Pass GO amount, then Start",
+          "2. Tap a player, enter an amount, then choose: Pass GO, receive from bank, pay bank, or pay another player",
+          "3. Every transaction is logged below; use Undo if you tapped the wrong one",
+          "4. Negative balances are marked In debt!"
+        ],
+        "ja": [
+          "1. 人数、初期資金、スタート通過の金額を設定して「開始」",
+          "2. 人をタップし、金額を入れて操作を選ぶ：スタート通過、銀行から受け取る、銀行に払う、他の人に払う",
+          "3. 取引は下に記録される。間違えたら「1 つ戻す」",
+          "4. 残高がマイナスになると「借金！」と表示"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "mogul",
+    "title": { "zh": "備用銀行", "en": "Bank", "ja": "銀行" }
+  }
+}
