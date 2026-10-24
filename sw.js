@@ -3,7 +3,7 @@
 importScripts('js/version.js');
 const VERSION = 'kbg-' + APP_VERSION;
 const FILES = [
-  './', 'index.html', 'style.css', 'manifest.webmanifest', 'js/version.js', 'js/app.js', 'js/modes/undercover.js', 'js/modes/bang.js', 'js/modes/sgs.js', 'js/modes/carcassonne.js', 'js/modes/catan.js',
+  './', 'index.html', 'style.css', 'manifest.webmanifest', 'js/version.js', 'js/app.js', 'js/modes/undercover.js', 'js/modes/bang.js', 'js/modes/sgs.js', 'js/modes/carcassonne.js', 'js/modes/catan.js', 'js/modes/puertorico.js',
   'icons/icon-192.png', 'icons/icon-512.png',
 ];
 

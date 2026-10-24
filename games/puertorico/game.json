@@ -1,0 +1,308 @@
+{
+  "id": "puertorico",
+  "name": { "zh": "波多黎各", "en": "Puerto Rico", "ja": "プエルトリコ" },
+  "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
+  "time": { "zh": "90–150 分鐘", "en": "90–150 min", "ja": "90〜150分" },
+  "summary": {
+    "zh": "經營殖民地：種植、生產、蓋建築、把貨物運回歐洲換分數。每輪輪流挑角色，大家都做那個動作，挑的人多一個特權。App 幫你列開局準備、算最後總分。",
+    "en": "Run a colony: plant, produce, build and ship goods back to Europe for points. Each round players pick roles in turn; everyone takes that action and the picker gets a privilege. The app lists the setup for your player count and adds up the final score.",
+    "ja": "植民地を経営する：農園を作り、生産し、建物を建て、商品を船でヨーロッパへ送って得点にする。毎ラウンド順に役割を選び、全員がその行動をして選んだ人は特権を得る。アプリで人数別の準備と最終得点の計算ができる。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "每個人有一塊島嶼（種農場、採石場）和一座城鎮（蓋建築）。農場和生產建築要有**殖民者**進駐才會運作。",
+          "",
+          "每一輪從總督開始，每人輪流挑一張**角色**。挑到哪個角色，**所有人**都照順序做那個動作，挑的人多一個**特權**。",
+          "",
+          "分數來自兩個地方：**船運**（把貨物運走換分數籌碼）和**建築**（每棟建築有分數，大建築還有加分）。遊戲結束時分數最高的人贏。"
+        ],
+        "en": [
+          "Each player has an island (plantations and quarries) and a city (buildings). Plantations and production buildings only work when **colonists** occupy them.",
+          "",
+          "Each round, starting with the Governor, players pick one **role** each. When a role is picked, **everyone** performs that action in turn order, and the picker gets a **privilege**.",
+          "",
+          "Points come from **shipping** (goods for VP chips) and **buildings** (each building is worth VP; large buildings give bonuses). Highest total at game end wins."
+        ],
+        "ja": [
+          "各自が島（農園と採石場）と町（建物）を持つ。農園と生産建物は**入植者**が入って初めて動く。",
+          "",
+          "毎ラウンド総督から順に**役割**を 1 枚ずつ選ぶ。選ばれた役割の行動を**全員**が順に行い、選んだ人は**特権**を得る。",
+          "",
+          "得点は**出荷**（商品を勝利点チップに）と**建物**（建物ごとの点、大建物のボーナス）。終了時の合計が最高の人の勝ち。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "人數不同，分數籌碼、殖民者、起始金幣、起始農場、貨船大小和角色數都不一樣，**在「開局」頁選人數就會列出來**。",
+          "",
+          "- 隨機決定總督（起始玩家）",
+          "- 農場板洗勻蓋著，翻開「人數＋1」塊；採石場另外放一疊",
+          "- 交易所空著，三艘貨船照人數挑大小",
+          "- 角色牌照人數放，淘金者 3 人不用、4 人 1 張、5 人 2 張"
+        ],
+        "en": [
+          "VP chips, colonists, starting doubloons, starting plantations, cargo ship sizes and the number of roles all depend on the player count — **choose the player count in the Play tab and the app lists them**.",
+          "",
+          "- Choose the Governor (start player) at random",
+          "- Shuffle the plantation tiles face down and turn up players + 1; quarries form their own stack",
+          "- The trading house starts empty; pick the three cargo ships for the player count",
+          "- Lay out the roles: no Prospector with 3, one with 4, two with 5"
+        ],
+        "ja": [
+          "勝利点チップ、入植者、初期ドゥブロン、初期農園、貨物船の大きさ、役割の数は人数で変わる。**「プレイ」タブで人数を選ぶと一覧が出る**。",
+          "",
+          "- 総督（スタートプレイヤー）をランダムに決める",
+          "- 農園タイルを裏向きに混ぜ、人数＋1 枚を表にする。採石場は別の山",
+          "- 交易所は空。貨物船 3 隻は人数に合わせて選ぶ",
+          "- 役割カードを並べる。金鉱掘りは 3 人で 0 枚、4 人で 1 枚、5 人で 2 枚"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "一輪的流程", "en": "A round", "ja": "ラウンドの流れ" },
+      "md": {
+        "zh": [
+          "1. 從總督開始，每人輪流挑一張還沒被挑的角色",
+          "2. 挑完立刻執行：從挑的人開始，**每個人**照順序做那個動作；挑的人多拿特權。不想做可以不做",
+          "3. 所有人都挑過一張後，**沒人挑的角色各放 1 枚金幣**在上面，下一輪誰挑到就拿走",
+          "4. 總督標記交給左邊的人，下一輪開始"
+        ],
+        "en": [
+          "1. Starting with the Governor, each player picks one role not yet taken",
+          "2. It is carried out right away: starting with the picker, **every player** takes the action in turn; the picker also gets the privilege. Actions are optional",
+          "3. When everyone has picked, **each unpicked role gets 1 doubloon**, which goes to whoever picks it next round",
+          "4. The Governor passes to the left and the next round begins"
+        ],
+        "ja": [
+          "1. 総督から順に、まだ選ばれていない役割を 1 枚ずつ選ぶ",
+          "2. 選んだらすぐ実行：選んだ人から順に**全員**がその行動をし、選んだ人は特権も得る。行動しなくてもよい",
+          "3. 全員が選び終えたら、**選ばれなかった役割に 1 ドゥブロンずつ**置く。次のラウンドで選んだ人がもらう",
+          "4. 総督が左隣に移り、次のラウンドへ"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "七種角色", "en": "The seven roles", "ja": "7 つの役割" },
+      "md": {
+        "zh": [
+          "- **開拓者**：每人拿一塊翻開的農場板放到島上。特權：可以改拿採石場",
+          "- **市長**：殖民船上的殖民者從市長開始一人一個輪流分完，大家可以重新安排自己的殖民者。特權：多從供應區拿 1 個。之後殖民船補上等於全部空位數的殖民者（至少等於人數）",
+          "- **建築師**：每人可以蓋一棟建築（同一種每人只能有一棟）。有殖民者的採石場可以折抵費用。特權：再便宜 1 元",
+          "- **工匠**：每種有運作的農場＋生產建築，各生產貨物。特權：多拿 1 個自己這次有生產的貨物",
+          "- **商人**：每人可以賣 1 個貨物到交易所（交易所 4 格，裡面不能有同種貨物）。價格：玉米 0、藍染 1、砂糖 2、菸草 3、咖啡 4。特權：多拿 1 元",
+          "- **船長**：見下一節〈船運〉。特權：多 1 分",
+          "- **淘金者**：沒有動作。特權：拿 1 元"
+        ],
+        "en": [
+          "- **Settler**: each player takes one face-up plantation for their island. Privilege: may take a quarry instead",
+          "- **Mayor**: colonists on the ship are handed out one at a time starting with the Mayor; everyone may rearrange their colonists. Privilege: 1 extra from the supply. Then refill the ship with colonists equal to all empty circles on city buildings (at least the number of players)",
+          "- **Builder**: each player may build one building (only one of each kind per player). Occupied quarries reduce the cost. Privilege: 1 doubloon cheaper",
+          "- **Craftsman**: every occupied plantation with a matching occupied production building produces goods. Privilege: 1 extra good of a kind you produced",
+          "- **Trader**: each player may sell 1 good to the trading house (4 spaces, no duplicate kinds). Prices: corn 0, indigo 1, sugar 2, tobacco 3, coffee 4. Privilege: +1 doubloon",
+          "- **Captain**: see Shipping. Privilege: +1 VP",
+          "- **Prospector**: no action. Privilege: take 1 doubloon"
+        ],
+        "ja": [
+          "- **開拓者**：各自、表向きの農園タイルを 1 枚取って島に置く。特権：代わりに採石場を取れる",
+          "- **市長**：入植船の入植者を市長から 1 人ずつ配り切る。全員が自分の入植者を並べ替えてよい。特権：ストックから 1 人追加。その後、全員の建物の空き枠の合計（最低でも人数）だけ入植船に補充",
+          "- **建築士**：各自 1 つ建物を建てられる（同じ建物は 1 人 1 つ）。入植者のいる採石場で割引。特権：さらに 1 安い",
+          "- **監督**：入植者のいる農園と生産建物の組み合わせごとに商品を生産。特権：今回生産した種類の商品を 1 つ追加",
+          "- **商人**：各自 1 つ商品を交易所に売れる（4 枠、同じ種類は不可）。価格：トウモロコシ 0、藍 1、砂糖 2、タバコ 3、コーヒー 4。特権：+1 ドゥブロン",
+          "- **船長**：〈出荷〉参照。特権：+1 点",
+          "- **金鉱掘り**：行動なし。特権：1 ドゥブロン"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "船運", "en": "Shipping", "ja": "出荷" },
+      "md": {
+        "zh": [
+          "- 從船長開始輪流，每次把**一種**貨物全部（裝得下的部分）裝上船，每個貨物 1 分",
+          "- 一艘船只能裝一種貨物，同一種貨物不能分在兩艘船上",
+          "- **能裝就一定要裝**，有選擇時要挑裝得最多的；一直輪到沒有人能再裝為止",
+          "- 結束後，每人只能留 **1 個**貨物（倉庫可以多留），其餘丟回供應區",
+          "- 裝滿的船清空，沒裝滿的船上貨物留著"
+        ],
+        "en": [
+          "- Starting with the Captain, players in turn load **one kind** of good (as many as fit) onto a ship; each good is 1 VP",
+          "- A ship holds only one kind of good, and the same kind can't be on two ships",
+          "- **You must load if you can**, choosing the option that ships the most; continue around until nobody can load",
+          "- Afterwards each player keeps only **1 good** (warehouses keep more); the rest go back to the supply",
+          "- Full ships are emptied; partly loaded ships keep their goods"
+        ],
+        "ja": [
+          "- 船長から順に、**1 種類**の商品を（積めるだけ）船に積む。商品 1 つ 1 点",
+          "- 1 隻に積めるのは 1 種類だけ。同じ種類を 2 隻に分けられない",
+          "- **積めるなら必ず積む**。選べるときは一番多く積める方。誰も積めなくなるまで続ける",
+          "- 終わったら各自**1 つ**だけ商品を残せる（倉庫があればもっと）。残りはストックへ",
+          "- 満杯の船は空にする。満杯でない船の商品はそのまま"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "建築", "en": "Buildings", "ja": "建物" },
+      "md": {
+        "zh": [
+          "格式：名稱（費用／分數）功能。採石場折抵上限：第一欄 1、第二欄 2、第三欄 3、大建築 4。",
+          "",
+          "**生產建築**",
+          "- 小藍染坊（1／1）、小製糖廠（2／1）：1 個殖民者",
+          "- 藍染坊（3／2）、製糖廠（4／2）、菸草廠（5／3）：3 個殖民者；咖啡烘焙廠（6／3）：2 個殖民者",
+          "",
+          "**第一欄**",
+          "- 小市場（1／1）：賣貨多 1 元",
+          "- 莊園（2／1）：開拓者時先從牌堆多抽一塊農場",
+          "- 工寮（2／1）：開拓者時可以拿採石場",
+          "- 小倉庫（3／1）：船運後多留一種貨物",
+          "",
+          "**第二欄**",
+          "- 收容所（4／2）：拿到新農場或採石場時附一個殖民者",
+          "- 辦公室（5／2）：可以賣交易所已經有的貨物",
+          "- 大市場（5／2）：賣貨多 2 元",
+          "- 大倉庫（6／2）：船運後多留兩種貨物",
+          "",
+          "**第三欄**",
+          "- 工廠（7／3）：生產 2／3／4／5 種貨物時拿 1／2／3／5 元",
+          "- 大學（8／3）：蓋新建築時附一個殖民者",
+          "- 港口（8／3）：每次裝船多 1 分",
+          "- 碼頭（9／3）：船長時可以把一種貨物全部運到自己的碼頭（每次船長一次）",
+          "",
+          "**大建築**（10／4，佔兩格，遊戲結束有殖民者才加分）",
+          "- 公會大廳：小生產建築每棟 +1、大生產建築每棟 +2",
+          "- 宅邸：島上 9 格以下 +4、10 格 +5、11 格 +6、12 格 +7",
+          "- 要塞：每 3 個殖民者 +1",
+          "- 海關：每 4 個分數籌碼 +1",
+          "- 市政廳：每棟紫色建築 +1",
+          "",
+          "建築名稱各版本翻譯不同，以手上的版本為準。"
+        ],
+        "en": [
+          "Format: name (cost / VP) effect. Quarry discount limit: column 1 → 1, column 2 → 2, column 3 → 3, large → 4.",
+          "",
+          "**Production buildings**",
+          "- Small indigo plant (1/1), small sugar mill (2/1): 1 colonist",
+          "- Indigo plant (3/2), sugar mill (4/2), tobacco storage (5/3): 3 colonists; coffee roaster (6/3): 2 colonists",
+          "",
+          "**Column 1**",
+          "- Small market (1/1): +1 doubloon when selling",
+          "- Hacienda (2/1): draw an extra plantation from the stack in the Settler phase",
+          "- Construction hut (2/1): may take a quarry in the Settler phase",
+          "- Small warehouse (3/1): keep one extra kind of good after shipping",
+          "",
+          "**Column 2**",
+          "- Hospice (4/2): a colonist comes with each new plantation or quarry",
+          "- Office (5/2): may sell a kind already in the trading house",
+          "- Large market (5/2): +2 doubloons when selling",
+          "- Large warehouse (6/2): keep two extra kinds after shipping",
+          "",
+          "**Column 3**",
+          "- Factory (7/3): producing 2/3/4/5 kinds earns 1/2/3/5 doubloons",
+          "- University (8/3): a colonist comes with each new building",
+          "- Harbor (8/3): +1 VP each time you ship",
+          "- Wharf (9/3): once per Captain phase, ship all goods of one kind on your own wharf",
+          "",
+          "**Large buildings** (10/4, take two spaces, bonus only if occupied at game end)",
+          "- Guild hall: +1 per small production building, +2 per large one",
+          "- Residence: island 9 or fewer +4, 10 +5, 11 +6, 12 +7",
+          "- Fortress: +1 per 3 colonists",
+          "- Customs house: +1 per 4 VP chips",
+          "- City hall: +1 per violet building"
+        ],
+        "ja": [
+          "書式：名前（コスト／点）効果。採石場の割引上限：1 列目 1、2 列目 2、3 列目 3、大建物 4。",
+          "",
+          "**生産建物**",
+          "- 小さな藍染め工場（1／1）、小さな製糖所（2／1）：入植者 1",
+          "- 藍染め工場（3／2）、製糖所（4／2）、タバコ保存所（5／3）：入植者 3。コーヒー焙煎所（6／3）：入植者 2",
+          "",
+          "**1 列目**",
+          "- 小さな市場（1／1）：売るとき +1",
+          "- 大農園（2／1）：開拓者のとき山から農園を 1 枚追加",
+          "- 建設小屋（2／1）：開拓者のとき採石場を取れる",
+          "- 小さな倉庫（3／1）：出荷後に 1 種類多く残せる",
+          "",
+          "**2 列目**",
+          "- 宿舎（4／2）：新しい農園・採石場に入植者が付く",
+          "- 事務所（5／2）：交易所にある種類も売れる",
+          "- 大きな市場（5／2）：売るとき +2",
+          "- 大きな倉庫（6／2）：出荷後に 2 種類多く残せる",
+          "",
+          "**3 列目**",
+          "- 工場（7／3）：2／3／4／5 種類生産で 1／2／3／5 ドゥブロン",
+          "- 大学（8／3）：新しい建物に入植者が付く",
+          "- 港（8／3）：出荷するたびに +1 点",
+          "- 波止場（9／3）：船長のたびに 1 回、1 種類を全部自分の波止場で出荷",
+          "",
+          "**大建物**（10／4、2 枠使う、終了時に入植者がいればボーナス）",
+          "- ギルドホール：小さな生産建物 1 つ +1、大きな生産建物 1 つ +2",
+          "- 邸宅：島が 9 枠以下 +4、10 枠 +5、11 枠 +6、12 枠 +7",
+          "- 要塞：入植者 3 人につき +1",
+          "- 税関：勝利点チップ 4 点につき +1",
+          "- 市役所：紫の建物 1 つにつき +1"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "遊戲結束與算分", "en": "Game end and scoring", "ja": "終了と得点" },
+      "md": {
+        "zh": [
+          "以下任一發生，**這一輪做完**就結束：",
+          "- 分數籌碼發完（不夠時照樣記分，用紙記）",
+          "- 市長階段後，供應區的殖民者不夠補滿殖民船",
+          "- 有人蓋滿城鎮的 12 格",
+          "",
+          "總分＝分數籌碼＋建築分數＋大建築加分。同分比金幣＋貨物的總數。最後一頁可以用 App 算。"
+        ],
+        "en": [
+          "The game ends **at the end of the round** when any of these happens:",
+          "- The VP chips run out (keep scoring on paper if needed)",
+          "- After a Mayor phase, the supply can't refill the colonist ship",
+          "- A player fills all 12 city spaces",
+          "",
+          "Total = VP chips + building VP + large building bonuses. Ties: most doubloons plus goods. You can add it up in the app."
+        ],
+        "ja": [
+          "次のどれかが起きたら、**そのラウンドの終わり**でゲーム終了：",
+          "- 勝利点チップがなくなった（足りなければ紙で記録）",
+          "- 市長の後、ストックの入植者で入植船を満たせない",
+          "- 誰かが町の 12 枠をすべて埋めた",
+          "",
+          "合計＝勝利点チップ＋建物の点＋大建物のボーナス。同点ならドゥブロンと商品の合計。アプリで計算できる。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "md": {
+        "zh": [
+          "- 挑角色前先想：這個動作對誰最有利？別替下家做嫁衣",
+          "- 前期錢最重要，早點有一條能賣高價的生產線（菸草、咖啡）",
+          "- 船運時注意別人會被迫裝什麼船，能逼人把貨丟掉",
+          "- 大建築很貴但加分多，後期有錢就搶"
+        ],
+        "en": [
+          "- Before picking a role, ask who benefits most — don't set up the next player",
+          "- Money matters most early; get a high-value production line (tobacco, coffee) running",
+          "- When shipping, watch what others will be forced to load — you can make them discard goods",
+          "- Large buildings are expensive but score big; grab one late when you have the money"
+        ],
+        "ja": [
+          "- 役割を選ぶ前に、誰が一番得をするか考える。次の人を助けない",
+          "- 序盤はお金が大事。高く売れる生産（タバコ、コーヒー）を早めに",
+          "- 出荷では他の人が何を積まされるか見る。商品を捨てさせることもできる",
+          "- 大建物は高いが点が大きい。終盤お金があれば取りに行く"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "puertorico",
+    "title": { "zh": "準備與算分", "en": "Setup & score", "ja": "準備・得点" }
+  }
+}
