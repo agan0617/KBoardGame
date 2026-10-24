@@ -38,6 +38,8 @@
           "- **罪犯**：殺死警長",
           "- **叛徒**：成為最後一個活著的人——先幫警長清掉別人，最後再單挑警長",
           "",
+          "![誰要打誰：警長（金★）和副警長（☆）要殺光罪犯（面罩）和叛徒（紫）；罪犯要殺警長；叛徒先清掉其他人（1），最後單挑警長（2），活到最後](img/roles.svg)",
+          "",
           "副警長和罪犯都不知道誰是自己人，要從大家射誰、救誰去猜。"
         ],
         "en": [
@@ -49,6 +51,8 @@
           "- **Outlaws**: kill the Sheriff",
           "- **Renegade**: be the last one alive — help clear out everyone else, then defeat the Sheriff in the end",
           "",
+          "![Who targets whom: the Sheriff (gold ★) and Deputies (☆) hunt the Outlaws (mask) and the Renegade (purple); Outlaws hunt the Sheriff; the Renegade first clears out the others (1), then faces the Sheriff (2) to be the last one standing](img/roles.svg)",
+          "",
           "Deputies and Outlaws do not know who is on their side. Watch who shoots and who helps whom."
         ],
         "ja": [
@@ -59,6 +63,8 @@
           "- **保安官・副保安官**：無法者と裏切り者を全員倒す",
           "- **無法者**：保安官を倒す",
           "- **裏切り者**：最後の一人になる。先に他の全員を片付け、最後に保安官を倒す",
+          "",
+          "![誰が誰を狙うか：保安官（金★）と副保安官（☆）は無法者（覆面）と裏切り者（紫）を倒す。無法者は保安官を倒す。裏切り者は先に他の人を片付け（1）、最後に保安官と対決（2）して一人だけ生き残る](img/roles.svg)",
           "",
           "副保安官も無法者も味方が誰かわかりません。誰が誰を撃ち、誰を助けるかで推理します。"
         ]
@@ -194,6 +200,10 @@
           "- **野馬**：別人看你距離 +1；**瞄準鏡**：你看別人距離 −1",
           "- 「驚嚎」不看距離；「恐慌」只能對距離 1 的人",
           "",
+          "![距離：從你（藍）往左右兩邊數，取比較近的那邊；死掉的人（灰 ✗）跳過不算](img/distance.svg)",
+          "",
+          "![射程：對方有野馬（馬蹄鐵）距離 +1，2＋1＝3，射程 1 的槍打不到、射程 3 的打得到；你有瞄準鏡（準星）距離 −1，2－1＝1，射程 1 就打得到](img/range.svg)",
+          "",
           "| 武器 | 射程 |",
           "|---|---|",
           "| 柯爾特 .45（預設） | 1 |",
@@ -209,6 +219,10 @@
           "- **Mustang**: others see you at +1 distance; **Scope**: you see others at −1",
           "- Cat Balou works at any distance; Panic! only at distance 1",
           "",
+          "![Distance: count seats both ways from you (blue) and take the shorter; eliminated players (grey ✗) are skipped](img/distance.svg)",
+          "",
+          "![Range: the target's Mustang (horseshoe) adds 1, so 2 + 1 = 3 — a range-1 gun can't reach, a range-3 gun can; your Scope (crosshair) subtracts 1, so 2 − 1 = 1 and a range-1 gun reaches](img/range.svg)",
+          "",
           "| Weapon | Range |",
           "|---|---|",
           "| Colt .45 (default) | 1 |",
@@ -223,6 +237,10 @@
           "- BANG! は武器の**射程**以内の距離の人にしか撃てない",
           "- **マスタング**：他の人から見た自分の距離 +1。**スコープ**：自分から見た他の人の距離 −1",
           "- キャット・バルーは距離無関係、パニック！は距離 1 のみ",
+          "",
+          "![距離：自分（青）から左右に数えて近い方。脱落者（灰色 ✗）は数えない](img/distance.svg)",
+          "",
+          "![射程：相手にマスタング（蹄鉄）があると距離 +1、2＋1＝3 で射程 1 の銃は届かず、射程 3 なら届く。自分にスコープ（照準）があると距離 −1、2－1＝1 で射程 1 でも届く](img/range.svg)",
           "",
           "| 武器 | 射程 |",
           "|---|---|",

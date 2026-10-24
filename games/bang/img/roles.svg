@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 270" font-family="sans-serif">
+  <!-- 誰要打誰：
+       第 1 列 警長（金★）＋副警長（淡金☆）→ 殺光罪犯（黑面罩）和叛徒（紫）
+       第 2 列 罪犯 → 殺死警長
+       第 3 列 叛徒 → ① 先清掉別人 → ② 最後單挑警長 → 只剩自己 -->
+  <defs>
+    <g id="sheriff"><circle r="17" fill="#e8b923" stroke="#fff" stroke-width="2"/><text y="7" text-anchor="middle" font-size="20" fill="#6b4e00">★</text></g>
+    <g id="deputy"><circle r="17" fill="#f3dc8f" stroke="#fff" stroke-width="2"/><text y="7" text-anchor="middle" font-size="20" fill="#9a7a1a">☆</text></g>
+    <g id="outlaw"><circle r="17" fill="#333" stroke="#fff" stroke-width="2"/><rect x="-14" y="-7" width="28" height="9" rx="3" fill="#d9534f"/><circle cx="-6" cy="-2.5" r="2.2" fill="#fff"/><circle cx="6" cy="-2.5" r="2.2" fill="#fff"/></g>
+    <g id="renegade"><circle r="17" fill="#7b4fa0" stroke="#fff" stroke-width="2"/><circle r="7" fill="none" stroke="#fff" stroke-width="3"/></g>
+    <g id="hit"><circle cx="13" cy="-13" r="8" fill="#d9534f" stroke="#fff" stroke-width="1.5"/><text x="13" y="-8.5" text-anchor="middle" font-size="11" fill="#fff">✗</text></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#555"/></marker>
+  </defs>
+  <rect width="420" height="270" fill="#f4ecd8"/>
+
+  <!-- 第 1 列 -->
+  <g transform="translate(0,48)">
+    <rect x="12" y="-28" width="100" height="56" rx="12" fill="#f7e7b0"/>
+    <use href="#sheriff" x="40"/><use href="#deputy" x="84"/>
+    <line x1="122" y1="0" x2="170" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#outlaw" x="200"/><use href="#hit" x="200"/>
+    <use href="#outlaw" x="246"/><use href="#hit" x="246"/>
+    <use href="#outlaw" x="292"/><use href="#hit" x="292"/>
+    <use href="#renegade" x="350"/><use href="#hit" x="350"/>
+  </g>
+  <line x1="12" y1="100" x2="408" y2="100" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 2 列 -->
+  <g transform="translate(0,140)">
+    <rect x="12" y="-28" width="146" height="56" rx="12" fill="#ddd"/>
+    <use href="#outlaw" x="40"/><use href="#outlaw" x="85"/><use href="#outlaw" x="130"/>
+    <line x1="168" y1="0" x2="216" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#sheriff" x="246"/><use href="#hit" x="246"/>
+  </g>
+  <line x1="12" y1="190" x2="408" y2="190" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 3 列：叛徒 -->
+  <g transform="translate(0,232)" text-anchor="middle">
+    <rect x="12" y="-28" width="56" height="56" rx="12" fill="#e4d6ef"/>
+    <use href="#renegade" x="40"/>
+    <line x1="72" y1="0" x2="96" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="100" cy="-31" r="9" fill="#555"/><text x="100" y="-26.5" font-size="12" fill="#fff" font-weight="bold">1</text>
+    <use href="#outlaw" x="124"/><use href="#hit" x="124"/>
+    <use href="#deputy" x="166"/><use href="#hit" x="166"/>
+    <line x1="192" y1="0" x2="216" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="220" cy="-31" r="9" fill="#555"/><text x="220" y="-26.5" font-size="12" fill="#fff" font-weight="bold">2</text>
+    <use href="#sheriff" x="244"/><use href="#hit" x="244"/>
+    <line x1="270" y1="0" x2="306" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#renegade" x="336"/>
+    <text x="378" y="10" font-size="28" fill="#e8b923">★</text>
+  </g>
+</svg>

@@ -1,18 +1,33 @@
 {
   "id": "undercover",
   "icon": "🕵️",
-  "name": { "zh": "誰是臥底", "en": "Undercover", "ja": "アンダーカバー" },
-  "players": { "zh": "4–12 人", "en": "4–12 players", "ja": "4〜12人" },
-  "time": { "zh": "15 分鐘", "en": "15 min", "ja": "15分" },
+  "name": {
+    "zh": "誰是臥底",
+    "en": "Undercover",
+    "ja": "アンダーカバー"
+  },
+  "players": {
+    "zh": "4–12 人",
+    "en": "4–12 players",
+    "ja": "4〜12人"
+  },
+  "time": {
+    "zh": "15 分鐘",
+    "en": "15 min",
+    "ja": "15分"
+  },
   "summary": {
     "zh": "大家拿到同一個詞，只有臥底的詞不太一樣。輪流用一句話描述，找出誰在跟你講不同的東西。一支手機傳著玩，不用主持人。",
     "en": "Everyone gets the same word, except the undercover players, whose word is slightly different. Describe it in one sentence each and find out who is talking about something else. Pass one phone around; no host needed.",
     "ja": "全員同じお題、ただし潜入者だけ少し違うお題。ひとことずつ説明して、違うものの話をしている人を見つけよう。スマホ 1 台を回して遊べて、進行役はいらない。"
   },
-
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "大部分人是**平民**，拿到同一個詞；少數人是**臥底**，拿到意思相近但不同的詞（例如平民「牛奶」、臥底「豆漿」）。也可以加一個**白板**，什麼詞都沒有。",
@@ -38,29 +53,45 @@
       }
     },
     {
-      "title": { "zh": "身分", "en": "Roles", "ja": "役割" },
+      "title": {
+        "zh": "身分",
+        "en": "Roles",
+        "ja": "役割"
+      },
       "md": {
         "zh": [
           "- **平民**：人數最多，拿到同一個詞。要找出所有臥底和白板",
           "- **臥底**：詞跟平民很像但不一樣。一開始不知道自己是臥底，發現後要努力混進平民裡",
-          "- **白板**（可不加）：沒有詞，自己知道是白板。靠聽別人描述猜詞、假裝自己也有。白板跟臥底同一邊"
+          "- **白板**（可不加）：沒有詞，自己知道是白板。靠聽別人描述猜詞、假裝自己也有。白板跟臥底同一邊",
+          "",
+          "![平民（藍）拿同一個詞；臥底（紅）拿相近但不同的詞；白板（灰）沒有詞，跟臥底同一邊](img/roles.svg)"
         ],
         "en": [
           "- **Civilian**: the majority, all with the same word. Must find every Undercover and Blank player",
           "- **Undercover**: a word close to, but not the same as, the Civilians'. You do not know you are Undercover at first; once you realise it, blend in with the Civilians",
-          "- **Blank** (optional): has no word and knows it. Listen to the clues, guess the word and pretend you have it too. The Blank is on the Undercover side"
+          "- **Blank** (optional): has no word and knows it. Listen to the clues, guess the word and pretend you have it too. The Blank is on the Undercover side",
+          "",
+          "![Civilians (blue) share one word; the Undercover (red) gets a similar but different word; the Blank (gray) gets none and is on the Undercover side](img/roles.svg)"
         ],
         "ja": [
           "- **市民**：いちばん多く、全員同じお題。潜入者と白紙を全員見つけるのが目標",
           "- **潜入者**：市民とよく似た別のお題。最初は自分が潜入者だと知らないので、気づいたら市民に紛れ込む",
-          "- **白紙**（入れなくてもよい）：お題がなく、自分が白紙だと知っている。みんなの説明からお題を推理して、持っているふりをする。白紙は潜入者側"
+          "- **白紙**（入れなくてもよい）：お題がなく、自分が白紙だと知っている。みんなの説明からお題を推理して、持っているふりをする。白紙は潜入者側",
+          "",
+          "![市民（青）は同じお題、潜入者（赤）は似ているけれど違うお題、白紙（灰）はお題なしで潜入者の側](img/roles.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "遊戲流程", "en": "How to Play", "ja": "ゲームの流れ" },
+      "title": {
+        "zh": "遊戲流程",
+        "en": "How to Play",
+        "ja": "ゲームの流れ"
+      },
       "md": {
         "zh": [
+          "![1 依座位傳手機看詞 → 2 照順序每人一句 → 3 同時指人，得票最多的出局 → 4 公布身分；還沒分出勝負就回到 2](img/flow.svg)",
+          "",
           "### 1. 發詞（一支手機傳著玩）",
           "",
           "到〈開局〉頁設定人數、臥底數、要不要白板，按「開始發詞」。大家圍成一圈、順時針編號，手機從 1 號開始傳：輪到的人點開看自己的詞，記住後蓋起來，再交給下一個人。",
@@ -81,6 +112,8 @@
           "在 App 點出局的人，會顯示他是平民、臥底還是白板（不公布詞）。還沒分出勝負就進下一輪，回到第 2 步。出局的人不再發言、不投票。"
         ],
         "en": [
+          "![1 Pass the phone seat by seat → 2 one clue each, in order → 3 everyone points at once; most votes is out → 4 reveal the role; if no side has won, back to 2](img/flow.svg)",
+          "",
           "### 1. Deal (pass one phone)",
           "",
           "On the Play tab, set the number of players, Undercover players and whether to add a Blank, then press \"Deal words\". Sit in a circle numbered clockwise and pass the phone starting from player 1: each player peeks at their word, hides it, and hands the phone on.",
@@ -101,6 +134,8 @@
           "Tap the eliminated player in the app to see whether they were a Civilian, Undercover or Blank (the word stays secret). If no one has won yet, start the next round from step 2. Eliminated players no longer speak or vote."
         ],
         "ja": [
+          "![1 席順にスマホを回してお題を見る → 2 順番にひとことずつ → 3 一斉に指さし、最多票の人が脱落 → 4 役割を公開。勝負がつかなければ 2 へ戻る](img/flow.svg)",
+          "",
           "### 1. お題を配る（スマホ 1 台を回す）",
           "",
           "〈プレイ〉タブで人数・潜入者の数・白紙を入れるかを決め、「お題を配る」を押します。輪になって時計回りに番号をつけ、1 番からスマホを回します。自分の番になったらお題を見て、覚えたら隠して次の人へ渡します。",
@@ -123,11 +158,17 @@
       }
     },
     {
-      "title": { "zh": "勝負", "en": "Winning", "ja": "勝敗" },
+      "title": {
+        "zh": "勝負",
+        "en": "Winning",
+        "ja": "勝敗"
+      },
       "md": {
         "zh": [
           "- **平民勝**：臥底和白板全部出局",
           "- **臥底勝**：場上的平民人數**不比臥底方（臥底＋白板）多**時——例如只剩 1 個平民和 1 個臥底",
+          "",
+          "![上：臥底和白板都出局，平民勝；中：平民 2 人比臥底方 1 人多，繼續；下：平民 1 人不比臥底方 1 人多，臥底方勝](img/win.svg)",
           "",
           "App 每次淘汰後會自動判斷，分出勝負就公布雙方的詞。"
         ],
@@ -135,18 +176,26 @@
           "- **Civilians win** when every Undercover and Blank player is out",
           "- **Undercover wins** when the Civilians **no longer outnumber the Undercover side** (Undercover plus Blank), for example 1 Civilian and 1 Undercover left",
           "",
+          "![Top: Undercover and Blank are all out, Civilians win. Middle: 2 Civilians outnumber 1 on the Undercover side, keep playing. Bottom: 1 Civilian is not more than 1 on the Undercover side, the Undercover side wins](img/win.svg)",
+          "",
           "The app checks after every elimination and reveals both words when the game ends."
         ],
         "ja": [
           "- **市民の勝ち**：潜入者と白紙が全員脱落",
           "- **潜入者の勝ち**：残った市民の人数が**潜入者側（潜入者＋白紙）より多くなくなったとき**。たとえば市民 1 人と潜入者 1 人が残ったとき",
           "",
+          "![上：潜入者と白紙が全員脱落、市民の勝ち。中：市民 2 人が潜入者側 1 人より多いので続行。下：市民 1 人が潜入者側 1 人より多くないので潜入者側の勝ち](img/win.svg)",
+          "",
           "アプリが脱落のたびに自動で判定し、勝負がついたら両方のお題を公開します。"
         ]
       }
     },
     {
-      "title": { "zh": "人數建議", "en": "Suggested Setups", "ja": "おすすめ人数" },
+      "title": {
+        "zh": "人數建議",
+        "en": "Suggested Setups",
+        "ja": "おすすめ人数"
+      },
       "md": {
         "zh": [
           "| 人數 | 臥底 | 白板 |",
@@ -181,7 +230,11 @@
       }
     },
     {
-      "title": { "zh": "描述技巧", "en": "Tips", "ja": "コツ" },
+      "title": {
+        "zh": "描述技巧",
+        "en": "Tips",
+        "ja": "コツ"
+      },
       "md": {
         "zh": [
           "- **平民**：講太明白，臥底會猜出你們的詞跟著講；講太模糊，又會被當成臥底",
@@ -204,46 +257,617 @@
       }
     }
   ],
-
   "play": {
     "type": "undercover",
-    "wordsFile": { "zh": "words.zh.json" },
+    "wordsFile": {
+      "zh": "words.zh.json"
+    },
     "words": {
       "zh": [
-        ["牛奶", "豆漿"], ["包子", "饅頭"], ["水餃", "餛飩"], ["眉毛", "睫毛"], ["蝴蝶", "飛蛾"],
-        ["麥當勞", "肯德基"], ["情人節", "七夕"], ["雨傘", "雨衣"], ["鋼琴", "小提琴"], ["珍珠奶茶", "奶綠"],
-        ["火鍋", "麻辣燙"], ["機車", "腳踏車"], ["捷運", "公車"], ["高鐵", "飛機"], ["醫生", "護士"],
-        ["老師", "教授"], ["籃球", "排球"], ["羽毛球", "網球"], ["游泳", "潛水"], ["咖啡", "奶茶"],
-        ["可樂", "汽水"], ["西瓜", "哈密瓜"], ["橘子", "柳丁"], ["草莓", "櫻桃"], ["蛋糕", "麵包"],
-        ["筷子", "湯匙"], ["枕頭", "棉被"], ["手機", "平板"], ["電影", "連續劇"], ["演唱會", "音樂劇"],
-        ["周杰倫", "林俊傑"], ["哈利波特", "魔戒"], ["孫悟空", "豬八戒"], ["白雪公主", "灰姑娘"], ["月餅", "粽子"],
-        ["春節", "中秋節"], ["夜市", "菜市場"], ["便利商店", "超市"], ["拖鞋", "涼鞋"], ["口紅", "護唇膏"],
-        ["眼鏡", "隱形眼鏡"], ["貓", "老虎"], ["狗", "狼"], ["企鵝", "海豹"], ["壽司", "生魚片"],
-        ["拉麵", "烏龍麵"], ["颱風", "暴雨"], ["電梯", "手扶梯"], ["襪子", "手套"], ["啤酒", "紅酒"]
+        [
+          "牛奶",
+          "豆漿"
+        ],
+        [
+          "包子",
+          "饅頭"
+        ],
+        [
+          "水餃",
+          "餛飩"
+        ],
+        [
+          "眉毛",
+          "睫毛"
+        ],
+        [
+          "蝴蝶",
+          "飛蛾"
+        ],
+        [
+          "麥當勞",
+          "肯德基"
+        ],
+        [
+          "情人節",
+          "七夕"
+        ],
+        [
+          "雨傘",
+          "雨衣"
+        ],
+        [
+          "鋼琴",
+          "小提琴"
+        ],
+        [
+          "珍珠奶茶",
+          "奶綠"
+        ],
+        [
+          "火鍋",
+          "麻辣燙"
+        ],
+        [
+          "機車",
+          "腳踏車"
+        ],
+        [
+          "捷運",
+          "公車"
+        ],
+        [
+          "高鐵",
+          "飛機"
+        ],
+        [
+          "醫生",
+          "護士"
+        ],
+        [
+          "老師",
+          "教授"
+        ],
+        [
+          "籃球",
+          "排球"
+        ],
+        [
+          "羽毛球",
+          "網球"
+        ],
+        [
+          "游泳",
+          "潛水"
+        ],
+        [
+          "咖啡",
+          "奶茶"
+        ],
+        [
+          "可樂",
+          "汽水"
+        ],
+        [
+          "西瓜",
+          "哈密瓜"
+        ],
+        [
+          "橘子",
+          "柳丁"
+        ],
+        [
+          "草莓",
+          "櫻桃"
+        ],
+        [
+          "蛋糕",
+          "麵包"
+        ],
+        [
+          "筷子",
+          "湯匙"
+        ],
+        [
+          "枕頭",
+          "棉被"
+        ],
+        [
+          "手機",
+          "平板"
+        ],
+        [
+          "電影",
+          "連續劇"
+        ],
+        [
+          "演唱會",
+          "音樂劇"
+        ],
+        [
+          "周杰倫",
+          "林俊傑"
+        ],
+        [
+          "哈利波特",
+          "魔戒"
+        ],
+        [
+          "孫悟空",
+          "豬八戒"
+        ],
+        [
+          "白雪公主",
+          "灰姑娘"
+        ],
+        [
+          "月餅",
+          "粽子"
+        ],
+        [
+          "春節",
+          "中秋節"
+        ],
+        [
+          "夜市",
+          "菜市場"
+        ],
+        [
+          "便利商店",
+          "超市"
+        ],
+        [
+          "拖鞋",
+          "涼鞋"
+        ],
+        [
+          "口紅",
+          "護唇膏"
+        ],
+        [
+          "眼鏡",
+          "隱形眼鏡"
+        ],
+        [
+          "貓",
+          "老虎"
+        ],
+        [
+          "狗",
+          "狼"
+        ],
+        [
+          "企鵝",
+          "海豹"
+        ],
+        [
+          "壽司",
+          "生魚片"
+        ],
+        [
+          "拉麵",
+          "烏龍麵"
+        ],
+        [
+          "颱風",
+          "暴雨"
+        ],
+        [
+          "電梯",
+          "手扶梯"
+        ],
+        [
+          "襪子",
+          "手套"
+        ],
+        [
+          "啤酒",
+          "紅酒"
+        ]
       ],
       "en": [
-        ["Coffee", "Tea"], ["Cat", "Tiger"], ["Dog", "Wolf"], ["Pizza", "Burger"], ["Pancake", "Waffle"],
-        ["Butterfly", "Moth"], ["Doctor", "Nurse"], ["Piano", "Guitar"], ["Beach", "Swimming pool"], ["Bicycle", "Motorcycle"],
-        ["Train", "Bus"], ["Airplane", "Helicopter"], ["Basketball", "Volleyball"], ["Tennis", "Badminton"], ["Swimming", "Diving"],
-        ["Apple", "Pear"], ["Orange", "Lemon"], ["Strawberry", "Cherry"], ["Cake", "Bread"], ["Fork", "Spoon"],
-        ["Pillow", "Blanket"], ["Phone", "Tablet"], ["Movie", "TV series"], ["Concert", "Musical"], ["Harry Potter", "The Lord of the Rings"],
-        ["Snow White", "Cinderella"], ["Christmas", "Thanksgiving"], ["Halloween", "Easter"], ["Sunglasses", "Glasses"], ["Lipstick", "Lip balm"],
-        ["Sushi", "Sashimi"], ["Ramen", "Spaghetti"], ["Penguin", "Seal"], ["Shark", "Dolphin"], ["Rain", "Snow"],
-        ["Castle", "Palace"], ["Wine", "Beer"], ["Socks", "Gloves"], ["Elevator", "Escalator"], ["Teacher", "Professor"],
-        ["Milk", "Yogurt"], ["Watermelon", "Melon"], ["Taxi", "Uber"], ["Library", "Bookstore"], ["Candle", "Lamp"],
-        ["Ketchup", "Mustard"], ["Football", "Rugby"], ["Zoo", "Aquarium"], ["Pirate", "Ninja"], ["Hotel", "Hostel"]
+        [
+          "Coffee",
+          "Tea"
+        ],
+        [
+          "Cat",
+          "Tiger"
+        ],
+        [
+          "Dog",
+          "Wolf"
+        ],
+        [
+          "Pizza",
+          "Burger"
+        ],
+        [
+          "Pancake",
+          "Waffle"
+        ],
+        [
+          "Butterfly",
+          "Moth"
+        ],
+        [
+          "Doctor",
+          "Nurse"
+        ],
+        [
+          "Piano",
+          "Guitar"
+        ],
+        [
+          "Beach",
+          "Swimming pool"
+        ],
+        [
+          "Bicycle",
+          "Motorcycle"
+        ],
+        [
+          "Train",
+          "Bus"
+        ],
+        [
+          "Airplane",
+          "Helicopter"
+        ],
+        [
+          "Basketball",
+          "Volleyball"
+        ],
+        [
+          "Tennis",
+          "Badminton"
+        ],
+        [
+          "Swimming",
+          "Diving"
+        ],
+        [
+          "Apple",
+          "Pear"
+        ],
+        [
+          "Orange",
+          "Lemon"
+        ],
+        [
+          "Strawberry",
+          "Cherry"
+        ],
+        [
+          "Cake",
+          "Bread"
+        ],
+        [
+          "Fork",
+          "Spoon"
+        ],
+        [
+          "Pillow",
+          "Blanket"
+        ],
+        [
+          "Phone",
+          "Tablet"
+        ],
+        [
+          "Movie",
+          "TV series"
+        ],
+        [
+          "Concert",
+          "Musical"
+        ],
+        [
+          "Harry Potter",
+          "The Lord of the Rings"
+        ],
+        [
+          "Snow White",
+          "Cinderella"
+        ],
+        [
+          "Christmas",
+          "Thanksgiving"
+        ],
+        [
+          "Halloween",
+          "Easter"
+        ],
+        [
+          "Sunglasses",
+          "Glasses"
+        ],
+        [
+          "Lipstick",
+          "Lip balm"
+        ],
+        [
+          "Sushi",
+          "Sashimi"
+        ],
+        [
+          "Ramen",
+          "Spaghetti"
+        ],
+        [
+          "Penguin",
+          "Seal"
+        ],
+        [
+          "Shark",
+          "Dolphin"
+        ],
+        [
+          "Rain",
+          "Snow"
+        ],
+        [
+          "Castle",
+          "Palace"
+        ],
+        [
+          "Wine",
+          "Beer"
+        ],
+        [
+          "Socks",
+          "Gloves"
+        ],
+        [
+          "Elevator",
+          "Escalator"
+        ],
+        [
+          "Teacher",
+          "Professor"
+        ],
+        [
+          "Milk",
+          "Yogurt"
+        ],
+        [
+          "Watermelon",
+          "Melon"
+        ],
+        [
+          "Taxi",
+          "Uber"
+        ],
+        [
+          "Library",
+          "Bookstore"
+        ],
+        [
+          "Candle",
+          "Lamp"
+        ],
+        [
+          "Ketchup",
+          "Mustard"
+        ],
+        [
+          "Football",
+          "Rugby"
+        ],
+        [
+          "Zoo",
+          "Aquarium"
+        ],
+        [
+          "Pirate",
+          "Ninja"
+        ],
+        [
+          "Hotel",
+          "Hostel"
+        ]
       ],
       "ja": [
-        ["コーヒー", "紅茶"], ["うどん", "そば"], ["寿司", "刺身"], ["ラーメン", "つけ麺"], ["カレー", "シチュー"],
-        ["おにぎり", "お弁当"], ["猫", "トラ"], ["犬", "オオカミ"], ["チョウ", "ガ"], ["医者", "看護師"],
-        ["ピアノ", "ギター"], ["海", "プール"], ["自転車", "バイク"], ["新幹線", "飛行機"], ["電車", "バス"],
-        ["野球", "ソフトボール"], ["テニス", "バドミントン"], ["水泳", "ダイビング"], ["りんご", "なし"], ["みかん", "レモン"],
-        ["いちご", "さくらんぼ"], ["ケーキ", "パン"], ["箸", "スプーン"], ["枕", "布団"], ["スマホ", "タブレット"],
-        ["映画", "ドラマ"], ["コンサート", "ミュージカル"], ["ドラえもん", "アンパンマン"], ["白雪姫", "シンデレラ"], ["お正月", "お盆"],
-        ["クリスマス", "バレンタイン"], ["コンビニ", "スーパー"], ["温泉", "銭湯"], ["メガネ", "サングラス"], ["口紅", "リップクリーム"],
-        ["ペンギン", "アザラシ"], ["サメ", "イルカ"], ["雨", "雪"], ["お城", "神社"], ["ビール", "日本酒"],
-        ["靴下", "手袋"], ["エレベーター", "エスカレーター"], ["牛乳", "豆乳"], ["たこ焼き", "お好み焼き"], ["餃子", "シュウマイ"],
-        ["図書館", "本屋"], ["遊園地", "動物園"], ["忍者", "侍"], ["ホテル", "旅館"], ["花火", "お祭り"]
+        [
+          "コーヒー",
+          "紅茶"
+        ],
+        [
+          "うどん",
+          "そば"
+        ],
+        [
+          "寿司",
+          "刺身"
+        ],
+        [
+          "ラーメン",
+          "つけ麺"
+        ],
+        [
+          "カレー",
+          "シチュー"
+        ],
+        [
+          "おにぎり",
+          "お弁当"
+        ],
+        [
+          "猫",
+          "トラ"
+        ],
+        [
+          "犬",
+          "オオカミ"
+        ],
+        [
+          "チョウ",
+          "ガ"
+        ],
+        [
+          "医者",
+          "看護師"
+        ],
+        [
+          "ピアノ",
+          "ギター"
+        ],
+        [
+          "海",
+          "プール"
+        ],
+        [
+          "自転車",
+          "バイク"
+        ],
+        [
+          "新幹線",
+          "飛行機"
+        ],
+        [
+          "電車",
+          "バス"
+        ],
+        [
+          "野球",
+          "ソフトボール"
+        ],
+        [
+          "テニス",
+          "バドミントン"
+        ],
+        [
+          "水泳",
+          "ダイビング"
+        ],
+        [
+          "りんご",
+          "なし"
+        ],
+        [
+          "みかん",
+          "レモン"
+        ],
+        [
+          "いちご",
+          "さくらんぼ"
+        ],
+        [
+          "ケーキ",
+          "パン"
+        ],
+        [
+          "箸",
+          "スプーン"
+        ],
+        [
+          "枕",
+          "布団"
+        ],
+        [
+          "スマホ",
+          "タブレット"
+        ],
+        [
+          "映画",
+          "ドラマ"
+        ],
+        [
+          "コンサート",
+          "ミュージカル"
+        ],
+        [
+          "ドラえもん",
+          "アンパンマン"
+        ],
+        [
+          "白雪姫",
+          "シンデレラ"
+        ],
+        [
+          "お正月",
+          "お盆"
+        ],
+        [
+          "クリスマス",
+          "バレンタイン"
+        ],
+        [
+          "コンビニ",
+          "スーパー"
+        ],
+        [
+          "温泉",
+          "銭湯"
+        ],
+        [
+          "メガネ",
+          "サングラス"
+        ],
+        [
+          "口紅",
+          "リップクリーム"
+        ],
+        [
+          "ペンギン",
+          "アザラシ"
+        ],
+        [
+          "サメ",
+          "イルカ"
+        ],
+        [
+          "雨",
+          "雪"
+        ],
+        [
+          "お城",
+          "神社"
+        ],
+        [
+          "ビール",
+          "日本酒"
+        ],
+        [
+          "靴下",
+          "手袋"
+        ],
+        [
+          "エレベーター",
+          "エスカレーター"
+        ],
+        [
+          "牛乳",
+          "豆乳"
+        ],
+        [
+          "たこ焼き",
+          "お好み焼き"
+        ],
+        [
+          "餃子",
+          "シュウマイ"
+        ],
+        [
+          "図書館",
+          "本屋"
+        ],
+        [
+          "遊園地",
+          "動物園"
+        ],
+        [
+          "忍者",
+          "侍"
+        ],
+        [
+          "ホテル",
+          "旅館"
+        ],
+        [
+          "花火",
+          "お祭り"
+        ]
       ]
     }
   }

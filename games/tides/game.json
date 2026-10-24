@@ -1,9 +1,21 @@
 {
   "id": "tides",
   "icon": "🌊",
-  "name": { "zh": "運轉潮汐", "en": "Turn the Tide", "ja": "ラント・ウンター" },
-  "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
-  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "name": {
+    "zh": "運轉潮汐",
+    "en": "Turn the Tide",
+    "ja": "ラント・ウンター"
+  },
+  "players": {
+    "zh": "3–5 人",
+    "en": "3–5 players",
+    "ja": "3〜5人"
+  },
+  "time": {
+    "zh": "30 分鐘",
+    "en": "30 min",
+    "ja": "30分"
+  },
   "summary": {
     "zh": "大家同時出天氣牌搶潮位卡：出最大的拿較低的潮位、第二大的拿較高的。每一手潮位最高的人丟一個救生圈，留下最多救生圈的人得分最多。手牌每輪傳給左邊，玩人數那麼多輪。App 幫你記救生圈、潮位和分數。",
     "en": "Everyone plays a weather card at once to bid for tide cards: the highest takes the lower tide, the second highest the higher. Each hand the highest tide loses a life preserver; keep the most preservers to score. Hands pass left each round, for as many rounds as players. The app tracks preservers, tide levels and scores.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "內容與準備", "en": "Contents and setup", "ja": "内容物と準備" },
+      "title": {
+        "zh": "內容與準備",
+        "en": "Contents and setup",
+        "ja": "内容物と準備"
+      },
       "md": {
         "zh": [
           "- **天氣牌** 60 張（1～60 各一張）、**潮位卡** 24 張（1～12 各兩張）、**救生圈**標記 24 個",
@@ -37,7 +53,11 @@
       }
     },
     {
-      "title": { "zh": "一手的流程", "en": "A hand", "ja": "1 手の流れ" },
+      "title": {
+        "zh": "一手的流程",
+        "en": "A hand",
+        "ja": "1 手の流れ"
+      },
       "md": {
         "zh": [
           "一輪有 12 手，每一手：",
@@ -45,10 +65,16 @@
           "1. 翻開潮位卡堆最上面 **2 張**",
           "2. 每個人**同時**挑一張天氣牌蓋著出，一起翻開比大小",
           "3. 出**最大**的人拿**比較小**的那張潮位卡；出**第二大**的人拿**比較大**的那張。新拿到的潮位卡**疊在自己舊的上面**，只看最上面那張",
+          "",
+          "![翻開 4 和 9：出最大（52）的人拿小的 4，出第二大（37）的人拿大的 9，其他人不拿](img/split.svg)",
+          "",
           "4. 現在**場上潮位最高**的人丟一個救生圈（翻面）。同分的人都要丟",
           "5. 出過的天氣牌蓋著放到一邊",
           "",
-          "丟救生圈的不一定是剛拿到大潮位的人——可能是之前的潮位一直最高的人。"
+          "丟救生圈的不一定是剛拿到大潮位的人——可能是之前的潮位一直最高的人。",
+          "",
+          "![新潮位疊在舊的上面，只看最上面那張；場上最高的是一直留著 11 的人，所以由他丟一個救生圈](img/stack.svg)",
+          ""
         ],
         "en": [
           "A round has 12 hands. Each hand:",
@@ -56,10 +82,16 @@
           "1. Turn over the top **2** tide cards",
           "2. Everyone **simultaneously** chooses a weather card face down, then all reveal",
           "3. The **highest** weather card takes the **lower** tide card; the **second highest** takes the **higher** one. Place the new tide card **on top of your old one** — only the top card counts",
+          "",
+          "![Tide cards 4 and 9: the highest weather card (52) takes the lower 4, the second highest (37) takes the higher 9; the others take none](img/split.svg)",
+          "",
           "4. Whoever now shows the **highest tide** loses a life preserver (turn it face down). Ties all lose one",
           "5. Put the played weather cards face down aside",
           "",
-          "The player who loses a preserver isn't necessarily the one who just took the higher tide — an earlier tide may still be the highest."
+          "The player who loses a preserver isn't necessarily the one who just took the higher tide — an earlier tide may still be the highest.",
+          "",
+          "![New tide cards go on top of old ones; the 11 left over from earlier is now the highest, so that player loses a preserver](img/stack.svg)",
+          ""
         ],
         "ja": [
           "1 ラウンドは 12 手。各手：",
@@ -67,15 +99,25 @@
           "1. 潮位カードの山から **2 枚**めくる",
           "2. 全員**同時に**天気カードを 1 枚裏向きで選び、一斉に公開",
           "3. **一番大きい**人が**小さい方**の潮位カード、**二番目**の人が**大きい方**を取る。新しい潮位カードは**前のカードの上に重ね**、一番上だけ数える",
+          "",
+          "![潮位 4 と 9：一番大きい 52 の人が小さい 4、二番目の 37 の人が大きい 9 を取る。ほかの人は取らない](img/split.svg)",
+          "",
           "4. いま**潮位が一番高い**人が浮き輪を 1 つ失う（裏返す）。同点なら全員",
           "5. 出した天気カードは裏向きで横へ",
           "",
-          "浮き輪を失うのは今大きい潮位を取った人とは限らない。前からの潮位が一番高いままのこともある。"
+          "浮き輪を失うのは今大きい潮位を取った人とは限らない。前からの潮位が一番高いままのこともある。",
+          "",
+          "![新しい潮位は前のカードの上に重ねる。前からの 11 が一番高いので、その人が浮き輪を 1 つ失う](img/stack.svg)",
+          ""
         ]
       }
     },
     {
-      "title": { "zh": "淘汰與一輪結束", "en": "Elimination and end of round", "ja": "脱落とラウンド終了" },
+      "title": {
+        "zh": "淘汰與一輪結束",
+        "en": "Elimination and end of round",
+        "ja": "脱落とラウンド終了"
+      },
       "md": {
         "zh": [
           "- 最後一個救生圈翻掉後還有一次機會；**沒救生圈又要丟**時才被淘汰，這輪出局",
@@ -110,7 +152,11 @@
       }
     },
     {
-      "title": { "zh": "App 怎麼用", "en": "Using the app", "ja": "アプリの使い方" },
+      "title": {
+        "zh": "App 怎麼用",
+        "en": "Using the app",
+        "ja": "アプリの使い方"
+      },
       "md": {
         "zh": [
           "1. 每輪開始先把每個人的救生圈數調好",
@@ -133,7 +179,11 @@
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips for new players",
+        "ja": "初心者向けのヒント"
+      },
       "md": {
         "zh": [
           "- 小牌別太早出完，後面會沒有東西擋",
@@ -155,6 +205,10 @@
   ],
   "play": {
     "type": "tides",
-    "title": { "zh": "記錄計分", "en": "Tracker", "ja": "記録・得点" }
+    "title": {
+      "zh": "記錄計分",
+      "en": "Tracker",
+      "ja": "記録・得点"
+    }
   }
 }

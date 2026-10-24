@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 286" font-family="sans-serif">
+  <defs></defs>
+  <rect width="420" height="286" fill="#f4ecd8"/>
+<g transform="translate(22,94)"><rect width="40" height="40" fill="#5b4636" stroke="#2b2018" stroke-width="1.5"/><rect x="14.399999999999999" y="14.399999999999999" width="11.200000000000001" height="11.200000000000001" fill="#e9cf99"/><rect x="14.399999999999999" y="0" width="11.200000000000001" height="20.0" fill="#e9cf99"/><rect x="20.0" y="14.399999999999999" width="20.0" height="11.200000000000001" fill="#e9cf99"/><rect x="14.399999999999999" y="20.0" width="11.200000000000001" height="20.0" fill="#e9cf99"/><rect x="0" y="14.399999999999999" width="20.0" height="11.200000000000001" fill="#e9cf99"/><rect x="3" y="3" width="34" height="34" fill="none" stroke="#3c9a4b" stroke-width="3"/></g>
+<rect x="64" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="82.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">1</text>
+<rect x="104" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="122.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">2</text>
+<rect x="144" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="162.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">3</text>
+<rect x="184" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="202.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">4</text>
+<rect x="224" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="242.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">5</text>
+<rect x="264" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="282.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">6</text>
+<rect x="304" y="96" width="36" height="36" rx="3" fill="none" stroke="#9a8a6a" stroke-dasharray="4 3"/><text x="322.0" y="120.0" text-anchor="middle" font-size="16" fill="#9a8a6a">7</text>
+<rect x="342" y="14" width="40" height="40" rx="3" fill="#2f3b52" stroke="#111" stroke-width="1.5"/><text x="362.0" y="42.0" text-anchor="middle" font-size="22" font-weight="bold" fill="#f4ecd8">?</text>
+<rect x="342" y="94" width="40" height="40" rx="3" fill="#2f3b52" stroke="#111" stroke-width="1.5"/><text x="362.0" y="122.0" text-anchor="middle" font-size="22" font-weight="bold" fill="#f4ecd8">?</text>
+<rect x="342" y="174" width="40" height="40" rx="3" fill="#2f3b52" stroke="#111" stroke-width="1.5"/><text x="362.0" y="202.0" text-anchor="middle" font-size="22" font-weight="bold" fill="#f4ecd8">?</text>
+<rect x="344" y="56" width="36" height="36" rx="3" fill="none" stroke="#c9b892" stroke-dasharray="2 4"/>
+<rect x="344" y="136" width="36" height="36" rx="3" fill="none" stroke="#c9b892" stroke-dasharray="2 4"/>
+<path d="M64 142 v8 H340 v-8" fill="none" stroke="#555" stroke-width="2"/><text x="202.0" y="172" text-anchor="middle" font-size="20" font-weight="bold" fill="#333">7</text>
+<rect x="30" y="242" width="26" height="26" rx="3" fill="#2f3b52"/><text x="43" y="261" text-anchor="middle" font-size="15" font-weight="bold" fill="#f4ecd8">?</text>
+<rect x="60" y="242" width="26" height="26" rx="3" fill="#2f3b52"/><text x="73" y="261" text-anchor="middle" font-size="15" font-weight="bold" fill="#f4ecd8">?</text>
+<rect x="90" y="242" width="26" height="26" rx="3" fill="#2f3b52"/><text x="103" y="261" text-anchor="middle" font-size="15" font-weight="bold" fill="#f4ecd8">?</text>
+<text x="134" y="262" font-size="20" fill="#333">=</text>
+<polygon points="168,264 174,248 188,245 198,256 192,266" fill="#f2c230" stroke="#9a7300" stroke-width="1.5"/>
+<text x="206" y="262" font-size="18" fill="#333">× 1</text>
+<text x="242" y="262" font-size="20" fill="#333">+</text>
+<ellipse cx="276" cy="256" rx="14" ry="10" fill="#8d8d8d" stroke="#555" stroke-width="1.5"/>
+<text x="296" y="262" font-size="18" fill="#333">× 2</text>
+</svg>

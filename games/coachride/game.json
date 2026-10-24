@@ -1,9 +1,21 @@
 {
   "id": "coachride",
   "icon": "🎩",
-  "name": { "zh": "魔城馬車", "en": "Coach Ride to Devil's Castle", "ja": "悪魔城への馬車の旅" },
-  "players": { "zh": "3–10 人", "en": "3–10 players", "ja": "3〜10人" },
-  "time": { "zh": "30–60 分鐘", "en": "30–60 min", "ja": "30〜60分" },
+  "name": {
+    "zh": "魔城馬車",
+    "en": "Coach Ride to Devil's Castle",
+    "ja": "悪魔城への馬車の旅"
+  },
+  "players": {
+    "zh": "3–10 人",
+    "en": "3–10 players",
+    "ja": "3〜10人"
+  },
+  "time": {
+    "zh": "30–60 分鐘",
+    "en": "30–60 min",
+    "ja": "30〜60分"
+  },
   "summary": {
     "zh": "馬車上的乘客分屬兩個秘密結社：騎士團要湊齊 3 把鑰匙，兄弟會要湊齊 3 個聖杯。交換道具、發起決鬥，猜出誰是同伴，再宣告勝利。用手機秘密發結社卡。",
     "en": "The passengers on the coach belong to two secret societies: the Order wants 3 keys, the Brotherhood 3 goblets. Trade objects, start struggles, work out who your allies are and proclaim victory. Deal the society cards secretly with one phone.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "先看這裡", "en": "Read this first", "ja": "はじめに" },
+      "title": {
+        "zh": "先看這裡",
+        "en": "Read this first",
+        "ja": "はじめに"
+      },
       "md": {
         "zh": [
           "這款絕版了，規則整理自玩家做的英文規則摘要，**職業和道具的效果寫在每張卡上，以手上的卡為準**。",
@@ -40,7 +56,11 @@
       }
     },
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "每人拿（N＝人數）：",
@@ -75,7 +95,11 @@
       }
     },
     {
-      "title": { "zh": "回合", "en": "Your turn", "ja": "手番" },
+      "title": {
+        "zh": "回合",
+        "en": "Your turn",
+        "ja": "手番"
+      },
       "md": {
         "zh": [
           "從旅行最遠的人開始輪流，每回合做**一件事**：",
@@ -104,36 +128,59 @@
       }
     },
     {
-      "title": { "zh": "決鬥", "en": "Struggles", "ja": "争い" },
+      "title": {
+        "zh": "決鬥",
+        "en": "Struggles",
+        "ja": "争い"
+      },
       "md": {
         "zh": [
           "1. 攻擊者說「我攻擊你！」，角色卡**劍**朝上放出；防守者角色卡**盾**朝上放出",
           "2. 從攻擊者左邊開始，其他人輪流決定支持哪一邊（把角色卡放在那一邊），或不放表示不參與",
           "3. 大家都可以把職業或道具翻開使用能力；**道具用完收回手上，職業翻開後就一直公開**",
           "4. 加總劍和盾的數量比大小（卡上兩種都有的，持有人自己選算哪一種）",
+          "",
+          "![決鬥：攻擊者 1 出劍、防守者 2 出盾；3、4 支持攻擊者，5 支持防守者，6 不參與 → 劍 3 比盾 2，攻擊者贏](img/duel.svg)",
+          "",
           "5. **平手**：攻擊者從補給牌堆拿一張道具",
-          "6. 贏家選一個：**偷看輸家的職業和結社**，或**看輸家的道具並拿走一張**（輸家只有一張道具時，贏家要給他一張自己的道具補上）"
+          "6. 贏家選一個：**偷看輸家的職業和結社**，或**看輸家的道具並拿走一張**（輸家只有一張道具時，贏家要給他一張自己的道具補上）",
+          "",
+          "![決鬥結果：平手時攻擊者從補給牌堆拿一張道具（上）；贏家（★）偷看輸家的職業（綠）和結社（灰），或看輸家的道具拿走一張（中）；輸家只有一張道具時，贏家拿走後要給他一張自己的（下）](img/duel-result.svg)"
         ],
         "en": [
           "1. The attacker says \"I attack you!\" and plays their character **sword** side up; the defender plays theirs **shield** side up",
           "2. Starting left of the attacker, the others choose a side by placing their character card, or keep it to abstain",
           "3. Anyone may reveal occupations or objects to use their abilities; **objects return to hand afterwards, occupations stay face up**",
           "4. Compare total swords to total shields (if a card has both, its owner chooses which counts)",
+          "",
+          "![A duel: attacker 1 plays the sword, defender 2 the shield; 3 and 4 back the attacker, 5 backs the defender, 6 stays out → 3 swords vs 2 shields, the attacker wins](img/duel.svg)",
+          "",
           "5. **Tie**: the attacker takes an object from the pick-up pile",
-          "6. The winner chooses one: **look at the loser's occupation and society**, or **look at the loser's objects and take one** (if the loser had only one, the winner gives them one of their own objects)"
+          "6. The winner chooses one: **look at the loser's occupation and society**, or **look at the loser's objects and take one** (if the loser had only one, the winner gives them one of their own objects)",
+          "",
+          "![After the duel: on a tie the attacker takes an object from the pick-up pile (top); the winner (★) either looks at the loser's occupation (green) and society (grey) or takes one of the loser's objects (middle); if the loser has only one object, the winner gives one of their own back (bottom)](img/duel-result.svg)"
         ],
         "ja": [
           "1. 攻撃者は「攻撃する！」と言い、キャラクターを**剣**の面で出す。防御者は**盾**の面で出す",
           "2. 攻撃者の左から順に、どちらを応援するかキャラクターを置いて示す。置かなければ不参加",
           "3. 誰でも職業や道具を公開して能力を使える。**道具は終わったら手札に戻し、職業は公開したまま**",
           "4. 剣と盾の合計を比べる（両方あるカードは持ち主がどちらで数えるか選ぶ）",
+          "",
+          "![決闘：攻撃者 1 は剣、防御者 2 は盾。3 と 4 は攻撃者を、5 は防御者を応援し、6 は不参加 → 剣 3 対盾 2 で攻撃者の勝ち](img/duel.svg)",
+          "",
           "5. **同点**：攻撃者は補充の山から道具を 1 枚取る",
-          "6. 勝者は 1 つ選ぶ：**敗者の職業と結社を見る**、または**敗者の道具を見て 1 枚奪う**（敗者の道具が 1 枚だけなら、勝者は自分の道具を 1 枚渡す）"
+          "6. 勝者は 1 つ選ぶ：**敗者の職業と結社を見る**、または**敗者の道具を見て 1 枚奪う**（敗者の道具が 1 枚だけなら、勝者は自分の道具を 1 枚渡す）",
+          "",
+          "![決闘のあと：同点なら攻撃者が補充の山から道具を 1 枚取る（上）。勝者（★）は敗者の職業（緑）と結社（灰）を見るか、敗者の道具を 1 枚奪う（中）。敗者の道具が 1 枚だけなら、勝者は自分の道具を 1 枚渡す（下）](img/duel-result.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "勝利", "en": "Winning", "ja": "勝利" },
+      "title": {
+        "zh": "勝利",
+        "en": "Winning",
+        "ja": "勝利"
+      },
       "md": {
         "zh": [
           "覺得自己的結社已經湊齊時，在自己的回合宣告：",
@@ -145,6 +192,8 @@
           "- 袋子裡裝著鑰匙或聖杯的，算鑰匙或聖杯",
           "- 人數奇數時，人數比較少的那一邊可以用力量藥水代替一把鑰匙或一個聖杯",
           "- 有道具「分會的盔甲外套」的人可以自己一個人贏（看卡上說明）",
+          "",
+          "![以騎士團為例：鑰匙在 1、3 手上，4 的袋子裡也有一把，湊齊 3 把；1 宣告後說出 3、4 全對就贏，說成 3、2 就變成兄弟會（聖杯）贏](img/win.svg)",
           "",
           "說完按「開局」頁的「公布結社」對答案。"
         ],
@@ -159,6 +208,8 @@
           "- With an odd number of players, the smaller society may use a Drink of Power in place of one key or goblet",
           "- The holder of the Coat of Armor of the Loge can win alone (see the card)",
           "",
+          "![Example for the Order: keys are held by 1 and 3, and 4 has one in a bag — 3 in all; 1 proclaims and names 3 and 4, all correct, and wins; naming 3 and 2 instead hands the win to the Brotherhood (goblet)](img/win.svg)",
+          "",
           "Then tap Reveal in the Play tab to check."
         ],
         "ja": [
@@ -172,6 +223,8 @@
           "- 人数が奇数なら、人数の少ない方の結社は力の薬を鍵か杯 1 つの代わりにできる",
           "- 「支部の鎧のコート」を持つ人は 1 人で勝てる（カード参照）",
           "",
+          "![騎士団の例：鍵は 1 と 3 が持ち、4 の袋にも 1 つで計 3 つ。1 が宣言して 3 と 4 を挙げれば全部正しく勝ち、3 と 2 を挙げると兄弟団（杯）の勝ち](img/win.svg)",
+          "",
           "宣言したら「プレイ」タブの「結社を公開」で答え合わせ。"
         ]
       }
@@ -179,6 +232,10 @@
   ],
   "play": {
     "type": "coachride",
-    "title": { "zh": "發結社卡", "en": "Societies", "ja": "結社配り" }
+    "title": {
+      "zh": "發結社卡",
+      "en": "Societies",
+      "ja": "結社配り"
+    }
   }
 }

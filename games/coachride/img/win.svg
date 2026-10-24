@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" font-family="sans-serif">
+  <!-- 宣告勝利（以騎士團的鑰匙為例）：
+       上 鑰匙在 1、3 手上，4 的袋子裡裝鑰匙也算 → 1 + 1 + 1 = 3 把
+       中 宣告者 1 說出 3、4 → 全對 → 騎士團（鑰匙）贏
+       下 說成 3、2 → 錯一個 → 對方結社（聖杯）贏 -->
+  <defs>
+    <g id="p"><circle r="16" fill="#6d7b8c" stroke="#fff" stroke-width="2"/></g>
+    <g id="key"><circle cx="-7" r="6" fill="none" stroke="#c99a12" stroke-width="3.5"/><path d="M-1 0 H12 M8 0 V6 M12 0 V5" fill="none" stroke="#c99a12" stroke-width="3.5"/></g>
+    <g id="cup"><path d="M-9 -11 H9 Q9 1 0 3 Q-9 1 -9 -11Z" fill="#c0392b"/><rect x="-1.5" y="3" width="3" height="6" fill="#c0392b"/><rect x="-7" y="9" width="14" height="3" rx="1.5" fill="#c0392b"/></g>
+    <g id="bag"><path d="M-6 -14 L6 -14 L4 -9 Q15 -4 14 8 Q12 16 0 16 Q-12 16 -14 8 Q-15 -4 -4 -9Z" fill="#a9825a" stroke="#6b4b2a" stroke-width="1.5"/></g>
+    <g id="slot"><rect x="-19" y="-18" width="38" height="36" rx="6" fill="#fff8e6" stroke="#c9b98f" stroke-width="1.5"/></g>
+    <g id="yes"><circle r="14" fill="#3c9a4b"/><text y="6" text-anchor="middle" font-size="17" fill="#fff">✓</text></g>
+    <g id="no"><circle r="14" fill="#d9534f"/><text y="6" text-anchor="middle" font-size="17" fill="#fff">✗</text></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#555"/></marker>
+  </defs>
+  <rect width="420" height="300" fill="#f4ecd8"/>
+
+  <!-- 上：誰手上有什麼 -->
+  <g text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">
+    <use href="#p" x="45" y="30"/><text x="45" y="35">1</text>
+    <use href="#p" x="105" y="30"/><text x="105" y="35">2</text>
+    <use href="#p" x="165" y="30"/><text x="165" y="35">3</text>
+    <use href="#p" x="225" y="30"/><text x="225" y="35">4</text>
+    <use href="#p" x="285" y="30"/><text x="285" y="35">5</text>
+  </g>
+  <rect x="26" y="8" width="38" height="44" rx="10" fill="none" stroke="#2f6fd0" stroke-width="2.5"/>
+  <use href="#slot" x="45" y="76"/><use href="#key" x="47" y="76"/>
+  <use href="#slot" x="105" y="76"/><use href="#cup" x="105" y="76"/>
+  <use href="#slot" x="165" y="76"/><use href="#key" x="167" y="76"/>
+  <use href="#slot" x="225" y="76"/><use href="#bag" x="225" y="76"/><g transform="translate(227,80) scale(0.6)"><use href="#key"/></g>
+  <use href="#slot" x="285" y="76"/><use href="#cup" x="285" y="76"/>
+  <text x="365" y="70" text-anchor="middle" font-size="17" fill="#333">1+1+1</text>
+  <text x="365" y="94" text-anchor="middle" font-size="20" font-weight="bold" fill="#c99a12">= 3</text>
+  <line x1="12" y1="112" x2="408" y2="112" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 中：說對 -->
+  <g transform="translate(0,155)" text-anchor="middle" font-size="14" font-weight="bold">
+    <use href="#p" x="45"/><text x="45" y="5" fill="#fff">1</text>
+    <line x1="66" y1="0" x2="110" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#p" x="140"/><text x="140" y="5" fill="#fff">3</text><use href="#yes" x="140" y="-30"/>
+    <use href="#p" x="185"/><text x="185" y="5" fill="#fff">4</text><use href="#yes" x="185" y="-30"/>
+    <line x1="215" y1="0" x2="265" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="310" r="24" fill="#d6e4f7" stroke="#2f6fd0" stroke-width="2.5"/><use href="#key" x="312"/>
+    <text x="358" y="10" font-size="28" fill="#e8b923">★</text>
+  </g>
+  <line x1="12" y1="200" x2="408" y2="200" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 下：說錯 -->
+  <g transform="translate(0,255)" text-anchor="middle" font-size="14" font-weight="bold">
+    <use href="#p" x="45"/><text x="45" y="5" fill="#fff">1</text>
+    <line x1="66" y1="0" x2="110" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#p" x="140"/><text x="140" y="5" fill="#fff">3</text><use href="#yes" x="140" y="-30"/>
+    <use href="#p" x="185"/><text x="185" y="5" fill="#fff">2</text><use href="#no" x="185" y="-30"/>
+    <line x1="215" y1="0" x2="265" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="310" r="24" fill="#f6d6d2" stroke="#c0392b" stroke-width="2.5"/><use href="#cup" x="310"/>
+    <text x="358" y="10" font-size="28" fill="#e8b923">★</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 268" font-family="sans-serif">
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#333"/></marker><path id="mp" d="M-10 10 L-5 -2 L-10 -3 L-10 -6 L10 -6 L10 -3 L5 -2 L10 10 L3 10 L0 4 L-3 10Z"/><g id="ring"><circle r="9" fill="none" stroke="#e53935" stroke-width="5"/><circle r="9" fill="none" stroke="#fff" stroke-width="5" stroke-dasharray="4.7 9.4"/></g><g id="ringoff"><circle r="9" fill="none" stroke="#9e9e9e" stroke-width="5"/></g></defs>
+  <rect width="420" height="268" fill="#f4ecd8"/>
+<g transform="translate(150,14)"><rect width="44" height="60" rx="6" fill="#4a8fe0" stroke="#1d4f91" stroke-width="1.8"/><path d="M6 46 q6 -6 12 0 t12 0 t12 0" fill="none" stroke="#cfe3ff" stroke-width="2"/><text x="22.0" y="33.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">4</text></g>
+<g transform="translate(226,14)"><rect width="44" height="60" rx="6" fill="#4a8fe0" stroke="#1d4f91" stroke-width="1.8"/><path d="M6 46 q6 -6 12 0 t12 0 t12 0" fill="none" stroke="#cfe3ff" stroke-width="2"/><text x="22.0" y="33.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#fff">9</text></g>
+<g transform="translate(60,132) scale(1.4)" fill="#d9534f" stroke="#fff" stroke-width="1.2"><circle cy="-10" r="5"/><use href="#mp"/></g>
+<g transform="translate(38,160)"><rect width="44" height="60" rx="6" fill="#f6b44b" stroke="#a8641a" stroke-width="1.8"/><text x="22.0" y="37.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#3b2405">52</text></g>
+<circle cx="90" cy="170" r="11" fill="#e8c13a" stroke="#555"/><text x="90" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">1</text>
+<g transform="translate(160,132) scale(1.4)" fill="#3f7fd0" stroke="#fff" stroke-width="1.2"><circle cy="-10" r="5"/><use href="#mp"/></g>
+<g transform="translate(138,160)"><rect width="44" height="60" rx="6" fill="#f6b44b" stroke="#a8641a" stroke-width="1.8"/><text x="22.0" y="37.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#3b2405">37</text></g>
+<circle cx="190" cy="170" r="11" fill="#b0b7bf" stroke="#555"/><text x="190" y="175" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">2</text>
+<g transform="translate(260,132) scale(1.4)" fill="#3c9a4b" stroke="#fff" stroke-width="1.2"><circle cy="-10" r="5"/><use href="#mp"/></g>
+<g transform="translate(238,160)"><rect width="44" height="60" rx="6" fill="#f6b44b" stroke="#a8641a" stroke-width="1.8"/><text x="22.0" y="37.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#3b2405">25</text></g>
+<g transform="translate(360,132) scale(1.4)" fill="#8e5bb5" stroke="#fff" stroke-width="1.2"><circle cy="-10" r="5"/><use href="#mp"/></g>
+<g transform="translate(338,160)"><rect width="44" height="60" rx="6" fill="#f6b44b" stroke="#a8641a" stroke-width="1.8"/><text x="22.0" y="37.0" text-anchor="middle" font-size="20" font-weight="bold" fill="#3b2405">18</text></g>
+<line x1="160" y1="76" x2="78" y2="108" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+<line x1="248" y1="76" x2="176" y2="108" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="210" y="252" text-anchor="middle" font-size="18" fill="#333">52 &gt; 37 &gt; 25 &gt; 18</text>
+</svg>

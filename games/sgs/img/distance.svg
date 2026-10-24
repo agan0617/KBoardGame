@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 290" font-family="sans-serif">
+  <!-- 距離：從你（藍色，最下方）往左右兩邊數，取比較近的那邊；陣亡的人（灰色 ✗）跳過不算
+       7 個座位、左上一人已陣亡：順時針 1、(陣亡)、2、3、2、1 -->
+  <defs>
+    <g id="p"><circle r="18" fill="#6d7b8c" stroke="#fff" stroke-width="2"/></g>
+    <g id="me"><circle r="20" fill="#2f6fd0" stroke="#fff" stroke-width="2.5"/><g fill="#fff"><circle cy="-6" r="5"/><path d="M-9 11 Q-9 0 0 0 Q9 0 9 11Z"/></g></g>
+    <g id="dead"><circle r="18" fill="#cfcfcf" stroke="#fff" stroke-width="2"/><text y="7" text-anchor="middle" font-size="20" fill="#d9534f">✗</text></g>
+    <g id="d"><circle r="13" fill="#e8b923" stroke="#8a6d10" stroke-width="1.5"/></g>
+  </defs>
+  <rect width="420" height="290" fill="#f4ecd8"/>
+  <circle cx="210" cy="150" r="78" fill="#d9b98a" stroke="#8a5a2b" stroke-width="3"/>
+  <circle cx="210" cy="150" r="105" fill="none" stroke="#b89a5a" stroke-width="2" stroke-dasharray="5 6"/>
+
+  <use href="#me" x="210" y="255"/>
+  <use href="#p" x="127.9" y="215.5"/>
+  <use href="#dead" x="107.6" y="126.6"/>
+  <use href="#p" x="164.4" y="55.4"/>
+  <use href="#p" x="255.6" y="55.4"/>
+  <use href="#p" x="312.4" y="126.6"/>
+  <use href="#p" x="292.1" y="215.5"/>
+
+  <g text-anchor="middle" font-size="16" font-weight="bold" fill="#333">
+    <use href="#d" x="96.6" y="240.4"/><text x="96.6" y="246">1</text>
+    <use href="#d" x="147.1" y="19.4"/><text x="147.1" y="25">2</text>
+    <use href="#d" x="272.9" y="19.4"/><text x="272.9" y="25">3</text>
+    <use href="#d" x="351.4" y="117.7"/><text x="351.4" y="123.3">2</text>
+    <use href="#d" x="323.4" y="240.4"/><text x="323.4" y="246">1</text>
+  </g>
+</svg>

@@ -1,18 +1,33 @@
 {
   "id": "sgs",
   "icon": "🏯",
-  "name": { "zh": "三國殺", "en": "Legends of the Three Kingdoms", "ja": "三国殺" },
-  "players": { "zh": "4–10 人", "en": "4–10 players", "ja": "4〜10人" },
-  "time": { "zh": "40–60 分鐘", "en": "40–60 min", "ja": "40〜60分" },
+  "name": {
+    "zh": "三國殺",
+    "en": "Legends of the Three Kingdoms",
+    "ja": "三国殺"
+  },
+  "players": {
+    "zh": "4–10 人",
+    "en": "4–10 players",
+    "ja": "4〜10人"
+  },
+  "time": {
+    "zh": "40–60 分鐘",
+    "en": "40–60 min",
+    "ja": "40〜60分"
+  },
   "summary": {
     "zh": "三國版的身份局：主公和忠臣對上反賊，還有一個想當最後贏家的內奸。只有主公亮身分，其他人邊打邊猜誰是誰。用手機秘密發身分。",
     "en": "The Three Kingdoms take on hidden roles: the Monarch and Loyalists against the Rebels, plus a Traitor who wants to be the last one standing. Only the Monarch is revealed. Deal roles secretly with one phone.",
     "ja": "三国志版の正体隠し：主公と忠臣が反賊と戦い、最後の一人を狙う内奸もいる。身分を明かすのは主公だけ。スマホで秘密裏に身分を配れる。"
   },
-
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "每個人拿一張祕密的**身分**和一張公開的**武將**。只有**主公**亮出身分，其他人都藏著。",
@@ -22,6 +37,8 @@
           "- **主公、忠臣**：消滅所有反賊和內奸",
           "- **反賊**：殺死主公",
           "- **內奸**：成為最後一個活著的人——先幫主公清掉別人，最後再單挑主公",
+          "",
+          "![誰要打誰：主公（金冠）和忠臣（盾）要消滅反賊（紅旗）和內奸（紫）；反賊要殺主公；內奸先清掉其他人（1），最後單挑主公（2），活到最後](img/roles.svg)",
           "",
           "忠臣和反賊都不知道誰是自己人，要從大家打誰、救誰去猜。"
         ],
@@ -34,6 +51,8 @@
           "- **Rebels**: kill the Monarch",
           "- **Traitor**: be the last one alive: help the Monarch clear out everyone else, then defeat the Monarch at the end",
           "",
+          "![Who targets whom: the Monarch (crown) and Loyalists (shield) eliminate the Rebels (red flag) and the Traitor (purple); Rebels kill the Monarch; the Traitor first clears out the others (1), then faces the Monarch (2) to be the last one alive](img/roles.svg)",
+          "",
           "Loyalists and Rebels do not know who is on their side, so watch who attacks and who heals whom."
         ],
         "ja": [
@@ -45,12 +64,18 @@
           "- **反賊**：主公を倒す",
           "- **内奸**：最後の一人になる。先に主公とほかの人を片付け、最後に主公と一騎打ち",
           "",
+          "![誰が誰を狙うか：主公（王冠）と忠臣（盾）は反賊（赤い旗）と内奸（紫）を倒す。反賊は主公を倒す。内奸は先にほかの人を片付け（1）、最後に主公と一騎打ち（2）して一人だけ生き残る](img/roles.svg)",
+          "",
           "忠臣も反賊も仲間が誰かわからないので、誰が誰を攻撃し、誰を助けるかから推理します。"
         ]
       }
     },
     {
-      "title": { "zh": "人數與身分", "en": "Players & Roles", "ja": "人数と身分" },
+      "title": {
+        "zh": "人數與身分",
+        "en": "Players & Roles",
+        "ja": "人数と身分"
+      },
       "md": {
         "zh": [
           "| 人數 | 主公 | 忠臣 | 反賊 | 內奸 |",
@@ -100,7 +125,11 @@
       }
     },
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "1. 發身分，主公亮出身分",
@@ -126,7 +155,11 @@
       }
     },
     {
-      "title": { "zh": "回合流程", "en": "Turn Phases", "ja": "ターンの流れ" },
+      "title": {
+        "zh": "回合流程",
+        "en": "Turn Phases",
+        "ja": "ターンの流れ"
+      },
       "md": {
         "zh": [
           "1. **準備階段**：有些技能在這時發動（觀星、洛神）",
@@ -135,6 +168,8 @@
           "4. **出牌階段**：想出幾張就出幾張，但「殺」每回合**只能出 1 張**（諸葛連弩、張飛例外）",
           "5. **棄牌階段**：手牌超過目前體力的張數，棄到剩跟體力一樣",
           "6. **結束階段**：有些技能在這時發動（閉月）",
+          "",
+          "![回合六階段：1 準備、6 結束是技能發動的時機（★）；2 判定翻牌；3 摸 2 張；4 出牌，「殺」每回合 1 張；5 棄牌——例如體力 3、手牌 5 張，就棄 2 張留 3 張](img/turn.svg)",
           "",
           "**判定**：翻開牌堆頂一張，看它的花色或點數決定結果，然後棄掉。"
         ],
@@ -146,6 +181,8 @@
           "5. **Discard phase**: discard down to your current health",
           "6. **End phase**: some skills trigger here (Eclipse the Moon)",
           "",
+          "![The six phases: 1 Start and 6 End are when some skills trigger (★); 2 Judgement flips a card; 3 draw 2; 4 play cards, only 1 Strike per turn; 5 discard — e.g. with 3 health and 5 cards, discard 2 to keep 3](img/turn.svg)",
+          "",
           "**Judgement**: flip the top card of the deck; its suit or number decides the result, then discard it."
         ],
         "ja": [
@@ -156,38 +193,60 @@
           "5. **捨て札フェイズ**：手札が現在の体力より多ければ、体力と同じ枚数まで捨てる",
           "6. **終了フェイズ**：ここで発動する技能がある（閉月）",
           "",
+          "![ターンの 6 フェイズ：1 準備と 6 終了は技能が発動するタイミング（★）。2 判定でカードをめくる。3 で 2 枚引く。4 でカードを使う（「殺」は 1 枚まで）。5 で捨てる——体力 3・手札 5 枚なら 2 枚捨てて 3 枚残す](img/turn.svg)",
+          "",
           "**判定**：山札の一番上をめくり、スートや数字で結果を決めてから捨てる。"
         ]
       }
     },
     {
-      "title": { "zh": "距離與攻擊範圍", "en": "Distance & Range", "ja": "距離と攻撃範囲" },
+      "title": {
+        "zh": "距離與攻擊範圍",
+        "en": "Distance & Range",
+        "ja": "距離と攻撃範囲"
+      },
       "md": {
         "zh": [
           "- 兩人之間的**距離**＝順時針或逆時針數過去，取比較近的那邊。隔壁是 1，再隔一人是 2；陣亡的人不算",
           "- 你的「殺」只能打到距離 ≤ **攻擊範圍**的人。沒裝武器時攻擊範圍是 1，裝了武器就看武器",
           "- **+1 馬**（絕影、的盧、爪黃飛電）：別人看你距離 +1",
           "- **−1 馬**（赤兔、大宛、紫騂）：你看別人距離 −1",
-          "- 「順手牽羊」只能對距離 1 的人；其他錦囊不看距離"
+          "- 「順手牽羊」只能對距離 1 的人；其他錦囊不看距離",
+          "",
+          "![距離：從你（藍）往左右兩邊數，取比較近的那邊；陣亡的人（灰 ✗）跳過不算](img/distance.svg)",
+          "",
+          "![攻擊範圍與馬：對方裝 +1 馬，距離 2＋1＝3，沒裝武器（範圍 1）打不到、範圍 3 的武器打得到；你裝 −1 馬，距離 2－1＝1，沒裝武器也打得到](img/horse.svg)"
         ],
         "en": [
           "- **Distance** between two players = count seats clockwise or counter-clockwise, whichever is shorter. Your neighbour is 1, the next one 2; dead players do not count",
           "- Your Strike can only target players within your **attack range**. Without a weapon your range is 1; with one, use the weapon's range",
           "- **+1 horse** (Shadow Runner, Hex Mark, Flying Lightning): others count their distance to you as +1",
           "- **−1 horse** (Red Hare, Ferghana Horse, Violet Stallion): you count your distance to others as −1",
-          "- Snatch only works at distance 1; other tricks ignore distance"
+          "- Snatch only works at distance 1; other tricks ignore distance",
+          "",
+          "![Distance: count seats both ways from you (blue) and take the shorter; dead players (grey ✗) are skipped](img/distance.svg)",
+          "",
+          "![Attack range and horses: the target's +1 horse makes it 2 + 1 = 3 — unarmed (range 1) can't reach, a range-3 weapon can; your −1 horse makes it 2 − 1 = 1, so even unarmed you can reach](img/horse.svg)"
         ],
         "ja": [
           "- 二人の間の**距離**＝時計回りと反時計回りで数え、近いほう。隣が 1、その次が 2。死亡した人は数えない",
           "- 「殺」は距離が**攻撃範囲**以内の人にしか使えない。武器なしは 1、武器を装備したら武器の範囲",
           "- **+1 馬**（絶影、的盧、爪黄飛電）：ほかの人から見たあなたまでの距離 +1",
           "- **−1 馬**（赤兎、大宛、紫騂）：あなたから見たほかの人までの距離 −1",
-          "- 「順手牽羊」は距離 1 の人だけ。ほかの錦囊は距離に関係なし"
+          "- 「順手牽羊」は距離 1 の人だけ。ほかの錦囊は距離に関係なし",
+          "",
+          "![距離：自分（青）から左右に数えて近い方。死亡した人（灰色 ✗）は数えない](img/distance.svg)",
+          "",
+          "![攻撃範囲と馬：相手が +1 馬なら距離 2＋1＝3 で、武器なし（範囲 1）では届かず、範囲 3 の武器なら届く。自分が −1 馬なら 2－1＝1 で武器なしでも届く](img/horse.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "基本牌", "en": "Basic Cards", "ja": "基本カード" },
+      "title": {
+        "zh": "基本牌",
+        "en": "Basic Cards",
+        "ja": "基本カード"
+      },
       "md": {
         "zh": [
           "- **殺**：對攻擊範圍內一個人出，他要出「閃」，不然受到 1 點傷害。每回合限 1 張",
@@ -207,7 +266,11 @@
       }
     },
     {
-      "title": { "zh": "錦囊牌", "en": "Trick Cards", "ja": "錦囊カード" },
+      "title": {
+        "zh": "錦囊牌",
+        "en": "Trick Cards",
+        "ja": "錦囊カード"
+      },
       "md": {
         "zh": [
           "### 一般錦囊（出了就生效）",
@@ -269,7 +332,11 @@
       }
     },
     {
-      "title": { "zh": "裝備牌", "en": "Equipment", "ja": "装備カード" },
+      "title": {
+        "zh": "裝備牌",
+        "en": "Equipment",
+        "ja": "装備カード"
+      },
       "md": {
         "zh": [
           "武器、防具、+1 馬、−1 馬各只能裝一張，換新的就把舊的棄掉。",
@@ -334,7 +401,11 @@
       }
     },
     {
-      "title": { "zh": "瀕死、陣亡與勝負", "en": "Dying, Death & Winning", "ja": "瀕死・死亡・勝敗" },
+      "title": {
+        "zh": "瀕死、陣亡與勝負",
+        "en": "Dying, Death & Winning",
+        "ja": "瀕死・死亡・勝敗"
+      },
       "md": {
         "zh": [
           "- 體力降到 0 就**瀕死**：從他開始依序問每個人要不要出「桃」救他，救回 1 點以上就活下來",
@@ -372,7 +443,11 @@
       }
     },
     {
-      "title": { "zh": "標準版 25 名武將", "en": "The 25 Standard Heroes", "ja": "標準版の武将 25 人" },
+      "title": {
+        "zh": "標準版 25 名武將",
+        "en": "The 25 Standard Heroes",
+        "ja": "標準版の武将 25 人"
+      },
       "md": {
         "zh": [
           "括號是勢力與體力。標「主公技」的技能只有當主公時才有。",
@@ -497,7 +572,11 @@
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips", "ja": "初心者向けヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips",
+        "ja": "初心者向けヒント"
+      },
       "md": {
         "zh": [
           "- **主公**：開局先觀察誰幫你、誰打你，別急著殺人——殺錯忠臣要棄光牌",
@@ -523,6 +602,12 @@
       }
     }
   ],
-
-  "play": { "type": "sgs", "title": { "zh": "發身分", "en": "Roles", "ja": "身分配り" } }
+  "play": {
+    "type": "sgs",
+    "title": {
+      "zh": "發身分",
+      "en": "Roles",
+      "ja": "身分配り"
+    }
+  }
 }

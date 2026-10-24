@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" font-family="sans-serif">
+  <!-- 開局：第一輪 1→2→3→4，第二輪倒過來 4→3→2→1（4 號連放兩次）；第二個村莊周圍的地形各拿 1 張資源 -->
+  <rect width="420" height="300" fill="#f4ecd8"/>
+  <polygon points="30.1,54.8 49.9,54.8 49.9,40.5 40,32.8 30.1,40.5" fill="#777" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="62" y="54" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">1</text>
+  <polygon points="30.1,134.8 49.9,134.8 49.9,120.5 40,112.8 30.1,120.5" fill="#777" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="62" y="134" font-size="18" fill="#333" text-anchor="middle" font-weight="bold">2</text>
+  <circle cx="110" cy="50" r="15" fill="#d9534f" stroke="#555" stroke-width="1.5"/><text x="110" y="56.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+  <line x1="129" y1="50" x2="165.4" y2="50" stroke="#333" stroke-width="2.5"/><polygon points="171,50 163.8,53.5 163.8,46.5" fill="#333"/>
+  <circle cx="190" cy="50" r="15" fill="#3f7fd0" stroke="#555" stroke-width="1.5"/><text x="190" y="56.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <line x1="209" y1="50" x2="245.4" y2="50" stroke="#333" stroke-width="2.5"/><polygon points="251,50 243.8,53.5 243.8,46.5" fill="#333"/>
+  <circle cx="270" cy="50" r="15" fill="#e67e22" stroke="#555" stroke-width="1.5"/><text x="270" y="56.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+  <line x1="289" y1="50" x2="325.4" y2="50" stroke="#333" stroke-width="2.5"/><polygon points="331,50 323.8,53.5 323.8,46.5" fill="#333"/>
+  <circle cx="350" cy="50" r="15" fill="#7b5ea7" stroke="#555" stroke-width="1.5"/><text x="350" y="56.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">4</text>
+  <circle cx="110" cy="130" r="15" fill="#d9534f" stroke="#555" stroke-width="1.5"/><text x="110" y="136.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+  <circle cx="190" cy="130" r="15" fill="#3f7fd0" stroke="#555" stroke-width="1.5"/><text x="190" y="136.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <line x1="171" y1="130" x2="134.6" y2="130" stroke="#333" stroke-width="2.5"/><polygon points="129,130 136.2,126.5 136.2,133.5" fill="#333"/>
+  <circle cx="270" cy="130" r="15" fill="#e67e22" stroke="#555" stroke-width="1.5"/><text x="270" y="136.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+  <line x1="251" y1="130" x2="214.6" y2="130" stroke="#333" stroke-width="2.5"/><polygon points="209,130 216.2,126.5 216.2,133.5" fill="#333"/>
+  <circle cx="350" cy="130" r="15" fill="#7b5ea7" stroke="#555" stroke-width="1.5"/><text x="350" y="136.3" font-size="17" fill="#fff" text-anchor="middle" font-weight="bold">4</text>
+  <line x1="331" y1="130" x2="294.6" y2="130" stroke="#333" stroke-width="2.5"/><polygon points="289,130 296.2,126.5 296.2,133.5" fill="#333"/>
+  <path d="M367 58 C 395 75, 395 105, 369 120" fill="none" stroke="#333" stroke-width="2.5"/>
+  <polygon points="365,124 377,121 369,113" fill="#333"/>
+  <line x1="20" y1="172" x2="400" y2="172" stroke="#cbbf9f" stroke-width="1.5"/>
+  <polygon points="80.6,180.5 110,197.5 110,231.5 80.6,248.5 51.1,231.5 51.1,197.5" fill="#c8643c" stroke="#f4ecd8" stroke-width="3"/><circle cx="80.6" cy="214.5" r="10.2" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="80.6" y="218.9" font-size="12" fill="#c0392b" text-anchor="middle" font-weight="bold">6</text>
+  <polygon points="139.4,180.5 168.9,197.5 168.9,231.5 139.4,248.5 110,231.5 110,197.5" fill="#2e7d32" stroke="#f4ecd8" stroke-width="3"/><circle cx="139.4" cy="214.5" r="10.2" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="139.4" y="218.9" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">9</text>
+  <polygon points="110,231.5 139.4,248.5 139.4,282.5 110,299.5 80.6,282.5 80.6,248.5" fill="#f2c94c" stroke="#f4ecd8" stroke-width="3"/><circle cx="110" cy="265.5" r="10.2" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="110" y="269.9" font-size="12" fill="#333" text-anchor="middle" font-weight="bold">4</text>
+  <polygon points="100.1,240.3 119.9,240.3 119.9,226 110,218.3 100.1,226" fill="#d9534f" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="111" y="237.5" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+  <line x1="185" y1="240" x2="219.4" y2="240" stroke="#333" stroke-width="2.5"/><polygon points="225,240 217.8,243.5 217.8,236.5" fill="#333"/>
+  <rect x="245" y="222" width="24" height="34" rx="3" fill="#c8643c" stroke="#fff" stroke-width="1.5"/>
+  <text x="282" y="246" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">+1</text>
+  <rect x="297" y="222" width="24" height="34" rx="3" fill="#2e7d32" stroke="#fff" stroke-width="1.5"/>
+  <text x="334" y="246" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">+1</text>
+  <rect x="349" y="222" width="24" height="34" rx="3" fill="#f2c94c" stroke="#fff" stroke-width="1.5"/>
+  <text x="386" y="246" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">+1</text>
+</svg>

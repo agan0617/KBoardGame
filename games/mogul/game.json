@@ -1,9 +1,21 @@
 {
   "id": "mogul",
   "icon": "🏦",
-  "name": { "zh": "MOGUL 房產大亨", "en": "MOGUL", "ja": "MOGUL 不動産王" },
-  "players": { "zh": "2–6 人", "en": "2–6 players", "ja": "2〜6人" },
-  "time": { "zh": "60–120 分鐘", "en": "60–120 min", "ja": "60〜120分" },
+  "name": {
+    "zh": "MOGUL 房產大亨",
+    "en": "MOGUL",
+    "ja": "MOGUL 不動産王"
+  },
+  "players": {
+    "zh": "2–6 人",
+    "en": "2–6 players",
+    "ja": "2〜6人"
+  },
+  "time": {
+    "zh": "60–120 分鐘",
+    "en": "60–120 min",
+    "ja": "60〜120分"
+  },
   "summary": {
     "zh": "大富翁類的買地收租遊戲，錢都在電子刷卡機裡。擲骰繞圈、買地蓋房、收過路費，讓別人破產。App 有備用銀行：刷卡機沒電或想看每筆紀錄時用。",
     "en": "A Monopoly-style property trading game with an electronic banking unit. Roll around the board, buy and build, collect rent and bankrupt the others. The app has a backup bank for when the unit runs out of batteries or you want a transaction log.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "先看這裡", "en": "Read this first", "ja": "はじめに" },
+      "title": {
+        "zh": "先看這裡",
+        "en": "Read this first",
+        "ja": "はじめに"
+      },
       "md": {
         "zh": [
           "這款是大富翁類遊戲的電子銀行版。下面寫的是這類遊戲的**通則**；起始金額、過起點拿多少、各格子的價錢與特殊卡，**以盒內說明書和刷卡機為準**。",
@@ -31,7 +47,11 @@
       }
     },
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "- 每人選一個棋子放起點，拿一張銀行卡",
@@ -54,7 +74,11 @@
       }
     },
     {
-      "title": { "zh": "回合流程", "en": "Your turn", "ja": "手番の流れ" },
+      "title": {
+        "zh": "回合流程",
+        "en": "Your turn",
+        "ja": "手番の流れ"
+      },
       "md": {
         "zh": [
           "1. 擲兩顆骰子，照點數往前走",
@@ -66,7 +90,9 @@
           "- **稅金**：付給銀行",
           "- **入獄**：直接去監獄，不經過起點、不拿錢",
           "3. 經過或停在起點，從銀行拿錢",
-          "4. 擲出**兩顆一樣**可以再擲一次；連續三次一樣就入獄"
+          "4. 擲出**兩顆一樣**可以再擲一次；連續三次一樣就入獄",
+          "",
+          "![上：經過起點從銀行拿錢；下：停在別人的地要付過路費給地主，房子越多越貴](img/go-rent.svg)"
         ],
         "en": [
           "1. Roll two dice and move that many spaces",
@@ -78,7 +104,9 @@
           "- **Tax**: pay the bank",
           "- **Go to jail**: move straight to jail, without passing GO or collecting money",
           "3. Passing or landing on GO pays you from the bank",
-          "4. **Doubles** let you roll again; three doubles in a row send you to jail"
+          "4. **Doubles** let you roll again; three doubles in a row send you to jail",
+          "",
+          "![Top: passing Start collects money from the bank. Bottom: landing on someone's property pays rent to the owner — more houses, higher rent](img/go-rent.svg)"
         ],
         "ja": [
           "1. サイコロ 2 個を振って進む",
@@ -90,38 +118,66 @@
           "- **税金**：銀行に払う",
           "- **刑務所へ**：スタートを通らず、お金をもらわずに刑務所へ",
           "3. スタートを通過するか止まると銀行からお金をもらう",
-          "4. **ゾロ目**ならもう一度振れる。3 回連続で刑務所"
+          "4. **ゾロ目**ならもう一度振れる。3 回連続で刑務所",
+          "",
+          "![上：スタートを通過すると銀行からお金をもらう。下：他人の土地に止まったら地主に通行料を払う。家が多いほど高い](img/go-rent.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "蓋房子與抵押", "en": "Building and mortgages", "ja": "建物と抵当" },
+      "title": {
+        "zh": "蓋房子與抵押",
+        "en": "Building and mortgages",
+        "ja": "建物と抵当"
+      },
       "md": {
         "zh": [
           "- 集滿**同一顏色的所有地**，才能在那些地上蓋房子",
+          "",
+          "![同一顏色的地全部是自己的才能蓋房子（✓）；有一塊在別人手上就不能蓋（✗）](img/color-set.svg)",
+          "",
           "- 同一組要**平均蓋**：每塊都有一間才能蓋第二間",
           "- 每塊地 4 間房子後可以換成 1 間旅館",
+          "",
+          "![平均蓋：每塊都有 1 間才能蓋第 2 間（✓ 補空的那塊、✗ 先加在已經有的）；4 間房子可以換成 1 間旅館](img/even-build.svg)",
+          "",
           "- 缺錢時可以把地抵押給銀行拿一半價錢，抵押中的地收不到過路費，贖回要多付利息",
           "- 玩家之間可以自由交易地契和錢"
         ],
         "en": [
           "- Own **every property of a color** before building houses on them",
+          "",
+          "![You can build only when you own every property of a color (✓); if someone else holds one, you can't (✗)](img/color-set.svg)",
+          "",
           "- Build **evenly**: each property in the group needs one house before any gets a second",
           "- After 4 houses on a property you can upgrade to a hotel",
+          "",
+          "![Build evenly: every lot needs 1 house before any gets a 2nd (✓ fill the empty one, ✗ add to one that has a house); 4 houses can become 1 hotel](img/even-build.svg)",
+          "",
           "- Short of money? Mortgage a property to the bank for half its price; mortgaged property collects no rent and costs interest to redeem",
           "- Players may trade deeds and money freely"
         ],
         "ja": [
           "- **同じ色の土地を全部**持って初めて家を建てられる",
+          "",
+          "![同じ色の土地を全部持っていれば家を建てられる（✓）。1 つでも他人のものなら建てられない（✗）](img/color-set.svg)",
+          "",
           "- **均等に**建てる：グループの全部に 1 軒ずつ建ててから 2 軒目",
           "- 1 つの土地に家 4 軒でホテルにできる",
+          "",
+          "![均等に建てる：全部に 1 軒ずつ建つまで 2 軒目は建てられない（✓ 空いている土地に、✗ すでにある土地に）。家 4 軒でホテル 1 つに](img/even-build.svg)",
+          "",
           "- お金が足りなければ土地を銀行に抵当に入れて半額をもらう。抵当中は通行料なし、戻すには利息",
           "- プレイヤー同士で権利書とお金を自由に取引できる"
         ]
       }
     },
     {
-      "title": { "zh": "監獄與破產", "en": "Jail and bankruptcy", "ja": "刑務所と破産" },
+      "title": {
+        "zh": "監獄與破產",
+        "en": "Jail and bankruptcy",
+        "ja": "刑務所と破産"
+      },
       "md": {
         "zh": [
           "- 在監獄裡：付罰金、用出獄卡，或擲出兩顆一樣就出獄；照說明書最多待幾回合",
@@ -144,7 +200,11 @@
       }
     },
     {
-      "title": { "zh": "備用銀行怎麼用", "en": "Using the backup bank", "ja": "予備銀行の使い方" },
+      "title": {
+        "zh": "備用銀行怎麼用",
+        "en": "Using the backup bank",
+        "ja": "予備銀行の使い方"
+      },
       "md": {
         "zh": [
           "1. 設好人數、起始金額、過起點拿多少，按「開始」",
@@ -169,6 +229,10 @@
   ],
   "play": {
     "type": "mogul",
-    "title": { "zh": "備用銀行", "en": "Bank", "ja": "銀行" }
+    "title": {
+      "zh": "備用銀行",
+      "en": "Bank",
+      "ja": "銀行"
+    }
   }
 }

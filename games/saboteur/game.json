@@ -1,9 +1,21 @@
 {
   "id": "saboteur",
   "icon": "⛏️",
-  "name": { "zh": "矮人礦坑", "en": "Saboteur", "ja": "お邪魔者" },
-  "players": { "zh": "3–10 人（擴展 2–12 人）", "en": "3–10 players (expansion 2–12)", "ja": "3〜10人（拡張で2〜12人）" },
-  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "name": {
+    "zh": "矮人礦坑",
+    "en": "Saboteur",
+    "ja": "お邪魔者"
+  },
+  "players": {
+    "zh": "3–10 人（擴展 2–12 人）",
+    "en": "3–10 players (expansion 2–12)",
+    "ja": "3〜10人（拡張で2〜12人）"
+  },
+  "time": {
+    "zh": "30 分鐘",
+    "en": "30 min",
+    "ja": "30分"
+  },
   "summary": {
     "zh": "矮人們一起挖通道找金塊，但裡面藏著破壞者，偷偷擋路、弄壞別人的工具。用手機秘密發身分，每輪結束公布、記三輪的金塊。",
     "en": "Dwarves dig tunnels together to find gold — but saboteurs hide among them, blocking paths and breaking tools. Deal secret roles with one phone, reveal them each round and track gold over three rounds.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "每個人秘密拿一張身分：**礦工**要把通道從起點挖到藏金塊的終點，**破壞者**要阻止他們。誰是破壞者大家都不知道。",
@@ -37,10 +53,17 @@
       }
     },
     {
-      "title": { "zh": "準備（基本版）", "en": "Setup (base game)", "ja": "準備（基本）" },
+      "title": {
+        "zh": "準備（基本版）",
+        "en": "Setup (base game)",
+        "ja": "準備（基本）"
+      },
       "md": {
         "zh": [
           "- 起點卡放桌上，3 張終點卡蓋著放在起點右邊**隔 7 張牌的距離**，三張上下排開、彼此隔一格；其中一張有金塊，兩張是石頭",
+          "",
+          "![起點（綠框）右邊隔 7 張牌的距離，3 張終點蓋著上下排開、彼此隔一格；一張金塊、兩張石頭](img/setup.svg)",
+          "",
           "- 身分照人數配好洗勻，每人一張（多一張不用），在「開局」頁用手機發也可以",
           "",
           "| 人數 | 破壞者 | 礦工 | 手牌 |",
@@ -58,6 +81,9 @@
         ],
         "en": [
           "- Place the start card; place the 3 goal cards face down **7 cards to the right**, one above another with a one-card gap; one hides gold, two are stone",
+          "",
+          "![Start card (green frame); 7 cards to the right, the 3 goal cards face down, one above another with one-card gaps — one gold, two stone](img/setup.svg)",
+          "",
           "- Shuffle the role cards for your player count and deal one each (one left over) — or deal them with the phone in the Play tab",
           "",
           "| Players | Saboteurs | Gold-Diggers | Hand |",
@@ -75,6 +101,9 @@
         ],
         "ja": [
           "- スタートカードを置き、ゴールカード 3 枚を裏向きで**右に 7 枚分離して**、1 枚ずつ間を空けて縦に並べる。1 枚が金、2 枚が石",
+          "",
+          "![スタート（緑枠）から右に 7 枚分あけ、ゴール 3 枚を裏向きで 1 枚ずつ間を空けて縦に並べる。金 1 枚、石 2 枚](img/setup.svg)",
+          "",
           "- 人数に合わせた役職カードを混ぜて 1 枚ずつ（1 枚余る）。「プレイ」タブでスマホで配ってもよい",
           "",
           "| 人数 | お邪魔者 | 金鉱掘り | 手札 |",
@@ -93,15 +122,25 @@
       }
     },
     {
-      "title": { "zh": "回合（基本版）", "en": "Your turn (base game)", "ja": "手番（基本）" },
+      "title": {
+        "zh": "回合（基本版）",
+        "en": "Your turn (base game)",
+        "ja": "手番（基本）"
+      },
       "md": {
         "zh": [
           "每回合做**一件事**，然後抽一張補牌：",
           "",
           "- **出通道牌**：接在已經跟起點連通的通道上，四邊都要跟旁邊的牌對得上。**工具被弄壞**的人不能出通道牌",
+          "",
+          "![新的通道（黃框）要接在跟起點連通的通道上、四邊都對得上：上 ✓；中 ✗ 邊對不上；下 ✗ 沒接上](img/connect.svg)",
+          "",
           "- **出行動牌**：",
           "- **弄壞工具**（鎬、燈、礦車）：放在別人面前，他不能出通道牌；同一種工具一次只能被弄壞一張",
           "- **修理工具**：修好自己或別人被弄壞的那一種工具（有的修理牌能修兩種，選一種）",
+          "",
+          "![工具被弄壞就不能出通道牌；出對應的修理牌就拿掉、又能出；同一種工具不能再被弄壞第二張](img/tools.svg)",
+          "",
           "- **地圖**：偷看一張終點卡，不給別人看",
           "- **落石**：拿掉一張通道牌（不能拿起點和終點）",
           "- **不出**：蓋著丟一張牌",
@@ -112,9 +151,15 @@
           "On your turn do **one thing**, then draw a card:",
           "",
           "- **Play a path card**: it must join a tunnel connected to the start, and all its edges must match neighboring cards. A player with a **broken tool** can't play path cards",
+          "",
+          "![A new path card (yellow frame) must join a tunnel connected to the start with every edge matching: top ✓; middle ✗ edge mismatch; bottom ✗ not connected](img/connect.svg)",
+          "",
           "- **Play an action card**:",
           "- **Broken tool** (pickaxe, lantern, cart): place in front of another player; they can't play path cards. Only one broken card of each tool at a time",
           "- **Repair**: fix that broken tool for yourself or someone else (dual repair cards fix either of two)",
+          "",
+          "![With a broken tool you can't play path cards; a matching repair removes it so you can again; the same tool can't be broken twice](img/tools.svg)",
+          "",
           "- **Map**: secretly look at one goal card",
           "- **Rockfall**: remove one path card (not the start or a goal)",
           "- **Pass**: discard one card face down",
@@ -125,9 +170,15 @@
           "手番では**1 つ**行い、カードを 1 枚引く：",
           "",
           "- **道カードを置く**：スタートとつながっている道に接し、四辺が隣と合うこと。**道具が壊れている**人は道カードを出せない",
+          "",
+          "![新しい道（黄枠）はスタートとつながる道に接し、四辺が合うこと：上 ✓、中 ✗ 辺が合わない、下 ✗ つながっていない](img/connect.svg)",
+          "",
           "- **アクションカードを出す**：",
           "- **道具を壊す**（つるはし、ランタン、トロッコ）：他人の前に置き、その人は道カードを出せない。同じ道具は 1 枚まで",
           "- **修理**：自分か他人の壊れたその道具を直す（2 種類のどちらかを直せるカードもある）",
+          "",
+          "![道具が壊れていると道カードを出せない。同じ道具の修理カードで直せばまた出せる。同じ道具は 2 枚重ねて壊せない](img/tools.svg)",
+          "",
           "- **地図**：ゴールカードを 1 枚こっそり見る",
           "- **落盤**：道カードを 1 枚取り除く（スタートとゴールは不可）",
           "- **パス**：1 枚を裏向きで捨てる",
@@ -137,7 +188,11 @@
       }
     },
     {
-      "title": { "zh": "一輪結束與分金塊（基本版）", "en": "End of round and gold (base game)", "ja": "ラウンド終了と金（基本）" },
+      "title": {
+        "zh": "一輪結束與分金塊（基本版）",
+        "en": "End of round and gold (base game)",
+        "ja": "ラウンド終了と金（基本）"
+      },
       "md": {
         "zh": [
           "- **礦工贏**：通道接到有金塊的終點。翻開跟人數一樣多的金塊卡，**接到金塊的人先挑一張**，再**逆時針**輪流給其他礦工挑，直到挑完（破壞者不能拿）",
@@ -160,7 +215,11 @@
       }
     },
     {
-      "title": { "zh": "擴展：新身分", "en": "Expansion: new roles", "ja": "拡張：新しい役職" },
+      "title": {
+        "zh": "擴展：新身分",
+        "en": "Expansion: new roles",
+        "ja": "拡張：新しい役職"
+      },
       "md": {
         "zh": [
           "擴展換掉基本版的身分和金塊卡，改用 15 張新身分洗勻、**每人一張**（其餘不用），手牌一律 **6 張**，每輪開始先蓋掉牌堆最上面 10 張不用。2～12 人都能玩。",
@@ -198,7 +257,11 @@
       }
     },
     {
-      "title": { "zh": "擴展：新通道與行動牌", "en": "Expansion: new path and action cards", "ja": "拡張：新しい道とアクション" },
+      "title": {
+        "zh": "擴展：新通道與行動牌",
+        "en": "Expansion: new path and action cards",
+        "ja": "拡張：新しい道とアクション"
+      },
       "md": {
         "zh": [
           "**新通道**",
@@ -259,6 +322,10 @@
   ],
   "play": {
     "type": "saboteur",
-    "title": { "zh": "發身分", "en": "Roles", "ja": "役職配り" }
+    "title": {
+      "zh": "發身分",
+      "en": "Roles",
+      "ja": "役職配り"
+    }
   }
 }

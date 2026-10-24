@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 395" font-family="sans-serif">
+  <!-- 流程：1 手機依座位傳 → 2 順時針每人一句 → 3 同時指人，3 號得 3 票 → 4 3 號出局、顯示身分；沒分勝負回到 2，分出勝負結束 -->
+  <defs>
+    <g id="m" stroke="#fff" stroke-width="1.5"><circle cy="-10" r="5"/><path d="M-10 10 L-5 -2 L-10 -3 L-10 -6 L10 -6 L10 -3 L5 -2 L10 10 L3 10 L0 4 L-3 10Z"/></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#333"/></marker>
+    <marker id="ahr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#c0392b"/></marker>
+  </defs>
+  <rect width="420" height="395" fill="#f4ecd8"/>
+  <rect x="8" y="11" width="370" height="88" rx="10" fill="#fbf6ea" stroke="#d8cbb0" stroke-width="1.5"/>
+  <circle cx="34" cy="55" r="15" fill="#333"/><text x="34" y="61" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">1</text>
+  <rect x="8" y="106" width="370" height="88" rx="10" fill="#fbf6ea" stroke="#d8cbb0" stroke-width="1.5"/>
+  <circle cx="34" cy="150" r="15" fill="#333"/><text x="34" y="156" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">2</text>
+  <rect x="8" y="201" width="370" height="88" rx="10" fill="#fbf6ea" stroke="#d8cbb0" stroke-width="1.5"/>
+  <circle cx="34" cy="245" r="15" fill="#333"/><text x="34" y="251" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">3</text>
+  <rect x="8" y="296" width="370" height="88" rx="10" fill="#fbf6ea" stroke="#d8cbb0" stroke-width="1.5"/>
+  <circle cx="34" cy="340" r="15" fill="#333"/><text x="34" y="346" text-anchor="middle" font-size="17" font-weight="bold" fill="#fff">4</text>
+  <use href="#m" transform="translate(95,67) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <text x="95" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">1</text>
+  <use href="#m" transform="translate(160,67) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <text x="160" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">2</text>
+  <use href="#m" transform="translate(225,67) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <text x="225" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">3</text>
+  <use href="#m" transform="translate(290,67) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <text x="290" y="95" text-anchor="middle" font-size="12" font-weight="bold" fill="#333">4</text>
+  <rect x="87" y="17" width="16" height="26" rx="3" fill="#333"/><rect x="90" y="21" width="10" height="16" fill="#7fb3e6"/>
+  <path d="M109 35 Q127.5 13 146 35" fill="none" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <path d="M174 35 Q192.5 13 211 35" fill="none" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <path d="M239 35 Q257.5 13 276 35" fill="none" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <use href="#m" transform="translate(95,172) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <path d="M93 138 L97 148 L103 137" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <ellipse cx="101" cy="126" rx="18" ry="12" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <rect x="95" y="135" width="10" height="4" fill="#fff"/>
+  <text x="101" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">1</text>
+  <use href="#m" transform="translate(160,172) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <path d="M158 138 L162 148 L168 137" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <ellipse cx="166" cy="126" rx="18" ry="12" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <rect x="160" y="135" width="10" height="4" fill="#fff"/>
+  <text x="166" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">2</text>
+  <use href="#m" transform="translate(225,172) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <path d="M223 138 L227 148 L233 137" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <ellipse cx="231" cy="126" rx="18" ry="12" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <rect x="225" y="135" width="10" height="4" fill="#fff"/>
+  <text x="231" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">3</text>
+  <use href="#m" transform="translate(290,172) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <path d="M288 138 L292 148 L298 137" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <ellipse cx="296" cy="126" rx="18" ry="12" fill="#fff" stroke="#555" stroke-width="1.5"/>
+  <rect x="290" y="135" width="10" height="4" fill="#fff"/>
+  <text x="296" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">4</text>
+  <line x1="113" y1="170" x2="142" y2="170" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="178" y1="170" x2="207" y2="170" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="243" y1="170" x2="272" y2="170" stroke="#333" stroke-width="2" marker-end="url(#ah)"/>
+  <use href="#m" transform="translate(95,259) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <use href="#m" transform="translate(160,259) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <use href="#m" transform="translate(225,259) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <use href="#m" transform="translate(290,259) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <path d="M95 237 Q160.0 205 219 235" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#ahr)"/>
+  <path d="M160 237 Q192.5 217 219 235" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#ahr)"/>
+  <path d="M290 237 Q257.5 217 231 235" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#ahr)"/>
+  <path d="M221 275 Q160.0 293 99 275" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#ahr)"/>
+  <circle cx="225" cy="207" r="11" fill="#c0392b"/><text x="225" y="212" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">3</text>
+  <circle cx="95" cy="207" r="11" fill="#999"/><text x="95" y="212" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">1</text>
+  <use href="#m" transform="translate(95,360) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <use href="#m" transform="translate(160,360) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <use href="#m" transform="translate(225,360) scale(1.5)" fill="#5a5a5a" opacity="0.3"/>
+  <path d="M212 341 L238 367 M238 341 L212 367" stroke="#c0392b" stroke-width="4" stroke-linecap="round"/>
+  <rect x="211" y="300" width="28" height="34" rx="4" fill="#d9534f" stroke="#fff" stroke-width="2"/>
+  <use href="#m" transform="translate(225,320) scale(0.9)" fill="#fff"/>
+  <use href="#m" transform="translate(290,360) scale(1.5)" fill="#5a5a5a" opacity="1"/>
+  <line x1="318" y1="340" x2="342" y2="340" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <polygon points="360.0,325.0 364.0,334.5 374.3,335.4 366.4,342.1 368.8,352.1 360.0,346.8 351.2,352.1 353.6,342.1 345.7,335.4 356.0,334.5" fill="#e8c13a" stroke="#fff" stroke-width="1.5"/>
+  <path d="M378 360 H404 V150 H382" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+
+</svg>

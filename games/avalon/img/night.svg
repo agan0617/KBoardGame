@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" font-family="sans-serif">
+  <!-- 夜晚誰看得到誰：
+       第 1 列 梅林（藍★）看得到壞人（爪牙、莫甘娜紅★、奧伯倫月牙），看不到莫德雷德（皇冠）
+       第 2 列 派西維爾（藍盾）看到兩個★（梅林與莫甘娜），分不出哪個是真的
+       第 3 列 壞人互相認識（爪牙、莫甘娜、莫德雷德），奧伯倫（月牙）不認識他們、他們也不認識他 -->
+  <defs>
+    <circle id="good" r="17" fill="#2f6fd0" stroke="#fff" stroke-width="2"/>
+    <circle id="evil" r="17" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+    <circle id="grey" r="17" fill="#8a8a8a" stroke="#fff" stroke-width="2"/>
+    <g id="star"><text y="7" text-anchor="middle" font-size="20" fill="#fff">★</text></g>
+    <g id="crown"><polygon points="-10,7 -10,-6 -5,0 0,-9 5,0 10,-6 10,7" fill="#ffd54a"/></g>
+    <g id="moon"><circle cx="-1" r="10" fill="#fff"/><circle cx="4" cy="-3" r="9" fill="#c0392b"/></g>
+    <g id="shieldW"><path d="M-8 -9 h16 v8 q0 9 -8 12 q-8 -3 -8 -12z" fill="#fff"/></g>
+    <g id="eye"><path d="M-15 0 Q0 -12 15 0 Q0 12 -15 0Z" fill="#fff" stroke="#333" stroke-width="2"/><circle r="4.5" fill="#333"/></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#555"/></marker>
+  </defs>
+  <rect width="420" height="300" fill="#f4ecd8"/>
+
+  <!-- 第 1 列：梅林 -->
+  <g transform="translate(0,50)">
+    <use href="#good" x="38"/><use href="#star" x="38"/>
+    <use href="#eye" x="82"/>
+    <line x1="102" y1="0" x2="134" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#evil" x="165"/>
+    <use href="#evil" x="210"/><use href="#star" x="210"/>
+    <use href="#evil" x="255"/><use href="#moon" x="255"/>
+    <g text-anchor="middle" font-size="16" fill="#3c9a4b" font-weight="bold"><text x="165" y="38">✓</text><text x="210" y="38">✓</text><text x="255" y="38">✓</text></g>
+    <g opacity="0.35"><use href="#evil" x="335"/><use href="#crown" x="335"/></g>
+    <circle cx="352" cy="-14" r="10" fill="#d9534f"/><text x="352" y="-8" text-anchor="middle" font-size="14" fill="#fff">✗</text>
+  </g>
+  <line x1="12" y1="102" x2="408" y2="102" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 2 列：派西維爾 -->
+  <g transform="translate(0,145)">
+    <use href="#good" x="38"/><use href="#shieldW" x="38"/>
+    <use href="#eye" x="82"/>
+    <line x1="102" y1="0" x2="134" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <use href="#grey" x="175"/><use href="#star" x="175"/>
+    <use href="#grey" x="235"/><use href="#star" x="235"/>
+    <text x="205" y="8" text-anchor="middle" font-size="22" fill="#555">=</text>
+    <text x="300" y="12" text-anchor="middle" font-size="34" font-weight="bold" fill="#8a5a2b">?</text>
+  </g>
+  <line x1="12" y1="192" x2="408" y2="192" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 3 列：壞人互認，奧伯倫除外 -->
+  <g transform="translate(0,245)">
+    <rect x="14" y="-30" width="200" height="60" rx="14" fill="#f6d6d2" stroke="#c0392b" stroke-width="2"/>
+    <use href="#evil" x="48"/>
+    <use href="#evil" x="114"/><use href="#star" x="114"/>
+    <use href="#evil" x="180"/><use href="#crown" x="180"/>
+    <text x="81" y="7" text-anchor="middle" font-size="18" fill="#c0392b" font-weight="bold">↔</text>
+    <text x="147" y="7" text-anchor="middle" font-size="18" fill="#c0392b" font-weight="bold">↔</text>
+    <line x1="222" y1="0" x2="300" y2="0" stroke="#999" stroke-width="3" stroke-dasharray="6 5"/>
+    <circle cx="261" cy="0" r="12" fill="#d9534f"/><text x="261" y="6" text-anchor="middle" font-size="15" fill="#fff">✗</text>
+    <use href="#evil" x="330"/><use href="#moon" x="330"/>
+  </g>
+</svg>

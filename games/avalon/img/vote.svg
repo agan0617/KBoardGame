@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 330" font-family="sans-serif">
+  <!-- 投票：
+       第 1 列 5 人，3 贊成 2 反對：超過半數，隊伍出發 ✓
+       第 2 列 6 人，3 贊成 3 反對：平手＝否決 ✗，隊長換順時針下一位（1 → 2）
+       第 3 列 同一輪連續 5 次否決：邪惡陣營直接獲勝 -->
+  <defs>
+    <g id="p"><circle r="15" fill="#6d7b8c" stroke="#fff" stroke-width="2"/></g>
+    <g id="crown"><polygon points="-11,7 -11,-6 -5.5,0 0,-10 5.5,0 11,-6 11,7" fill="#e8b923" stroke="#8a6d10" stroke-width="1.2"/></g>
+    <g id="yes"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#3c9a4b"/><text y="6" text-anchor="middle" font-size="17" fill="#fff">✓</text></g>
+    <g id="no"><rect x="-13" y="-13" width="26" height="26" rx="5" fill="#d9534f"/><text y="6" text-anchor="middle" font-size="17" fill="#fff">✗</text></g>
+    <g id="noC"><circle r="14" fill="#d9534f"/><text y="6" text-anchor="middle" font-size="16" fill="#fff">✗</text></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#555"/></marker>
+  </defs>
+  <rect width="420" height="330" fill="#f4ecd8"/>
+
+  <!-- 第 1 列：5 人 3:2 -->
+  <g transform="translate(0,48)" text-anchor="middle">
+    <use href="#crown" x="30" y="-25"/>
+    <g font-size="14" fill="#fff" font-weight="bold">
+      <use href="#p" x="30"/><text x="30" y="5">1</text>
+      <use href="#p" x="76"/><text x="76" y="5">2</text>
+      <use href="#p" x="122"/><text x="122" y="5">3</text>
+      <use href="#p" x="168"/><text x="168" y="5">4</text>
+      <use href="#p" x="214"/><text x="214" y="5">5</text>
+    </g>
+    <use href="#yes" x="30" y="38"/><use href="#no" x="76" y="38"/><use href="#yes" x="122" y="38"/><use href="#yes" x="168" y="38"/><use href="#no" x="214" y="38"/>
+    <text x="300" y="30" font-size="20" fill="#333"><tspan fill="#3c9a4b">3</tspan> &gt; <tspan fill="#d9534f">2</tspan></text>
+    <circle cx="380" cy="23" r="20" fill="#3c9a4b"/><text x="380" y="32" font-size="24" fill="#fff">✓</text>
+  </g>
+  <line x1="12" y1="112" x2="408" y2="112" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 2 列：6 人 3:3 平手，隊長換人 -->
+  <g transform="translate(0,160)" text-anchor="middle">
+    <use href="#crown" x="30" y="-25"/>
+    <g opacity="0.45"><use href="#crown" x="76" y="-25"/></g>
+    <line x1="43" y1="-24" x2="62" y2="-24" stroke="#555" stroke-width="2.5" marker-end="url(#ah)"/>
+    <g font-size="14" fill="#fff" font-weight="bold">
+      <use href="#p" x="30"/><text x="30" y="5">1</text>
+      <use href="#p" x="76"/><text x="76" y="5">2</text>
+      <use href="#p" x="122"/><text x="122" y="5">3</text>
+      <use href="#p" x="168"/><text x="168" y="5">4</text>
+      <use href="#p" x="214"/><text x="214" y="5">5</text>
+      <use href="#p" x="260"/><text x="260" y="5">6</text>
+    </g>
+    <use href="#yes" x="30" y="38"/><use href="#no" x="76" y="38"/><use href="#no" x="122" y="38"/><use href="#yes" x="168" y="38"/><use href="#yes" x="214" y="38"/><use href="#no" x="260" y="38"/>
+    <text x="325" y="30" font-size="20" fill="#333"><tspan fill="#3c9a4b">3</tspan> = <tspan fill="#d9534f">3</tspan></text>
+    <circle cx="390" cy="23" r="20" fill="#d9534f"/><text x="390" y="32" font-size="24" fill="#fff">✗</text>
+  </g>
+  <line x1="12" y1="232" x2="408" y2="232" stroke="#c9b98f" stroke-width="1.5"/>
+
+  <!-- 第 3 列：連續 5 次否決 → 邪惡勝 -->
+  <g transform="translate(0,285)" text-anchor="middle">
+    <g font-size="13" fill="#555"><text x="30" y="-22">1</text><text x="72" y="-22">2</text><text x="114" y="-22">3</text><text x="156" y="-22">4</text><text x="198" y="-22">5</text></g>
+    <use href="#noC" x="30"/><use href="#noC" x="72"/><use href="#noC" x="114"/><use href="#noC" x="156"/><use href="#noC" x="198"/>
+    <line x1="225" y1="0" x2="268" y2="0" stroke="#555" stroke-width="3" marker-end="url(#ah)"/>
+    <circle cx="300" r="16" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+    <circle cx="340" r="16" fill="#c0392b" stroke="#fff" stroke-width="2"/>
+    <text x="382" y="9" font-size="26" fill="#e8b923">★</text>
+  </g>
+</svg>

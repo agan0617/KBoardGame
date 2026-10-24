@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" font-family="sans-serif">
+  <!-- 上：經過起點從銀行拿錢；下：停在別人的地付過路費給地主，房子越多越貴 -->
+  <rect width="420" height="250" fill="#f4ecd8"/>
+  <rect x="30" y="30" width="46" height="46" fill="#d9cfb5" stroke="#8a7a5a" stroke-width="1.5"/>
+  <rect x="76" y="30" width="46" height="46" fill="#d9cfb5" stroke="#8a7a5a" stroke-width="1.5"/>
+  <rect x="122" y="30" width="46" height="46" fill="#5aa469" stroke="#8a7a5a" stroke-width="1.5"/>
+  <rect x="168" y="30" width="46" height="46" fill="#d9cfb5" stroke="#8a7a5a" stroke-width="1.5"/>
+  <rect x="214" y="30" width="46" height="46" fill="#d9cfb5" stroke="#8a7a5a" stroke-width="1.5"/>
+  <line x1="130" y1="53" x2="153" y2="53" stroke="#fff" stroke-width="4"/><polygon points="160,53 151,57.3 151,48.7" fill="#fff"/>
+  <g transform="translate(53,59) scale(1.0)"><circle cy="-14" r="6" fill="#d9534f" stroke="#fff" stroke-width="1.5"/><path d="M-9 8 Q-8 -4 -3 -8 L3 -8 Q8 -4 9 8 Z" fill="#d9534f" stroke="#fff" stroke-width="1.5"/></g>
+  <path d="M53.0 26 Q 145.0 4 233.0 24" fill="none" stroke="#333" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <polygon points="237.0,28 225.0,26 233.0,17" fill="#333"/>
+  <g transform="translate(237,59) scale(1.0)"><circle cy="-14" r="6" fill="#d9534f" stroke="#fff" stroke-width="1.5"/><path d="M-9 8 Q-8 -4 -3 -8 L3 -8 Q8 -4 9 8 Z" fill="#d9534f" stroke="#fff" stroke-width="1.5"/></g>
+  <g transform="translate(305,50)"><polygon points="-22,-8 0,-22 22,-8" fill="#7f8c8d"/><rect x="-20" y="-8" width="40" height="4" fill="#7f8c8d"/><rect x="-17" y="-3" width="5" height="18" fill="#95a5a6"/><rect x="-7" y="-3" width="5" height="18" fill="#95a5a6"/><rect x="3" y="-3" width="5" height="18" fill="#95a5a6"/><rect x="13" y="-3" width="5" height="18" fill="#95a5a6"/><rect x="-22" y="15" width="44" height="5" fill="#7f8c8d"/></g>
+  <line x1="332" y1="52" x2="356.4" y2="52" stroke="#333" stroke-width="2.5"/><polygon points="362,52 354.8,55.5 354.8,48.5" fill="#333"/>
+  <text x="374" y="59" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">+</text>
+  <circle cx="392" cy="46" r="10" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <circle cx="398" cy="56" r="10" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <line x1="20" y1="104" x2="400" y2="104" stroke="#cbbf9f" stroke-width="1.5"/>
+  <rect x="40" y="122" width="56" height="70" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="40" y="122" width="56" height="20" rx="5" fill="#3a7bd5"/><rect x="40" y="134" width="56" height="8" fill="#3a7bd5"/><circle cx="68" cy="178" r="9" fill="#3f7fd0" stroke="#555" stroke-width="1.2"/>
+  <g transform="translate(112,170) scale(0.9)"><circle cy="-14" r="6" fill="#d9534f" stroke="#fff" stroke-width="1.5"/><path d="M-9 8 Q-8 -4 -3 -8 L3 -8 Q8 -4 9 8 Z" fill="#d9534f" stroke="#fff" stroke-width="1.5"/></g>
+  <circle cx="68" cy="222" r="9" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <text x="150" y="175" font-size="30" fill="#333" text-anchor="middle" font-weight="bold">&lt;</text>
+  <rect x="205" y="122" width="56" height="70" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="205" y="122" width="56" height="20" rx="5" fill="#3a7bd5"/><rect x="205" y="134" width="56" height="8" fill="#3a7bd5"/><circle cx="233" cy="178" r="9" fill="#3f7fd0" stroke="#555" stroke-width="1.2"/><polygon points="209.5,162 220.5,162 220.5,155 215,149 209.5,155" fill="#3a9a4a" stroke="#fff" stroke-width="1.2"/><polygon points="223,162 234,162 234,155 228.5,149 223,155" fill="#3a9a4a" stroke="#fff" stroke-width="1.2"/>
+  <g transform="translate(277,170) scale(0.9)"><circle cy="-14" r="6" fill="#d9534f" stroke="#fff" stroke-width="1.5"/><path d="M-9 8 Q-8 -4 -3 -8 L3 -8 Q8 -4 9 8 Z" fill="#d9534f" stroke="#fff" stroke-width="1.5"/></g>
+  <circle cx="215" cy="222" r="9" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <circle cx="233" cy="222" r="9" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <circle cx="251" cy="222" r="9" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+  <circle cx="320" cy="222" r="12" fill="#d9534f" stroke="#555" stroke-width="1.5"/><text x="320" y="227" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold"></text>
+  <line x1="336" y1="222" x2="364.4" y2="222" stroke="#333" stroke-width="2.5"/><polygon points="370,222 362.8,225.5 362.8,218.5" fill="#333"/>
+  <circle cx="388" cy="222" r="12" fill="#3f7fd0" stroke="#555" stroke-width="1.5"/><text x="388" y="227" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold"></text>
+  <circle cx="353" cy="205" r="7" fill="#e8c13a" stroke="#a8841a" stroke-width="1.5"/>
+</svg>

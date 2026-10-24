@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 336" font-family="sans-serif">
+  <defs><g id="bull"><path d="M-7 -6 Q-9 -2 -4 -2 M7 -6 Q9 -2 4 -2" fill="none" stroke="#c0392b" stroke-width="1.8" stroke-linecap="round"/><ellipse cy="1" rx="4.6" ry="5" fill="#c0392b"/></g><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#333"/></marker></defs>
+  <rect width="420" height="336" fill="#f4ecd8"/>
+<g transform="translate(20,14)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">55</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">7</text></g>
+<text x="172" y="48" font-size="22" fill="#333">→</text>
+<g transform="translate(204,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(228,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(252,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(276,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(300,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(324,41) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(348,41) scale(1.2)"><use href="#bull"/></g>
+<text x="405" y="49" text-anchor="end" font-size="22" font-weight="bold" fill="#c0392b">7</text>
+<g transform="translate(20,78)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">11</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">5</text></g>
+<g transform="translate(66,78)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">22</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">5</text></g>
+<g transform="translate(112,78)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">33</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">5</text></g>
+<text x="172" y="112" font-size="22" fill="#333">→</text>
+<g transform="translate(204,105) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(228,105) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(252,105) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(276,105) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(300,105) scale(1.2)"><use href="#bull"/></g>
+<text x="405" y="113" text-anchor="end" font-size="22" font-weight="bold" fill="#c0392b">5</text>
+<g transform="translate(20,142)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">10</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">3</text></g>
+<g transform="translate(66,142)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">20</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">3</text></g>
+<g transform="translate(112,142)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">30</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">3</text></g>
+<text x="172" y="176" font-size="22" fill="#333">→</text>
+<g transform="translate(204,169) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(228,169) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(252,169) scale(1.2)"><use href="#bull"/></g>
+<text x="405" y="177" text-anchor="end" font-size="22" font-weight="bold" fill="#c0392b">3</text>
+<g transform="translate(20,206)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">5</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">2</text></g>
+<g transform="translate(66,206)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">15</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">2</text></g>
+<g transform="translate(112,206)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">25</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">2</text></g>
+<text x="172" y="240" font-size="22" fill="#333">→</text>
+<g transform="translate(204,233) scale(1.2)"><use href="#bull"/></g>
+<g transform="translate(228,233) scale(1.2)"><use href="#bull"/></g>
+<text x="405" y="241" text-anchor="end" font-size="22" font-weight="bold" fill="#c0392b">2</text>
+<g transform="translate(20,270)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">1</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">1</text></g>
+<g transform="translate(66,270)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">8</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">1</text></g>
+<g transform="translate(112,270)"><rect width="40" height="54" rx="5" fill="#fff" stroke="#555" stroke-width="1.5"/><text x="20.0" y="25" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">46</text><use href="#bull" x="13.0" y="41" transform="scale(1)"/><text x="25.0" y="47" font-size="12" font-weight="bold" fill="#c0392b">1</text></g>
+<text x="172" y="304" font-size="22" fill="#333">→</text>
+<g transform="translate(204,297) scale(1.2)"><use href="#bull"/></g>
+<text x="405" y="305" text-anchor="end" font-size="22" font-weight="bold" fill="#c0392b">1</text>
+</svg>

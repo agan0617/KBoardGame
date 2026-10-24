@@ -1,20 +1,43 @@
 {
   "id": "avalon",
   "icon": "⚔️",
-  "name": { "zh": "阿瓦隆", "en": "Avalon", "ja": "アヴァロン" },
-  "players": { "zh": "5–10 人", "en": "5–10 players", "ja": "5〜10人" },
-  "time": { "zh": "45–90 分鐘", "en": "45–90 min", "ja": "45〜90分" },
+  "name": {
+    "zh": "阿瓦隆",
+    "en": "Avalon",
+    "ja": "アヴァロン"
+  },
+  "players": {
+    "zh": "5–10 人",
+    "en": "5–10 players",
+    "ja": "5〜10人"
+  },
+  "time": {
+    "zh": "45–90 分鐘",
+    "en": "45–90 min",
+    "ja": "45〜90分"
+  },
   "summary": {
     "zh": "亞瑟王的忠臣對上莫德雷德的爪牙：藏在人群裡的壞人要破壞任務，好人要找出誰在說謊。",
     "en": "Loyal Servants of Arthur versus the Minions of Mordred: hidden traitors sabotage the quests while the good side tries to spot the liars.",
     "ja": "アーサー王の忠臣とモードレッドの手下の戦い。紛れ込んだ悪がクエストを妨害し、善は嘘つきを見破る。"
   },
-  "voice": { "zh": "zh-TW-YunJheNeural", "en": "en-GB-RyanNeural", "ja": "ja-JP-KeitaNeural" },
-  "rate": { "zh": "-8%", "en": "-5%", "ja": "-5%" },
-
+  "voice": {
+    "zh": "zh-TW-YunJheNeural",
+    "en": "en-GB-RyanNeural",
+    "ja": "ja-JP-KeitaNeural"
+  },
+  "rate": {
+    "zh": "-8%",
+    "en": "-5%",
+    "ja": "-5%"
+  },
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "玩家分成**善良陣營**（亞瑟的忠臣）與**邪惡陣營**（莫德雷德的爪牙），每個人拿一張祕密的角色卡。",
@@ -49,7 +72,11 @@
       }
     },
     {
-      "title": { "zh": "人數與陣營", "en": "Players & Teams", "ja": "人数と陣営" },
+      "title": {
+        "zh": "人數與陣營",
+        "en": "Players & Teams",
+        "ja": "人数と陣営"
+      },
       "md": {
         "zh": [
           "| 人數 | 5 | 6 | 7 | 8 | 9 | 10 |",
@@ -78,7 +105,11 @@
       }
     },
     {
-      "title": { "zh": "角色", "en": "Characters", "ja": "役職" },
+      "title": {
+        "zh": "角色",
+        "en": "Characters",
+        "ja": "役職"
+      },
       "md": {
         "zh": [
           "### 善良陣營",
@@ -93,7 +124,9 @@
           "- **莫甘娜**：在派西維爾眼中看起來像梅林，用來混淆派西維爾",
           "- **莫德雷德**：梅林看不到他，是最難抓的壞人",
           "- **奧伯倫**：不知道其他壞人是誰，其他壞人也不知道他；但梅林看得到他",
-          "- **莫德雷德的爪牙**：普通的壞人，夜晚認識同伴"
+          "- **莫德雷德的爪牙**：普通的壞人，夜晚認識同伴",
+          "",
+          "![夜晚誰看得到誰：梅林（藍★）看得到壞人，但看不到莫德雷德（皇冠）；派西維爾（藍盾）看到梅林和莫甘娜（紅★）兩個★，分不出哪個是真的；壞人互相認識，奧伯倫（月牙）除外](img/night.svg)"
         ],
         "en": [
           "### Good",
@@ -108,7 +141,9 @@
           "- **Morgana**: appears as Merlin to Percival, to confuse him",
           "- **Mordred**: hidden from Merlin, the hardest villain to catch",
           "- **Oberon**: does not know the other Evil players and they do not know him, but Merlin can see him",
-          "- **Minion of Mordred**: a regular Evil player who knows the others at night"
+          "- **Minion of Mordred**: a regular Evil player who knows the others at night",
+          "",
+          "![Who sees whom at night: Merlin (blue ★) sees Evil except Mordred (crown); Percival (blue shield) sees two ★ — Merlin and Morgana (red ★) — and can't tell which is real; Evil know each other, except Oberon (crescent)](img/night.svg)"
         ],
         "ja": [
           "### 善の陣営",
@@ -123,12 +158,18 @@
           "- **モルガナ**：パーシヴァルからはマーリンに見え、パーシヴァルを惑わせる",
           "- **モードレッド**：マーリンから見えない、いちばん見つけにくい悪",
           "- **オベロン**：ほかの悪を知らず、ほかの悪もオベロンを知らない。ただしマーリンからは見える",
-          "- **モードレッドの手下**：普通の悪。夜に仲間を確認できる"
+          "- **モードレッドの手下**：普通の悪。夜に仲間を確認できる",
+          "",
+          "![夜に誰が誰を見られるか：マーリン（青★）は悪が見えるがモードレッド（王冠）は見えない。パーシヴァル（青い盾）にはマーリンとモルガナ（赤★）の 2 つの★が見え、どちらが本物かわからない。悪は互いを知っているが、オベロン（三日月）だけは別](img/night.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "遊戲流程", "en": "How to Play", "ja": "ゲームの流れ" },
+      "title": {
+        "zh": "遊戲流程",
+        "en": "How to Play",
+        "ja": "ゲームの流れ"
+      },
       "md": {
         "zh": [
           "### 1. 夜晚（主持人念旁白）",
@@ -147,6 +188,8 @@
           "- 平手或反對多：否決，隊長換下一位，重新組隊",
           "- 同一輪**連續 5 次否決**：邪惡陣營直接獲勝",
           "",
+          "![投票：贊成超過半數才出發（上，3 比 2 ✓）；平手也算否決，隊長換順時針下一位（中，3 比 3 ✗）；同一輪連續 5 次否決，邪惡陣營直接獲勝（下）](img/vote.svg)",
+          "",
           "### 4. 出任務",
           "",
           "每位隊員暗中交出一張任務卡：",
@@ -155,6 +198,8 @@
           "- 邪惡陣營可以出成功或失敗（出成功是為了藏身分）",
           "",
           "收齊後洗亂再翻開。**只要有一張失敗，任務就失敗**（例外見〈任務人數〉）。",
+          "",
+          "![任務卡洗亂翻開：全部成功才成功，有一張失敗就失敗；7 人以上的第 4 輪（虛線框）要 2 張失敗才算失敗](img/mission.svg)",
           "",
           "### 5. 刺殺梅林",
           "",
@@ -177,6 +222,8 @@
           "- A tie or more rejects: rejected, the next player becomes Leader and proposes a new team",
           "- **5 rejections in a row** in the same round: Evil wins immediately",
           "",
+          "![Voting: the team goes only if more than half approve (top, 3–2 ✓); a tie is a rejection and leadership passes clockwise (middle, 3–3 ✗); 5 rejections in a row in one round and Evil wins (bottom)](img/vote.svg)",
+          "",
           "### 4. Quest",
           "",
           "Each team member secretly plays one quest card:",
@@ -185,6 +232,8 @@
           "- Evil players may play Success or Fail (Success helps them stay hidden)",
           "",
           "Shuffle the cards and reveal them. **A single Fail makes the quest fail** (see the exception under Team Sizes).",
+          "",
+          "![Quest cards are shuffled and revealed: all Success means success, a single Fail means failure; in round 4 with 7+ players (dashed box) it takes 2 Fails](img/mission.svg)",
           "",
           "### 5. Assassinate Merlin",
           "",
@@ -207,6 +256,8 @@
           "- 同数か却下が多い：却下。次の人がリーダーになって編成し直す",
           "- 同じラウンドで**5 回連続却下**：悪の陣営の勝ち",
           "",
+          "![投票：承認が過半数ならクエストへ（上、3 対 2 ✓）。同数も却下で、リーダーは時計回りに次の人へ（中、3 対 3 ✗）。同じラウンドで 5 回連続却下なら悪の勝ち（下）](img/vote.svg)",
+          "",
           "### 4. クエスト",
           "",
           "メンバーはそれぞれクエストカードを 1 枚こっそり出します。",
@@ -216,6 +267,8 @@
           "",
           "集めたカードを混ぜてめくります。**失敗が 1 枚でもあればクエスト失敗**です（例外は〈クエスト人数〉参照）。",
           "",
+          "![クエストカードは混ぜてめくる：全部成功なら成功、失敗が 1 枚でもあれば失敗。7 人以上の第 4 ラウンド（点線の枠）は失敗 2 枚で失敗](img/mission.svg)",
+          "",
           "### 5. マーリン暗殺",
           "",
           "善が 3 回クエストを成功させたら、悪の陣営は正体を明かして相談し、暗殺者が 1 人を指名します。マーリンなら悪の逆転勝利、外れたら善の勝利です。"
@@ -223,7 +276,11 @@
       }
     },
     {
-      "title": { "zh": "任務人數", "en": "Team Sizes", "ja": "クエスト人数" },
+      "title": {
+        "zh": "任務人數",
+        "en": "Team Sizes",
+        "ja": "クエスト人数"
+      },
       "md": {
         "zh": [
           "每一輪要出任務的人數：",
@@ -270,7 +327,11 @@
       }
     },
     {
-      "title": { "zh": "建議配置", "en": "Suggested Setups", "ja": "おすすめ構成" },
+      "title": {
+        "zh": "建議配置",
+        "en": "Suggested Setups",
+        "ja": "おすすめ構成"
+      },
       "md": {
         "zh": [
           "第一次玩可以照這個配：",
@@ -317,7 +378,11 @@
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips", "ja": "初心者向けヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips",
+        "ja": "初心者向けヒント"
+      },
       "md": {
         "zh": [
           "- **好人**：注意誰投票支持了失敗的隊伍；任務失敗後，隊員裡一定有壞人",
@@ -340,121 +405,282 @@
       }
     }
   ],
-
   "host": {
     "options": [
-      { "id": "percival", "label": { "zh": "派西維爾", "en": "Percival", "ja": "パーシヴァル" }, "default": true },
-      { "id": "morgana", "label": { "zh": "莫甘娜", "en": "Morgana", "ja": "モルガナ" }, "default": true },
-      { "id": "mordred", "label": { "zh": "莫德雷德", "en": "Mordred", "ja": "モードレッド" }, "default": false },
-      { "id": "oberon", "label": { "zh": "奧伯倫", "en": "Oberon", "ja": "オベロン" }, "default": false }
+      {
+        "id": "percival",
+        "label": {
+          "zh": "派西維爾",
+          "en": "Percival",
+          "ja": "パーシヴァル"
+        },
+        "default": true
+      },
+      {
+        "id": "morgana",
+        "label": {
+          "zh": "莫甘娜",
+          "en": "Morgana",
+          "ja": "モルガナ"
+        },
+        "default": true
+      },
+      {
+        "id": "mordred",
+        "label": {
+          "zh": "莫德雷德",
+          "en": "Mordred",
+          "ja": "モードレッド"
+        },
+        "default": false
+      },
+      {
+        "id": "oberon",
+        "label": {
+          "zh": "奧伯倫",
+          "en": "Oberon",
+          "ja": "オベロン"
+        },
+        "default": false
+      }
     ],
     "scripts": [
       {
         "id": "night",
-        "title": { "zh": "夜晚", "en": "Night", "ja": "夜" },
+        "title": {
+          "zh": "夜晚",
+          "en": "Night",
+          "ja": "夜"
+        },
         "lines": [
-          { "id": "night01", "pause": 3, "text": {
-            "zh": "大家確認一下自己的角色卡，不要讓別人看到。",
-            "en": "Everyone, check your character card. Don't let anyone else see it.",
-            "ja": "自分の役職カードを確認してください。ほかの人には見せないでください。" } },
-          { "id": "night02", "pause": 3, "text": {
-            "zh": "天黑請閉眼。所有人閉上眼睛，把手握拳放在面前。",
-            "en": "Night falls. Everyone, close your eyes and put your fist out in front of you.",
-            "ja": "夜になりました。全員、目を閉じて、こぶしを握って前に出してください。" } },
-          { "id": "night03a", "pause": 5, "when": "!oberon", "text": {
-            "zh": "邪惡陣營請睜開眼睛，互相確認你的同伴。",
-            "en": "Minions of Mordred, open your eyes and find your fellow minions.",
-            "ja": "悪の陣営は目を開けて、仲間を確認してください。" } },
-          { "id": "night03b", "pause": 5, "when": "oberon", "text": {
-            "zh": "除了奧伯倫，邪惡陣營請睜開眼睛，互相確認你的同伴。",
-            "en": "Minions of Mordred, except Oberon, open your eyes and find your fellow minions.",
-            "ja": "オベロン以外の悪の陣営は目を開けて、仲間を確認してください。" } },
-          { "id": "night04", "pause": 2, "text": {
-            "zh": "邪惡陣營請閉上眼睛。",
-            "en": "Minions of Mordred, close your eyes.",
-            "ja": "悪の陣営は目を閉じてください。" } },
-          { "id": "night05a", "pause": 2, "when": "!mordred", "text": {
-            "zh": "邪惡陣營請豎起大拇指。",
-            "en": "Minions of Mordred, put your thumbs up.",
-            "ja": "悪の陣営は親指を立ててください。" } },
-          { "id": "night05b", "pause": 2, "when": "mordred", "text": {
-            "zh": "除了莫德雷德，邪惡陣營請豎起大拇指。",
-            "en": "Minions of Mordred, except Mordred himself, put your thumbs up.",
-            "ja": "モードレッド以外の悪の陣営は親指を立ててください。" } },
-          { "id": "night06", "pause": 5, "text": {
-            "zh": "梅林請睜開眼睛，看看誰豎起了大拇指，他們就是邪惡陣營。",
-            "en": "Merlin, open your eyes. The players with their thumbs up are the forces of evil.",
-            "ja": "マーリンは目を開けて、親指を立てている人を確認してください。それが悪の陣営です。" } },
-          { "id": "night07", "pause": 2, "text": {
-            "zh": "梅林請閉上眼睛。邪惡陣營請收起大拇指。",
-            "en": "Merlin, close your eyes. Minions of Mordred, put your thumbs down.",
-            "ja": "マーリンは目を閉じてください。悪の陣営は親指を下ろしてください。" } },
-          { "id": "night08a", "pause": 2, "when": "percival && morgana", "text": {
-            "zh": "梅林和莫甘娜請豎起大拇指。",
-            "en": "Merlin and Morgana, put your thumbs up.",
-            "ja": "マーリンとモルガナは親指を立ててください。" } },
-          { "id": "night08b", "pause": 2, "when": "percival && !morgana", "text": {
-            "zh": "梅林請豎起大拇指。",
-            "en": "Merlin, put your thumb up.",
-            "ja": "マーリンは親指を立ててください。" } },
-          { "id": "night09", "pause": 5, "when": "percival", "text": {
-            "zh": "派西維爾請睜開眼睛，看看豎起大拇指的人。",
-            "en": "Percival, open your eyes and see who has their thumbs up.",
-            "ja": "パーシヴァルは目を開けて、親指を立てている人を確認してください。" } },
-          { "id": "night10", "pause": 2, "when": "percival", "text": {
-            "zh": "派西維爾請閉上眼睛。所有人請收起大拇指。",
-            "en": "Percival, close your eyes. Everyone, put your thumbs down.",
-            "ja": "パーシヴァルは目を閉じてください。全員、親指を下ろしてください。" } },
-          { "id": "night11", "pause": 0, "text": {
-            "zh": "天亮了，所有人請睜開眼睛。",
-            "en": "Day breaks. Everyone, open your eyes.",
-            "ja": "朝になりました。全員、目を開けてください。" } }
+          {
+            "id": "night01",
+            "pause": 3,
+            "text": {
+              "zh": "大家確認一下自己的角色卡，不要讓別人看到。",
+              "en": "Everyone, check your character card. Don't let anyone else see it.",
+              "ja": "自分の役職カードを確認してください。ほかの人には見せないでください。"
+            }
+          },
+          {
+            "id": "night02",
+            "pause": 3,
+            "text": {
+              "zh": "天黑請閉眼。所有人閉上眼睛，把手握拳放在面前。",
+              "en": "Night falls. Everyone, close your eyes and put your fist out in front of you.",
+              "ja": "夜になりました。全員、目を閉じて、こぶしを握って前に出してください。"
+            }
+          },
+          {
+            "id": "night03a",
+            "pause": 5,
+            "when": "!oberon",
+            "text": {
+              "zh": "邪惡陣營請睜開眼睛，互相確認你的同伴。",
+              "en": "Minions of Mordred, open your eyes and find your fellow minions.",
+              "ja": "悪の陣営は目を開けて、仲間を確認してください。"
+            }
+          },
+          {
+            "id": "night03b",
+            "pause": 5,
+            "when": "oberon",
+            "text": {
+              "zh": "除了奧伯倫，邪惡陣營請睜開眼睛，互相確認你的同伴。",
+              "en": "Minions of Mordred, except Oberon, open your eyes and find your fellow minions.",
+              "ja": "オベロン以外の悪の陣営は目を開けて、仲間を確認してください。"
+            }
+          },
+          {
+            "id": "night04",
+            "pause": 2,
+            "text": {
+              "zh": "邪惡陣營請閉上眼睛。",
+              "en": "Minions of Mordred, close your eyes.",
+              "ja": "悪の陣営は目を閉じてください。"
+            }
+          },
+          {
+            "id": "night05a",
+            "pause": 2,
+            "when": "!mordred",
+            "text": {
+              "zh": "邪惡陣營請豎起大拇指。",
+              "en": "Minions of Mordred, put your thumbs up.",
+              "ja": "悪の陣営は親指を立ててください。"
+            }
+          },
+          {
+            "id": "night05b",
+            "pause": 2,
+            "when": "mordred",
+            "text": {
+              "zh": "除了莫德雷德，邪惡陣營請豎起大拇指。",
+              "en": "Minions of Mordred, except Mordred himself, put your thumbs up.",
+              "ja": "モードレッド以外の悪の陣営は親指を立ててください。"
+            }
+          },
+          {
+            "id": "night06",
+            "pause": 5,
+            "text": {
+              "zh": "梅林請睜開眼睛，看看誰豎起了大拇指，他們就是邪惡陣營。",
+              "en": "Merlin, open your eyes. The players with their thumbs up are the forces of evil.",
+              "ja": "マーリンは目を開けて、親指を立てている人を確認してください。それが悪の陣営です。"
+            }
+          },
+          {
+            "id": "night07",
+            "pause": 2,
+            "text": {
+              "zh": "梅林請閉上眼睛。邪惡陣營請收起大拇指。",
+              "en": "Merlin, close your eyes. Minions of Mordred, put your thumbs down.",
+              "ja": "マーリンは目を閉じてください。悪の陣営は親指を下ろしてください。"
+            }
+          },
+          {
+            "id": "night08a",
+            "pause": 2,
+            "when": "percival && morgana",
+            "text": {
+              "zh": "梅林和莫甘娜請豎起大拇指。",
+              "en": "Merlin and Morgana, put your thumbs up.",
+              "ja": "マーリンとモルガナは親指を立ててください。"
+            }
+          },
+          {
+            "id": "night08b",
+            "pause": 2,
+            "when": "percival && !morgana",
+            "text": {
+              "zh": "梅林請豎起大拇指。",
+              "en": "Merlin, put your thumb up.",
+              "ja": "マーリンは親指を立ててください。"
+            }
+          },
+          {
+            "id": "night09",
+            "pause": 5,
+            "when": "percival",
+            "text": {
+              "zh": "派西維爾請睜開眼睛，看看豎起大拇指的人。",
+              "en": "Percival, open your eyes and see who has their thumbs up.",
+              "ja": "パーシヴァルは目を開けて、親指を立てている人を確認してください。"
+            }
+          },
+          {
+            "id": "night10",
+            "pause": 2,
+            "when": "percival",
+            "text": {
+              "zh": "派西維爾請閉上眼睛。所有人請收起大拇指。",
+              "en": "Percival, close your eyes. Everyone, put your thumbs down.",
+              "ja": "パーシヴァルは目を閉じてください。全員、親指を下ろしてください。"
+            }
+          },
+          {
+            "id": "night11",
+            "pause": 0,
+            "text": {
+              "zh": "天亮了，所有人請睜開眼睛。",
+              "en": "Day breaks. Everyone, open your eyes.",
+              "ja": "朝になりました。全員、目を開けてください。"
+            }
+          }
         ]
       },
       {
         "id": "calls",
-        "title": { "zh": "口令", "en": "Calls", "ja": "かけ声" },
+        "title": {
+          "zh": "口令",
+          "en": "Calls",
+          "ja": "かけ声"
+        },
         "autoplay": false,
         "lines": [
-          { "id": "call01", "pause": 0, "text": {
-            "zh": "請大家準備投票。三、二、一，亮！",
-            "en": "Get ready to vote. Three, two, one, reveal!",
-            "ja": "投票の準備をしてください。さん、に、いち、どうぞ！" } },
-          { "id": "call02", "pause": 0, "text": {
-            "zh": "請隊員交出任務卡。洗亂之後，一張一張翻開。",
-            "en": "Team members, hand in your quest cards. Shuffle them, then turn them over one by one.",
-            "ja": "メンバーはクエストカードを出してください。よく混ぜてから、一枚ずつめくります。" } },
-          { "id": "call03", "pause": 0, "text": {
-            "zh": "任務成功！",
-            "en": "The quest succeeds!",
-            "ja": "クエスト成功！" } },
-          { "id": "call04", "pause": 0, "text": {
-            "zh": "任務失敗。",
-            "en": "The quest fails.",
-            "ja": "クエスト失敗。" } },
-          { "id": "call05", "pause": 0, "text": {
-            "zh": "隊伍被否決，換下一位隊長。",
-            "en": "The team is rejected. Leadership passes to the next player.",
-            "ja": "編成は却下されました。リーダーは次の人に交代です。" } }
+          {
+            "id": "call01",
+            "pause": 0,
+            "text": {
+              "zh": "請大家準備投票。三、二、一，亮！",
+              "en": "Get ready to vote. Three, two, one, reveal!",
+              "ja": "投票の準備をしてください。さん、に、いち、どうぞ！"
+            }
+          },
+          {
+            "id": "call02",
+            "pause": 0,
+            "text": {
+              "zh": "請隊員交出任務卡。洗亂之後，一張一張翻開。",
+              "en": "Team members, hand in your quest cards. Shuffle them, then turn them over one by one.",
+              "ja": "メンバーはクエストカードを出してください。よく混ぜてから、一枚ずつめくります。"
+            }
+          },
+          {
+            "id": "call03",
+            "pause": 0,
+            "text": {
+              "zh": "任務成功！",
+              "en": "The quest succeeds!",
+              "ja": "クエスト成功！"
+            }
+          },
+          {
+            "id": "call04",
+            "pause": 0,
+            "text": {
+              "zh": "任務失敗。",
+              "en": "The quest fails.",
+              "ja": "クエスト失敗。"
+            }
+          },
+          {
+            "id": "call05",
+            "pause": 0,
+            "text": {
+              "zh": "隊伍被否決，換下一位隊長。",
+              "en": "The team is rejected. Leadership passes to the next player.",
+              "ja": "編成は却下されました。リーダーは次の人に交代です。"
+            }
+          }
         ]
       },
       {
         "id": "assassin",
-        "title": { "zh": "刺殺", "en": "Assassination", "ja": "暗殺" },
+        "title": {
+          "zh": "刺殺",
+          "en": "Assassination",
+          "ja": "暗殺"
+        },
         "autoplay": false,
         "lines": [
-          { "id": "assn01", "pause": 1, "text": {
-            "zh": "善良陣營完成了三次任務，進入刺殺階段。",
-            "en": "Good has completed three quests. The assassination begins.",
-            "ja": "善の陣営が三回のクエストを成功させました。暗殺フェーズに入ります。" } },
-          { "id": "assn02", "pause": 0, "text": {
-            "zh": "邪惡陣營請亮出身分，和刺客一起討論，找出誰是梅林。",
-            "en": "Minions of Mordred, reveal yourselves. Discuss with the Assassin and work out who Merlin is.",
-            "ja": "悪の陣営は正体を明かして、暗殺者と相談し、マーリンが誰かを探してください。" } },
-          { "id": "assn03", "pause": 0, "text": {
-            "zh": "刺客，請指出你認為的梅林。",
-            "en": "Assassin, point to the player you believe is Merlin.",
-            "ja": "暗殺者は、マーリンだと思う人を指さしてください。" } }
+          {
+            "id": "assn01",
+            "pause": 1,
+            "text": {
+              "zh": "善良陣營完成了三次任務，進入刺殺階段。",
+              "en": "Good has completed three quests. The assassination begins.",
+              "ja": "善の陣営が三回のクエストを成功させました。暗殺フェーズに入ります。"
+            }
+          },
+          {
+            "id": "assn02",
+            "pause": 0,
+            "text": {
+              "zh": "邪惡陣營請亮出身分，和刺客一起討論，找出誰是梅林。",
+              "en": "Minions of Mordred, reveal yourselves. Discuss with the Assassin and work out who Merlin is.",
+              "ja": "悪の陣営は正体を明かして、暗殺者と相談し、マーリンが誰かを探してください。"
+            }
+          },
+          {
+            "id": "assn03",
+            "pause": 0,
+            "text": {
+              "zh": "刺客，請指出你認為的梅林。",
+              "en": "Assassin, point to the player you believe is Merlin.",
+              "ja": "暗殺者は、マーリンだと思う人を指さしてください。"
+            }
+          }
         ]
       }
     ]

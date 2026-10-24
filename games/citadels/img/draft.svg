@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 296" font-family="sans-serif">
+  <!-- 選角色（4 人）：8 張 → 蓋著拿掉 1、翻開拿掉 2（國王 4 不能翻開拿掉）→ 剩 5 張給王冠玩家，挑 1 張蓋著，其餘傳左手邊：4→3→2，最後 1 張不用 -->
+  <defs>
+    <g id="m" stroke="#fff" stroke-width="1.5"><circle cy="-10" r="5"/><path d="M-10 10 L-5 -2 L-10 -3 L-10 -6 L10 -6 L10 -3 L5 -2 L10 10 L3 10 L0 4 L-3 10Z"/></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#333"/></marker>
+    <marker id="ahr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#c0392b"/></marker>
+    <g id="coin"><circle r="7" fill="#f2c230" stroke="#a87b00" stroke-width="1.5"/><circle r="3" fill="none" stroke="#a87b00" stroke-width="1"/></g>
+    <g id="bcard"><rect x="-8" y="-11" width="16" height="22" rx="2" fill="#fffaf0" stroke="#555" stroke-width="1.5"/><path d="M-4 3 L0 -2 L4 3 V7 H-4Z" fill="#999"/></g>
+    <g id="back"><rect x="-14" y="-19" width="28" height="38" rx="4" fill="#7a3b2e" stroke="#fff" stroke-width="2"/><path d="M0 -10 L8 0 L0 10 L-8 0Z" fill="none" stroke="#c98a6b" stroke-width="2"/></g>
+    <g id="crown"><path d="M-10 4 L-10 -6 L-5 -1 L0 -8 L5 -1 L10 -6 L10 4Z" fill="#e8c13a" stroke="#8a6d00" stroke-width="1.5"/></g>
+    <g id="shield"><path d="M-8 -9 h16 v9 q0 9 -8 12 q-8 -3 -8 -12z" fill="#2f6fd0" stroke="#fff" stroke-width="1.5"/></g>
+  </defs>
+  <rect width="420" height="296" fill="#f4ecd8"/>
+  <rect x="8" y="8" width="404" height="58" rx="10" fill="#fbf6ea" stroke="#d8cbb0" stroke-width="1.5"/>
+  <g opacity="1"><rect x="31.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="45" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">1</text></g>
+  <g opacity="1"><rect x="78.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="92" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">2</text></g>
+  <g opacity="1"><rect x="125.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="139" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">3</text></g>
+  <g opacity="1"><rect x="172.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="186" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">4</text></g>
+  <g opacity="1"><rect x="219.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="233" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">5</text></g>
+  <g opacity="1"><rect x="266.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="280" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">6</text></g>
+  <g opacity="1"><rect x="313.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="327" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">7</text></g>
+  <g opacity="1"><rect x="360.0" y="18.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="374" y="44" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">8</text></g>
+  <line x1="210" y1="70" x2="210" y2="88" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <rect x="14" y="94" width="150" height="62" rx="8" fill="#e9e1cc" stroke="#999" stroke-width="2" stroke-dasharray="6 4"/>
+  <use href="#back" x="45" y="125"/>
+  <g opacity="1"><rect x="81.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="95" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">3</text></g>
+  <g opacity="1"><rect x="119.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="133" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">7</text></g>
+  <path d="M152 90 L168 106 M168 90 L152 106" stroke="#c0392b" stroke-width="3.5" stroke-linecap="round"/>
+  <g opacity="1"><rect x="216.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="230" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">1</text></g>
+  <g opacity="1"><rect x="250.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="264" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">2</text></g>
+  <g opacity="1"><rect x="284.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="298" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">4</text></g>
+  <g opacity="1"><rect x="318.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="332" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">5</text></g>
+  <g opacity="1"><rect x="352.0" y="106.0" width="28" height="38" rx="4" fill="#fff" stroke="#555" stroke-width="2"/><text x="366" y="132" text-anchor="middle" font-size="19" font-weight="bold" fill="#333">8</text></g>
+  <path d="M230 148 Q150 175 78 198" fill="none" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <use href="#m" transform="translate(62,236) scale(1.7)" fill="#d9534f" opacity="1"/>
+  <use href="#back" transform="translate(62,274) scale(0.7)"/>
+  <use href="#m" transform="translate(152,236) scale(1.7)" fill="#2f6fd0" opacity="1"/>
+  <use href="#back" transform="translate(152,274) scale(0.7)"/>
+  <use href="#m" transform="translate(242,236) scale(1.7)" fill="#3c9a4b" opacity="1"/>
+  <use href="#back" transform="translate(242,274) scale(0.7)"/>
+  <use href="#m" transform="translate(332,236) scale(1.7)" fill="#e08a1e" opacity="1"/>
+  <use href="#back" transform="translate(332,274) scale(0.7)"/>
+  <use href="#crown" transform="translate(62,206) scale(1.2)"/>
+  <line x1="84" y1="236" x2="130" y2="236" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <circle cx="107.0" cy="218" r="11" fill="#fff" stroke="#555" stroke-width="2"/><text x="107.0" y="223" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">4</text>
+  <line x1="174" y1="236" x2="220" y2="236" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <circle cx="197.0" cy="218" r="11" fill="#fff" stroke="#555" stroke-width="2"/><text x="197.0" y="223" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">3</text>
+  <line x1="264" y1="236" x2="310" y2="236" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <circle cx="287.0" cy="218" r="11" fill="#fff" stroke="#555" stroke-width="2"/><text x="287.0" y="223" text-anchor="middle" font-size="14" font-weight="bold" fill="#333">2</text>
+  <line x1="354" y1="236" x2="378" y2="236" stroke="#333" stroke-width="2.5" marker-end="url(#ah)"/>
+  <use href="#back" transform="translate(394,236) scale(0.7)" opacity="0.5"/>
+
+</svg>

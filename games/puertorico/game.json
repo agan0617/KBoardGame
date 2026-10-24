@@ -1,9 +1,21 @@
 {
   "id": "puertorico",
   "icon": "⚓",
-  "name": { "zh": "波多黎各", "en": "Puerto Rico", "ja": "プエルトリコ" },
-  "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
-  "time": { "zh": "90–150 分鐘", "en": "90–150 min", "ja": "90〜150分" },
+  "name": {
+    "zh": "波多黎各",
+    "en": "Puerto Rico",
+    "ja": "プエルトリコ"
+  },
+  "players": {
+    "zh": "3–5 人",
+    "en": "3–5 players",
+    "ja": "3〜5人"
+  },
+  "time": {
+    "zh": "90–150 分鐘",
+    "en": "90–150 min",
+    "ja": "90〜150分"
+  },
   "summary": {
     "zh": "經營殖民地：種植、生產、蓋建築、把貨物運回歐洲換分數。每輪輪流挑角色，大家都做那個動作，挑的人多一個特權。App 幫你列開局準備、算最後總分。",
     "en": "Run a colony: plant, produce, build and ship goods back to Europe for points. Each round players pick roles in turn; everyone takes that action and the picker gets a privilege. The app lists the setup for your player count and adds up the final score.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "每個人有一塊島嶼（種農場、採石場）和一座城鎮（蓋建築）。農場和生產建築要有**殖民者**進駐才會運作。",
@@ -37,7 +53,11 @@
       }
     },
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "人數不同，分數籌碼、殖民者、起始金幣、起始農場、貨船大小和角色數都不一樣，**在「開局」頁選人數就會列出來**。",
@@ -66,30 +86,44 @@
       }
     },
     {
-      "title": { "zh": "一輪的流程", "en": "A round", "ja": "ラウンドの流れ" },
+      "title": {
+        "zh": "一輪的流程",
+        "en": "A round",
+        "ja": "ラウンドの流れ"
+      },
       "md": {
         "zh": [
           "1. 從總督開始，每人輪流挑一張還沒被挑的角色",
           "2. 挑完立刻執行：從挑的人開始，**每個人**照順序做那個動作；挑的人多拿特權。不想做可以不做",
           "3. 所有人都挑過一張後，**沒人挑的角色各放 1 枚金幣**在上面，下一輪誰挑到就拿走",
-          "4. 總督標記交給左邊的人，下一輪開始"
+          "4. 總督標記交給左邊的人，下一輪開始",
+          "",
+          "![3 人的一輪：輪到誰挑，就從他開始所有人照順序做，挑的人多拿特權（★）；沒人挑的角色各放 1 枚金幣，總督交給下一位](img/role-round.svg)"
         ],
         "en": [
           "1. Starting with the Governor, each player picks one role not yet taken",
           "2. It is carried out right away: starting with the picker, **every player** takes the action in turn; the picker also gets the privilege. Actions are optional",
           "3. When everyone has picked, **each unpicked role gets 1 doubloon**, which goes to whoever picks it next round",
-          "4. The Governor passes to the left and the next round begins"
+          "4. The Governor passes to the left and the next round begins",
+          "",
+          "![A 3-player round: whoever picks a role starts it, everyone follows in order, and the picker gets the privilege (★); each unpicked role gets 1 doubloon and the Governor passes on](img/role-round.svg)"
         ],
         "ja": [
           "1. 総督から順に、まだ選ばれていない役割を 1 枚ずつ選ぶ",
           "2. 選んだらすぐ実行：選んだ人から順に**全員**がその行動をし、選んだ人は特権も得る。行動しなくてもよい",
           "3. 全員が選び終えたら、**選ばれなかった役割に 1 ドゥブロンずつ**置く。次のラウンドで選んだ人がもらう",
-          "4. 総督が左隣に移り、次のラウンドへ"
+          "4. 総督が左隣に移り、次のラウンドへ",
+          "",
+          "![3 人の 1 ラウンド：選んだ人から順に全員が行動し、選んだ人は特権（★）を得る。選ばれなかった役割に 1 ドゥブロンずつ置き、総督は次の人へ](img/role-round.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "七種角色", "en": "The seven roles", "ja": "7 つの役割" },
+      "title": {
+        "zh": "七種角色",
+        "en": "The seven roles",
+        "ja": "7 つの役割"
+      },
       "md": {
         "zh": [
           "- **開拓者**：每人拿一塊翻開的農場板放到島上。特權：可以改拿採石場",
@@ -121,33 +155,56 @@
       }
     },
     {
-      "title": { "zh": "船運", "en": "Shipping", "ja": "出荷" },
+      "title": {
+        "zh": "船運",
+        "en": "Shipping",
+        "ja": "出荷"
+      },
       "md": {
         "zh": [
           "- 從船長開始輪流，每次把**一種**貨物全部（裝得下的部分）裝上船，每個貨物 1 分",
           "- 一艘船只能裝一種貨物，同一種貨物不能分在兩艘船上",
+          "",
+          "![一艘船只裝一種貨（✓）；同一艘混兩種（✗）、同一種分在兩艘船（✗）都不行](img/shipping.svg)",
+          "",
           "- **能裝就一定要裝**，有選擇時要挑裝得最多的；一直輪到沒有人能再裝為止",
           "- 結束後，每人只能留 **1 個**貨物（倉庫可以多留），其餘丟回供應區",
-          "- 裝滿的船清空，沒裝滿的船上貨物留著"
+          "- 裝滿的船清空，沒裝滿的船上貨物留著",
+          "",
+          "![船運結束：裝滿的船清空、沒裝滿的貨物留著；每人只留 1 個貨物，其餘丟回](img/after-shipping.svg)"
         ],
         "en": [
           "- Starting with the Captain, players in turn load **one kind** of good (as many as fit) onto a ship; each good is 1 VP",
           "- A ship holds only one kind of good, and the same kind can't be on two ships",
+          "",
+          "![One kind of good per ship (✓); mixing two kinds on one ship (✗) or splitting one kind across two ships (✗) is not allowed](img/shipping.svg)",
+          "",
           "- **You must load if you can**, choosing the option that ships the most; continue around until nobody can load",
           "- Afterwards each player keeps only **1 good** (warehouses keep more); the rest go back to the supply",
-          "- Full ships are emptied; partly loaded ships keep their goods"
+          "- Full ships are emptied; partly loaded ships keep their goods",
+          "",
+          "![After shipping: full ships are emptied, partly loaded ones keep their cargo; each player keeps only 1 good and returns the rest](img/after-shipping.svg)"
         ],
         "ja": [
           "- 船長から順に、**1 種類**の商品を（積めるだけ）船に積む。商品 1 つ 1 点",
           "- 1 隻に積めるのは 1 種類だけ。同じ種類を 2 隻に分けられない",
+          "",
+          "![1 隻に 1 種類（✓）。1 隻に 2 種類混ぜる（✗）、同じ種類を 2 隻に分ける（✗）のはだめ](img/shipping.svg)",
+          "",
           "- **積めるなら必ず積む**。選べるときは一番多く積める方。誰も積めなくなるまで続ける",
           "- 終わったら各自**1 つ**だけ商品を残せる（倉庫があればもっと）。残りはストックへ",
-          "- 満杯の船は空にする。満杯でない船の商品はそのまま"
+          "- 満杯の船は空にする。満杯でない船の商品はそのまま",
+          "",
+          "![船積みの後：満杯の船は空に、満杯でない船はそのまま。各自商品は 1 つだけ残し、残りは戻す](img/after-shipping.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "建築", "en": "Buildings", "ja": "建物" },
+      "title": {
+        "zh": "建築",
+        "en": "Buildings",
+        "ja": "建物"
+      },
       "md": {
         "zh": [
           "格式：名稱（費用／分數）功能。採石場折抵上限：第一欄 1、第二欄 2、第三欄 3、大建築 4。",
@@ -250,7 +307,11 @@
       }
     },
     {
-      "title": { "zh": "遊戲結束與算分", "en": "Game end and scoring", "ja": "終了と得点" },
+      "title": {
+        "zh": "遊戲結束與算分",
+        "en": "Game end and scoring",
+        "ja": "終了と得点"
+      },
       "md": {
         "zh": [
           "以下任一發生，**這一輪做完**就結束：",
@@ -279,7 +340,11 @@
       }
     },
     {
-      "title": { "zh": "擴展一：新時代建築", "en": "Expansion I: The New Buildings", "ja": "拡張 1：新しい建物" },
+      "title": {
+        "zh": "擴展一：新時代建築",
+        "en": "Expansion I: The New Buildings",
+        "ja": "拡張 1：新しい建物"
+      },
       "md": {
         "zh": [
           "**準備**：生產建築照舊。紫色建築由大家挑：總督先挑一種放到費用相同的空位，順時針輪流，直到 12 個小建築位和 5 個大建築位都放滿（小建築一次放兩棟）。費用 2、5、8 的位置要從同費用的四種裡挑兩種不同的。沒挑到的收回盒子。費用和分數照板塊上印的。",
@@ -349,7 +414,11 @@
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips for new players",
+        "ja": "初心者向けのヒント"
+      },
       "md": {
         "zh": [
           "- 挑角色前先想：這個動作對誰最有利？別替下家做嫁衣",
@@ -374,6 +443,10 @@
   ],
   "play": {
     "type": "puertorico",
-    "title": { "zh": "準備與算分", "en": "Setup & score", "ja": "準備・得点" }
+    "title": {
+      "zh": "準備與算分",
+      "en": "Setup & score",
+      "ja": "準備・得点"
+    }
   }
 }

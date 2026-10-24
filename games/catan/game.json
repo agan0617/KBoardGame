@@ -1,9 +1,21 @@
 {
   "id": "catan",
   "icon": "🎲",
-  "name": { "zh": "卡坦島", "en": "Catan", "ja": "カタン" },
-  "players": { "zh": "3–4 人", "en": "3–4 players", "ja": "3〜4人" },
-  "time": { "zh": "60–90 分鐘", "en": "60–90 min", "ja": "60〜90分" },
+  "name": {
+    "zh": "卡坦島",
+    "en": "Catan",
+    "ja": "カタン"
+  },
+  "players": {
+    "zh": "3–4 人",
+    "en": "3–4 players",
+    "ja": "3〜4人"
+  },
+  "time": {
+    "zh": "60–90 分鐘",
+    "en": "60–90 min",
+    "ja": "60〜90分"
+  },
   "summary": {
     "zh": "在卡坦島上採集磚塊、木材、羊毛、小麥、礦石，蓋道路、村莊和城市，跟大家交易，先拿到 10 分的人贏。App 幫你擲骰、記點數分布和勝利分數。",
     "en": "Gather brick, lumber, wool, grain and ore on Catan, build roads, settlements and cities, trade with everyone, and be first to 10 points. The app rolls the dice, tracks the roll history and keeps victory points.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "title": {
+        "zh": "遊戲概要",
+        "en": "Overview",
+        "ja": "ゲームの概要"
+      },
       "md": {
         "zh": [
           "島由 19 塊六角形地形組成，每塊有一個數字。每回合擲兩顆骰子，**點數對到的地形**，旁邊有村莊或城市的人就拿那種資源。",
@@ -37,7 +53,11 @@
       }
     },
     {
-      "title": { "zh": "資源與地形", "en": "Resources and terrain", "ja": "資源と地形" },
+      "title": {
+        "zh": "資源與地形",
+        "en": "Resources and terrain",
+        "ja": "資源と地形"
+      },
       "md": {
         "zh": [
           "- 丘陵 → **磚塊**",
@@ -72,7 +92,11 @@
       }
     },
     {
-      "title": { "zh": "準備與開局放置", "en": "Setup and starting placement", "ja": "準備と初期配置" },
+      "title": {
+        "zh": "準備與開局放置",
+        "en": "Setup and starting placement",
+        "ja": "準備と初期配置"
+      },
       "md": {
         "zh": [
           "1. 拼好島（新手可以照說明書的建議配置），放數字片，強盜放沙漠",
@@ -80,7 +104,11 @@
           "3. **開局放置**：照順序每人放 1 個村莊＋1 條相連的道路；最後一個人放完後**倒過來**再放第二輪（最後一人連放兩次）",
           "4. 第二個村莊放好後，周圍的地形各拿 1 張資源",
           "",
-          "**距離規則**：村莊旁邊的 3 個路口都不能有別的村莊或城市（任何人的都不行）"
+          "**距離規則**：村莊旁邊的 3 個路口都不能有別的村莊或城市（任何人的都不行）",
+          "",
+          "![開局放置：第一輪 1→2→3→4，第二輪倒過來 4→3→2→1（最後一人連放兩次）；第二個村莊周圍的地形各拿 1 張資源](img/setup-order.svg)",
+          "",
+          "![距離規則：村莊旁邊的 3 個路口（✗）都不能蓋，隔一個路口以上（✓）才可以，別人的村莊也一樣](img/distance.svg)"
         ],
         "en": [
           "1. Build the island (beginners can use the suggested layout in the rulebook), place the number tokens, put the robber on the desert",
@@ -88,7 +116,11 @@
           "3. **Starting placement**: in order, each player places 1 settlement and 1 connected road; then **in reverse order** a second round (the last player places twice in a row)",
           "4. After placing the second settlement, take 1 resource from each hex next to it",
           "",
-          "**Distance rule**: none of the 3 intersections next to a settlement may hold another settlement or city (anyone's)"
+          "**Distance rule**: none of the 3 intersections next to a settlement may hold another settlement or city (anyone's)",
+          "",
+          "![Setup: round one goes 1→2→3→4, round two reverses 4→3→2→1 (the last player places twice in a row); the second settlement takes 1 resource from each adjacent hex](img/setup-order.svg)",
+          "",
+          "![Distance rule: the 3 intersections next to a settlement (✗) are off limits; two or more steps away (✓) is fine, for anyone's settlements](img/distance.svg)"
         ],
         "ja": [
           "1. 島を組み（初心者は説明書のおすすめ配置で）、数字チップを置き、盗賊を砂漠に置く",
@@ -96,12 +128,20 @@
           "3. **初期配置**：順番に開拓地 1 と隣接する街道 1 を置く。最後の人の後は**逆順**で 2 周目（最後の人は 2 回続けて置く）",
           "4. 2 つ目の開拓地を置いたら、隣接する地形から資源を 1 枚ずつもらう",
           "",
-          "**距離ルール**：開拓地の隣の 3 つの交差点には、誰の開拓地・都市も置けない"
+          "**距離ルール**：開拓地の隣の 3 つの交差点には、誰の開拓地・都市も置けない",
+          "",
+          "![初期配置：1 巡目は 1→2→3→4、2 巡目は逆に 4→3→2→1（最後の人は 2 回続けて置く）。2 つ目の開拓地は隣の地形から 1 枚ずつもらう](img/setup-order.svg)",
+          "",
+          "![距離ルール：開拓地の隣の交差点 3 つ（✗）には建てられない。1 つ以上空ければ（✓）OK。他人の開拓地でも同じ](img/distance.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "回合流程", "en": "Your turn", "ja": "手番の流れ" },
+      "title": {
+        "zh": "回合流程",
+        "en": "Your turn",
+        "ja": "手番の流れ"
+      },
       "md": {
         "zh": [
           "**1. 擲骰**：兩顆骰子加起來，那個數字的地形全部生產。村莊拿 1 張、城市拿 2 張（每個人都拿，不只擲骰的人）",
@@ -139,30 +179,44 @@
       }
     },
     {
-      "title": { "zh": "擲到 7：強盜", "en": "Rolling a 7: the robber", "ja": "7 が出たら：盗賊" },
+      "title": {
+        "zh": "擲到 7：強盜",
+        "en": "Rolling a 7: the robber",
+        "ja": "7 が出たら：盗賊"
+      },
       "md": {
         "zh": [
           "- 這回合沒有人生產資源",
           "- 手牌**超過 7 張**的人，棄掉一半（無條件捨去，例如 9 張棄 4 張）",
           "- 擲骰的人把強盜移到另一塊地形，**那塊地形不再生產**，直到強盜被移走",
-          "- 再從那塊地形旁有村莊或城市的人手上，抽 1 張牌"
+          "- 再從那塊地形旁有村莊或城市的人手上，抽 1 張牌",
+          "",
+          "![擲到 7：手牌 9 張要棄 4 張、7 張不用棄；強盜站的地形不生產，擲骰的人從旁邊有村莊的人手上抽 1 張](img/robber.svg)"
         ],
         "en": [
           "- Nobody produces this turn",
           "- Anyone with **more than 7 cards** discards half, rounded down (9 cards → discard 4)",
           "- The roller moves the robber to another hex; **that hex produces nothing** until the robber moves",
-          "- The roller then steals 1 random card from a player with a settlement or city on that hex"
+          "- The roller then steals 1 random card from a player with a settlement or city on that hex",
+          "",
+          "![Rolling a 7: with 9 cards you discard 4, with 7 you keep them all; the robber's hex stops producing and the roller steals 1 card from a player next to it](img/robber.svg)"
         ],
         "ja": [
           "- この手番は誰も生産しない",
           "- 手札が **8 枚以上**の人は半分を捨てる（切り捨て、9 枚なら 4 枚）",
           "- 振った人は盗賊を別の地形へ動かす。**その地形は盗賊がいる間は生産しない**",
-          "- その地形に開拓地・都市がある人から 1 枚ランダムに奪う"
+          "- その地形に開拓地・都市がある人から 1 枚ランダムに奪う",
+          "",
+          "![7 が出たら：手札 9 枚なら 4 枚捨てる、7 枚なら捨てなくてよい。盗賊のいる地形は生産せず、振った人は隣接するプレイヤーから 1 枚奪う](img/robber.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "建造費用", "en": "Building costs", "ja": "建設コスト" },
+      "title": {
+        "zh": "建造費用",
+        "en": "Building costs",
+        "ja": "建設コスト"
+      },
       "md": {
         "zh": [
           "- **道路**：磚塊＋木材",
@@ -185,7 +239,11 @@
       }
     },
     {
-      "title": { "zh": "發展卡", "en": "Development cards", "ja": "発展カード" },
+      "title": {
+        "zh": "發展卡",
+        "en": "Development cards",
+        "ja": "発展カード"
+      },
       "md": {
         "zh": [
           "共 25 張，**買到的那一回合不能用**（分數卡除外）：",
@@ -214,11 +272,17 @@
       }
     },
     {
-      "title": { "zh": "最長道路與最大騎士", "en": "Longest Road and Largest Army", "ja": "最長交易路と最大騎士力" },
+      "title": {
+        "zh": "最長道路與最大騎士",
+        "en": "Longest Road and Largest Army",
+        "ja": "最長交易路と最大騎士力"
+      },
       "md": {
         "zh": [
           "- **最長道路**（2 分）：第一個連出 **5 條以上**不分岔的連續道路的人拿；別人連得比他**更長**才換人。被別人的村莊截斷也會掉",
           "- **最大騎士**（2 分）：第一個打出 **3 張騎士**的人拿；別人打出的騎士**更多**才換人",
+          "",
+          "![最長道路：連續 5 條以上拿 2 分；被別人的村莊從中間截斷，6 條只算 3＋3](img/longest-road.svg)",
           "",
           "在「開局」頁按下誰拿到，App 會自動加 2 分。"
         ],
@@ -226,18 +290,26 @@
           "- **Longest Road** (2 points): the first to have a continuous road of **5 or more** segments; it moves only when someone has a **longer** one. A road cut by another player's settlement can lose it",
           "- **Largest Army** (2 points): the first to have played **3 Knights**; it moves only when someone plays **more**",
           "",
+          "![Longest Road: 5 or more connected roads earn 2 VP; a road of 6 cut in the middle by another player's settlement counts only as 3 and 3](img/longest-road.svg)",
+          "",
           "Tap the holder in the Play tab and the app adds the 2 points."
         ],
         "ja": [
           "- **最長交易路**（2 点）：最初に**5 本以上**つながった街道を作った人。他の人が**もっと長く**したら移る。他人の開拓地で分断されると失うこともある",
           "- **最大騎士力**（2 点）：最初に騎士を**3 枚**使った人。他の人が**それより多く**使ったら移る",
           "",
+          "![最長交易路：5 本以上つながれば 2 点。他人の開拓地で途中を切られると、6 本でも 3 本と 3 本としか数えない](img/longest-road.svg)",
+          "",
           "「プレイ」タブで持ち主を押すと 2 点が自動で加算される。"
         ]
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips for new players",
+        "ja": "初心者向けのヒント"
+      },
       "md": {
         "zh": [
           "- 開局村莊放在 6、8、5、9 這些常出的數字旁，資源種類也要分散",
@@ -262,6 +334,10 @@
   ],
   "play": {
     "type": "catan",
-    "title": { "zh": "擲骰計分", "en": "Dice & VP", "ja": "サイコロ・得点" }
+    "title": {
+      "zh": "擲骰計分",
+      "en": "Dice & VP",
+      "ja": "サイコロ・得点"
+    }
   }
 }

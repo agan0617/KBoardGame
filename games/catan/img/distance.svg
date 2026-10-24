@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 256" font-family="sans-serif">
+  <!-- 距離規則：紅村莊相鄰的 3 個路口 ✗；隔一個路口以上 ✓（藍色別人的村莊也一樣） -->
+  <rect width="420" height="256" fill="#f4ecd8"/>
+  <polygon points="173.6,23 210,44 210,86 173.6,107 137.3,86 137.3,44" fill="#2e7d32" stroke="#f4ecd8" stroke-width="3"/><circle cx="173.6" cy="65" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="173.6" y="70.5" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">4</text>
+  <polygon points="246.4,23 282.7,44 282.7,86 246.4,107 210,86 210,44" fill="#f2c94c" stroke="#f4ecd8" stroke-width="3"/><circle cx="246.4" cy="65" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="246.4" y="70.5" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">9</text>
+  <polygon points="137.3,86 173.6,107 173.6,149 137.3,170 100.9,149 100.9,107" fill="#9ccc65" stroke="#f4ecd8" stroke-width="3"/><circle cx="137.3" cy="128" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="137.3" y="133.5" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">10</text>
+  <polygon points="210,86 246.4,107 246.4,149 210,170 173.6,149 173.6,107" fill="#c8643c" stroke="#f4ecd8" stroke-width="3"/><circle cx="210" cy="128" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="210" y="133.5" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="bold">6</text>
+  <polygon points="282.7,86 319.1,107 319.1,149 282.7,170 246.4,149 246.4,107" fill="#8d8d8d" stroke="#f4ecd8" stroke-width="3"/><circle cx="282.7" cy="128" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="282.7" y="133.5" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">5</text>
+  <polygon points="173.6,149 210,170 210,212 173.6,233 137.3,212 137.3,170" fill="#f2c94c" stroke="#f4ecd8" stroke-width="3"/><circle cx="173.6" cy="191" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="173.6" y="196.5" font-size="15" fill="#333" text-anchor="middle" font-weight="bold">3</text>
+  <polygon points="246.4,149 282.7,170 282.7,212 246.4,233 210,212 210,170" fill="#2e7d32" stroke="#f4ecd8" stroke-width="3"/><circle cx="246.4" cy="191" r="12.6" fill="#f7efd9" stroke="#8a7a5a" stroke-width="1.2"/><text x="246.4" y="196.5" font-size="15" fill="#c0392b" text-anchor="middle" font-weight="bold">8</text>
+  <line x1="246.4" y1="149" x2="246.4" y2="107" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="246.4" y1="149" x2="210" y2="170" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/>
+  <line x1="246.4" y1="149" x2="282.7" y2="170" stroke="#c0392b" stroke-width="3" stroke-dasharray="5 4"/>
+  <polygon points="236,158.2 256.7,158.2 256.7,143.2 246.4,135.2 236,143.2" fill="#d9534f" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="246.4" cy="107" r="11" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="246.4" y="112" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✗</text>
+  <circle cx="210" cy="170" r="11" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="210" y="174.9" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✗</text>
+  <circle cx="282.7" cy="170" r="11" fill="#c0392b" stroke="#fff" stroke-width="2"/><text x="282.7" y="174.9" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✗</text>
+  <circle cx="173.6" cy="149" r="11" fill="#2e8b3d" stroke="#fff" stroke-width="2"/><text x="173.6" y="153.9" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✓</text>
+  <circle cx="319.1" cy="149" r="11" fill="#2e8b3d" stroke="#fff" stroke-width="2"/><text x="319.1" y="153.9" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✓</text>
+  <circle cx="210" cy="212" r="11" fill="#2e8b3d" stroke="#fff" stroke-width="2"/><text x="210" y="216.9" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">✓</text>
+  <polygon points="201,94 219,94 219,81 210,74 201,81" fill="#3f7fd0" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="225" cy="71" r="9" fill="#2e8b3d" stroke="#fff" stroke-width="2"/><text x="225" y="75" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold">✓</text>
+</svg>

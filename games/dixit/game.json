@@ -1,9 +1,21 @@
 {
   "id": "dixit",
   "icon": "🎨",
-  "name": { "zh": "只言片語", "en": "Dixit", "ja": "ディクシット" },
-  "players": { "zh": "3–6 人（奧德賽可到 12 人）", "en": "3–6 players (Odyssey up to 12)", "ja": "3〜6人（オデッセイで12人）" },
-  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "name": {
+    "zh": "只言片語",
+    "en": "Dixit",
+    "ja": "ディクシット"
+  },
+  "players": {
+    "zh": "3–6 人（奧德賽可到 12 人）",
+    "en": "3–6 players (Odyssey up to 12)",
+    "ja": "3〜6人（オデッセイで12人）"
+  },
+  "time": {
+    "zh": "30 分鐘",
+    "en": "30 min",
+    "ja": "30分"
+  },
   "summary": {
     "zh": "說書人看著手上的畫，說一句話、一個詞或哼一段歌，大家從手牌挑一張最像的混進去，再猜哪張是說書人的。說得太明白、太難懂都拿不到分。App 幫你算每回合的分數。",
     "en": "The storyteller describes one of their pictures with a word, a sentence or a hum; everyone adds a card that fits, then guesses which was the storyteller's. Too obvious or too obscure scores nothing. The app scores each round.",
@@ -11,7 +23,11 @@
   },
   "rules": [
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "- 牌洗勻，每人發 **6 張**",
@@ -31,7 +47,11 @@
       }
     },
     {
-      "title": { "zh": "一回合", "en": "A round", "ja": "ラウンドの流れ" },
+      "title": {
+        "zh": "一回合",
+        "en": "A round",
+        "ja": "ラウンドの流れ"
+      },
       "md": {
         "zh": [
           "1. **說書人**從手牌挑一張，蓋著出，同時說一句提示（一個詞、一句話、一段聲音或動作都可以）",
@@ -39,7 +59,9 @@
           "3. 說書人把所有牌洗勻，翻開排成一排，給每張一個號碼",
           "4. 除了說書人，每個人**暗中投票**猜哪張是說書人的牌。不能投自己的牌",
           "5. 一起翻開投票，照〈計分〉加分",
-          "6. 每人補到 6 張，下一個人當說書人"
+          "6. 每人補到 6 張，下一個人當說書人",
+          "",
+          "![1 說書人（★）蓋一張牌並說提示 → 2 其他人各蓋一張給他 → 3 洗勻翻開編號 → 4 暗中投票 → 5 一起翻開 → 6 補到 6 張，換下一位當說書人](img/round.svg)"
         ],
         "en": [
           "1. The **storyteller** chooses a card, plays it face down and gives a clue (a word, a sentence, a sound or a gesture)",
@@ -47,7 +69,9 @@
           "3. The storyteller shuffles them and lays them out face up, each with a number",
           "4. Everyone except the storyteller **secretly votes** for the card they think is the storyteller's. You can't vote for your own",
           "5. Reveal the votes together and score (see Scoring)",
-          "6. Everyone draws back to 6; the next player becomes storyteller"
+          "6. Everyone draws back to 6; the next player becomes storyteller",
+          "",
+          "![1 The storyteller (★) plays a card face down and gives a clue → 2 everyone else gives one card face down → 3 shuffle, reveal and number them → 4 vote in secret → 5 reveal the votes → 6 refill to 6 cards; the next player is storyteller](img/round.svg)"
         ],
         "ja": [
           "1. **語り部**は手札から 1 枚を裏向きに出し、ヒントを言う（単語、文、音、身ぶりなんでも）",
@@ -55,17 +79,25 @@
           "3. 語り部は全部を混ぜ、表向きに並べて番号を付ける",
           "4. 語り部以外は、どれが語り部のカードか**こっそり投票**する。自分のカードには投票できない",
           "5. 一斉に投票を公開して得点（〈得点〉参照）",
-          "6. 全員 6 枚まで補充し、次の人が語り部"
+          "6. 全員 6 枚まで補充し、次の人が語り部",
+          "",
+          "![1 語り部（★）がカードを伏せて出し、ヒントを言う → 2 ほかの人も 1 枚ずつ伏せて渡す → 3 混ぜて表にして番号をつける → 4 こっそり投票 → 5 一斉に公開 → 6 6 枚まで補充し、次の人が語り部](img/round.svg)"
         ]
       }
     },
     {
-      "title": { "zh": "計分", "en": "Scoring", "ja": "得点" },
+      "title": {
+        "zh": "計分",
+        "en": "Scoring",
+        "ja": "得点"
+      },
       "md": {
         "zh": [
           "- **全部的人都猜中**或**沒有人猜中**：說書人 0 分，其他人各 2 分（提示太明白或太難懂）",
           "- **有人猜中、有人沒猜中**：說書人和猜中的人各 3 分",
           "- 說書人以外的人：自己的牌**每被投一票 +1 分**",
+          "",
+          "![框的顏色是誰的牌、圓片是誰投的：全猜中（上）說書人 0、其他各 2；沒人猜中（中）說書人 0、其他各 2 再加被投的票；有人中有人沒中（下）說書人和猜中的人各 3，紅色的牌被投 1 票再 +1](img/scoring.svg)",
           "",
           "在「開局」頁點每個人投給誰，App 會自動算。"
         ],
@@ -74,6 +106,8 @@
           "- **Some but not all** find it: the storyteller and each finder score 3",
           "- Every player other than the storyteller: **+1 for each vote** their card received",
           "",
+          "![Frame color = whose card, disc = who voted. All correct (top): storyteller 0, others 2 each. Nobody correct (middle): storyteller 0, others 2 each plus votes on their cards. Some correct (bottom): storyteller and correct guessers 3 each; red's card got 1 vote, +1](img/scoring.svg)",
+          "",
           "Tap who voted for which card in the Play tab and the app scores it."
         ],
         "ja": [
@@ -81,12 +115,18 @@
           "- **一部だけ**正解：語り部と正解者が 3 点",
           "- 語り部以外は、自分のカードに**1 票入るごとに +1 点**",
           "",
+          "![枠の色はだれのカードか、円は投票した人。全員正解（上）：語り部 0、ほかは 2 点ずつ。全員不正解（中）：語り部 0、ほかは 2 点＋自分のカードへの票。一部正解（下）：語り部と正解者は 3 点ずつ、赤のカードは 1 票入ったので +1](img/scoring.svg)",
+          "",
           "「プレイ」タブで誰がどれに投票したか押すと自動で計算。"
         ]
       }
     },
     {
-      "title": { "zh": "遊戲結束", "en": "Game end", "ja": "ゲーム終了" },
+      "title": {
+        "zh": "遊戲結束",
+        "en": "Game end",
+        "ja": "ゲーム終了"
+      },
       "md": {
         "zh": [
           "牌堆抽完，或有人到 **30 分**，遊戲結束，分數最高的人贏。",
@@ -106,7 +146,11 @@
       }
     },
     {
-      "title": { "zh": "說好提示的訣竅", "en": "Tips for clues", "ja": "ヒントのコツ" },
+      "title": {
+        "zh": "說好提示的訣竅",
+        "en": "Tips for clues",
+        "ja": "ヒントのコツ"
+      },
       "md": {
         "zh": [
           "- 目標是**讓一部分人猜中、一部分人猜錯**，太直白會全中、太跳躍會全錯，兩種都是 0 分",
@@ -128,6 +172,10 @@
   ],
   "play": {
     "type": "dixit",
-    "title": { "zh": "算分", "en": "Score", "ja": "得点" }
+    "title": {
+      "zh": "算分",
+      "en": "Score",
+      "ja": "得点"
+    }
   }
 }

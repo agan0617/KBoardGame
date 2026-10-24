@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" font-family="sans-serif">
+  <!-- 最長道路：連續 5 條以上 → ✓ +2 分；6 條被別人的村莊從中間截斷 → 只算 3 和 3 ✗ -->
+  <rect width="420" height="260" fill="#f4ecd8"/>
+  <polygon points="50,36 79.4,53 79.4,87 50,104 20.6,87 20.6,53" fill="#2e7d32" stroke="#f4ecd8" stroke-width="3"/>
+  <polygon points="108.9,36 138.3,53 138.3,87 108.9,104 79.4,87 79.4,53" fill="#9ccc65" stroke="#f4ecd8" stroke-width="3"/>
+  <polygon points="167.8,36 197.2,53 197.2,87 167.8,104 138.3,87 138.3,53" fill="#c8643c" stroke="#f4ecd8" stroke-width="3"/>
+  <line x1="24" y1="51" x2="46.5" y2="38" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="24" y1="51" x2="46.5" y2="38" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <text x="35.3" y="32.5" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">1</text>
+  <line x1="53.5" y1="38" x2="76" y2="51" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="53.5" y1="38" x2="76" y2="51" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <text x="64.7" y="32.5" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">2</text>
+  <line x1="82.9" y1="51" x2="105.4" y2="38" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="82.9" y1="51" x2="105.4" y2="38" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <text x="94.2" y="32.5" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">3</text>
+  <line x1="112.4" y1="38" x2="134.9" y2="51" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="112.4" y1="38" x2="134.9" y2="51" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <text x="123.6" y="32.5" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">4</text>
+  <line x1="141.8" y1="51" x2="164.3" y2="38" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="141.8" y1="51" x2="164.3" y2="38" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <text x="153.1" y="32.5" font-size="13" fill="#333" text-anchor="middle" font-weight="bold">5</text>
+  <polygon points="12.5,60.2 28.7,60.2 28.7,48.5 20.6,42.2 12.5,48.5" fill="#d9534f" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="300" y="66" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">≥ 5</text>
+  <text x="345" y="68" font-size="28" fill="#2e8b3d" text-anchor="middle" font-weight="bold">✓</text>
+  <rect x="368" y="46" width="40" height="30" rx="6" fill="#e8c13a"/>
+  <text x="388" y="68" font-size="17" fill="#333" text-anchor="middle" font-weight="bold">+2</text>
+  <line x1="20" y1="132" x2="400" y2="132" stroke="#cbbf9f" stroke-width="1.5"/>
+  <polygon points="50,181 79.4,198 79.4,232 50,249 20.6,232 20.6,198" fill="#2e7d32" stroke="#f4ecd8" stroke-width="3"/>
+  <polygon points="108.9,181 138.3,198 138.3,232 108.9,249 79.4,232 79.4,198" fill="#9ccc65" stroke="#f4ecd8" stroke-width="3"/>
+  <polygon points="167.8,181 197.2,198 197.2,232 167.8,249 138.3,232 138.3,198" fill="#c8643c" stroke="#f4ecd8" stroke-width="3"/>
+  <line x1="24" y1="196" x2="46.5" y2="183" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="24" y1="196" x2="46.5" y2="183" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="53.5" y1="183" x2="76" y2="196" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="53.5" y1="183" x2="76" y2="196" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="82.9" y1="196" x2="105.4" y2="183" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="82.9" y1="196" x2="105.4" y2="183" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="112.4" y1="183" x2="134.9" y2="196" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="112.4" y1="183" x2="134.9" y2="196" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="141.8" y1="196" x2="164.3" y2="183" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="141.8" y1="196" x2="164.3" y2="183" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <line x1="171.2" y1="183" x2="193.8" y2="196" stroke="#fff" stroke-width="11" stroke-linecap="round"/><line x1="171.2" y1="183" x2="193.8" y2="196" stroke="#d9534f" stroke-width="7" stroke-linecap="round"/>
+  <polygon points="99,189.8 118.8,189.8 118.8,175.5 108.9,167.8 99,175.5" fill="#3f7fd0" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+  <text x="300" y="211" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">3 | 3</text>
+  <text x="370" y="213" font-size="28" fill="#c0392b" text-anchor="middle" font-weight="bold">✗</text>
+</svg>

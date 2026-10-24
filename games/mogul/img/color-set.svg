@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" font-family="sans-serif">
+  <!-- 同一顏色的地全部是自己的（紅）才能蓋房子 ✓；有一塊是別人的（藍）就不能蓋 ✗ -->
+  <rect width="420" height="210" fill="#f4ecd8"/>
+  <rect x="30" y="18" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="30" y="18" width="60" height="20" rx="5" fill="#e67e22"/><rect x="30" y="30" width="60" height="8" fill="#e67e22"/><circle cx="60" cy="78" r="9" fill="#d9534f" stroke="#555" stroke-width="1.2"/>
+  <rect x="102" y="18" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="102" y="18" width="60" height="20" rx="5" fill="#e67e22"/><rect x="102" y="30" width="60" height="8" fill="#e67e22"/><circle cx="132" cy="78" r="9" fill="#d9534f" stroke="#555" stroke-width="1.2"/>
+  <rect x="174" y="18" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="174" y="18" width="60" height="20" rx="5" fill="#e67e22"/><rect x="174" y="30" width="60" height="8" fill="#e67e22"/><circle cx="204" cy="78" r="9" fill="#d9534f" stroke="#555" stroke-width="1.2"/>
+  <line x1="258" y1="55" x2="284.4" y2="55" stroke="#333" stroke-width="2.5"/><polygon points="290,55 282.8,58.5 282.8,51.5" fill="#333"/>
+  <polygon points="307,67 329,67 329,53 318,41 307,53" fill="#3a9a4a" stroke="#fff" stroke-width="1.2"/>
+  <text x="370" y="66" font-size="32" fill="#2e8b3d" text-anchor="middle" font-weight="bold">✓</text>
+  <rect x="30" y="122" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="30" y="122" width="60" height="20" rx="5" fill="#e67e22"/><rect x="30" y="134" width="60" height="8" fill="#e67e22"/><circle cx="60" cy="182" r="9" fill="#d9534f" stroke="#555" stroke-width="1.2"/>
+  <rect x="102" y="122" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="102" y="122" width="60" height="20" rx="5" fill="#e67e22"/><rect x="102" y="134" width="60" height="8" fill="#e67e22"/><circle cx="132" cy="182" r="9" fill="#d9534f" stroke="#555" stroke-width="1.2"/>
+  <rect x="174" y="122" width="60" height="74" rx="5" fill="#fff" stroke="#999" stroke-width="1.5"/><rect x="174" y="122" width="60" height="20" rx="5" fill="#e67e22"/><rect x="174" y="134" width="60" height="8" fill="#e67e22"/><circle cx="204" cy="182" r="9" fill="#3f7fd0" stroke="#555" stroke-width="1.2"/>
+  <line x1="258" y1="159" x2="284.4" y2="159" stroke="#333" stroke-width="2.5"/><polygon points="290,159 282.8,162.5 282.8,155.5" fill="#333"/>
+  <polygon points="307,171 329,171 329,157 318,145 307,157" fill="#3a9a4a" stroke="#fff" stroke-width="1.2"/>
+  <text x="370" y="170" font-size="32" fill="#c0392b" text-anchor="middle" font-weight="bold">✗</text>
+  <line x1="20" y1="106" x2="400" y2="106" stroke="#cbbf9f" stroke-width="1.5"/>
+</svg>

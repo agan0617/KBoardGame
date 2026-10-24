@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 160" font-family="sans-serif">
+  <!-- 身分：平民 4 人拿同一個詞（圓）；臥底拿相近但不同的詞（圓角方）；白板沒有詞。臥底和白板同一邊 -->
+  <defs>
+    <g id="m" stroke="#fff" stroke-width="1.5"><circle cy="-10" r="5"/><path d="M-10 10 L-5 -2 L-10 -3 L-10 -6 L10 -6 L10 -3 L5 -2 L10 10 L3 10 L0 4 L-3 10Z"/></g>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#333"/></marker>
+    <marker id="ahr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#c0392b"/></marker>
+  </defs>
+  <rect width="420" height="160" fill="#f4ecd8"/>
+  <rect x="23" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2"/>
+  <circle cx="40" cy="39" r="10" fill="#e8a33a"/>
+  <use href="#m" transform="translate(40,100) scale(1.8)" fill="#2f6fd0" opacity="1"/>
+  <rect x="78" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2"/>
+  <circle cx="95" cy="39" r="10" fill="#e8a33a"/>
+  <use href="#m" transform="translate(95,100) scale(1.8)" fill="#2f6fd0" opacity="1"/>
+  <rect x="133" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2"/>
+  <circle cx="150" cy="39" r="10" fill="#e8a33a"/>
+  <use href="#m" transform="translate(150,100) scale(1.8)" fill="#2f6fd0" opacity="1"/>
+  <rect x="188" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2"/>
+  <circle cx="205" cy="39" r="10" fill="#e8a33a"/>
+  <use href="#m" transform="translate(205,100) scale(1.8)" fill="#2f6fd0" opacity="1"/>
+  <rect x="278" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2"/>
+  <rect x="285" y="29" width="20" height="20" rx="5" fill="#e8a33a"/>
+  <use href="#m" transform="translate(295,100) scale(1.8)" fill="#d9534f" opacity="1"/>
+  <rect x="338" y="18" width="34" height="42" rx="4" fill="#fff" stroke="#555" stroke-width="2" stroke-dasharray="4 3"/>
+  <use href="#m" transform="translate(355,100) scale(1.8)" fill="#8a8a8a" opacity="1"/>
+  <line x1="250" y1="12" x2="250" y2="150" stroke="#999" stroke-width="2" stroke-dasharray="6 5"/>
+  <path d="M20 132 v10 h205 v-10" fill="none" stroke="#2f6fd0" stroke-width="4"/>
+  <path d="M273 132 v10 h104 v-10" fill="none" stroke="#d9534f" stroke-width="4"/>
+
+</svg>

@@ -1,9 +1,21 @@
 {
   "id": "nimmt",
   "icon": "🐮",
-  "name": { "zh": "誰是牛頭王", "en": "6 nimmt!", "ja": "ニムト" },
-  "players": { "zh": "2–10 人", "en": "2–10 players", "ja": "2〜10人" },
-  "time": { "zh": "45 分鐘", "en": "45 min", "ja": "45分" },
+  "name": {
+    "zh": "誰是牛頭王",
+    "en": "6 nimmt!",
+    "ja": "ニムト"
+  },
+  "players": {
+    "zh": "2–10 人",
+    "en": "2–10 players",
+    "ja": "2〜10人"
+  },
+  "time": {
+    "zh": "45 分鐘",
+    "en": "45 min",
+    "ja": "45分"
+  },
   "summary": {
     "zh": "大家同時出一張牌，照大小排進四列，誰放到某一列的第 6 張就要把前 5 張吃下來，上面的牛頭就是扣分。牛頭最少的人贏。App 幫你算牛頭。",
     "en": "Everyone plays a card at once; cards go into four rows by number, and whoever places the 6th card in a row takes the other five — their bull heads are penalty points. Fewest heads wins. The app counts the heads.",
@@ -11,34 +23,60 @@
   },
   "rules": [
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": {
+        "zh": "準備",
+        "en": "Setup",
+        "ja": "準備"
+      },
       "md": {
         "zh": [
           "- 104 張牌（1～104）洗勻，每人發 **10 張**",
           "- 從牌堆翻 **4 張**，排成直的四列，每列一張",
-          "- 每張牌上的**牛頭數**就是吃下來的扣分：55 是 7 頭、11 的倍數 5 頭、10 的倍數 3 頭、5 的倍數 2 頭、其他 1 頭"
+          "- 每張牌上的**牛頭數**就是吃下來的扣分：55 是 7 頭、11 的倍數 5 頭、10 的倍數 3 頭、5 的倍數 2 頭、其他 1 頭",
+          "",
+          "![牛頭數對照：55 是 7 頭、11 的倍數 5 頭、10 的倍數 3 頭、5 的倍數 2 頭、其他 1 頭](img/heads.svg)",
+          ""
         ],
         "en": [
           "- Shuffle the 104 cards (1–104) and deal **10** to each player",
           "- Turn up **4** cards from the deck to start four rows, one card each",
-          "- The **bull heads** on a card are its penalty: 55 has 7, multiples of 11 have 5, multiples of 10 have 3, multiples of 5 have 2, all others 1"
+          "- The **bull heads** on a card are its penalty: 55 has 7, multiples of 11 have 5, multiples of 10 have 3, multiples of 5 have 2, all others 1",
+          "",
+          "![Bull heads: 55 has 7, multiples of 11 have 5, multiples of 10 have 3, multiples of 5 have 2, all others 1](img/heads.svg)",
+          ""
         ],
         "ja": [
           "- 104 枚（1〜104）を混ぜて各自 **10 枚**配る",
           "- 山札から **4 枚**めくって 4 列の先頭に 1 枚ずつ置く",
-          "- カードの**牛の頭**が失点：55 は 7、11 の倍数は 5、10 の倍数は 3、5 の倍数は 2、その他は 1"
+          "- カードの**牛の頭**が失点：55 は 7、11 の倍数は 5、10 の倍数は 3、5 の倍数は 2、その他は 1",
+          "",
+          "![牛の頭の数：55 は 7、11 の倍数は 5、10 の倍数は 3、5 の倍数は 2、その他は 1](img/heads.svg)",
+          ""
         ]
       }
     },
     {
-      "title": { "zh": "怎麼出牌", "en": "Playing a turn", "ja": "カードの出し方" },
+      "title": {
+        "zh": "怎麼出牌",
+        "en": "Playing a turn",
+        "ja": "カードの出し方"
+      },
       "md": {
         "zh": [
           "1. 每個人**同時**挑一張手牌蓋著出，一起翻開",
           "2. 從**數字最小**的牌開始，一張一張放進列裡",
           "3. 每張牌接在「**最後一張比它小、而且差距最小**」的那一列後面",
+          "",
+          "![45 接在最後一張比它小、差距最小的那一列：41 只差 4，所以放 41 後面；70 比 45 大不能放](img/place.svg)",
+          "",
           "4. 放進去的是那一列的**第 6 張**：把前 5 張收進自己的牛頭堆，這張牌變成那一列新的第一張",
+          "",
+          "![58 是那一列的第 6 張：前 5 張收進自己的牛頭堆（1＋5＋1＋3＋1＝11 頭），58 變成新的第一張](img/sixth.svg)",
+          "",
           "5. 牌比四列最後一張**都小**：自己挑一列整列收走，這張牌變成那一列新的第一張",
+          "",
+          "![出 3，比四列最後一張都小：挑一整列收走（這裡挑只有 2 頭的那列），3 變成那一列新的第一張](img/lowest.svg)",
+          "",
           "",
           "10 張都出完是一局。"
         ],
@@ -46,8 +84,17 @@
           "1. Everyone **simultaneously** chooses a card face down, then all reveal",
           "2. Place them one at a time, starting with the **lowest number**",
           "3. Each card goes on the row whose last card is **lower than it and closest** to it",
+          "",
+          "![45 goes after the lower last card closest to it: 41 is only 4 away; 70 is higher, so not there](img/place.svg)",
+          "",
           "4. If it would be the **6th card** in that row, take the 5 cards into your penalty pile; your card starts that row",
+          "",
+          "![58 would be the 6th card: take the first 5 (1+5+1+3+1 = 11 heads), and 58 starts the row](img/sixth.svg)",
+          "",
           "5. If your card is **lower than every row's last card**, choose a row and take it all; your card starts that row",
+          "",
+          "![A 3 is lower than every row: take a whole row (here the one with only 2 heads), and the 3 starts that row](img/lowest.svg)",
+          "",
           "",
           "A round ends when all 10 cards are played."
         ],
@@ -55,15 +102,28 @@
           "1. 全員**同時に**手札から 1 枚を裏向きで選び、一斉に公開",
           "2. **数字の小さい**カードから 1 枚ずつ並べる",
           "3. 各カードは「**最後のカードが自分より小さく、差が一番小さい**」列に置く",
+          "",
+          "![45 は自分より小さく差が一番小さい列へ：41 との差が 4 で最小。70 は大きいので置けない](img/place.svg)",
+          "",
           "4. その列の **6 枚目**になったら、前の 5 枚を自分の失点の山に取り、自分のカードがその列の先頭になる",
+          "",
+          "![58 が 6 枚目：前の 5 枚を取り（1＋5＋1＋3＋1＝11 頭）、58 が新しい先頭になる](img/sixth.svg)",
+          "",
           "5. どの列の最後のカードより**小さい**ときは、好きな列を 1 つまるごと取り、自分のカードがその列の先頭になる",
+          "",
+          "![3 はどの列より小さい：好きな列をまるごと取り（ここでは 2 頭だけの列）、3 がその列の先頭になる](img/lowest.svg)",
+          "",
           "",
           "10 枚出し切ったら 1 ラウンド終了。"
         ]
       }
     },
     {
-      "title": { "zh": "計分與結束", "en": "Scoring and end", "ja": "得点と終了" },
+      "title": {
+        "zh": "計分與結束",
+        "en": "Scoring and end",
+        "ja": "得点と終了"
+      },
       "md": {
         "zh": [
           "- 每局結束，算自己吃到的牌上牛頭總數，累積起來",
@@ -89,7 +149,11 @@
       }
     },
     {
-      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "title": {
+        "zh": "新手提醒",
+        "en": "Tips for new players",
+        "ja": "初心者向けのヒント"
+      },
       "md": {
         "zh": [
           "- 看哪一列已經 4、5 張，那附近的數字最危險",
@@ -114,6 +178,10 @@
   ],
   "play": {
     "type": "nimmt",
-    "title": { "zh": "算牛頭", "en": "Heads", "ja": "牛の頭" }
+    "title": {
+      "zh": "算牛頭",
+      "en": "Heads",
+      "ja": "牛の頭"
+    }
   }
 }
