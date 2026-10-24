@@ -221,9 +221,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .nm-row b { text-align: right; color: var(--accent); }
 .dx-total div.nm-over { border-color: #e06a6a; }
 
-/* 運轉潮汐：三輪計分表（沿用 pr-grid） */
-.td-grid { grid-template-columns: 6em 1fr 1fr; }
-.td-status { text-align: center; color: var(--accent); min-height: 1.5em; }
+/* 運轉潮汐：救生圈與潮位 */
+.tt-grid { display: grid; grid-template-columns: 1fr auto auto; gap: 8px 10px; align-items: center; margin: 8px 0 12px; }
+.tt-grid > small { font-size: 12px; color: var(--dim); text-align: center; }
 
 /* 富饒之城：最後算分（沿用 pr-grid） */
 .ci-grid { grid-template-columns: 3em 1.3fr .8fr .8fr .8fr 1fr 3em; gap: 4px; }

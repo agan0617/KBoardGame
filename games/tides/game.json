@@ -1,100 +1,133 @@
 {
   "id": "tides",
-  "name": { "zh": "運轉潮汐", "en": "Tides of Time", "ja": "タイズ・オブ・タイム" },
-  "players": { "zh": "2 人", "en": "2 players", "ja": "2人" },
-  "time": { "zh": "20 分鐘", "en": "20 min", "ja": "20分" },
+  "name": { "zh": "運轉潮汐", "en": "Turn the Tide", "ja": "ラント・ウンター" },
+  "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
+  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
   "summary": {
-    "zh": "兩個人用 18 張牌輪流挑牌、互換手牌，打造自己的王國。每張牌有花色和計分目標，玩三輪，每輪留一張當遺物。App 幫你記三輪分數。",
-    "en": "Two players draft from 18 cards, passing hands back and forth to build a kingdom. Each card has a suit and a scoring objective; play three rounds, keeping one relic each round. The app tracks the three round scores.",
-    "ja": "18 枚のカードを 2 人で 1 枚ずつ選んで手札を交換し、王国を作る。カードにはスートと得点目標がある。3 ラウンド遊び、毎ラウンド 1 枚を遺物として残す。アプリで 3 ラウンドの得点を記録。"
+    "zh": "大家同時出天氣牌搶潮位卡：出最大的拿較低的潮位、第二大的拿較高的。每一手潮位最高的人丟一個救生圈，留下最多救生圈的人得分最多。手牌每輪傳給左邊，玩人數那麼多輪。App 幫你記救生圈、潮位和分數。",
+    "en": "Everyone plays a weather card at once to bid for tide cards: the highest takes the lower tide, the second highest the higher. Each hand the highest tide loses a life preserver; keep the most preservers to score. Hands pass left each round, for as many rounds as players. The app tracks preservers, tide levels and scores.",
+    "ja": "全員同時に天気カードを出して潮位カードを取り合う。一番大きい人が低い潮位、二番目が高い潮位を取る。毎手、潮位が一番高い人が浮き輪を失い、浮き輪が多く残るほど得点。手札は毎ラウンド左へ回し、人数分のラウンドを遊ぶ。アプリで浮き輪・潮位・得点を記録。"
   },
   "rules": [
     {
-      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "title": { "zh": "內容與準備", "en": "Contents and setup", "ja": "内容物と準備" },
       "md": {
         "zh": [
-          "- 18 張遊戲牌洗勻（另一張是提示卡，不用）",
-          "- 每人發 **5 張**當手牌，其餘蓋著當牌堆",
-          "- 每張牌有一種**花色**（共 5 種）和一個**計分目標**，例如某花色最多的人得幾分、每張某花色得幾分"
+          "- **天氣牌** 60 張（1～60 各一張）、**潮位卡** 24 張（1～12 各兩張）、**救生圈**標記 24 個",
+          "- 潮位卡洗勻蓋著放中間；天氣牌洗勻，每人發 **12 張**，剩下的收回盒子",
+          "- 13～48 號的天氣牌上方印著 1 個或半個救生圈。**手牌的救生圈加總**，拿那麼多個救生圈標記（兩個半個算一個，剩半個無條件捨去）",
+          "",
+          "救生圈多的人手牌通常比較難出，所以看起來不公平其實是平衡過的。"
         ],
         "en": [
-          "- Shuffle the 18 game cards (the extra reference card is not used)",
-          "- Deal **5** to each player; the rest form the draw pile",
-          "- Each card has a **suit** (5 suits in all) and a **scoring objective**, such as points for having the most of a suit or points per card of a suit"
+          "- **60 weather cards** (1–60, one each), **24 tide cards** (1–12, two each), **24 life preserver** tokens",
+          "- Shuffle the tide cards face down in the middle; shuffle the weather cards and deal **12** to each player; return the rest to the box",
+          "- Weather cards 13–48 show one or half a life preserver at the top. **Add up the preservers in your hand** and take that many tokens (two halves make one; round a leftover half down)",
+          "",
+          "Players with more preservers usually have harder hands to play, so it balances out."
         ],
         "ja": [
-          "- ゲームカード 18 枚を混ぜる（もう 1 枚は早見表で使わない）",
-          "- 各自 **5 枚**配り、残りは山札",
-          "- カードには**スート**（全 5 種）と**得点目標**がある。例：あるスートが最多なら何点、あるスート 1 枚ごとに何点"
+          "- **天気カード** 60 枚（1〜60 各 1 枚）、**潮位カード** 24 枚（1〜12 各 2 枚）、**浮き輪**トークン 24 個",
+          "- 潮位カードを混ぜて裏向きで中央に。天気カードを混ぜて各自 **12 枚**配り、残りは箱へ",
+          "- 13〜48 の天気カードの上部に浮き輪 1 つか半分が描いてある。**手札の浮き輪を合計**してその数のトークンを取る（半分 2 つで 1 つ、余った半分は切り捨て）",
+          "",
+          "浮き輪の多い人は出しにくい手札なので、バランスは取れている。"
         ]
       }
     },
     {
-      "title": { "zh": "一輪怎麼玩", "en": "Playing a round", "ja": "ラウンドの流れ" },
+      "title": { "zh": "一手的流程", "en": "A hand", "ja": "1 手の流れ" },
       "md": {
         "zh": [
-          "1. 兩人各從手牌挑 **1 張**蓋著出，一起翻開，放到自己面前",
-          "2. **交換手牌**（把剩下的手牌交給對方）",
-          "3. 重複，直到兩人都出完 5 張",
-          "4. **計分**：照自己面前每張牌（包括之前留下的遺物）的計分目標算分，記下來"
+          "一輪有 12 手，每一手：",
+          "",
+          "1. 翻開潮位卡堆最上面 **2 張**",
+          "2. 每個人**同時**挑一張天氣牌蓋著出，一起翻開比大小",
+          "3. 出**最大**的人拿**比較小**的那張潮位卡；出**第二大**的人拿**比較大**的那張。新拿到的潮位卡**疊在自己舊的上面**，只看最上面那張",
+          "4. 現在**場上潮位最高**的人丟一個救生圈（翻面）。同分的人都要丟",
+          "5. 出過的天氣牌蓋著放到一邊",
+          "",
+          "丟救生圈的不一定是剛拿到大潮位的人——可能是之前的潮位一直最高的人。"
         ],
         "en": [
-          "1. Each player chooses **1** card from hand, both reveal and place it in front of themselves",
-          "2. **Swap hands** (give your remaining cards to the other player)",
-          "3. Repeat until both players have played 5 cards",
-          "4. **Score**: count the objective on every card in front of you (including relics kept earlier) and write it down"
+          "A round has 12 hands. Each hand:",
+          "",
+          "1. Turn over the top **2** tide cards",
+          "2. Everyone **simultaneously** chooses a weather card face down, then all reveal",
+          "3. The **highest** weather card takes the **lower** tide card; the **second highest** takes the **higher** one. Place the new tide card **on top of your old one** — only the top card counts",
+          "4. Whoever now shows the **highest tide** loses a life preserver (turn it face down). Ties all lose one",
+          "5. Put the played weather cards face down aside",
+          "",
+          "The player who loses a preserver isn't necessarily the one who just took the higher tide — an earlier tide may still be the highest."
         ],
         "ja": [
-          "1. 2 人とも手札から **1 枚**選んで同時に公開し、自分の前に置く",
-          "2. **手札を交換**（残りを相手に渡す）",
-          "3. 2 人とも 5 枚出すまで繰り返す",
-          "4. **得点**：自分の前のすべてのカード（前に残した遺物も含む）の得点目標を数えて記録"
+          "1 ラウンドは 12 手。各手：",
+          "",
+          "1. 潮位カードの山から **2 枚**めくる",
+          "2. 全員**同時に**天気カードを 1 枚裏向きで選び、一斉に公開",
+          "3. **一番大きい**人が**小さい方**の潮位カード、**二番目**の人が**大きい方**を取る。新しい潮位カードは**前のカードの上に重ね**、一番上だけ数える",
+          "4. いま**潮位が一番高い**人が浮き輪を 1 つ失う（裏返す）。同点なら全員",
+          "5. 出した天気カードは裏向きで横へ",
+          "",
+          "浮き輪を失うのは今大きい潮位を取った人とは限らない。前からの潮位が一番高いままのこともある。"
         ]
       }
     },
     {
-      "title": { "zh": "遺物與棄牌（第一、二輪）", "en": "Relics and discards (rounds 1 and 2)", "ja": "遺物と除外（第 1・2 ラウンド）" },
+      "title": { "zh": "淘汰與一輪結束", "en": "Elimination and end of round", "ja": "脱落とラウンド終了" },
       "md": {
         "zh": [
-          "- 從這輪出的牌裡挑 **1 張留下當遺物**，之後每一輪都放在你的王國裡、照樣算分",
-          "- 再挑 **1 張移出遊戲**，不再使用",
-          "- 剩下的 3 張拿回手上，再從牌堆**抽 2 張**，湊成 5 張開始下一輪",
+          "- 最後一個救生圈翻掉後還有一次機會；**沒救生圈又要丟**時才被淘汰，這輪出局",
+          "- 12 張都出完，或只剩 **2 個人**，這輪結束",
           "",
-          "**第三輪**：不選遺物、不棄牌、不抽牌，算完分遊戲結束。"
+          "**算分**",
+          "- 每個還朝上的救生圈 **1 分**；沒有救生圈 0 分；**被淘汰 −1 分**",
+          "- 這輪結束時**潮位最低**的人 **+1 分**（同分都拿；沒有潮位卡的人算最低）",
+          "",
+          "**下一輪**：把自己的 12 張天氣牌和救生圈一起**傳給左邊**，潮位卡重洗。**輪數等於人數**，每個人都會用到每一副手牌。最後總分最高的人贏。"
         ],
         "en": [
-          "- From the cards you played, **keep 1 as a relic**; it stays in your kingdom and scores in every later round",
-          "- **Remove 1** card from the game",
-          "- Take the remaining 3 back into your hand and **draw 2**, making 5 to start the next round",
+          "- After your last preserver is turned over you get one more chance; you are eliminated from the round only when you must lose another and have none",
+          "- The round ends when all 12 cards are played, or when only **2 players** remain",
           "",
-          "**Round 3**: no relics, discards or draws; the game ends after scoring."
+          "**Scoring**",
+          "- **1 point** per face-up preserver; none left is 0; **eliminated is −1**",
+          "- The **lowest tide** at the end of the round scores **+1** (ties all score; a player with no tide card counts as lowest)",
+          "",
+          "**Next round**: pass your 12 weather cards and your preservers **to the left** and reshuffle the tide cards. Play **as many rounds as players**, so everyone plays every hand. Highest total wins."
         ],
         "ja": [
-          "- 出したカードから **1 枚を遺物として残す**。以後のラウンドも王国に置いて得点に数える",
-          "- **1 枚をゲームから除外**",
-          "- 残り 3 枚を手札に戻し、山札から **2 枚引いて** 5 枚にして次のラウンド",
+          "- 最後の浮き輪を裏返してもまだ 1 回チャンスがある。**浮き輪がないのにまた失う**ときに脱落、そのラウンドは終わり",
+          "- 12 枚出し切るか、**2 人**だけになったらラウンド終了",
           "",
-          "**第 3 ラウンド**：遺物も除外もドローもなし。得点したら終了。"
+          "**得点**",
+          "- 表の浮き輪 1 つにつき **1 点**、なければ 0 点、**脱落は −1 点**",
+          "- ラウンド終了時に**潮位が一番低い**人は **+1 点**（同点は全員、潮位カードのない人が一番低い）",
+          "",
+          "**次のラウンド**：自分の天気カード 12 枚と浮き輪を一緒に**左へ渡し**、潮位カードを混ぜ直す。**人数分のラウンド**を遊び、全員が全部の手札を使う。合計が一番多い人の勝ち。"
         ]
       }
     },
     {
-      "title": { "zh": "勝負", "en": "Winning", "ja": "勝敗" },
+      "title": { "zh": "App 怎麼用", "en": "Using the app", "ja": "アプリの使い方" },
       "md": {
         "zh": [
-          "三輪的分數加起來，總分高的人贏。",
-          "",
-          "在「開局」頁填每輪分數，App 會加總、標出領先和贏家。"
+          "1. 每輪開始先把每個人的救生圈數調好",
+          "2. 每一手翻牌比大小後，把拿到潮位卡的兩個人的「潮位」改成新那張的數字",
+          "3. 按「這手結算」，App 找出潮位最高的人扣救生圈、處理淘汰；按錯可以復原",
+          "4. 12 手打完或剩兩人會自動算分；也可以手動按「這輪結束」"
         ],
         "en": [
-          "Add up the three round scores; the higher total wins.",
-          "",
-          "Enter each round's score in the Play tab and the app totals them and shows who's ahead."
+          "1. At the start of each round set everyone's preservers",
+          "2. After each hand's reveal, set the tide of the two players who took tide cards to the new number",
+          "3. Tap Resolve hand: the app finds the highest tide, removes a preserver and handles elimination; undo if needed",
+          "4. After 12 hands or with two players left the round scores automatically; you can also end it manually"
         ],
         "ja": [
-          "3 ラウンドの得点を合計し、多い方の勝ち。",
-          "",
-          "「プレイ」タブに各ラウンドの得点を入れると、合計とリードしている人を表示する。"
+          "1. ラウンド開始時に各自の浮き輪を合わせる",
+          "2. 各手の公開後、潮位カードを取った 2 人の潮位を新しい数字に変える",
+          "3. 「この手を精算」で、潮位が一番高い人の浮き輪を減らし脱落も処理。間違えたら戻せる",
+          "4. 12 手か残り 2 人で自動的に得点計算。手動で終了もできる"
         ]
       }
     },
@@ -102,25 +135,25 @@
       "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
       "md": {
         "zh": [
-          "- 出牌前看對方手上剩什麼：你不拿的牌會交給對方",
-          "- 遺物會一直算分，留下花色好用、目標容易達成的那張",
-          "- 移出遊戲的牌兩人都拿不到，可以拿來拆掉對方需要的組合"
+          "- 小牌別太早出完，後面會沒有東西擋",
+          "- 記住上一輪自己的手牌：下一輪左邊的人會拿到它",
+          "- 有時故意出大牌拿低潮位，比讓自己的潮位一直卡在高處好"
         ],
         "en": [
-          "- Before choosing, think about what you're passing — every card you skip goes to your opponent",
-          "- Relics score every round; keep one with a useful suit and an easy objective",
-          "- A removed card is gone for both players — use it to break up a combination your opponent needs"
+          "- Don't use up your low cards too early",
+          "- Remember your hand from last round — the player on your left has it now",
+          "- Sometimes playing high to take the lower tide beats staying stuck with a high one"
         ],
         "ja": [
-          "- 選ぶ前に、渡すカードを考える。取らなかったカードは相手に行く",
-          "- 遺物は毎ラウンド得点に入る。使いやすいスートで達成しやすい目標のカードを残す",
-          "- 除外したカードは 2 人とも使えない。相手が欲しい組み合わせを崩すのに使える"
+          "- 小さいカードを早く使い切らない",
+          "- 前のラウンドの自分の手札を覚えておく。今は左隣が持っている",
+          "- 大きいカードで低い潮位を取る方が、高い潮位のまま残るよりよいこともある"
         ]
       }
     }
   ],
   "play": {
     "type": "tides",
-    "title": { "zh": "計分表", "en": "Score sheet", "ja": "得点表" }
+    "title": { "zh": "記錄計分", "en": "Tracker", "ja": "記録・得点" }
   }
 }
