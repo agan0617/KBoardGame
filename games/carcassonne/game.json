@@ -1,0 +1,283 @@
+{
+  "id": "carcassonne",
+  "name": { "zh": "卡卡頌", "en": "Carcassonne", "ja": "カルカソンヌ" },
+  "players": { "zh": "2–5 人（擴充 6 人）", "en": "2–5 players (6 with expansion)", "ja": "2〜5人（拡張で6人）" },
+  "time": { "zh": "35–45 分鐘", "en": "35–45 min", "ja": "35〜45分" },
+  "summary": {
+    "zh": "輪流抽地形板拼出中世紀法國的城堡、道路和草地，派小人進駐搶分。App 幫你記分、提醒計分規則。",
+    "en": "Take turns drawing tiles to build medieval France — cities, roads and fields — and place your followers to score. The app keeps score and reminds you of the scoring rules.",
+    "ja": "タイルを引いて中世フランスの都市・道・草原をつなげ、ミープルを置いて得点を狙う。アプリで得点記録と得点ルールの確認ができる。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "大家輪流抽一片地形板，接在桌上已經拼好的地圖旁邊，慢慢拼出城堡、道路、修道院和草地。",
+          "",
+          "放完地形板可以派一個小人站上去，佔住那座城堡、那條路或那片草地。區塊完成時，佔住它的人得分，小人收回來再用。",
+          "",
+          "地形板抽完，算完最後的分數，分數最高的人贏。"
+        ],
+        "en": [
+          "On your turn draw a tile and add it to the map on the table, gradually building cities, roads, cloisters and fields.",
+          "",
+          "After placing the tile you may put one of your followers on it to claim that city, road or field. When a feature is completed, whoever claims it scores and gets the follower back.",
+          "",
+          "When the tiles run out, do the final scoring. Highest score wins."
+        ],
+        "ja": [
+          "手番ではタイルを 1 枚引き、場の地図につなげて置きます。都市・道・修道院・草原が少しずつできていきます。",
+          "",
+          "タイルを置いたら、自分のミープルを 1 つ置いてその都市・道・草原を確保できます。完成すると確保した人が得点し、ミープルは手元に戻ります。",
+          "",
+          "タイルがなくなったら最終得点を計算し、最高得点の人が勝ちです。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "1. 起始地形板（背面顏色不同）放在桌子中間，其他 71 片蓋著洗勻",
+          "2. 每人拿一個顏色的 8 個小人：1 個放計分軌的 0 當分數標記，7 個在手上",
+          "3. 年紀最小的人先開始，順時針輪流",
+          "",
+          "不用實體計分軌的話，在「開局」用 App 記分。"
+        ],
+        "en": [
+          "1. Place the start tile (different back) in the middle; shuffle the other 71 tiles face down",
+          "2. Each player takes 8 followers of one color: 1 goes on 0 of the score track, 7 stay in hand",
+          "3. The youngest player starts; play goes clockwise",
+          "",
+          "Instead of the score track you can keep score in the app's Play tab."
+        ],
+        "ja": [
+          "1. スタートタイル（裏の色が違う）を中央に置き、残り 71 枚を裏向きに混ぜる",
+          "2. 各自 1 色のミープル 8 個を取る。1 個は得点トラックの 0 に置いて得点マーカー、7 個が手持ち",
+          "3. 最年少の人から時計回り",
+          "",
+          "得点トラックの代わりに「プレイ」タブのアプリで記録できます。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "回合流程", "en": "Your turn", "ja": "手番の流れ" },
+      "md": {
+        "zh": [
+          "**1. 放地形板**：抽一片，接在地圖上。至少要碰到一片已經在桌上的板，**所有相鄰的邊都要接得上**（城堡接城堡、路接路、草地接草地）。真的放不下就丟掉重抽",
+          "",
+          "**2. 可以派一個小人**：只能站在**剛放的那片**上，選一個區塊站：道路（強盜）、城堡（騎士）、修道院（修士）或草地（農夫，躺著放）。如果那個區塊已經跟有別人小人的區塊連在一起，就不能站",
+          "",
+          "**3. 計分**：這片板讓哪個區塊完成了，就馬上算分（見〈計分〉），站在上面的小人收回。草地的農夫要到遊戲結束才回來"
+        ],
+        "en": [
+          "**1. Place a tile**: draw one and add it to the map. It must touch at least one tile, and **every edge it touches must match** (city to city, road to road, field to field). If it truly can't be placed, discard it and draw again",
+          "",
+          "**2. You may place a follower**: only on **the tile you just placed**, on one feature — road (thief), city (knight), cloister (monk) or field (farmer, lying down). You can't place it on a feature already connected to one with another follower",
+          "",
+          "**3. Score**: any feature your tile completed scores right away (see Scoring) and its followers go back to their owners. Farmers stay until the end of the game"
+        ],
+        "ja": [
+          "**1. タイルを置く**：1 枚引いて地図につなげる。少なくとも 1 枚に接し、**接するすべての辺がつながる**こと（都市は都市、道は道、草原は草原）。どうしても置けなければ捨てて引き直す",
+          "",
+          "**2. ミープルを置ける**：**今置いたタイル**の上の 1 か所だけ。道（盗賊）、都市（騎士）、修道院（修道士）、草原（農民、寝かせて置く）。すでに他のミープルがいる場所とつながっているところには置けない",
+          "",
+          "**3. 得点**：このタイルで完成した場所はすぐに得点し（〈得点〉参照）、そこのミープルは戻る。草原の農民はゲーム終了まで戻らない"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "計分", "en": "Scoring", "ja": "得点" },
+      "md": {
+        "zh": [
+          "**區塊完成時**",
+          "- **道路**：兩端都接到路口、城堡、修道院或繞成一圈。每片 1 分",
+          "- **城堡**：城牆整個圍起來。每片 2 分，每個盾徽再 2 分",
+          "- **修道院**：周圍 8 格都放滿。9 分",
+          "",
+          "**誰拿分**：同一個區塊誰的小人最多誰拿全分；一樣多就每個人都拿全分。小人是因為區塊連起來才湊在一起的（不能直接站在有人的區塊，但可以從旁邊接過來）",
+          "",
+          "**遊戲結束時**（地形板抽完），還沒完成的也算：",
+          "- 道路每片 1 分",
+          "- 城堡每片 1 分，盾徽各 1 分",
+          "- 修道院 1 分，周圍每有一片再 1 分",
+          "- **草地**：每塊草地由農夫最多的人計分，草地碰到的每座**已完成**的城堡 3 分（同一座城堡碰到好幾塊草地，每塊草地都算）"
+        ],
+        "en": [
+          "**When a feature is completed**",
+          "- **Road**: both ends reach a crossing, city, cloister, or it loops. 1 per tile",
+          "- **City**: fully enclosed by walls. 2 per tile, plus 2 per shield",
+          "- **Cloister**: all 8 surrounding spaces filled. 9 points",
+          "",
+          "**Who scores**: whoever has the most followers in the feature scores it in full; ties all score in full. Followers end up together when features join (you can't place directly onto an occupied feature, but you can connect to it)",
+          "",
+          "**At game end** (no tiles left), incomplete features also score:",
+          "- Road 1 per tile",
+          "- City 1 per tile and 1 per shield",
+          "- Cloister 1 plus 1 per surrounding tile",
+          "- **Fields**: each field is scored by whoever has the most farmers in it — 3 for every **completed** city it touches (a city touching several fields counts for each field)"
+        ],
+        "ja": [
+          "**完成したとき**",
+          "- **道**：両端が交差点・都市・修道院につながるか、輪になる。1 枚 1 点",
+          "- **都市**：城壁で完全に囲まれる。1 枚 2 点、紋章 1 つにつき 2 点",
+          "- **修道院**：周り 8 マスが埋まる。9 点",
+          "",
+          "**誰が得点するか**：その場所でミープルが一番多い人が満点。同数なら全員満点。ミープルが同じ場所に集まるのは場所がつながったとき（他人のいる場所に直接は置けないが、つなげることはできる）",
+          "",
+          "**ゲーム終了時**（タイルがなくなったら）、未完成の場所も得点：",
+          "- 道 1 枚 1 点",
+          "- 都市 1 枚 1 点、紋章 1 点",
+          "- 修道院 1 点＋周りのタイル 1 枚につき 1 点",
+          "- **草原**：農民が一番多い人が得点。接している**完成した**都市 1 つにつき 3 点（複数の草原に接する都市は草原ごとに数える）"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：旅館與大教堂", "en": "Expansion: Inns & Cathedrals", "ja": "拡張：宿屋と大聖堂" },
+      "md": {
+        "zh": [
+          "- **第 6 色**：多一組小人，可以 6 人玩",
+          "- **大小人**：每人 1 個，算成 2 個小人搶多數，但計分時跟一般小人一樣",
+          "- **旅館**（路邊有湖）：完成的道路每片 2 分；**遊戲結束還沒完成就 0 分**",
+          "- **大教堂**（城堡中央）：完成的城堡每片 3 分、盾徽各 3 分；**遊戲結束還沒完成就 0 分**",
+          "- 18 片新地形板，洗進去一起用"
+        ],
+        "en": [
+          "- **Sixth color**: an extra set of followers for 6 players",
+          "- **Large follower**: one each; counts as 2 followers for majorities, scores like a normal one",
+          "- **Inn** (lake beside a road): completed road 2 per tile; **0 if incomplete at game end**",
+          "- **Cathedral** (in a city): completed city 3 per tile and 3 per shield; **0 if incomplete at game end**",
+          "- 18 new tiles, shuffled in"
+        ],
+        "ja": [
+          "- **6 色目**：コマが 1 組増え、6 人で遊べる",
+          "- **大きなミープル**：各自 1 つ。多数決では 2 個分、得点は普通と同じ",
+          "- **宿屋**（道沿いの湖）：完成した道は 1 枚 2 点。**終了時に未完成なら 0 点**",
+          "- **大聖堂**（都市の中）：完成した都市は 1 枚 3 点、紋章 3 点。**終了時に未完成なら 0 点**",
+          "- 新タイル 18 枚を混ぜて使う"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：商人與建築師", "en": "Expansion: Traders & Builders", "ja": "拡張：商人と建築士" },
+      "md": {
+        "zh": [
+          "- **貨物**：城堡裡有酒、麥、布的圖示。**完成城堡的人**（不管有沒有小人在裡面）拿走對應的貨物標記。遊戲結束時，酒、麥、布**各自最多的人得 10 分**，平手都拿",
+          "- **建築師**：放在已經有你小人的道路或城堡上。之後你接長那條路或那座城堡時，**可以再抽一片、多放一次**（一回合最多多一次）",
+          "- **豬**：放在已經有你農夫的草地。遊戲結束時那塊草地你拿分的話，每座城堡改成 **4 分**",
+          "- 24 片新地形板"
+        ],
+        "en": [
+          "- **Goods**: some cities show wine, grain or cloth. **Whoever completes the city** (followers or not) takes the matching goods tokens. At game end, **the most of each type scores 10**; ties all score",
+          "- **Builder**: place it on a road or city that already has your follower. When you later extend that feature, **draw and place a second tile** (at most one extra per turn)",
+          "- **Pig**: place it in a field with your farmer. If you score that field at the end, each city is worth **4**",
+          "- 24 new tiles"
+        ],
+        "ja": [
+          "- **交易品**：都市にワイン・小麦・布の絵がある。**都市を完成させた人**（コマがいなくても）が対応するトークンを取る。終了時、ワイン・小麦・布**それぞれ最多の人が 10 点**、同数は全員",
+          "- **建築士**：自分のコマがいる道か都市に置く。後でその場所を延ばしたとき、**もう 1 枚引いて置ける**（1 手番 1 回まで）",
+          "- **豚**：自分の農民がいる草原に置く。終了時にその草原で得点するなら都市 1 つ **4 点**",
+          "- 新タイル 24 枚"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：公主與龍", "en": "Expansion: The Princess & the Dragon", "ja": "拡張：王女とドラゴン" },
+      "md": {
+        "zh": [
+          "- **火山**：抽到火山板時，龍移到那片上，這回合不能派小人",
+          "- **龍的板**：抽到有龍圖示的板，放完後大家從自己開始輪流移動龍，**一共走 6 格**（不能斜走、不能走回這次走過的格子、不能進仙子那格），**龍經過的小人全部被吃掉**回到主人手上",
+          "- **仙子**：沒派小人時，可以把仙子移到自己任何一個小人旁邊。被仙子保護的小人龍吃不掉。回合開始時仙子在你的小人旁：+1 分；那個小人的區塊計分時：+3 分",
+          "- **公主**：放出公主城堡板接到有騎士的城堡時，可以把那座城堡裡的一個騎士趕走（不派小人）",
+          "- **魔法門**：放出魔法門板時，可以把小人派到地圖上**任何**還沒人佔、還沒完成的區塊"
+        ],
+        "en": [
+          "- **Volcano**: when you draw a volcano tile, the dragon moves onto it; no follower this turn",
+          "- **Dragon tiles**: after placing one, players starting with you take turns moving the dragon **6 spaces in total** (no diagonals, no revisiting a space this move, not onto the fairy). **Every follower it passes is eaten** and returned to its owner",
+          "- **Fairy**: instead of placing a follower, move the fairy next to one of your followers; that follower is safe from the dragon. +1 if the fairy is with your follower at the start of your turn; +3 when that follower's feature scores",
+          "- **Princess**: when a princess tile joins a city with knights, you may remove one knight from that city (instead of placing a follower)",
+          "- **Magic portal**: when you place a portal tile, you may place a follower on **any** unoccupied, incomplete feature on the map"
+        ],
+        "ja": [
+          "- **火山**：火山タイルを引いたらドラゴンがそこへ移る。その手番はミープルを置けない",
+          "- **ドラゴンタイル**：置いたら自分から順に 1 マスずつ、**合計 6 マス**ドラゴンを動かす（斜め不可、今回通ったマスに戻れない、妖精のマスに入れない）。**通ったマスのミープルはすべて食べられ**持ち主に戻る",
+          "- **妖精**：ミープルを置かない代わりに、自分のミープルの隣へ妖精を動かせる。そのミープルはドラゴンに食べられない。手番の最初に妖精が自分のコマの隣なら +1、そのコマの場所が得点したら +3",
+          "- **王女**：王女タイルを騎士のいる都市につなげたら、その都市の騎士を 1 人取り除ける（ミープルを置く代わり）",
+          "- **魔法の門**：門のタイルを置いたら、地図上の**どこでも**、空いていて未完成の場所にミープルを置ける"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴充：河流 II", "en": "Expansion: The River II", "ja": "拡張：川 II" },
+      "md": {
+        "zh": [
+          "- 用河流的**源頭板**代替起始板開局，先把河流板全部放完，才開始抽一般的地形板",
+          "- 河流要接成一條，不能馬上轉回頭；河流的分岔板讓河分成兩條，各自要接到湖",
+          "- 河流旁的城堡、道路、草地照一般規則計分",
+          "- 跟公主與龍一起玩時，河流的火山板照火山規則"
+        ],
+        "en": [
+          "- Start with the river **spring** instead of the normal start tile; place all river tiles first, then draw normal tiles",
+          "- The river must form one continuous stream and can't turn back on itself immediately; the fork splits it into two branches, each ending in a lake",
+          "- Cities, roads and fields beside the river score normally",
+          "- With The Princess & the Dragon, the river volcano follows the volcano rules"
+        ],
+        "ja": [
+          "- 通常のスタートタイルの代わりに川の**源流**から始め、川タイルを全部置いてから普通のタイルを引く",
+          "- 川は 1 本につながるように置き、すぐに折り返してはいけない。分岐タイルで 2 本に分かれ、それぞれ湖で終わる",
+          "- 川沿いの都市・道・草原は通常どおり得点",
+          "- 「王女とドラゴン」と一緒なら、川の火山は火山のルールに従う"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "md": {
+        "zh": [
+          "- 小人只有 7 個，別一開始就全派出去，留幾個才搶得到大城堡",
+          "- 草地的農夫放下去就收不回來，中後期再放比較划算",
+          "- 想搶別人的城堡：在旁邊另外蓋一小段城堡派騎士，再想辦法接過去，人數一樣多就一起拿分",
+          "- 很難完成的城堡別硬接，遊戲結束只剩一半分數"
+        ],
+        "en": [
+          "- You only have 7 followers — don't place them all early, or you can't contest a big city later",
+          "- Farmers never come back, so they are usually better placed mid to late game",
+          "- To share someone's city, start a small separate city next to it with your knight, then join them; equal numbers both score",
+          "- Don't keep extending a city that's hard to finish — incomplete cities score half at the end"
+        ],
+        "ja": [
+          "- ミープルは 7 個だけ。序盤に出し切ると大きな都市を争えない",
+          "- 農民は戻ってこないので、中盤から終盤に置くのが得",
+          "- 他人の都市に割り込むには、隣に小さな都市を作って騎士を置き、あとでつなげる。同数なら一緒に得点",
+          "- 完成しにくい都市を無理に広げない。未完成だと終了時は半分の点数"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "我們家的擴充", "en": "Our expansions", "ja": "うちの拡張" },
+      "md": {
+        "zh": [
+          "- 基本版（2001 年德國年度遊戲獎）",
+          "- 四合一擴充：旅館與大教堂、商人與建築師、公主與龍、河流 II",
+          "- 五合一擴充（投石車等）：規則待補"
+        ],
+        "en": [
+          "- Base game (Spiel des Jahres 2001)",
+          "- 4-in-1 expansion: Inns & Cathedrals, Traders & Builders, The Princess & the Dragon, The River II",
+          "- 5-in-1 expansion (Catapult and more): rules to be added"
+        ],
+        "ja": [
+          "- 基本セット（2001 年ドイツ年間ゲーム大賞）",
+          "- 4 in 1 拡張：宿屋と大聖堂、商人と建築士、王女とドラゴン、川 II",
+          "- 5 in 1 拡張（カタパルトなど）：ルールは追加予定"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "carcassonne",
+    "title": { "zh": "計分", "en": "Score", "ja": "得点" }
+  }
+}
