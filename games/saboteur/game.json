@@ -1,0 +1,263 @@
+{
+  "id": "saboteur",
+  "name": { "zh": "矮人礦坑", "en": "Saboteur", "ja": "お邪魔者" },
+  "players": { "zh": "3–10 人（擴展 2–12 人）", "en": "3–10 players (expansion 2–12)", "ja": "3〜10人（拡張で2〜12人）" },
+  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "summary": {
+    "zh": "矮人們一起挖通道找金塊，但裡面藏著破壞者，偷偷擋路、弄壞別人的工具。用手機秘密發身分，每輪結束公布、記三輪的金塊。",
+    "en": "Dwarves dig tunnels together to find gold — but saboteurs hide among them, blocking paths and breaking tools. Deal secret roles with one phone, reveal them each round and track gold over three rounds.",
+    "ja": "ドワーフたちが協力してトンネルを掘り金を探す。でも中にはお邪魔者が紛れていて、道をふさぎ道具を壊す。スマホで役職を秘密に配り、ラウンドごとに公開、3 ラウンドの金を記録。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "遊戲概要", "en": "Overview", "ja": "ゲームの概要" },
+      "md": {
+        "zh": [
+          "每個人秘密拿一張身分：**礦工**要把通道從起點挖到藏金塊的終點，**破壞者**要阻止他們。誰是破壞者大家都不知道。",
+          "",
+          "輪流出通道牌接通道，或出行動牌弄壞別人的工具、修好工具、偷看終點、炸掉一段通道。",
+          "",
+          "一輪結束公布身分，贏的一方分金塊。玩三輪，金塊最多的人贏。"
+        ],
+        "en": [
+          "Everyone secretly gets a role: **Gold-Diggers** try to dig a tunnel from the start to the goal card hiding the gold; **Saboteurs** try to stop them. Nobody knows who the Saboteurs are.",
+          "",
+          "Take turns placing path cards to extend the tunnel, or play action cards to break someone's tools, repair them, peek at a goal or blow up a path.",
+          "",
+          "At the end of each round roles are revealed and the winning side shares the gold. After three rounds the most gold wins."
+        ],
+        "ja": [
+          "各自こっそり役職を受け取る。**金鉱掘り**はスタートから金のあるゴールまでトンネルを掘り、**お邪魔者**はそれを阻む。誰がお邪魔者かは分からない。",
+          "",
+          "順番に道カードでトンネルを延ばすか、アクションカードで道具を壊す・直す・ゴールをのぞく・道を壊す。",
+          "",
+          "ラウンドの終わりに役職を公開し、勝った側が金を分ける。3 ラウンドで金が一番多い人の勝ち。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備（基本版）", "en": "Setup (base game)", "ja": "準備（基本）" },
+      "md": {
+        "zh": [
+          "- 起點卡放桌上，3 張終點卡蓋著放在起點右邊**隔 7 張牌的距離**，三張上下排開、彼此隔一格；其中一張有金塊，兩張是石頭",
+          "- 身分照人數配好洗勻，每人一張（多一張不用），在「開局」頁用手機發也可以",
+          "",
+          "| 人數 | 破壞者 | 礦工 | 手牌 |",
+          "|---|---|---|---|",
+          "| 3 | 1 | 3 | 6 |",
+          "| 4 | 1 | 4 | 6 |",
+          "| 5 | 2 | 4 | 6 |",
+          "| 6 | 2 | 5 | 5 |",
+          "| 7 | 3 | 5 | 5 |",
+          "| 8 | 3 | 6 | 4 |",
+          "| 9 | 3 | 7 | 4 |",
+          "| 10 | 4 | 7 | 4 |",
+          "",
+          "- 通道牌和行動牌洗勻，照上表發手牌，其餘當牌堆"
+        ],
+        "en": [
+          "- Place the start card; place the 3 goal cards face down **7 cards to the right**, one above another with a one-card gap; one hides gold, two are stone",
+          "- Shuffle the role cards for your player count and deal one each (one left over) — or deal them with the phone in the Play tab",
+          "",
+          "| Players | Saboteurs | Gold-Diggers | Hand |",
+          "|---|---|---|---|",
+          "| 3 | 1 | 3 | 6 |",
+          "| 4 | 1 | 4 | 6 |",
+          "| 5 | 2 | 4 | 6 |",
+          "| 6 | 2 | 5 | 5 |",
+          "| 7 | 3 | 5 | 5 |",
+          "| 8 | 3 | 6 | 4 |",
+          "| 9 | 3 | 7 | 4 |",
+          "| 10 | 4 | 7 | 4 |",
+          "",
+          "- Shuffle the path and action cards, deal hands as above; the rest is the draw pile"
+        ],
+        "ja": [
+          "- スタートカードを置き、ゴールカード 3 枚を裏向きで**右に 7 枚分離して**、1 枚ずつ間を空けて縦に並べる。1 枚が金、2 枚が石",
+          "- 人数に合わせた役職カードを混ぜて 1 枚ずつ（1 枚余る）。「プレイ」タブでスマホで配ってもよい",
+          "",
+          "| 人数 | お邪魔者 | 金鉱掘り | 手札 |",
+          "|---|---|---|---|",
+          "| 3 | 1 | 3 | 6 |",
+          "| 4 | 1 | 4 | 6 |",
+          "| 5 | 2 | 4 | 6 |",
+          "| 6 | 2 | 5 | 5 |",
+          "| 7 | 3 | 5 | 5 |",
+          "| 8 | 3 | 6 | 4 |",
+          "| 9 | 3 | 7 | 4 |",
+          "| 10 | 4 | 7 | 4 |",
+          "",
+          "- 道カードとアクションカードを混ぜ、上の枚数を配る。残りは山札"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "回合（基本版）", "en": "Your turn (base game)", "ja": "手番（基本）" },
+      "md": {
+        "zh": [
+          "每回合做**一件事**，然後抽一張補牌：",
+          "",
+          "- **出通道牌**：接在已經跟起點連通的通道上，四邊都要跟旁邊的牌對得上。**工具被弄壞**的人不能出通道牌",
+          "- **出行動牌**：",
+          "- **弄壞工具**（鎬、燈、礦車）：放在別人面前，他不能出通道牌；同一種工具一次只能被弄壞一張",
+          "- **修理工具**：修好自己或別人被弄壞的那一種工具（有的修理牌能修兩種，選一種）",
+          "- **地圖**：偷看一張終點卡，不給別人看",
+          "- **落石**：拿掉一張通道牌（不能拿起點和終點）",
+          "- **不出**：蓋著丟一張牌",
+          "",
+          "通道接到終點卡就翻開；是石頭的話照常繼續挖。牌堆抽完後，手牌出完的人就停手。"
+        ],
+        "en": [
+          "On your turn do **one thing**, then draw a card:",
+          "",
+          "- **Play a path card**: it must join a tunnel connected to the start, and all its edges must match neighboring cards. A player with a **broken tool** can't play path cards",
+          "- **Play an action card**:",
+          "- **Broken tool** (pickaxe, lantern, cart): place in front of another player; they can't play path cards. Only one broken card of each tool at a time",
+          "- **Repair**: fix that broken tool for yourself or someone else (dual repair cards fix either of two)",
+          "- **Map**: secretly look at one goal card",
+          "- **Rockfall**: remove one path card (not the start or a goal)",
+          "- **Pass**: discard one card face down",
+          "",
+          "When a tunnel reaches a goal card, flip it; if it's stone, keep digging. Once the draw pile is empty, players stop when their hand runs out."
+        ],
+        "ja": [
+          "手番では**1 つ**行い、カードを 1 枚引く：",
+          "",
+          "- **道カードを置く**：スタートとつながっている道に接し、四辺が隣と合うこと。**道具が壊れている**人は道カードを出せない",
+          "- **アクションカードを出す**：",
+          "- **道具を壊す**（つるはし、ランタン、トロッコ）：他人の前に置き、その人は道カードを出せない。同じ道具は 1 枚まで",
+          "- **修理**：自分か他人の壊れたその道具を直す（2 種類のどちらかを直せるカードもある）",
+          "- **地図**：ゴールカードを 1 枚こっそり見る",
+          "- **落盤**：道カードを 1 枚取り除く（スタートとゴールは不可）",
+          "- **パス**：1 枚を裏向きで捨てる",
+          "",
+          "道がゴールに届いたらめくる。石ならそのまま掘り続ける。山札が尽きたら、手札がなくなった人から終わり。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "一輪結束與分金塊（基本版）", "en": "End of round and gold (base game)", "ja": "ラウンド終了と金（基本）" },
+      "md": {
+        "zh": [
+          "- **礦工贏**：通道接到有金塊的終點。翻開跟人數一樣多的金塊卡，**接到金塊的人先挑一張**，再**逆時針**輪流給其他礦工挑，直到挑完（破壞者不能拿）",
+          "- **破壞者贏**：所有人的牌都出完了還沒接到金塊。1 個破壞者拿 4 塊、2～3 個各 3 塊、4 個各 2 塊",
+          "- 公布身分、收牌重洗，重新發身分開始下一輪",
+          "- **三輪**後金塊最多的人贏"
+        ],
+        "en": [
+          "- **Gold-Diggers win**: the tunnel reaches the gold. Reveal as many gold cards as players; **the player who reached it picks one first**, then the other Gold-Diggers take turns **counter-clockwise** until they're gone (Saboteurs get none)",
+          "- **Saboteurs win**: everyone has run out of cards and the gold wasn't reached. 1 Saboteur gets 4 gold, 2–3 get 3 each, 4 get 2 each",
+          "- Reveal roles, reshuffle and deal new roles for the next round",
+          "- After **three rounds** the most gold wins"
+        ],
+        "ja": [
+          "- **金鉱掘りの勝ち**：道が金に届いた。人数分の金カードを公開し、**届いた人から 1 枚選び**、他の金鉱掘りが**反時計回り**に選んでいく（お邪魔者はもらえない）",
+          "- **お邪魔者の勝ち**：全員のカードがなくなっても金に届かなかった。お邪魔者 1 人なら 4、2〜3 人なら各 3、4 人なら各 2",
+          "- 役職を公開し、混ぜ直して役職を配り直して次のラウンド",
+          "- **3 ラウンド**後、金が一番多い人の勝ち"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴展：新身分", "en": "Expansion: new roles", "ja": "拡張：新しい役職" },
+      "md": {
+        "zh": [
+          "擴展換掉基本版的身分和金塊卡，改用 15 張新身分洗勻、**每人一張**（其餘不用），手牌一律 **6 張**，每輪開始先蓋掉牌堆最上面 10 張不用。2～12 人都能玩。",
+          "",
+          "- **綠隊礦工**（4）、**藍隊礦工**（4）：自己隊的人把通道接到金塊、路上沒有另一色的門就贏",
+          "- **老大**（1）：綠隊或藍隊贏都算贏，分金塊少 1",
+          "- **投機者**（1）：礦工或破壞者贏都算贏，分金塊少 2",
+          "- **地質學家**（2）：不靠金塊，通道上看得到幾顆水晶就拿幾塊（兩人平分、無條件捨去）",
+          "- **破壞者**（3）",
+          "",
+          "贏家平分金塊的數量照盒內表格；最後再處理偷竊卡。被「困住」的人這輪不算贏家。"
+        ],
+        "en": [
+          "The expansion replaces the base roles and gold cards: shuffle the 15 new roles and deal **one each** (the rest are unused). Hands are always **6** cards, and at the start of each round set aside the top 10 cards unseen. 2–12 players.",
+          "",
+          "- **Green Gold-Diggers** (4), **Blue Gold-Diggers** (4): win if their team connects to the gold with no door of the other color on the way",
+          "- **Boss** (1): wins if Green or Blue wins; gets 1 less gold",
+          "- **Profiteer** (1): wins whether the Gold-Diggers or the Saboteurs win; gets 2 less gold",
+          "- **Geologist** (2): ignores the gold — 1 gold per visible crystal (two Geologists split it, rounded down)",
+          "- **Saboteurs** (3)",
+          "",
+          "Winners split the gold per the table in the box; Theft cards resolve last. Trapped players don't count as winners that round."
+        ],
+        "ja": [
+          "拡張では基本の役職と金カードを使わず、新しい役職 15 枚を混ぜて**1 枚ずつ**（残りは使わない）。手札は常に **6 枚**、毎ラウンド最初に山札の上 10 枚を見ずに除ける。2〜12 人。",
+          "",
+          "- **緑の金鉱掘り**（4）、**青の金鉱掘り**（4）：自分の色の誰かが金につなぎ、途中に他の色の扉がなければ勝ち",
+          "- **ボス**（1）：緑か青が勝てば勝ち。金は 1 少ない",
+          "- **強欲者**（1）：金鉱掘りでもお邪魔者でも勝てば勝ち。金は 2 少ない",
+          "- **地質学者**（2）：金に関係なく、見えている水晶 1 つにつき金 1（2 人なら山分け、切り捨て）",
+          "- **お邪魔者**（3）",
+          "",
+          "勝者の金の分け方は箱の表のとおり。最後に泥棒カード。閉じ込められた人はそのラウンドの勝者にならない。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "擴展：新通道與行動牌", "en": "Expansion: new path and action cards", "ja": "拡張：新しい道とアクション" },
+      "md": {
+        "zh": [
+          "**新通道**",
+          "- **門**（綠、藍各 3）：只有同色的隊伍走得過",
+          "- **梯子**（4）：一律算跟起點相連，梯子之間互通；要接著通道放，不能放在終點旁",
+          "- **橋**、**雙彎道**（各 2）：兩條不相通的路，放的時候至少一條要接到起點",
+          "- **水晶**：畫在部分通道上，不影響通路，給地質學家算",
+          "",
+          "**新行動牌**（同一種不能同時有兩張作用在同一個人身上）",
+          "- **偷竊**（4）：放自己面前，分完金塊後從一個有金塊的人那裡偷 1 塊；被困住時不能用",
+          "- **住手**（3）：拿掉某人面前的一張偷竊",
+          "- **換手牌**（2）：跟別人交換整副手牌，對方補抽 1 張",
+          "- **檢查**（2）：偷看某人的身分",
+          "- **換帽子**（2）：某人（可以是自己）丟掉身分，從沒用到的身分抽一張新的",
+          "- **困住**（3）：放在別人面前，他不能出通道牌，這輪結束也不算贏家",
+          "- **自由**（4）：拿掉某人面前的一張困住",
+          "",
+          "**每回合多一個選擇**：丟兩張牌，拿掉自己面前的一張牌（只補抽一張）。"
+        ],
+        "en": [
+          "**New paths**",
+          "- **Doors** (3 green, 3 blue): only the team of that color can pass",
+          "- **Ladders** (4): always count as connected to the start and to each other; must touch a path and can't go next to a goal",
+          "- **Bridge**, **double curve** (2 each): two separate paths; at least one must connect to the start when placed",
+          "- **Crystals**: printed on some paths; they don't affect connections but count for Geologists",
+          "",
+          "**New actions** (no two of the same type on one player at once)",
+          "- **Theft** (4): place in front of yourself; after gold is shared, steal 1 gold from a player who has some. Not while trapped",
+          "- **Hands off** (3): remove one Theft from in front of a player",
+          "- **Swap your hand** (2): trade hands with another player; they draw 1",
+          "- **Inspection** (2): look at a player's role",
+          "- **Swap your hats** (2): a player (or you) discards their role unseen and draws a new one from the unused roles",
+          "- **Trapped!** (3): place in front of another player; they can't play paths and won't count as a winner",
+          "- **Free at last!** (4): remove one Trapped! from in front of a player",
+          "",
+          "**Extra turn option**: discard two cards to remove one card in front of you (draw only one)."
+        ],
+        "ja": [
+          "**新しい道**",
+          "- **扉**（緑・青 各 3）：同じ色のチームだけ通れる",
+          "- **はしご**（4）：常にスタートとつながり、はしご同士もつながる。道に接して置き、ゴールの隣は不可",
+          "- **橋**、**ダブルカーブ**（各 2）：つながらない 2 本の道。置くとき少なくとも 1 本がスタートにつながること",
+          "- **水晶**：一部の道に描かれている。つながりには関係なく、地質学者が数える",
+          "",
+          "**新しいアクション**（同じ種類を 1 人に 2 枚は置けない）",
+          "- **泥棒**（4）：自分の前に置く。金の分配後、金を持っている人から 1 盗む。閉じ込められていたら使えない",
+          "- **手を出すな**（3）：誰かの前の泥棒を 1 枚取り除く",
+          "- **手札交換**（2）：他の人と手札をまるごと交換。相手は 1 枚引く",
+          "- **調査**（2）：誰かの役職を見る",
+          "- **帽子交換**（2）：誰か（自分でも）の役職を見ずに捨て、使っていない役職から 1 枚引き直す",
+          "- **閉じ込め**（3）：他人の前に置く。その人は道カードを出せず、勝者にもならない",
+          "- **解放**（4）：誰かの前の閉じ込めを 1 枚取り除く",
+          "",
+          "**手番の選択肢が 1 つ増える**：2 枚捨てて自分の前のカードを 1 枚取り除く（1 枚だけ引く）。"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "saboteur",
+    "title": { "zh": "發身分", "en": "Roles", "ja": "役職配り" }
+  }
+}
