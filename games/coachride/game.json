@@ -1,0 +1,183 @@
+{
+  "id": "coachride",
+  "name": { "zh": "魔城馬車", "en": "Coach Ride to Devil's Castle", "ja": "悪魔城への馬車の旅" },
+  "players": { "zh": "3–10 人", "en": "3–10 players", "ja": "3〜10人" },
+  "time": { "zh": "30–60 分鐘", "en": "30–60 min", "ja": "30〜60分" },
+  "summary": {
+    "zh": "馬車上的乘客分屬兩個秘密結社：騎士團要湊齊 3 把鑰匙，兄弟會要湊齊 3 個聖杯。交換道具、發起決鬥，猜出誰是同伴，再宣告勝利。用手機秘密發結社卡。",
+    "en": "The passengers on the coach belong to two secret societies: the Order wants 3 keys, the Brotherhood 3 goblets. Trade objects, start struggles, work out who your allies are and proclaim victory. Deal the society cards secretly with one phone.",
+    "ja": "馬車の乗客は 2 つの秘密結社に分かれている。騎士団は鍵 3 つ、兄弟団は杯 3 つを集める。道具を交換し、争いを仕掛け、仲間を見抜いて勝利を宣言する。結社カードはスマホで秘密に配れる。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "先看這裡", "en": "Read this first", "ja": "はじめに" },
+      "md": {
+        "zh": [
+          "這款絕版了，規則整理自玩家做的英文規則摘要，**職業和道具的效果寫在每張卡上，以手上的卡為準**。",
+          "",
+          "- **公開秘密騎士團**：湊齊 **3 把鑰匙**",
+          "- **真實謊言兄弟會**：湊齊 **3 個聖杯**",
+          "",
+          "鑰匙和聖杯散在大家手上，你不知道誰是同伴，要靠交易和決鬥打探。"
+        ],
+        "en": [
+          "This game is out of print; these rules come from a fan-made English summary. **Occupation and object effects are printed on the cards — follow the cards you have.**",
+          "",
+          "- **Order of Open Secrets**: gather **3 keys**",
+          "- **Brotherhood of True Lies**: gather **3 goblets**",
+          "",
+          "The keys and goblets are scattered among everyone's hands and you don't know who your allies are — find out by trading and fighting."
+        ],
+        "ja": [
+          "このゲームは絶版で、ルールはファンによる英語の要約から。**職業と道具の効果はカードに書いてあるので、手元のカードに従う**。",
+          "",
+          "- **公然の秘密騎士団**：**鍵 3 つ**をそろえる",
+          "- **真実の嘘兄弟団**：**杯 3 つ**をそろえる",
+          "",
+          "鍵と杯はみんなの手札に散らばっていて、誰が仲間か分からない。交換と争いで探る。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "每人拿（N＝人數）：",
+          "- **角色卡** 1 張，正面朝上（一面劍、一面盾）",
+          "- **結社卡** 1 張：騎士團和兄弟會各「N 的一半、無條件進位」張洗勻後發，奇數時多一張不用（「開局」頁可以用手機發）",
+          "- **職業卡** 1 張",
+          "- **力量藥水** 1 張（只有人數是奇數時）",
+          "- **道具卡** 1 張（3 人時 2 張）：從「N−2 張有封印的道具＋2 個袋子」洗勻後發（3 人用 4 張有封印的）。3 人時拿掉黑珍珠，10 人時拿掉外套",
+          "",
+          "沒用到的角色、結社、藥水收回盒子；剩下的道具卡當**補給牌堆**。"
+        ],
+        "en": [
+          "Each player receives (N = number of players):",
+          "- **1 character card**, face up (sword on one side, shield on the other)",
+          "- **1 society card**: shuffle half of N (rounded up) Order and the same number of Brotherhood cards and deal one each; with an odd N one is left over (or deal them with the phone in the Play tab)",
+          "- **1 occupation card**",
+          "- **1 Drink of Power** (only with an odd number of players)",
+          "- **1 object card** (2 with 3 players): shuffle N−2 sealed objects plus 2 bags and deal (4 sealed objects with 3 players). Remove the Black Pearl with 3 players and the Coat with 10",
+          "",
+          "Unused characters, societies and drinks go back in the box; the remaining objects form the **pick-up pile**."
+        ],
+        "ja": [
+          "各自が受け取るもの（N＝人数）：",
+          "- **キャラクター** 1 枚、表向き（剣の面と盾の面）",
+          "- **結社カード** 1 枚：騎士団と兄弟団を「N の半分、切り上げ」枚ずつ混ぜて配る。奇数なら 1 枚余る（「プレイ」タブでスマホで配ってもよい）",
+          "- **職業カード** 1 枚",
+          "- **力の薬** 1 枚（人数が奇数のときだけ）",
+          "- **道具カード** 1 枚（3 人なら 2 枚）：「封印付きの道具 N−2 枚＋袋 2 枚」を混ぜて配る（3 人なら封印付き 4 枚）。3 人では黒真珠、10 人ではコートを抜く",
+          "",
+          "使わないキャラクター・結社・薬は箱へ。残った道具は**補充の山**。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "回合", "en": "Your turn", "ja": "手番" },
+      "md": {
+        "zh": [
+          "從旅行最遠的人開始輪流，每回合做**一件事**：",
+          "",
+          "- **不做事**",
+          "- **提議交換道具**：拿一張道具跟某人換。對方可以拒絕；如果他手上除了袋子沒別的、你又給他袋子，就一定要拒絕。換到有「交換能力」的卡，接受的人先念出來，再換提議的人念",
+          "- **發動決鬥**（見下一節）",
+          "- **宣告勝利**（見〈勝利〉）"
+        ],
+        "en": [
+          "Starting with the player who has traveled furthest, each turn do **one** thing:",
+          "",
+          "- **Pass**",
+          "- **Offer a trade**: offer one object to another player. They may refuse; they must refuse if their only other card is a bag and you're offering a bag. If a received card has a trade ability, the accepting player reads theirs aloud first, then the offering player",
+          "- **Attack** (see the next section)",
+          "- **Proclaim victory** (see Winning)"
+        ],
+        "ja": [
+          "一番遠くまで旅した人から順に、手番では**1 つ**だけ行う：",
+          "",
+          "- **何もしない**",
+          "- **道具の交換を提案**：道具 1 枚を誰かと交換する。相手は断れる。相手の手札が袋だけで、袋を差し出されたら必ず断る。交換能力のあるカードを受け取ったら、受けた側が先に読み上げ、次に提案した側",
+          "- **争いを仕掛ける**（次の節）",
+          "- **勝利を宣言**（〈勝利〉参照）"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "決鬥", "en": "Struggles", "ja": "争い" },
+      "md": {
+        "zh": [
+          "1. 攻擊者說「我攻擊你！」，角色卡**劍**朝上放出；防守者角色卡**盾**朝上放出",
+          "2. 從攻擊者左邊開始，其他人輪流決定支持哪一邊（把角色卡放在那一邊），或不放表示不參與",
+          "3. 大家都可以把職業或道具翻開使用能力；**道具用完收回手上，職業翻開後就一直公開**",
+          "4. 加總劍和盾的數量比大小（卡上兩種都有的，持有人自己選算哪一種）",
+          "5. **平手**：攻擊者從補給牌堆拿一張道具",
+          "6. 贏家選一個：**偷看輸家的職業和結社**，或**看輸家的道具並拿走一張**（輸家只有一張道具時，贏家要給他一張自己的道具補上）"
+        ],
+        "en": [
+          "1. The attacker says \"I attack you!\" and plays their character **sword** side up; the defender plays theirs **shield** side up",
+          "2. Starting left of the attacker, the others choose a side by placing their character card, or keep it to abstain",
+          "3. Anyone may reveal occupations or objects to use their abilities; **objects return to hand afterwards, occupations stay face up**",
+          "4. Compare total swords to total shields (if a card has both, its owner chooses which counts)",
+          "5. **Tie**: the attacker takes an object from the pick-up pile",
+          "6. The winner chooses one: **look at the loser's occupation and society**, or **look at the loser's objects and take one** (if the loser had only one, the winner gives them one of their own objects)"
+        ],
+        "ja": [
+          "1. 攻撃者は「攻撃する！」と言い、キャラクターを**剣**の面で出す。防御者は**盾**の面で出す",
+          "2. 攻撃者の左から順に、どちらを応援するかキャラクターを置いて示す。置かなければ不参加",
+          "3. 誰でも職業や道具を公開して能力を使える。**道具は終わったら手札に戻し、職業は公開したまま**",
+          "4. 剣と盾の合計を比べる（両方あるカードは持ち主がどちらで数えるか選ぶ）",
+          "5. **同点**：攻撃者は補充の山から道具を 1 枚取る",
+          "6. 勝者は 1 つ選ぶ：**敗者の職業と結社を見る**、または**敗者の道具を見て 1 枚奪う**（敗者の道具が 1 枚だけなら、勝者は自分の道具を 1 枚渡す）"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "勝利", "en": "Winning", "ja": "勝利" },
+      "md": {
+        "zh": [
+          "覺得自己的結社已經湊齊時，在自己的回合宣告：",
+          "- 「公開秘密騎士團擁有 3 把力量之鑰，兄弟會必須臣服！」或",
+          "- 「真實謊言兄弟會擁有 3 個陰謀之杯，騎士團必須臣服！」",
+          "",
+          "接著**說出所有拿著那些道具的同伴**。全部說對，你的結社贏；說錯任何一個，**對方結社贏**。",
+          "",
+          "- 袋子裡裝著鑰匙或聖杯的，算鑰匙或聖杯",
+          "- 人數奇數時，人數比較少的那一邊可以用力量藥水代替一把鑰匙或一個聖杯",
+          "- 有道具「分會的盔甲外套」的人可以自己一個人贏（看卡上說明）",
+          "",
+          "說完按「開局」頁的「公布結社」對答案。"
+        ],
+        "en": [
+          "When you believe your society has its set, proclaim on your turn:",
+          "- \"The Order of Open Secrets owns the three keys of power and demands the Brotherhood's absolute subjection!\" or",
+          "- \"The Brotherhood of True Lies owns the three goblets of intrigue and demands the Order's absolute subjection!\"",
+          "",
+          "Then **name every ally holding those objects**. All correct: your society wins. Any mistake: **the other society wins**.",
+          "",
+          "- A bag holding a key or goblet counts as one",
+          "- With an odd number of players, the smaller society may use a Drink of Power in place of one key or goblet",
+          "- The holder of the Coat of Armor of the Loge can win alone (see the card)",
+          "",
+          "Then tap Reveal in the Play tab to check."
+        ],
+        "ja": [
+          "自分の結社がそろったと思ったら、自分の手番に宣言する：",
+          "- 「公然の秘密騎士団は力の鍵 3 つを持っている、兄弟団は服従せよ！」または",
+          "- 「真実の嘘兄弟団は陰謀の杯 3 つを持っている、騎士団は服従せよ！」",
+          "",
+          "続けて**その道具を持つ仲間を全員挙げる**。全部正しければ自分の結社の勝ち、1 人でも違えば**相手の結社の勝ち**。",
+          "",
+          "- 鍵や杯が入った袋は鍵・杯として数える",
+          "- 人数が奇数なら、人数の少ない方の結社は力の薬を鍵か杯 1 つの代わりにできる",
+          "- 「支部の鎧のコート」を持つ人は 1 人で勝てる（カード参照）",
+          "",
+          "宣言したら「プレイ」タブの「結社を公開」で答え合わせ。"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "coachride",
+    "title": { "zh": "發結社卡", "en": "Societies", "ja": "結社配り" }
+  }
+}
