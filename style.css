@@ -37,6 +37,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* 首頁：遊戲清單 */
 #sort { flex-wrap: wrap; }
 #sort button { flex: 0 0 auto; padding: 4px 10px; }
+#sort .count { margin-left: auto; font-style: normal; color: var(--dim); }
 #game-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 #game-list a {
   display: block; padding: 16px; border-radius: 14px; background: var(--panel);
