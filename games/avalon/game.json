@@ -2,7 +2,7 @@
   "id": "avalon",
   "name": { "zh": "阿瓦隆", "en": "Avalon", "ja": "アヴァロン" },
   "players": { "zh": "5–10 人", "en": "5–10 players", "ja": "5〜10人" },
-  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "time": { "zh": "45–90 分鐘", "en": "45–90 min", "ja": "45〜90分" },
   "summary": {
     "zh": "亞瑟王的忠臣對上莫德雷德的爪牙：藏在人群裡的壞人要破壞任務，好人要找出誰在說謊。",
     "en": "Loyal Servants of Arthur versus the Minions of Mordred: hidden traitors sabotage the quests while the good side tries to spot the liars.",
