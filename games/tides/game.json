@@ -1,0 +1,126 @@
+{
+  "id": "tides",
+  "name": { "zh": "運轉潮汐", "en": "Tides of Time", "ja": "タイズ・オブ・タイム" },
+  "players": { "zh": "2 人", "en": "2 players", "ja": "2人" },
+  "time": { "zh": "20 分鐘", "en": "20 min", "ja": "20分" },
+  "summary": {
+    "zh": "兩個人用 18 張牌輪流挑牌、互換手牌，打造自己的王國。每張牌有花色和計分目標，玩三輪，每輪留一張當遺物。App 幫你記三輪分數。",
+    "en": "Two players draft from 18 cards, passing hands back and forth to build a kingdom. Each card has a suit and a scoring objective; play three rounds, keeping one relic each round. The app tracks the three round scores.",
+    "ja": "18 枚のカードを 2 人で 1 枚ずつ選んで手札を交換し、王国を作る。カードにはスートと得点目標がある。3 ラウンド遊び、毎ラウンド 1 枚を遺物として残す。アプリで 3 ラウンドの得点を記録。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "- 18 張遊戲牌洗勻（另一張是提示卡，不用）",
+          "- 每人發 **5 張**當手牌，其餘蓋著當牌堆",
+          "- 每張牌有一種**花色**（共 5 種）和一個**計分目標**，例如某花色最多的人得幾分、每張某花色得幾分"
+        ],
+        "en": [
+          "- Shuffle the 18 game cards (the extra reference card is not used)",
+          "- Deal **5** to each player; the rest form the draw pile",
+          "- Each card has a **suit** (5 suits in all) and a **scoring objective**, such as points for having the most of a suit or points per card of a suit"
+        ],
+        "ja": [
+          "- ゲームカード 18 枚を混ぜる（もう 1 枚は早見表で使わない）",
+          "- 各自 **5 枚**配り、残りは山札",
+          "- カードには**スート**（全 5 種）と**得点目標**がある。例：あるスートが最多なら何点、あるスート 1 枚ごとに何点"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "一輪怎麼玩", "en": "Playing a round", "ja": "ラウンドの流れ" },
+      "md": {
+        "zh": [
+          "1. 兩人各從手牌挑 **1 張**蓋著出，一起翻開，放到自己面前",
+          "2. **交換手牌**（把剩下的手牌交給對方）",
+          "3. 重複，直到兩人都出完 5 張",
+          "4. **計分**：照自己面前每張牌（包括之前留下的遺物）的計分目標算分，記下來"
+        ],
+        "en": [
+          "1. Each player chooses **1** card from hand, both reveal and place it in front of themselves",
+          "2. **Swap hands** (give your remaining cards to the other player)",
+          "3. Repeat until both players have played 5 cards",
+          "4. **Score**: count the objective on every card in front of you (including relics kept earlier) and write it down"
+        ],
+        "ja": [
+          "1. 2 人とも手札から **1 枚**選んで同時に公開し、自分の前に置く",
+          "2. **手札を交換**（残りを相手に渡す）",
+          "3. 2 人とも 5 枚出すまで繰り返す",
+          "4. **得点**：自分の前のすべてのカード（前に残した遺物も含む）の得点目標を数えて記録"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "遺物與棄牌（第一、二輪）", "en": "Relics and discards (rounds 1 and 2)", "ja": "遺物と除外（第 1・2 ラウンド）" },
+      "md": {
+        "zh": [
+          "- 從這輪出的牌裡挑 **1 張留下當遺物**，之後每一輪都放在你的王國裡、照樣算分",
+          "- 再挑 **1 張移出遊戲**，不再使用",
+          "- 剩下的 3 張拿回手上，再從牌堆**抽 2 張**，湊成 5 張開始下一輪",
+          "",
+          "**第三輪**：不選遺物、不棄牌、不抽牌，算完分遊戲結束。"
+        ],
+        "en": [
+          "- From the cards you played, **keep 1 as a relic**; it stays in your kingdom and scores in every later round",
+          "- **Remove 1** card from the game",
+          "- Take the remaining 3 back into your hand and **draw 2**, making 5 to start the next round",
+          "",
+          "**Round 3**: no relics, discards or draws; the game ends after scoring."
+        ],
+        "ja": [
+          "- 出したカードから **1 枚を遺物として残す**。以後のラウンドも王国に置いて得点に数える",
+          "- **1 枚をゲームから除外**",
+          "- 残り 3 枚を手札に戻し、山札から **2 枚引いて** 5 枚にして次のラウンド",
+          "",
+          "**第 3 ラウンド**：遺物も除外もドローもなし。得点したら終了。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "勝負", "en": "Winning", "ja": "勝敗" },
+      "md": {
+        "zh": [
+          "三輪的分數加起來，總分高的人贏。",
+          "",
+          "在「開局」頁填每輪分數，App 會加總、標出領先和贏家。"
+        ],
+        "en": [
+          "Add up the three round scores; the higher total wins.",
+          "",
+          "Enter each round's score in the Play tab and the app totals them and shows who's ahead."
+        ],
+        "ja": [
+          "3 ラウンドの得点を合計し、多い方の勝ち。",
+          "",
+          "「プレイ」タブに各ラウンドの得点を入れると、合計とリードしている人を表示する。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "新手提醒", "en": "Tips for new players", "ja": "初心者向けのヒント" },
+      "md": {
+        "zh": [
+          "- 出牌前看對方手上剩什麼：你不拿的牌會交給對方",
+          "- 遺物會一直算分，留下花色好用、目標容易達成的那張",
+          "- 移出遊戲的牌兩人都拿不到，可以拿來拆掉對方需要的組合"
+        ],
+        "en": [
+          "- Before choosing, think about what you're passing — every card you skip goes to your opponent",
+          "- Relics score every round; keep one with a useful suit and an easy objective",
+          "- A removed card is gone for both players — use it to break up a combination your opponent needs"
+        ],
+        "ja": [
+          "- 選ぶ前に、渡すカードを考える。取らなかったカードは相手に行く",
+          "- 遺物は毎ラウンド得点に入る。使いやすいスートで達成しやすい目標のカードを残す",
+          "- 除外したカードは 2 人とも使えない。相手が欲しい組み合わせを崩すのに使える"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "tides",
+    "title": { "zh": "計分表", "en": "Score sheet", "ja": "得点表" }
+  }
+}

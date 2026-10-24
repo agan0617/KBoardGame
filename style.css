@@ -218,6 +218,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .nm-in { height: 40px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: inherit; font-size: 16px; padding: 0 10px; min-width: 0; }
 .nm-row b { text-align: right; color: var(--accent); }
 .dx-total div.nm-over { border-color: #e06a6a; }
+
+/* 運轉潮汐：三輪計分表（沿用 pr-grid） */
+.td-grid { grid-template-columns: 6em 1fr 1fr; }
+.td-status { text-align: center; color: var(--accent); min-height: 1.5em; }
 .link { color: var(--dim); text-decoration: underline; padding: 8px; font-size: 14px; }
 .uc-end { text-align: center; }
 .uc-end.uc .uc-huge { color: #e06a6a; }
