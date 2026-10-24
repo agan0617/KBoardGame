@@ -189,6 +189,22 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .pr-grid input { width: 100%; height: 38px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: inherit; font-size: 16px; text-align: center; }
 .pr-grid > b { font-size: 18px; text-align: center; display: flex; flex-direction: column; color: var(--accent); }
 .pr-grid > b small { font-size: 11px; }
+
+/* 只言片語：投票與總分 */
+.dx-vote { margin: 10px 0; }
+.dx-vote > span { display: block; font-size: 14px; color: var(--dim); margin-bottom: 4px; }
+.dx-vote > div { display: flex; flex-wrap: wrap; gap: 5px; }
+.dx-vote button { min-width: 40px; height: 40px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 2px; }
+.dx-vote button small { font-size: 10px; color: var(--accent); }
+.dx-vote button.teller { border-color: var(--dim); }
+.dx-vote button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.dx-vote button.on small { color: var(--accent-ink); }
+.dx-total { display: grid; grid-template-columns: repeat(auto-fill, minmax(64px, 1fr)); gap: 6px; }
+.dx-total div { text-align: center; padding: 6px 0; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); }
+.dx-total div.teller { border-color: var(--accent); }
+.dx-total small { display: block; font-size: 12px; color: var(--dim); }
+.dx-total b { font-size: 22px; }
+.dx-total em { display: block; font-style: normal; font-size: 12px; color: var(--accent); }
 .link { color: var(--dim); text-decoration: underline; padding: 8px; font-size: 14px; }
 .uc-end { text-align: center; }
 .uc-end.uc .uc-huge { color: #e06a6a; }

@@ -1,0 +1,132 @@
+{
+  "id": "dixit",
+  "name": { "zh": "只言片語", "en": "Dixit", "ja": "ディクシット" },
+  "players": { "zh": "3–6 人（奧德賽可到 12 人）", "en": "3–6 players (Odyssey up to 12)", "ja": "3〜6人（オデッセイで12人）" },
+  "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },
+  "summary": {
+    "zh": "說書人看著手上的畫，說一句話、一個詞或哼一段歌，大家從手牌挑一張最像的混進去，再猜哪張是說書人的。說得太明白、太難懂都拿不到分。App 幫你算每回合的分數。",
+    "en": "The storyteller describes one of their pictures with a word, a sentence or a hum; everyone adds a card that fits, then guesses which was the storyteller's. Too obvious or too obscure scores nothing. The app scores each round.",
+    "ja": "語り部が手札の絵を言葉や一言、鼻歌で表し、みんなは合いそうな絵を 1 枚混ぜる。どれが語り部のカードか当てる。分かりやすすぎても難しすぎても点にならない。アプリで毎ラウンドの得点を計算。"
+  },
+  "rules": [
+    {
+      "title": { "zh": "準備", "en": "Setup", "ja": "準備" },
+      "md": {
+        "zh": [
+          "- 牌洗勻，每人發 **6 張**",
+          "- 每人拿一個顏色的兔子放計分板 0 分，和對應顏色的投票片",
+          "- 隨便挑一個人當第一個說書人，之後順時針輪流"
+        ],
+        "en": [
+          "- Shuffle the cards and deal **6** to each player",
+          "- Each player takes a rabbit for the score track (on 0) and the voting tokens of their color",
+          "- Choose a first storyteller; afterwards it passes clockwise"
+        ],
+        "ja": [
+          "- カードを混ぜて各自 **6 枚**配る",
+          "- 各自 1 色のウサギを得点トラックの 0 に置き、同じ色の投票チップを取る",
+          "- 最初の語り部を決める。以後は時計回り"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "一回合", "en": "A round", "ja": "ラウンドの流れ" },
+      "md": {
+        "zh": [
+          "1. **說書人**從手牌挑一張，蓋著出，同時說一句提示（一個詞、一句話、一段聲音或動作都可以）",
+          "2. 其他人從自己的手牌挑一張**最符合提示**的，蓋著交給說書人",
+          "3. 說書人把所有牌洗勻，翻開排成一排，給每張一個號碼",
+          "4. 除了說書人，每個人**暗中投票**猜哪張是說書人的牌。不能投自己的牌",
+          "5. 一起翻開投票，照〈計分〉加分",
+          "6. 每人補到 6 張，下一個人當說書人"
+        ],
+        "en": [
+          "1. The **storyteller** chooses a card, plays it face down and gives a clue (a word, a sentence, a sound or a gesture)",
+          "2. Everyone else picks the card from their hand that **best fits the clue** and gives it face down to the storyteller",
+          "3. The storyteller shuffles them and lays them out face up, each with a number",
+          "4. Everyone except the storyteller **secretly votes** for the card they think is the storyteller's. You can't vote for your own",
+          "5. Reveal the votes together and score (see Scoring)",
+          "6. Everyone draws back to 6; the next player becomes storyteller"
+        ],
+        "ja": [
+          "1. **語り部**は手札から 1 枚を裏向きに出し、ヒントを言う（単語、文、音、身ぶりなんでも）",
+          "2. 他の人は手札から**ヒントに一番合う**カードを 1 枚、裏向きで語り部に渡す",
+          "3. 語り部は全部を混ぜ、表向きに並べて番号を付ける",
+          "4. 語り部以外は、どれが語り部のカードか**こっそり投票**する。自分のカードには投票できない",
+          "5. 一斉に投票を公開して得点（〈得点〉参照）",
+          "6. 全員 6 枚まで補充し、次の人が語り部"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "計分", "en": "Scoring", "ja": "得点" },
+      "md": {
+        "zh": [
+          "- **全部的人都猜中**或**沒有人猜中**：說書人 0 分，其他人各 2 分（提示太明白或太難懂）",
+          "- **有人猜中、有人沒猜中**：說書人和猜中的人各 3 分",
+          "- 說書人以外的人：自己的牌**每被投一票 +1 分**",
+          "",
+          "在「開局」頁點每個人投給誰，App 會自動算。"
+        ],
+        "en": [
+          "- **Everyone** or **nobody** finds the storyteller's card: storyteller 0, everyone else 2 (the clue was too obvious or too obscure)",
+          "- **Some but not all** find it: the storyteller and each finder score 3",
+          "- Every player other than the storyteller: **+1 for each vote** their card received",
+          "",
+          "Tap who voted for which card in the Play tab and the app scores it."
+        ],
+        "ja": [
+          "- **全員**正解、または**誰も**正解しない：語り部 0 点、他の全員 2 点（ヒントが分かりやすすぎるか難しすぎる）",
+          "- **一部だけ**正解：語り部と正解者が 3 点",
+          "- 語り部以外は、自分のカードに**1 票入るごとに +1 点**",
+          "",
+          "「プレイ」タブで誰がどれに投票したか押すと自動で計算。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "遊戲結束", "en": "Game end", "ja": "ゲーム終了" },
+      "md": {
+        "zh": [
+          "牌堆抽完，或有人到 **30 分**，遊戲結束，分數最高的人贏。",
+          "",
+          "人數多（7 人以上）或只有 3 人時，出牌、投票的方式說明書另有規定，照盒內說明書玩，算分一樣照上面。"
+        ],
+        "en": [
+          "The game ends when the deck runs out or someone reaches **30 points**; highest score wins.",
+          "",
+          "With large groups (7+) or only 3 players the rulebook changes how cards are played and votes cast — follow the rulebook in the box; scoring works as above."
+        ],
+        "ja": [
+          "山札がなくなるか、誰かが **30 点**になったら終了。最高得点の人の勝ち。",
+          "",
+          "大人数（7 人以上）や 3 人のときは、カードの出し方や投票が説明書で変わる。箱の説明書に従い、得点は上のとおり。"
+        ]
+      }
+    },
+    {
+      "title": { "zh": "說好提示的訣竅", "en": "Tips for clues", "ja": "ヒントのコツ" },
+      "md": {
+        "zh": [
+          "- 目標是**讓一部分人猜中、一部分人猜錯**，太直白會全中、太跳躍會全錯，兩種都是 0 分",
+          "- 可以用歌名、電影台詞、成語、只有某幾個人懂的梗",
+          "- 不是說書人時，挑一張「別人會以為是說書人的」牌，騙到票就有分"
+        ],
+        "en": [
+          "- Aim for **some players to get it and some not** — too literal and everyone finds it, too abstract and nobody does; both score 0",
+          "- Song titles, film quotes, proverbs or in-jokes only some players know all work well",
+          "- When you're not the storyteller, play a card others will mistake for the storyteller's — every vote you draw scores"
+        ],
+        "ja": [
+          "- **一部の人だけ当たる**のが狙い。具体的すぎると全員正解、飛びすぎると誰も当たらず、どちらも 0 点",
+          "- 曲名、映画のセリフ、ことわざ、一部の人だけ分かるネタが使える",
+          "- 語り部でないときは、語り部のカードと間違えられそうな絵を出す。票を集めれば得点"
+        ]
+      }
+    }
+  ],
+  "play": {
+    "type": "dixit",
+    "title": { "zh": "算分", "en": "Score", "ja": "得点" }
+  }
+}
