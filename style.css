@@ -160,6 +160,27 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .cc-cheat summary { cursor: pointer; font-weight: 600; }
 .cc-cheat ul { margin: 8px 0 0; padding-left: 18px; color: var(--dim); font-size: 14px; line-height: 1.6; }
 .cc-rank li { grid-template-columns: 2.2em 1fr 3em 0; }
+
+/* 卡坦島：擲骰＋勝利分數 */
+.ct-dice { text-align: center; }
+.ct-faces { font-size: 64px; line-height: 1; margin: 4px 0 8px; }
+.ct-faces b { font-size: 40px; margin-left: 12px; color: var(--accent); vertical-align: middle; }
+.ct-players { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.ct-p { padding: 10px; margin-bottom: 0; }
+.ct-p .uc-row { margin-bottom: 6px; font-size: 14px; }
+.ct-p .uc-step button { width: 32px; height: 32px; font-size: 18px; }
+.ct-p .uc-step b { min-width: 22px; font-size: 17px; }
+.ct-p .seg { display: flex; gap: 4px; }
+.ct-p .seg button { flex: 1; font-size: 12px; padding: 6px 2px; }
+.ct-head { display: flex; align-items: center; margin: 0 0 8px; font-size: 16px; }
+.ct-head span { flex: 1; }
+.ct-head b { color: var(--accent); font-size: 18px; }
+.ct-bars { display: grid; grid-template-columns: repeat(11, 1fr); gap: 3px; align-items: end; text-align: center; }
+.ct-bars div { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100px; }
+.ct-bars i { width: 70%; background: var(--dim); border-radius: 3px 3px 0 0; min-height: 2px; }
+.ct-bars i.seven { background: #d9534f; }
+.ct-bars small { font-size: 11px; color: var(--dim); }
+.ct-bars b { font-size: 13px; }
 .link { color: var(--dim); text-decoration: underline; padding: 8px; font-size: 14px; }
 .uc-end { text-align: center; }
 .uc-end.uc .uc-huge { color: #e06a6a; }
