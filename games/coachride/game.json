@@ -1,5 +1,6 @@
 {
   "id": "coachride",
+  "icon": "🎩",
   "name": { "zh": "魔城馬車", "en": "Coach Ride to Devil's Castle", "ja": "悪魔城への馬車の旅" },
   "players": { "zh": "3–10 人", "en": "3–10 players", "ja": "3〜10人" },
   "time": { "zh": "30–60 分鐘", "en": "30–60 min", "ja": "30〜60分" },

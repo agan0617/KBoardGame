@@ -1,5 +1,6 @@
 {
   "id": "nimmt",
+  "icon": "🐮",
   "name": { "zh": "誰是牛頭王", "en": "6 nimmt!", "ja": "ニムト" },
   "players": { "zh": "2–10 人", "en": "2–10 players", "ja": "2〜10人" },
   "time": { "zh": "45 分鐘", "en": "45 min", "ja": "45分" },

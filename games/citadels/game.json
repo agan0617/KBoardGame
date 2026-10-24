@@ -1,5 +1,6 @@
 {
   "id": "citadels",
+  "icon": "👑",
   "name": { "zh": "富饒之城", "en": "Citadels", "ja": "あやつり人形" },
   "players": { "zh": "2–7 人（新版 2–8 人）", "en": "2–7 players (2016 edition 2–8)", "ja": "2〜7人（新版 2〜8人）" },
   "time": { "zh": "30–60 分鐘", "en": "30–60 min", "ja": "30〜60分" },

@@ -1,5 +1,6 @@
 {
   "id": "undercover",
+  "icon": "🕵️",
   "name": { "zh": "誰是臥底", "en": "Undercover", "ja": "アンダーカバー" },
   "players": { "zh": "4–12 人", "en": "4–12 players", "ja": "4〜12人" },
   "time": { "zh": "15 分鐘", "en": "15 min", "ja": "15分" },

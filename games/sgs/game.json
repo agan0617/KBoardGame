@@ -1,5 +1,6 @@
 {
   "id": "sgs",
+  "icon": "🏯",
   "name": { "zh": "三國殺", "en": "Legends of the Three Kingdoms", "ja": "三国殺" },
   "players": { "zh": "4–10 人", "en": "4–10 players", "ja": "4〜10人" },
   "time": { "zh": "40–60 分鐘", "en": "40–60 min", "ja": "40〜60分" },

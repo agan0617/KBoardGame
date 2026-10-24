@@ -37,6 +37,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* 首頁：遊戲清單 */
 #sort { flex-wrap: wrap; }
 #sort button { flex: 0 0 auto; padding: 4px 10px; }
+.gicon { margin-right: 8px; }
+/* 玩法頁的示意圖 */
+.fig { margin: 14px 0; text-align: center; }
+.fig img { width: 100%; max-width: 520px; border-radius: 12px; background: #f4ecd8; }
+.fig figcaption { font-size: 14px; color: var(--dim); margin-top: 6px; }
 #sort .count { margin-left: auto; font-style: normal; color: var(--dim); }
 #game-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 #game-list a {

@@ -1,5 +1,6 @@
 {
   "id": "avalon",
+  "icon": "⚔️",
   "name": { "zh": "阿瓦隆", "en": "Avalon", "ja": "アヴァロン" },
   "players": { "zh": "5–10 人", "en": "5–10 players", "ja": "5〜10人" },
   "time": { "zh": "45–90 分鐘", "en": "45–90 min", "ja": "45〜90分" },

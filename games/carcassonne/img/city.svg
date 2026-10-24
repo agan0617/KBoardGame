@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170" font-family="sans-serif">
+  <!-- 完成的城堡：3 片＋1 個盾徽 → 2×3 + 2 = 8 分 -->
+  <defs>
+    <g id="field"><rect width="80" height="80" fill="#8cbf5f" stroke="#4f7a36" stroke-width="2"/></g>
+    <g id="meeple" fill="#d9534f" stroke="#fff" stroke-width="1.5"><circle cy="-10" r="5"/><path d="M-10 10 L-5 -2 L-10 -3 L-10 -6 L10 -6 L10 -3 L5 -2 L10 10 L3 10 L0 4 L-3 10Z"/></g>
+    <g id="shield"><path d="M-8 -9 h16 v9 q0 9 -8 12 q-8 -3 -8 -12z" fill="#2f6fd0" stroke="#fff" stroke-width="1.5"/></g>
+  </defs>
+  <rect width="420" height="170" fill="#f4ecd8"/>
+  <!-- 左：城牆在左側封口，城堡往右延伸 -->
+  <g transform="translate(20,20)"><use href="#field"/><polygon points="80,0 80,80 30,62 30,18" fill="#d9a566" stroke="#8a5a2b" stroke-width="2"/></g>
+  <!-- 中：城堡貫穿左右，有盾徽 -->
+  <g transform="translate(100,20)"><use href="#field"/><polygon points="0,0 80,0 80,80 0,80" fill="#d9a566"/><line x1="0" y1="0" x2="80" y2="0" stroke="#8a5a2b" stroke-width="3"/><line x1="0" y1="80" x2="80" y2="80" stroke="#8a5a2b" stroke-width="3"/><use href="#shield" x="40" y="40"/></g>
+  <!-- 右：城牆在右側封口 -->
+  <g transform="translate(180,20)"><use href="#field"/><polygon points="0,0 0,80 50,62 50,18" fill="#d9a566" stroke="#8a5a2b" stroke-width="2"/></g>
+  <use href="#meeple" x="65" y="62"/>
+  <g transform="translate(140,125)"><rect x="-38" y="-16" width="76" height="30" rx="8" fill="#e8c13a"/><text y="6" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">× 3</text></g>
+  <!-- 算式 -->
+  <g transform="translate(330,70)" text-anchor="middle" fill="#333">
+    <text y="-12" font-size="20">2 × 3 + 2</text>
+    <text y="22" font-size="34" font-weight="bold" fill="#c0392b">= 8</text>
+  </g>
+</svg>

@@ -1,5 +1,6 @@
 {
   "id": "mogul",
+  "icon": "🏦",
   "name": { "zh": "MOGUL 房產大亨", "en": "MOGUL", "ja": "MOGUL 不動産王" },
   "players": { "zh": "2–6 人", "en": "2–6 players", "ja": "2〜6人" },
   "time": { "zh": "60–120 分鐘", "en": "60–120 min", "ja": "60〜120分" },

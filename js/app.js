@@ -140,7 +140,7 @@ function renderHome() {
     + `<em class="count">${esc(ui('count').replace('{0}', gameIds.length))}</em>`;   // 遊戲總數（Ken 2026-10-24 要求）
   $('#game-list').innerHTML = sortedIds().map(id => {
     const g = games[id];
-    return `<li><a href="#/${id}"><h2>${esc(tr(g.name))}</h2><div class="meta">${esc(tr(g.players))}・${esc(tr(g.time))}</div><p>${esc(tr(g.summary))}</p></a></li>`;
+    return `<li><a href="#/${id}"><h2>${g.icon ? `<span class="gicon">${esc(g.icon)}</span>` : ''}${esc(tr(g.name))}</h2><div class="meta">${esc(tr(g.players))}・${esc(tr(g.time))}</div><p>${esc(tr(g.summary))}</p></a></li>`;
   }).join('');
 }
 
@@ -149,12 +149,15 @@ function renderHome() {
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 function inline(s) { return esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>'); }
 
-function md(lines) {
+// base：遊戲資料夾（games/<id>/），示意圖「![說明](img/x.svg)」的路徑相對於它
+function md(lines, base = '') {
   let out = '', i = 0;
   const cells = l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim());
   while (i < lines.length) {
     const l = lines[i];
     if (!l.trim()) { i++; continue; }
+    const img = l.match(/^!\[(.*)\]\((.+)\)$/);
+    if (img) { out += `<figure class="fig"><img src="${esc(base + img[2])}" alt="${esc(img[1])}" loading="lazy"><figcaption>${inline(img[1])}</figcaption></figure>`; i++; continue; }
     if (l.startsWith('### ')) { out += `<h3>${inline(l.slice(4))}</h3>`; i++; continue; }
     if (l.startsWith('- ')) {
       out += '<ul>';
@@ -174,7 +177,7 @@ function md(lines) {
 
 function renderRules(g) {
   $('#toc').innerHTML = g.rules.map((s, i) => `<a href="#" data-sec="${i}">${esc(tr(s.title))}</a>`).join('');
-  $('#rules-body').innerHTML = g.rules.map((s, i) => `<h2 id="sec-${i}">${esc(tr(s.title))}</h2>${md(tr(s.md))}`).join('');
+  $('#rules-body').innerHTML = g.rules.map((s, i) => `<h2 id="sec-${i}">${esc(tr(s.title))}</h2>${md(tr(s.md), `games/${g.id}/`)}`).join('');
 }
 
 $('#toc').addEventListener('click', e => {

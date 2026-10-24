@@ -1,5 +1,6 @@
 {
   "id": "dixit",
+  "icon": "🎨",
   "name": { "zh": "只言片語", "en": "Dixit", "ja": "ディクシット" },
   "players": { "zh": "3–6 人（奧德賽可到 12 人）", "en": "3–6 players (Odyssey up to 12)", "ja": "3〜6人（オデッセイで12人）" },
   "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },

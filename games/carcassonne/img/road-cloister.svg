@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" font-family="sans-serif">
+  <!-- 上：道路 4 片（兩端都接到路口）→ 4 分；下：修道院被 8 片圍滿 → 9 分 -->
+  <defs>
+    <g id="field"><rect width="60" height="60" fill="#8cbf5f" stroke="#4f7a36" stroke-width="2"/></g>
+    <g id="roadH"><line x1="0" y1="30" x2="60" y2="30" stroke="#8c7a55" stroke-width="9"/><line x1="0" y1="30" x2="60" y2="30" stroke="#f3ead2" stroke-width="5"/></g>
+    <g id="cross"><circle cx="30" cy="30" r="9" fill="#7a5a3a" stroke="#fff" stroke-width="2"/></g>
+    <g id="cloister"><rect x="17" y="24" width="26" height="20" fill="#e9e1cf" stroke="#7a5a3a" stroke-width="2"/><polygon points="14,25 30,12 46,25" fill="#c0392b"/></g>
+    <g id="meeple" fill="#3f7fd0" stroke="#fff" stroke-width="1.5"><circle cy="-9" r="4.5"/><path d="M-9 9 L-4 -2 L-9 -3 L-9 -6 L9 -6 L9 -3 L4 -2 L9 9 L3 9 L0 4 L-3 9Z"/></g>
+  </defs>
+  <rect width="420" height="300" fill="#f4ecd8"/>
+  <!-- 道路：路口 → 2 片直路 → 路口 -->
+  <g transform="translate(20,20)">
+    <g><use href="#field"/><line x1="30" y1="30" x2="60" y2="30" stroke="#8c7a55" stroke-width="9"/><line x1="30" y1="30" x2="60" y2="30" stroke="#f3ead2" stroke-width="5"/><use href="#cross"/></g>
+    <g transform="translate(60,0)"><use href="#field"/><use href="#roadH"/></g>
+    <g transform="translate(120,0)"><use href="#field"/><use href="#roadH"/></g>
+    <g transform="translate(180,0)"><use href="#field"/><line x1="0" y1="30" x2="30" y2="30" stroke="#8c7a55" stroke-width="9"/><line x1="0" y1="30" x2="30" y2="30" stroke="#f3ead2" stroke-width="5"/><use href="#cross"/></g>
+    <use href="#meeple" x="90" y="18"/>
+  </g>
+  <g transform="translate(340,52)" text-anchor="middle"><text font-size="16" fill="#333" y="-6">1 × 4</text><text y="26" font-size="30" font-weight="bold" fill="#c0392b">= 4</text></g>
+  <!-- 修道院：3×3 -->
+  <g transform="translate(60,105)">
+    <g><use href="#field"/></g><g transform="translate(60,0)"><use href="#field"/></g><g transform="translate(120,0)"><use href="#field"/></g>
+    <g transform="translate(0,60)"><use href="#field"/></g><g transform="translate(60,60)"><use href="#field"/><use href="#cloister"/></g><g transform="translate(120,60)"><use href="#field"/></g>
+    <g transform="translate(0,120)"><use href="#field"/></g><g transform="translate(60,120)"><use href="#field"/></g><g transform="translate(120,120)"><use href="#field"/></g>
+    <rect x="60" y="60" width="60" height="60" fill="none" stroke="#e8c13a" stroke-width="4"/>
+    <use href="#meeple" x="90" y="108"/>
+  </g>
+  <g transform="translate(340,200)" text-anchor="middle"><text font-size="16" fill="#333" y="-6">1 + 8</text><text y="26" font-size="30" font-weight="bold" fill="#c0392b">= 9</text></g>
+</svg>

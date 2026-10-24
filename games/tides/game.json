@@ -1,5 +1,6 @@
 {
   "id": "tides",
+  "icon": "🌊",
   "name": { "zh": "運轉潮汐", "en": "Turn the Tide", "ja": "ラント・ウンター" },
   "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
   "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },

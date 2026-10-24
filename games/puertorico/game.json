@@ -1,5 +1,6 @@
 {
   "id": "puertorico",
+  "icon": "⚓",
   "name": { "zh": "波多黎各", "en": "Puerto Rico", "ja": "プエルトリコ" },
   "players": { "zh": "3–5 人", "en": "3–5 players", "ja": "3〜5人" },
   "time": { "zh": "90–150 分鐘", "en": "90–150 min", "ja": "90〜150分" },

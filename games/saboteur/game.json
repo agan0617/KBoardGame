@@ -1,5 +1,6 @@
 {
   "id": "saboteur",
+  "icon": "⛏️",
   "name": { "zh": "矮人礦坑", "en": "Saboteur", "ja": "お邪魔者" },
   "players": { "zh": "3–10 人（擴展 2–12 人）", "en": "3–10 players (expansion 2–12)", "ja": "3〜10人（拡張で2〜12人）" },
   "time": { "zh": "30 分鐘", "en": "30 min", "ja": "30分" },

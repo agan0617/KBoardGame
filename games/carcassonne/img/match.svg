@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" font-family="sans-serif">
+  <!-- 地形板怎麼接：上排 ✓ 城堡接城堡、道路接道路；下排 ✗ 城堡邊接到草地 -->
+  <defs>
+    <g id="field"><rect width="80" height="80" fill="#8cbf5f" stroke="#4f7a36" stroke-width="2"/></g>
+    <g id="cityR"><polygon points="80,0 80,80 58,62 58,18" fill="#d9a566" stroke="#8a5a2b" stroke-width="2"/></g>
+    <g id="cityL"><polygon points="0,0 0,80 22,62 22,18" fill="#d9a566" stroke="#8a5a2b" stroke-width="2"/></g>
+    <g id="roadV"><line x1="40" y1="0" x2="40" y2="80" stroke="#8c7a55" stroke-width="10"/><line x1="40" y1="0" x2="40" y2="80" stroke="#f3ead2" stroke-width="6"/></g>
+    <g id="roadH"><line x1="0" y1="40" x2="80" y2="40" stroke="#8c7a55" stroke-width="10"/><line x1="0" y1="40" x2="80" y2="40" stroke="#f3ead2" stroke-width="6"/></g>
+  </defs>
+  <rect width="420" height="200" fill="#f4ecd8"/>
+  <!-- ✓：左板右邊是城堡，右板左邊也是城堡；兩塊都有直的道路 -->
+  <g transform="translate(20,10)"><use href="#field"/><use href="#roadV"/><use href="#cityR"/></g>
+  <g transform="translate(100,10)"><use href="#field"/><use href="#roadV"/><use href="#cityL"/></g>
+  <circle cx="230" cy="50" r="18" fill="#3c9a4b"/><text x="230" y="58" text-anchor="middle" font-size="24" fill="#fff">✓</text>
+  <!-- ✗：左板右邊是城堡，右板左邊是草地 -->
+  <g transform="translate(20,105)"><use href="#field"/><use href="#roadV"/><use href="#cityR"/></g>
+  <g transform="translate(100,105)"><use href="#field"/><use href="#roadV"/></g>
+  <line x1="100" y1="110" x2="100" y2="180" stroke="#d9534f" stroke-width="4" stroke-dasharray="6 4"/>
+  <circle cx="230" cy="145" r="18" fill="#d9534f"/><text x="230" y="153" text-anchor="middle" font-size="24" fill="#fff">✗</text>
+</svg>

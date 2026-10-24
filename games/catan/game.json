@@ -1,5 +1,6 @@
 {
   "id": "catan",
+  "icon": "🎲",
   "name": { "zh": "卡坦島", "en": "Catan", "ja": "カタン" },
   "players": { "zh": "3–4 人", "en": "3–4 players", "ja": "3〜4人" },
   "time": { "zh": "60–90 分鐘", "en": "60–90 min", "ja": "60〜90分" },
