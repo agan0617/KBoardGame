@@ -16,13 +16,16 @@ const SPEECH_LANG = { zh: 'zh-TW', en: 'en-GB', ja: 'ja-JP' };
 const UI = {
   zh: { app: 'K桌遊', rules: '玩法', host: '主持', playTab: '開局', back: '返回', prev: '上一句', next: '下一句',
     play: '▶ 連續播放', resume: '▶ 繼續播放', pause: '⏸ 暫停', pace: '停頓', short: '短', mid: '中', long: '長',
-    idleAuto: '按「連續播放」從第一句開始念，或點下面任一句單獨念', idleTap: '點下面任一句就念那一句', fail: '載入失敗：' },
+    idleAuto: '按「連續播放」從第一句開始念，或點下面任一句單獨念', idleTap: '點下面任一句就念那一句', fail: '載入失敗：',
+    sortBy: '排序', sDefault: '預設', sName: '名稱', sPlayers: '人數', sTime: '時間', sRecent: '最近玩' },
   en: { app: 'K Board Games', rules: 'Rules', host: 'Host', playTab: 'Play', back: 'Back', prev: 'Previous line', next: 'Next line',
     play: '▶ Play all', resume: '▶ Resume', pause: '⏸ Pause', pace: 'Pauses', short: 'Short', mid: 'Mid', long: 'Long',
-    idleAuto: 'Press “Play all” to start from the first line, or tap any line below to hear just that one', idleTap: 'Tap a line below to hear it', fail: 'Failed to load: ' },
+    idleAuto: 'Press “Play all” to start from the first line, or tap any line below to hear just that one', idleTap: 'Tap a line below to hear it', fail: 'Failed to load: ',
+    sortBy: 'Sort', sDefault: 'Default', sName: 'Name', sPlayers: 'Players', sTime: 'Time', sRecent: 'Recent' },
   ja: { app: 'Kボードゲーム', rules: 'ルール', host: '進行', playTab: 'プレイ', back: '戻る', prev: '前の台詞', next: '次の台詞',
     play: '▶ 連続再生', resume: '▶ 続きを再生', pause: '⏸ 一時停止', pace: '間', short: '短', mid: '中', long: '長',
-    idleAuto: '「連続再生」で最初から読み上げます。下の台詞をタップすると、その一文だけ読みます', idleTap: '下の台詞をタップすると読み上げます', fail: '読み込みに失敗：' },
+    idleAuto: '「連続再生」で最初から読み上げます。下の台詞をタップすると、その一文だけ読みます', idleTap: '下の台詞をタップすると読み上げます', fail: '読み込みに失敗：',
+    sortBy: '並び順', sDefault: '標準', sName: '名前', sPlayers: '人数', sTime: '時間', sRecent: '最近' },
 };
 
 function defaultLang() {
@@ -54,6 +57,12 @@ $('#langs').addEventListener('click', e => {
   cur = null;   // 讓 route() 用新語言重畫玩法與旁白
   route();
   if (sid && cur) selectScript(sid);   // 停在原本那組旁白
+});
+
+$('#sort').addEventListener('click', e => {
+  const b = e.target.closest('button[data-sort]'); if (!b) return;
+  store.set('sort', b.dataset.sort);
+  renderHome();
 });
 
 const games = {};          // id → game.json
@@ -90,6 +99,7 @@ function route() {
   $('#ver').classList.toggle('hidden', !!g);   // 版號只在主畫面顯示
   if (!g) { cur = null; $('#title').textContent = ui('app'); document.title = ui('app'); return; }
   const tabs = tabsOf(g);
+  if (cur !== g) store.set('recent', Object.assign(store.get('recent', {}), { [id]: Date.now() }));   // 首頁「最近玩」排序用
   if (cur !== g) {
     cur = g; script = null;
     $('#tabs').innerHTML = tabs.map(t => `<button data-tab="${t}">${esc(tabLabel(g, t))}</button>`).join('');
@@ -109,8 +119,25 @@ function route() {
   if (t === 'host') preloadAudio(g);
 }
 
+// 首頁排序（Ken 2026-10-24 要求）：預設＝games/index.json 的順序；人數照最少人數、時間照最短時間（都取文字裡第一個數字），
+// 一樣的照預設順序；最近玩＝最後打開那款的時間，沒打開過的排後面。選的排序記在 localStorage
+const SORTS = ['default', 'name', 'players', 'time', 'recent'];
+const firstNum = s => +((String(tr(s)).match(/\d+/) || [999])[0]);
+function sortedIds() {
+  const by = store.get('sort', 'default'), recent = store.get('recent', {}), idx = id => gameIds.indexOf(id);
+  const key = {
+    name: (a, b) => tr(games[a].name).localeCompare(tr(games[b].name), { zh: 'zh-Hant-TW', en: 'en', ja: 'ja' }[lang]),
+    players: (a, b) => firstNum(games[a].players) - firstNum(games[b].players),
+    time: (a, b) => firstNum(games[a].time) - firstNum(games[b].time),
+    recent: (a, b) => (recent[b] || 0) - (recent[a] || 0),
+  }[by];
+  return [...gameIds].sort((a, b) => (key ? key(a, b) : 0) || idx(a) - idx(b));
+}
+
 function renderHome() {
-  $('#game-list').innerHTML = gameIds.map(id => {
+  const by = store.get('sort', 'default');
+  $('#sort').innerHTML = `<span>${esc(ui('sortBy'))}</span>` + SORTS.map(s => `<button data-sort="${s}" class="${s === by ? 'on' : ''}">${esc(ui('s' + s[0].toUpperCase() + s.slice(1)))}</button>`).join('');
+  $('#game-list').innerHTML = sortedIds().map(id => {
     const g = games[id];
     return `<li><a href="#/${id}"><h2>${esc(tr(g.name))}</h2><div class="meta">${esc(tr(g.players))}・${esc(tr(g.time))}</div><p>${esc(tr(g.summary))}</p></a></li>`;
   }).join('');
